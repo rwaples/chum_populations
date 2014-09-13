@@ -14,7 +14,7 @@ rename_dict = {
     '/media/Shared/Data/chum/populations/barcodes/CM06_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CM06',
     '/media/Shared/Data/chum/populations/barcodes/CM09_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CM09',
     '/media/Shared/Data/chum/populations/barcodes/CMX1_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CMX1',
-#    '/media/Shared/Data/chum/populations/barcodes/CMX3_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CMX3'
+    '/media/Shared/Data/chum/populations/barcodes/CMX3_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CMX3'
     }
 
 
@@ -27,8 +27,7 @@ for rename_file, fa_dir in rename_dict.items():
             #os.rename(os.path.join(fa_dir, 'sample_{}.fa'.format(barcode)), os.path.join(fa_dir, '{}.fa'.format(ind_name)))
             with open(os.path.join(fa_dir, 'sample_{}.fa'.format(barcode))) as FA_FILE:
                 with gzip.open(os.path.join(fa_dir, '{}.fa.gz'.format(ind_name)), 'wb') as GZ_FILE:
-                    for line in FA_FILE:
-                        GZ_FILE.write(line)
+                    GZ_FILE.writelines(FA_FILE)
 
 
             
