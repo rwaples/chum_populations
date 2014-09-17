@@ -19,15 +19,23 @@ rename_dict = {
 
 
 
-for rename_file, fa_dir in rename_dict.items():
+for rename_file, fq_dir in rename_dict.items():
     with open(rename_file) as INFILE:
         for line in INFILE:
             barcode, ind_name = line.strip().split('\t')
-            #print os.path.exists((os.path.join(fa_dir, 'sample_{}.fa'.format(barcode))))           
-            #os.rename(os.path.join(fa_dir, 'sample_{}.fa'.format(barcode)), os.path.join(fa_dir, '{}.fa'.format(ind_name)))
-            with open(os.path.join(fa_dir, 'sample_{}.fa'.format(barcode))) as FA_FILE:
-                with gzip.open(os.path.join(fa_dir, '{}.fa.gz'.format(ind_name)), 'wb') as GZ_FILE:
-                    GZ_FILE.writelines(FA_FILE)
+            #print os.path.exists((os.path.join(fq_dir, 'sample_{}.fq'.format(barcode))))
+            old_name = os.path.join(fq_dir, 'sample_{}.fq'.format(barcode))
+            new_name = os.path.join(fq_dir, '{}.fq'.format(ind_name))
+            print(old_name, new_name)          
+            os.rename(old_name, new_name)
+            with open(os.path.join(fq_dir, 'rename_record.txt'), 'a') as OUTFILE:
+                OUTFILE.write(old_name)
+                OUTFILE.write("\t")
+                OUTFILE.write(new_name)
+                OUTFILE.write("\n")
+            #with open(os.path.join(fq_dir, 'sample_{}.fq'.format(barcode))) as FQ_FILE:
+            #   with gzip.open(os.path.join(fa_dir, '{}.fq.gz'.format(ind_name)), 'wb') as GZ_FILE:
+            #       GZ_FILE.writelines(FQ_FILE)
 
 
             

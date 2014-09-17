@@ -1,0 +1,21 @@
+
+prep for freebayes
+
+samtools faidx ./chum_ref_batch_01.fa
+samtools view -bS '/media/Shared/Data/chum/populations/aln/CMSHERW94S_0083.sam' | samtools sort -@ 4 - test_sorted
+samtools index ./test_sorted.bam 
+freebayes -f //media/Shared/Data/chum/populations/aln/chum_ref_batch_01.fa /media/Shared/Data/chum/populations/aln/test_sorted.bam > test.vcf
+
+
+
+TODO
+
+use --populations to separate my populations
+
+examine 
+
+--no-population-priors 
+--pooled-discrete
+--hwe-priors-off
+--cnv-map
+	BED file =  reference sequence, start, end, sample name, copy number

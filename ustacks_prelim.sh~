@@ -1,0 +1,6 @@
+
+# notice no deleveraging algo
+
+ustacks -f ***.fq -o ./*** -i 1 -m 3 -M 4 -H -r --max_locus_stacks 4 --model_type bounded --bound_high 0.05 -p 6 -t gzfastq
+
+
