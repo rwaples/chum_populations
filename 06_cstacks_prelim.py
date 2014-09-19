@@ -1,6 +1,6 @@
 catalog_individuals = [
     # mappings parents
- #   'CMUW10X_0001', 'CMUW10X_0008', 'CMUW10X_0009',
+    'CMUW10X_0001', 'CMUW10X_0008', 'CMUW10X_0009'],
     # CMKALA03
     'CMKALA03_0009', 'CMKALA03_0011', 
     # CMSQUA10
@@ -26,8 +26,9 @@ catalog_individuals = [
 # use /home/ipseg/Programs/Stacks/stacks-1.20/scripts/convert_stacks.pl
 
 # from stacks directory, run this
-print('cstacks -b 01 --catalog /media/Shared/Data/chum/populations/stacks/mapping_catalog/batch_42' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n -p 6')
+print('cstacks -b 03 --catalog /media/Shared/Data/chum/populations/stacks/mapping_catalog/batch_42' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n -p 6')
 
+print('cstacks -b 03 ' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n -p 6')
 
 
 #cstacks -b 01 -s **** -o /media/Shared/Data/chum/populations/stacks -n -p 6
