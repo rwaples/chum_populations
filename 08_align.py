@@ -13,7 +13,7 @@ def parse_name_fqgz(ind_filename):
     return(basename, sample_name, silli, ind_num)
 
 
-files_to_align = glob.glob('/media/Shared/Data/chum/populations/aln/*.fq.gz')
+files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/*.fq.gz')
 
 my_ref_file = '/media/Shared/Data/chum/populations/aln/batch_02/ref/chum_ref_batch_02.fa'
 
@@ -26,5 +26,19 @@ for individual_fq_gz in files_to_align:
     print(bwa_cmd.format(read_group, my_ref_file,  individual_fq_gz, sample_name))
     
         
+# bowtie1
+bowtie1_cmd = "gunzip -c {} | bowtie -p 6 --trim3 9 -v 3 -S --sam-RG ID:{} --sam-RG SM:{} /media/Shared/Data/chum/populations/aln/batch_02/ref/bt1 - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/batch_02/bowtie1/{}.bam"
 
+for individual_fq_gz in files_to_align:
+    basename, sample_name, silli, ind_num = parse_name_fqgz(individual_fq_gz)
+    print(bowtie1_cmd.format(individual_fq_gz, sample_name, sample_name, sample_name))
+# for bowtie1 RG must be added to each seq line, possible to do with bamaddrg program 
+
+
+# bowtie2  
+bowtie2_cmd = "gunzip -c {} | bowtie2 -p 6 --trim3 9 --no-unal --rg-id {} --rg SM:{} --rg PL:ILLUMINA /media/Shared/Data/chum/populations/aln/batch_02/ref/batch_02_bti - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/batch_02/bowtie2/{}.bam"
+
+for individual_fq_gz in files_to_align:
+    basename, sample_name, silli, ind_num = parse_name_fqgz(individual_fq_gz)
+    print(bowtie2_cmd.format(individual_fq_gz, sample_name, sample_name, sample_name))
                     

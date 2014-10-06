@@ -1,6 +1,21 @@
 # convert a stacks catalog to a reference fasta 
 
 
+""" 
+TODO: filter catalog based on:
+    repetitive sequences
+    unique alignments
+    rxstacks
+    mappability
+    depth
+
+
+
+"""
+
+
+
+
 #my_tags_file = '/media/Shared/Data/chum/populations/stacks/batch_1.catalog.tags.tsv'
 my_ref_file = '/media/Shared/Data/chum/populations/aln/chum_ref_batch_03.fa'
 my_tags_file = "/media/Shared/Data/chum/populations/stacks/batch_3.catalog.tags.tsv"

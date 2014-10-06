@@ -1,6 +1,6 @@
 catalog_individuals = [
     # mappings parents
-    'CMUW10X_0001', 'CMUW10X_0008', 'CMUW10X_0009'],
+    'CMUW10X_0001', 'CMUW10X_0008', 'CMUW10X_0009',
     # CMKALA03
     'CMKALA03_0009', 'CMKALA03_0011', 
     # CMSQUA10
@@ -26,11 +26,23 @@ catalog_individuals = [
 # use /home/ipseg/Programs/Stacks/stacks-1.20/scripts/convert_stacks.pl
 
 # from stacks directory, run this
-print('cstacks -b 03 --catalog /media/Shared/Data/chum/populations/stacks/mapping_catalog/batch_42' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n -p 6')
-
+print('cstacks -b 03 --catalog /media/Shared/Data/chum/populations/stacks/mapping_catalog/batch_42' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n 4 -p 6')
 print('cstacks -b 03 ' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n -p 6')
 
 
-#cstacks -b 01 -s **** -o /media/Shared/Data/chum/populations/stacks -n -p 6
 
+print("cstacks -b 05 -s ./" + " -s ./".join(catalog_individuals) + " -o ./ -n 4 -p 6")
 
+# sstacks _prelim
+
+for count, xx in enumerate(catalog_individuals):
+    ind_id = count + 1
+    sstacks_cmd = "sstacks -b 03 -c ./batch_3 -s ./{} -o /media/Shared/Data/chum/populations/stacks -p 6"
+    print(sstacks_cmd.format(xx))
+    
+    
+# rxstacks_prelim
+
+rxstacks -b 3  -P ./ -o ./rxstacks --model_type bounded --bound_high 0.05 --lnl_filter --lnl_dist --lnl_lim -10.0 -t 6
+
+rxstacks -b 3  -P ./ -o ./rxstacks_2 --model_type bounded --bound_high 0.05 --lnl_filter  --lnl_lim -10.0 --lnl_dist --max_haplo 3 --prune_haplo -t 6

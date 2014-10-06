@@ -7,13 +7,14 @@ import os.path
 samtools faidx ./chum_ref_batch_02.fa
 
 #generate commands to convert sams to bams
+# NO LONGER NEEDED
 sam_files = glob.glob('/media/Shared/Data/chum/populations/aln/*.sam')
 for SAM in sam_files:
     print("samtools view -bhu {sam_file} | samtools sort -m 4G -o {bam_file} -O bam -T temp_prefix -@ 2 -".format(sam_file = SAM, bam_file = SAM.replace(".sam", ".bam")))
 
 
 # index each bam
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/*.bam')
 for BAM in bam_files:
     print("samtools index {bam_file}".format(bam_file=BAM))
 
@@ -26,7 +27,7 @@ mapped_stats = "/media/Shared/Data/chum/populations/map/mapped.stats.txt"
 #my_BED_file = "/media/Shared/Data/chum/populations/fb/batch_01.bed"
 my_BED_file = "/media/Shared/Data/chum/populations/fb/batch_02.bed"
 my_target_file = "/media/Shared/Data/chum/populations/fb/batch_02_targets.bed"
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie1/*.bam')
 my_sample_names = [os.path.splitext(os.path.basename(xx))[0] for xx in bam_files]
 
 def generate_CNV_BED(map_stats_file, BED_file, sample_names, catID_col = 0, best_model_col = 4):
@@ -77,7 +78,7 @@ with open(populations_file, 'w') as OUTFILE:
         
 # to examine coverage
 # 
-./bedtools genomecov -bga -ibam '//media/Shared/Data/chum/populations/aln/batch_03/CMUW10X_0008.bam' > '/home/ipseg/Desktop/waples/chum_populations/basic_stats' 
+./bedtools genomecov -bga -ibam '//media/Shared/Data/chum/populations/aln/batch_02/bowtie1/CMUW10X_0008.bam' > '/home/ipseg/Desktop/waples/chum_populations/basic_stats' 
 
 # also we may want to increase the clipping penalty in bwa 
 
@@ -104,19 +105,33 @@ test_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_003
 
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/*X*.bam')
 bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/*.bam')
 
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie1/new.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/*.bam')
 
 
 "freebayes -f /media/Shared/Data/chum/populations/aln/batch_02/ref/chum_ref_batch_02.fa \
---cnv-map /media/Shared/Data/chum/populations/fb/batch_02.bed \
--targets '/media/Shared/Data/chum/populations/fb/batch_02_targets.bed' \
---populations /media/Shared/Data/chum/populations/fb/batch_01.populations \
+--min-coverage 2 \
+--min-repeat-size 100 \
+--haplotype-length 0 \
 --min-alternate-fraction 0.05 \
--e 2 \
---exclude-unobserved-genotypes \
---genotype-qualities \
--b " + " -b ".join(bam_files) + " --vcf ./batch_02.vcf"
+--min-alternate-count 1 \
+--min-alternate-total 2 \
+--binomial-obs-priors-off \
+--theta .01 \
+--targets /media/Shared/Data/chum/populations/fb/batch_02_nosample.bed \
+--cnv-map /media/Shared/Data/chum/populations/fb/batch_02.bed \
+-m 10 \
+-q 10 \
+-b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/batch_02_bt2.vcf"
+
+
+
+
+--pooled-continuous \
+
+--populations /media/Shared/Data/chum/populations/fb/batch_01.populations \
+
 
 "freebayes -f /media/Shared/Data/chum/populations/aln/batch_02/chum_ref_batch_02.fa \
 --min-alternate-fraction 0.1 \
@@ -130,7 +145,7 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/*.bam')
 -q 10 \
 -m 10 \
 
-"/media/Shared/Data/chum/populations/fb/batch_01.targets.bed"
+
 
 
 

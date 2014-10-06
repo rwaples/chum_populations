@@ -27,7 +27,7 @@ fqgz_dir = "/media/Shared/Data/chum/populations/cleanSeqs"
 for count, xx in enumerate(catalog_individuals):
     ind_id = count + 1
     ind_filename = os.path.join(fqgz_dir, xx + ".fq.gz")
-    ustacks_cmd = "ustacks -f {} -o /media/Shared/Data/chum/populations/stacks -i {} -m 3 -M 4 -H -r --max_locus_stacks 4 -p 6 -t gzfastq"
+    ustacks_cmd = "ustacks -f {} -o /media/Shared/Data/chum/populations/stacks -i {} --model_type bounded --bound_high 0.05 --alpha 0.1  -m 2 -M 4 -H -r --max_locus_stacks 4 -p 4 -t gzfastq "
     print(ustacks_cmd.format(ind_filename, ind_id))
     
 
