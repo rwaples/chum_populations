@@ -1,0 +1,3 @@
+10/7 
+check that reads with quality scores ~2 are not getting through phred64 B phred33 #
+run fastqc on each indidivual and parse output
