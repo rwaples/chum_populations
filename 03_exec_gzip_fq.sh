@@ -1,14 +1,13 @@
-
 # gzip each of the individual fq files output by process_radtags for the population data
 cd /media/Shared/Data/chum/populations/cleanSeqs
 find . -name '*.fq' -exec gzip {} \;
 find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanSeqs \;
 			
 
-# also the three parents from mapping families
-cd /media/Shared/Data/chum/diploids/FASTQ
-find . -name '*.fq' -exec gzip {} \;
-find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanSeqs \;
+# also the PE sequence data from Hoodsport
+cd /media/Shared/Data/chum/PE/clean_demultiplex
+find . -name '*UW*.fq' -exec gzip {} \;
+find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanSeqs/PE_Hoodsport \;
 
 
 # need to concatenate the re-sequenced individuals (CMX1)
