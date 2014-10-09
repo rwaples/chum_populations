@@ -12,16 +12,21 @@ nrows = nrow(ind_stats)
 # histogram of depth
 ggplot(data = ind_stats, aes(x= log10(nreads))) + 
   geom_histogram(binwidth = .2) + geom_vline(xintercept = 6, color = 'red') + theme_classic()
+ggsave('./plots/depth_histogram.pdf')
+
 
 # indidivuals ordered by depth
 ggplot(data = ind_stats[order(ind_stats$nreads),], aes(y= log10(nreads), x = seq(1, nrows))) +
   geom_point(size = 5, alpha = .8) + geom_hline(yintercept = 6, color = 'black') + 
   xlab('individual') +
   theme_classic() + theme(axis.text = element_text(size = 14, face = 'bold'), axis.title = element_text(size = 24, face = 'bold')) 
+ggsave('./plots/depth_individuals.pdf')
 
 # depth by population
 ggplot(data = ind_stats, aes(x = pop, y= log10(nreads), fill = factor(pop) )) + 
   geom_violin(scale = 'width', trim = TRUE, adjust = 1) + geom_hline(yintercept = 6, color = 'black') + coord_flip() + theme_classic() + theme(axis.text = element_text(size = 14, face = 'bold'), axis.title = element_text(size = 24, face = 'bold')) 
+ggsave('./plots/depth_pop_violoin.pdf')
+
  
 above = table(ind_stats[ind_stats$nreads > 1000000,]$pop)
 below = table(ind_stats[ind_stats$nreads < 1000000,]$pop)
@@ -33,6 +38,8 @@ ggplot(data = above_below, aes(x = below, y = above, fill = factor(pop), color =
   geom_point(size = 8, alpha = .5) + geom_text(aes(label = pop), hjust=0, vjust=0, size = 10, position = 'jitter') + 
   xlab("# individuals below 1M depth") + ylab("# individuals above 1M depth") + 
   theme_classic() + xlim(-1, 13) + theme(axis.text = element_text(size = 14, face = 'bold'), axis.title = element_text(size = 24, face = 'bold')) 
+ggsave('./plots/depth_pop_thresholds.pdf')
+
 
 plot(log10(sort(ind_stats$nreads)))
 
