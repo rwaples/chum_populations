@@ -1,9 +1,7 @@
 library(ggplot2)
 
 
-ind_stats_file = "C:/Users/IPSEG/Desktop/Waples/chum_populations/ind_seq_stats.tsv"
-ind_stats_file = '/home/ipseg/Desktop/waples/chum_populations/ind_seq_stats.tsv'
-
+ind_stats_file = file.path('./results/ind_seq_stats.tsv')
 ind_stats <- read.table(file = ind_stats_file, sep = "\t", header = TRUE)
 
 ind_stats = data.frame(ind_stats[ind_stats$pop != 'CMUW10X', ])
