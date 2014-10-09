@@ -5,7 +5,7 @@ import glob
 import struct
 
 fqgz_list = glob.glob(os.path.join("/media/Shared/Data/chum/populations/cleanSeqs", '*.fq.gz'))
-fqgz_list += glob.glob(os.path.join("/media/Shared/Data/chum/populations/cleanSeqs/PE_Hoodsport", '*.fq.gz'))
+#fqgz_list += glob.glob(os.path.join("/media/Shared/Data/chum/populations/cleanSeqs/PE_Hoodsport", '*.fq.gz'))
 
 
 def parse_name_fqgz(ind_filename):
@@ -35,7 +35,7 @@ def lenreads_gzip(gzip_filename):
         return(len(second_line.strip())) 
     
 
-with open("/home/ipseg/Desktop/waples/chum_populations/ind_seq_stats.tsv", 'w') as OUTFILE:
+with open("/home/ipseg/Desktop/waples/chum_populations/results/ind_seq_stats.tsv", 'w') as OUTFILE:
     OUTFILE.write("\t".join(['filename', 'name', 'pop', 'ind', 'size_bytes', 'nreads', 'lenreads']))
     OUTFILE.write("\n")
     for fqgz_file in fqgz_list:

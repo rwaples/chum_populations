@@ -4,13 +4,11 @@ find . -name '*.fq' -exec gzip {} \;
 find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanSeqs \;
 			
 
-# also the P1 sequence data from Hoodsport
+# also the PE sequence data from Hoodsport
 cd /media/Shared/Data/chum/populations/cleanSeqs/CMUW
 find . -name '*UW*.fq' -exec gzip {} \;
 find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanSeqs \;
 
-
-# still need to examine the full PE data
 
 # need to concatenate the re-sequenced individuals (CMX1)
 cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMHAMM10_0002.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMHAMM10_0002.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/re_CMHAMM10_0002.fq.gz
