@@ -30,14 +30,20 @@ print('cstacks -b 10 ' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ 
 # from stacks directory, run this
 #print('cstacks -b 03 --catalog /media/Shared/Data/chum/populations/stacks/mapping_catalog/batch_42' + " -s ./" + " -s ./".join(catalog_individuals) +' -o ./ -n 4 -p 6')
 
-3print("cstacks -b 05 -s ./" + " -s ./".join(catalog_individuals) + " -o ./ -n 4 -p 6")
+print("cstacks -b 05 -s ./" + " -s ./".join(catalog_individuals) + " -o ./ -n 4 -p 6")
 
 
 # sstacks _prelim
 for count, xx in enumerate(catalog_individuals):
-ind_id = count + 1
-sstacks_cmd = "sstacks -b 03 -c ./batch_3 -s ./{} -o /media/Shared/Data/chum/populations/stacks -p 6"
-print(sstacks_cmd.format(xx))
+    ind_id = count + 1
+    sstacks_cmd = "sstacks -b 10 -c ./batch_10 -s ./{} -o /media/Shared/Data/chum/populations/stacks -p 8"
+    print(sstacks_cmd.format(xx))
+    
+genotypes -b 10 -P /media/Shared/Data/chum/populations/stacks -s 
+populations -b 10 -P /media/Shared/Data/chum/populations/stacks -s -t 6 -r .5 -p .5 -a .05 --fstats --genepop --plink 
+        
 # rxstacks_prelim
-rxstacks -b 3 -P ./ -o ./rxstacks --model_type bounded --bound_high 0.05 --lnl_filter --lnl_dist --lnl_lim -10.0 -t 6
+rxstacks -b 10 -P ./ -o ./rxstacks_b10 --model_type bounded --bound_high 0.05 --lnl_filter --lnl_dist --lnl_lim -10.0 -t 6
+
+
 rxstacks -b 3 -P ./ -o ./rxstacks_2 --model_type bounded --bound_high 0.05 --lnl_filter --lnl_lim -10.0 --lnl_dist --max_haplo 3 --prune_haplo -t 6

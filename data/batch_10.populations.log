@@ -1,0 +1,128 @@
+# Distribution of population loci.
+# Distribution of valid loci matched to catalog locus.
+# Valid samples at locus	Count
+0	560
+1	810630
+2	60955
+3	26685
+4	15332
+5	9765
+6	6586
+7	4650
+8	3242
+9	2546
+10	2066
+11	1726
+12	1638
+13	1488
+14	1602
+15	1784
+16	2274
+17	3001
+18	4243
+19	7909
+20	22047
+21	25388
+# Distribution of confounded loci at catalog locus.
+# Confounded samples at locus	Count
+0	1011337
+1	3223
+2	819
+3	339
+4	136
+5	100
+6	53
+7	28
+8	20
+9	16
+10	13
+11	5
+12	10
+13	6
+14	3
+15	5
+16	1
+17	1
+18	2
+# Distribution of missing loci at catalog loci.
+# Absent samples at locus	Count
+0	1011337
+1	3223
+2	819
+3	339
+4	136
+5	100
+6	53
+7	28
+8	20
+9	16
+10	13
+11	5
+12	10
+13	6
+14	3
+15	5
+16	1
+17	1
+18	2
+# Distribution of population loci after applying locus constraints.
+# Distribution of valid loci matched to catalog locus.
+# Valid samples at locus	Count
+0	943017
+11	1726
+12	1638
+13	1488
+14	1602
+15	1784
+16	2274
+17	3001
+18	4243
+19	7909
+20	22047
+21	25388
+# Distribution of confounded loci at catalog locus.
+# Confounded samples at locus	Count
+0	1011337
+1	3223
+2	819
+3	339
+4	136
+5	100
+6	53
+7	28
+8	20
+9	16
+10	13
+11	5
+12	10
+13	6
+14	3
+15	5
+16	1
+17	1
+18	2
+# Distribution of missing loci at catalog loci.
+# Absent samples at locus	Count
+0	72620
+1	811056
+2	60929
+3	26569
+4	15279
+5	9696
+6	6689
+7	4791
+8	3354
+9	2604
+10	2129
+11	166
+12	91
+13	42
+14	21
+15	17
+16	8
+17	17
+18	10
+19	11
+20	10
+21	8
+Population 1 contained 1938 incompatible loci.
