@@ -1,0 +1,28 @@
+PLINK v1.90b2m 64-bit (15 Oct 2014)
+13 arguments: --allow-extra-chr --bfile ./data/batch_10/batch_10_filter_loci --family --geno 0.2 --maf .05 --make-bed --mind 0.2 --out ./data/batch_10/batch_10_filter_missingness
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Tue Oct 21 16:30:41 2014
+
+Random number seed: 1413934241
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+15488 variants loaded from .bim file.
+200 people (0 males, 0 females, 200 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./data/batch_10/batch_10_filter_missingness.nosex
+.
+45 people removed due to missing genotype data (--mind).
+IDs written to ./data/batch_10/batch_10_filter_missingness.irem .
+--family: 9 clusters defined.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 155 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining individuals is 0.928247.
+0 variants removed due to missing genotype data (--geno).
+0 variants removed due to MAF threshold(s) (--maf/--max-maf).
+15488 variants and 155 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ./data/batch_10/batch_10_filter_missingness.bed +
+./data/batch_10/batch_10_filter_missingness.bim +
+./data/batch_10/batch_10_filter_missingness.fam ... done.
+
+End time: Tue Oct 21 16:30:41 2014

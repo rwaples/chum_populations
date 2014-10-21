@@ -1,0 +1,22 @@
+PLINK v1.90b2m 64-bit (15 Oct 2014)
+9 arguments: --allow-extra-chr --bfile ./data/batch_10/batch_10_clean --distance square flat-missing 1-ibs --out ./data/batch_10/batch_10
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Tue Oct 21 16:30:41 2014
+
+Random number seed: 1413934241
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+11852 variants loaded from .bim file.
+155 people (0 males, 0 females, 155 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./data/batch_10/batch_10.nosex .
+Using up to 8 threads (change this with --threads).
+Before main variant filters, 155 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.932965.
+11852 variants and 155 people pass filters and QC.
+Note: No phenotypes present.
+Distance matrix calculation complete.
+IDs written to ./data/batch_10/batch_10.mdist.id .
+Distances (proportions) written to ./data/batch_10/batch_10.mdist .
+
+End time: Tue Oct 21 16:30:41 2014

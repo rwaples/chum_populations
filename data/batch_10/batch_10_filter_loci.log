@@ -1,0 +1,29 @@
+PLINK v1.90b2m 64-bit (15 Oct 2014)
+10 arguments: --allow-extra-chr --file ./data/batch_10/batch_10_raw --geno 0.2 --maf .1 --make-bed --out ./data/batch_10/batch_10_filter_loci
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Tue Oct 21 16:30:41 2014
+
+Random number seed: 1413934241
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (84568 variants, 200 people).
+--file: ./data/batch_10/batch_10_filter_loci-temporary.bed +
+./data/batch_10/batch_10_filter_loci-temporary.bim +
+./data/batch_10/batch_10_filter_loci-temporary.fam written.
+84568 variants loaded from .bim file.
+200 people (0 males, 0 females, 200 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./data/batch_10/batch_10_filter_loci.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 200 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.359371.
+69009 variants removed due to missing genotype data (--geno).
+71 variants removed due to MAF threshold(s) (--maf/--max-maf).
+15488 variants and 200 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ./data/batch_10/batch_10_filter_loci.bed +
+./data/batch_10/batch_10_filter_loci.bim +
+./data/batch_10/batch_10_filter_loci.fam ... done.
+
+End time: Tue Oct 21 16:30:41 2014
