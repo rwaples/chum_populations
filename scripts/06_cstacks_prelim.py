@@ -49,7 +49,7 @@ for count, xx in enumerate(other_individuals):
     
 genotypes -b 10 -P /media/Shared/Data/chum/populations/stacks -s 
 populations -b 10 -P /media/Shared/Data/chum/populations/stacks -s -t 6 -r .5 -p .5 -a .05 --fstats --genepop --plink 
-populations -b 10 -P /media/Shared/Data/chum/populations/stacks -s -t 6 -r .5 -p .5 -a .05 --fstats --genepop --plink --phylip_var --vcf -M /media/Shared/Data/chum/populations/stacks/pop_map/pop_map.txt -W /media/Shared/Data/chum/populations/stacks_output/populations/whitelist.txt
+populations -b 10 -P /media/Shared/Data/chum/populations/stacks -s -t 6 -r .5 -p 4 -a .05 --fastphase --phase --beagle_phase --genepop --plink --phylip_var --vcf -M /media/Shared/Data/chum/populations/stacks/pop_map/pop_map.txt -W /media/Shared/Data/chum/populations/stacks_output/populations/whitelist.txt
 
 # rxstacks_prelim
 rxstacks -b 10 -P ./ -o ./rxstacks_b10 --model_type bounded --bound_high 0.05 --lnl_filter --lnl_dist --lnl_lim -10.0 -t 6
