@@ -2,9 +2,9 @@ PLINK v1.90b2m 64-bit (15 Oct 2014)
 10 arguments: --allow-extra-chr --file ./data/batch_10/batch_10_raw --geno 0.2 --maf .1 --make-bed --out ./data/batch_10/batch_10_filter_loci
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Tue Oct 21 16:30:41 2014
+Start time: Fri Oct 24 17:13:25 2014
 
-Random number seed: 1413934241
+Random number seed: 1414196005
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 Scanning .ped file... done.
 Performing single-pass .bed write (84568 variants, 200 people).
@@ -26,4 +26,4 @@ Note: No phenotypes present.
 ./data/batch_10/batch_10_filter_loci.bim +
 ./data/batch_10/batch_10_filter_loci.fam ... done.
 
-End time: Tue Oct 21 16:30:41 2014
+End time: Fri Oct 24 17:13:26 2014
