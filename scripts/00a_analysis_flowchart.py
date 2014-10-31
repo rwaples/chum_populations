@@ -12,4 +12,3 @@ myDOT[2].write_png("C:/Users/IPSEG/Desktop/Waples/chum_populations/plots/chum_po
 
 
 
-myDOT.write_png("C:/Users/IPSEG/Desktop/Waples/chum_populations/plots/test.png")
