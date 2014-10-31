@@ -1,0 +1,97 @@
+digraph preliminary_analysis {
+	node[color=cornflowerblue];
+	
+	family_08[];
+	ml_psv1[label="identify paralogs"];
+	ml_psv2[label="identify paralogs"];	
+	map1[label="linkage map" shape = rect];
+	paper1[label="*paper 1*" shape = circle];	
+	
+	family_08 -> ml_psv1;
+	ml_psv1 -> map1;
+	map1 -> paper1;
+	
+	family_01;
+	family_09;
+	map2[label="consensus\nlinkage map" shape = rect];
+	resolve_paralogs[label="resolve paralogs\nacross families"];
+	
+	family_01 -> ml_psv2;
+	family_09 -> ml_psv2;
+	family_08 -> ml_psv2;
+	ml_psv2 -> resolve_paralogs;
+	resolve_paralogs-> map2;
+	
+	centromeres[label="place\ncentromeres"];
+	ref_genomes[label="O. mykiss \n S. Salar \n genomes"];
+	transcriptome[label="chum\ntranscriptome"];
+	map3[label="annotated linkage map" shape = rect];
+	
+	map2 -> map3;
+	centromeres -> map3;
+	transcriptome -> map3;
+	ref_genomes -> map3;
+}
+
+digraph population_analysis{
+	node[color=cornflowerblue];
+
+//	map[label="linkage map" shape = rect];
+	ml_psv[label="identify paralogs"];
+	catalog[label="stacks catalog"];
+	ref[label="FASTA reference"]
+
+	family_08 -> catalog;
+	family_01 -> catalog;
+	family_09 -> catalog;
+	catalog -> ml_psv[label=genotype labeljust = l];
+	catalog -> curate; 
+	curate-> ref;
+	
+	chum_pops[label="RAD data from\nPuget Sound\nchum populations"];
+	chum_pops -> ref[label="align"];
+	sam[label="SAM files"];
+	snp_caller[label="ploidy-aware\n variant discovery \nand genotyping"];
+	ref -> sam;
+	ml_psv -> snp_caller[label="annotate\nwith duplicate status"];
+	sam -> snp_caller;
+	ref -> snp_caller;
+}
+
+
+digraph populations{	
+	pop1[label="Squakum Creek\nFALL" style=filled color = tan];
+	pop2[label="Hamma Hamma\nSUMMER" style=filled color = orange];
+	pop3[label="Lilliwaup Creek\nFALL" style=filled color = tan];
+	pop4[label=	"Hoodsport Hatchery\nFALL" style=filled color = tan];
+	pop5[label="Snohomish River\nFALL" style=filled color=tan];
+	pop6[label="Stillaguamish River\nFALL" style=filled color=tan];
+	pop7[label="Nisqually Kalama Creek\nWINTER" style=filled color=lightblue];
+	pop8[label="Sherwood River\nFALL" style=filled color=tan];
+	pop9[label="Sherwood River\nSUMMER" style=filled color= orange];
+	pop10[label="Skookum Creek\nFALL" style=filled color=tan];
+
+	south_puget[label="South Puget Sound"];
+	north_puget[label="North Puget Sound"];
+	hood_canal[label="Hood Canal"];
+	fraser[label="Fraser River BC"];
+	pops[label="chum populations"];
+	
+	pop1 -> fraser;
+	pop2 -> hood_canal;
+	pop3 -> hood_canal;
+	pop4 -> hood_canal;
+	pop5 -> north_puget;
+	pop6 -> north_puget;
+	pop7 -> south_puget;
+	pop8 -> south_puget;
+	pop9 -> south_puget;
+	pop10 -> south_puget;
+					
+	south_puget -> pops;
+	north_puget -> pops;
+	hood_canal -> pops;
+	fraser -> pops;
+}
+
+
