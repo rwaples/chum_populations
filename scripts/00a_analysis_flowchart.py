@@ -9,4 +9,7 @@ myDOT[1].write_png("C:/Users/IPSEG/Desktop/Waples/chum_populations/plots/populat
 
 myDOT[2].write_png("C:/Users/IPSEG/Desktop/Waples/chum_populations/plots/chum_populations.png")
 
+
+
+
 myDOT.write_png("C:/Users/IPSEG/Desktop/Waples/chum_populations/plots/test.png")

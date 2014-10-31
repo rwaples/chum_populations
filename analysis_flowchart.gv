@@ -1,21 +1,19 @@
-digraph preliminary_analysis {
-	node[color=cornflowerblue];
+digraph mapping{
+	subgraph cluster_1 {
+		label="paper 1";
+		family_08[];
+		ml_psv1[label="identify paralogs"];
+		map1[label="linkage map" shape = rect];
+		family_08 -> ml_psv1;
+		ml_psv1 -> map1;
+	}
+	// node[color=cornflowerblue];
 	
-	family_08[];
-	ml_psv1[label="identify paralogs"];
-	ml_psv2[label="identify paralogs"];	
-	map1[label="linkage map" shape = rect];
-	paper1[label="*paper 1*" shape = circle];	
-	
-	family_08 -> ml_psv1;
-	ml_psv1 -> map1;
-	map1 -> paper1;
-	
-	family_01;
-	family_09;
+subgraph cluster_2 {
+	label="paper 2"
 	map2[label="consensus\nlinkage map" shape = rect];
 	resolve_paralogs[label="resolve paralogs\nacross families"];
-	
+	ml_psv2[label="identify paralogs"];	
 	family_01 -> ml_psv2;
 	family_09 -> ml_psv2;
 	family_08 -> ml_psv2;
@@ -31,12 +29,12 @@ digraph preliminary_analysis {
 	centromeres -> map3;
 	transcriptome -> map3;
 	ref_genomes -> map3;
+	}
 }
 
 digraph population_analysis{
 	node[color=cornflowerblue];
 
-//	map[label="linkage map" shape = rect];
 	ml_psv[label="identify paralogs"];
 	catalog[label="stacks catalog"];
 	ref[label="FASTA reference"]
@@ -44,18 +42,22 @@ digraph population_analysis{
 	family_08 -> catalog;
 	family_01 -> catalog;
 	family_09 -> catalog;
-	catalog -> ml_psv[label=genotype labeljust = l];
+	catalog -> ml_psv;
 	catalog -> curate; 
 	curate-> ref;
 	
 	chum_pops[label="RAD data from\nPuget Sound\nchum populations"];
 	chum_pops -> ref[label="align"];
+	chum_pops -> catalog[color = red]
 	sam[label="SAM files"];
-	snp_caller[label="ploidy-aware\n variant discovery \nand genotyping"];
+	chum_pops -> sam;
+	snp_caller[label="GATK or\n FreeBayes"];
+	result[label="ploidy-aware\n variant discovery \nand genotyping"]
 	ref -> sam;
-	ml_psv -> snp_caller[label="annotate\nwith duplicate status"];
+	ml_psv -> snp_caller;
 	sam -> snp_caller;
 	ref -> snp_caller;
+	snp_caller -> result;
 }
 
 
