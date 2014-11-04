@@ -5,7 +5,7 @@ batch_10: filter statistics plots
 filter: missingness hwe 
 
 missingness: ./data/batch_10/batch_10_raw.ped ./data/batch_10/batch_10_raw.map
-	plink --file ./data/batch_10/batch_10_raw --geno 0.2 --maf .1 --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_filter_loci
+	plink --file ./data/batch_10/batch_10_raw --geno 0.25 --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_filter_loci
 	plink --bfile ./data/batch_10/batch_10_filter_loci --family --geno 0.25 --mind 0.25 --maf .05 --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_filter_missingness
 
 hwe:
