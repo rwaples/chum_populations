@@ -15,15 +15,16 @@ def parse_name_fqgz(ind_filename):
 
 files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/*.fq.gz')
 
-my_ref_file = '/media/Shared/Data/chum/populations/aln/batch_02/ref/chum_ref_batch_02.fa'
+my_ref_file = '/home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt'
 
 # could try to apply a large clipping penalty "-L 1000"
-bwa_cmd = "bwa mem -t 6 -R '{}' {} {} | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/{}.bam"
+# should we try to trim the 3' end by nine units?
+bwa_cmd = "bwa mem -t 6 -R '{}' {} {} | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/curated/{}.bam"
 
 for individual_fq_gz in files_to_align:
     basename, sample_name, silli, ind_num = parse_name_fqgz(individual_fq_gz)
     read_group = "@RG\\tID:{}\\tSM:{}".format(sample_name, sample_name)
-    print(bwa_cmd.format(read_group, my_ref_file,  individual_fq_gz, sample_name))
+    print(bwa_cmd.format(read_group, my_ref_file, individual_fq_gz, sample_name))
     
         
 # bowtie1
@@ -36,7 +37,7 @@ for individual_fq_gz in files_to_align:
 
 
 # bowtie2  
-bowtie2_cmd = "gunzip -c {} | bowtie2 -p 6 --trim3 9 --no-unal --rg-id {} --rg SM:{} --rg PL:ILLUMINA /media/Shared/Data/chum/populations/aln/batch_02/ref/batch_02_bti - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/batch_02/bowtie2/{}.bam"
+bowtie2_cmd = "gunzip -c {} | bowtie2 -p 6 --trim3 9 --no-unal --rg-id {} --rg SM:{} --rg PL:ILLUMINA /home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/curated/{}.bam"
 
 for individual_fq_gz in files_to_align:
     basename, sample_name, silli, ind_num = parse_name_fqgz(individual_fq_gz)

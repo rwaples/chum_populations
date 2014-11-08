@@ -78,7 +78,8 @@ with open(populations_file, 'w') as OUTFILE:
         
 # to examine coverage
 # 
-./bedtools genomecov -bga -ibam '//media/Shared/Data/chum/populations/aln/batch_02/bowtie1/CMUW10X_0008.bam' > '/home/ipseg/Desktop/waples/chum_populations/basic_stats' 
+bedtools genomecov -bga -ibam '/media/Shared/Data/chum/populations/aln/curated/CMSHERW94F_0010.bam' > '/home/ipseg/Desktop/waples/chum_populations/basic_stats' 
+
 
 # also we may want to increase the clipping penalty in bwa 
 
