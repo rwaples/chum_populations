@@ -5,6 +5,7 @@ import os.path
 
 # index the reference
 samtools faidx ./chum_ref_batch_02.fa
+samtools faidx /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt
 
 #generate commands to convert sams to bams
 # NO LONGER NEEDED
@@ -14,7 +15,7 @@ for SAM in sam_files:
 
 
 # index each bam
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/*.bam')
 for BAM in bam_files:
     print("samtools index {bam_file}".format(bam_file=BAM))
 
@@ -25,9 +26,9 @@ for BAM in bam_files:
 # reference_sequence, start, end, sample name, copy number
 mapped_stats = "/media/Shared/Data/chum/populations/map/mapped.stats.txt"
 #my_BED_file = "/media/Shared/Data/chum/populations/fb/batch_01.bed"
-my_BED_file = "/media/Shared/Data/chum/populations/fb/batch_02.bed"
-my_target_file = "/media/Shared/Data/chum/populations/fb/batch_02_targets.bed"
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie1/*.bam')
+my_BED_file = "/media/Shared/Data/chum/populations/fb/batch_42_CURATED.bed"
+my_target_file = "/media/Shared/Data/chum/populations/fb/batch_42_CURATED_targets.bed"
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/*.bam')
 my_sample_names = [os.path.splitext(os.path.basename(xx))[0] for xx in bam_files]
 
 def generate_CNV_BED(map_stats_file, BED_file, sample_names, catID_col = 0, best_model_col = 4):
@@ -42,7 +43,7 @@ def generate_CNV_BED(map_stats_file, BED_file, sample_names, catID_col = 0, best
                 if (model_call != "AB"):
                     #print(line_split[catID_col], line_split[best_model_col])
                     for sample_name in sample_names:
-                        OUTFILE.write("catID|{}\t-1\t-1\t{}\t4\n".format(catID, sample_name))
+                        OUTFILE.write("{}\t-1\t-1\t{}\t4\n".format(catID, sample_name))
 
                     
 generate_CNV_BED(mapped_stats, my_BED_file, my_sample_names)
@@ -55,7 +56,7 @@ def generate_targets_file(map_stats_file, targets_file, sample_names):
                 line_split = line.strip().split()
                 catID = line_split[0]
                 for sample_name in sample_names:
-                    OUTFILE.write("catID|{}\t0\t94\t{}\n".format(catID, sample_name))
+                    OUTFILE.write("{}\t0\t84\t{}\n".format(catID, sample_name))
 
 generate_targets_file(map_stats_file = mapped_stats, targets_file = my_target_file, sample_names = my_sample_names)
 
@@ -67,11 +68,11 @@ def generate_basic_BED(fa_ref, BED_output):
                 seq = next(INFILE).strip()
                 OUTFILE.write("{}\t0\t{}\n".format(header, len(seq)))
 
-generate_basic_BED(fa_ref = "/media/Shared/Data/chum/populations/aln/chum_ref_batch_02.fa", BED_output = "/media/Shared/Data/chum/populations/fb/batch_02_nosample.bed")
+generate_basic_BED(fa_ref = "/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt", BED_output = "/media/Shared/Data/chum/populations/fb/batch_42_CURATED_nosample.bed")
 
 my_pops = [xx.split("_")[0] for xx in my_sample_names]
 
-populations_file  = "/media/Shared/Data/chum/populations/fb/batch_01.populations"
+populations_file  = "/media/Shared/Data/chum/populations/fb/populations"
 with open(populations_file, 'w') as OUTFILE:
     for sn, pop in  zip(my_sample_names, my_pops):
         OUTFILE.write("{}\t{}\n".format(sn,pop))
@@ -104,29 +105,34 @@ piping to bowtie, noticed that old chum reads were trimmed to 85 bases
 parental_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMUW10X_0001.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0008.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0009.bam"]
 test_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0030.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0033.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0040.bam"]
 
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/*X*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/CMUW*.bam')
 bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
 
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie1/new.bam')
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/*.bam')
 
 
-"freebayes -f /media/Shared/Data/chum/populations/aln/batch_02/ref/chum_ref_batch_02.fa \
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+--genotype-qualities \
 --min-coverage 2 \
---min-repeat-size 100 \
+--min-repeat-size 20 \
 --haplotype-length 0 \
 --min-alternate-fraction 0.05 \
 --min-alternate-count 1 \
 --min-alternate-total 2 \
 --binomial-obs-priors-off \
 --theta .01 \
---targets /media/Shared/Data/chum/populations/fb/batch_02_nosample.bed \
---cnv-map /media/Shared/Data/chum/populations/fb/batch_02.bed \
--m 10 \
+--populations /media/Shared/Data/chum/populations/fb/populations \
+--cnv-map /media/Shared/Data/chum/populations/fb/batch_42_CURATED.bed \
+-D .95 \
+-m 20 \
 -q 10 \
--b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/batch_02_bt2.vcf"
+-R 20 \
+-U 5 \
+-e 1 \
+-b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_curated.vcf"
 
-
+--targets /media/Shared/Data/chum/populations/fb/batch_42_CURATED_targets.bed \
 
 
 --pooled-continuous \
