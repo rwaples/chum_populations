@@ -114,6 +114,12 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/
 
 "freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
 --genotype-qualities \
+--binomial-obs-priors-off \
+--cnv-map /media/Shared/Data/chum/populations/fb/batch_42_CURATED.bed \
+-b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_curated.vcf"
+
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+--genotype-qualities \
 --min-coverage 2 \
 --min-repeat-size 20 \
 --haplotype-length 0 \
@@ -124,20 +130,13 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/
 --theta .01 \
 --populations /media/Shared/Data/chum/populations/fb/populations \
 --cnv-map /media/Shared/Data/chum/populations/fb/batch_42_CURATED.bed \
--D .95 \
+-D .85 \
 -m 20 \
 -q 10 \
 -R 20 \
 -U 5 \
 -e 1 \
 -b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_curated.vcf"
-
---targets /media/Shared/Data/chum/populations/fb/batch_42_CURATED_targets.bed \
-
-
---pooled-continuous \
-
---populations /media/Shared/Data/chum/populations/fb/batch_01.populations \
 
 
 "freebayes -f /media/Shared/Data/chum/populations/aln/batch_02/chum_ref_batch_02.fa \
@@ -149,8 +148,27 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/
 -b " + " -b ".join(bam_files) + " --vcf ./batch_03.vcf"
 
 
--q 10 \
--m 10 \
+--targets /media/Shared/Data/chum/populations/fb/batch_42_CURATED_targets.bed \
+
+# OR try GATK 
+# including read-back phasing
+# use picard to CreateSequenceDictionary
+java -jar /home/ipseg/Programs/picard/picard/dist/picard.jar CreateSequenceDictionary REFERENCE=/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt OUTPUT=/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt.dict
+
+
+# run GATK
+# here on a single sample
+# not the "fix_misencoded_quality_scores"
+java -jar /home/ipseg/Programs/GATK/GenomeAnalysisTK-3.3-0/GenomeAnalysisTK.jar \
+--fix_misencoded_quality_scores \
+-T HaplotypeCaller \
+-R /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+-I /media/Shared/Data/chum/populations/aln/curated/CMUW10_0008.bam \
+--emitRefConfidence GVCF \
+-variant_index_type LINEAR \
+--variant_index_parameter 128000 \
+-L /media/Shared/Data/chum/populations/fb/batch_42_CURATED_nosample.bed \
+-o /home/ipseg/Desktop/waples/chum_populations/results/batch_42_GATK.raw.snps.indels.g.vcf
 
 
 
@@ -160,11 +178,3 @@ TODO
 
 use --populations to separate my populations
 --min-alternate-fraction "should be changed for ploidy > 2"
-
-examine 
-
---no-population-priors 
---pooled-discrete
---hwe-priors-off
---cnv-map
-	BED file =  reference sequence, start, end, sample name, copy number
