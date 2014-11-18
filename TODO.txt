@@ -4,13 +4,16 @@ check that reads with quality scores of '2' are not getting through phred64 B ph
 create a blacklist/whitelist and use during populations
 
 11/3/14
+VCF - 
 figure out how to phase genotypes/haplotypes in ouput
 
+
+PLINK - 
 maybe the --family optinon is not working as expected with summary stats
 ensure that HWE filtering is occuring at the population level, rather than overall
- both the --hwe and --hardy options seem to work on all indidviduals
-HWE should be examined in a haplotype constext.
-How we evaluate the HWE results across populations
+both the --hwe and --hardy options seem to work on loci across all populations,rrather than within populations
+Ideally HWE should be examined in a haplotype context.
+How do we evaluate the HWE results across populations?
 
 figure out a way to recode the "un" chromosomes into numbered chromosomes
 for mapped snps replace with actual number!
@@ -19,4 +22,4 @@ incorporate life-history phenotypes in PLINK files
 
 look at the --cm-map parameter in PLINK for map-aware analyses 
 
-test-missing cluster-by-missing 
+test-missing cluster-by-missing

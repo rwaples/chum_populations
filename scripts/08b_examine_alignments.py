@@ -1,6 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# stats files generated with something like:
+# bedtools genomecov -bga -ibam '/media/Shared/Data/chum/populations/aln/curated/CMSHERW94F_0010.bam' > '/home/ipseg/Desktop/waples/chum_populations/basic_stats' 
+
+
 bowtie2_file = "/home/ipseg/Desktop/waples/chum_populations/basic_stats"
 bwa_stats_file = "/home/ipseg/Desktop/waples/chum_populations/basic_stats2"
 
@@ -15,18 +19,12 @@ bwa_max.columns = ['srt', 'stop', 'depth']
 bt2_sum = np.sum(bt2_max.depth)
 bwa_sum = np.sum(bwa_max.depth)
 
-bt2_max.depth[bt2_means.depth >= 1000] = 1000
-bwa_max.depth[bwa_means.depth >= 1000] = 1000
+bt2_max.depth[bt2_max.depth >= 10000] = 10000
+bwa_max.depth[bwa_max.depth >= 10000] = 10000
 
-means = pd.merge(bt2_means, bwa_means, left_index = True, right_index = True, how = 'outer')
-plt.plot(means.depth_x, means.depth_y, 'bo')
+maxes = pd.merge(bt2_max, bwa_max, left_index = True, right_index = True, how = 'outer')
+plt.plot(maxes.depth_x, maxes.depth_y, 'bo', alpha = .2)
 pyplot.yscale('log')
-pyplot.ylim(.8, 2000)
+pyplot.ylim(.8, 12000)
 pyplot.xscale('log')
-pyplot.xlim(.8, 2000)
-
-measn.ix('3_x')
-set(bt2.index)
-set(bwa.index)
-
-len(.intersection())
+pyplot.xlim(.8, 12000)
