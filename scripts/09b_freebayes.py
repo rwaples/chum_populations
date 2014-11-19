@@ -1,3 +1,5 @@
+import os
+import glob
 
 -D --read-dependence-factor N
                    Incorporate non-independence of reads by scaling successive
@@ -15,8 +17,28 @@ piping to bowtie, noticed that old chum reads were trimmed to 85 bases
 parental_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMUW10X_0001.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0008.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0009.bam"]
 test_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0030.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0033.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0040.bam"]
 
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/CMUW*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/*.bam')
 bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
+
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+-E 100 -m 10 -q 10 \
+-b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/CMUW.raw.vcf"
+
+
+# all pops
+# look at /home/ipseg/Programs/freebayes/scripts/samples.cnv for example cnv variation 
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+-E 100 -m 10 -q 10 --binomial-obs-priors-off \
+--populations /media/Shared/Data/chum/populations/fb/populations \
+-b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
+
+# freebayes-parrallel
+"""/home/ipseg/Programs/freebayes/scripts/fasta_generate_regions_RW.py /home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt 1000 > /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/regions.txt"""
+
+# regions file is not cooperating - naming of chromosomes is not occuring correctly
+"""/home/ipseg/Programs/freebayes/scripts/freebayes-parallel /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/regions.txt 4 \
+-f /home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt /media/Shared/Data/chum/populations/aln/curated/CMUW10_0008.bam"""
+
 
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie1/new.bam')
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/batch_02/bowtie2/*.bam')
