@@ -1,39 +1,104 @@
-all: batch_10
+HWE_POP_THRESHOLD = 5
+#MAF_THRESHOLD = 0.05
 
-batch_10: filter statistics plots  
 
-filter: missingness hwe 
+all: FISH_560
 
-missingness: ./data/batch_10/batch_10_raw.ped ./data/batch_10/batch_10_raw.map
-	plink --file ./data/batch_10/batch_10_raw --geno 0.25 --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_filter_loci
-	plink --bfile ./data/batch_10/batch_10_filter_loci --family --geno 0.25 --mind 0.25 --maf .05 --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_filter_missingness
+FISH_560: filter statistics plots  
 
-hwe:
-	plink --bfile ./data/batch_10/batch_10_filter_missingness --write-snplist --family --hwe .0000001 midp --allow-extra-chr --make-bed --out ./data/batch_10/batch_10_clean
+filter: missingness hwe maf ld final
 
+missingness:
+	# remove loci not genotyped in at least 75% of indidivudals (across all pops)
+	plink --file ./data/FISH_560/FISH_560.raw --geno 0.25 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter01
+	# remove loci not genotyped in at least 75% of indidivudals (within each pop)
+	plink --bfile  ./data/FISH_560/FISH_560.filter01 --family --geno 0.25 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter02
+	# remove invididuals not genotyed at least 75% of loci	 
+	plink --bfile  ./data/FISH_560/FISH_560.filter02 --family --mind 0.25 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter03
+	# remove population 8 (CMSQUA10)
+	plink --bfile  ./data/FISH_560/FISH_560.filter03 --family --remove-cluster-names 8 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter04
+	
+	#split files by family
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 1 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_01
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 2 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_02
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 3 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_03	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 4 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_04	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 5 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_05	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 6 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_06	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 7 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_07	
+	#plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 8 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_08	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 9 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_09	
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --family --keep-cluster-names 10 -allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.fam_10	
+
+hwe:	
+	# list of loci passing HWE for each pop
+	plink --bfile  ./data/FISH_560/FISH_560.fam_01 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_01.hwe	
+	plink --bfile  ./data/FISH_560/FISH_560.fam_02 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_02.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_03 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_03.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_04 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_04.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_05 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_05.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_06 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_06.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_07 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_07.hwe
+	#plink --bfile  ./data/FISH_560/FISH_560.fam_08 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_08.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_09 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_09.hwe
+	plink --bfile  ./data/FISH_560/FISH_560.fam_10 --hwe .0001 midp --hardy midp --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_10.hwe
+
+maf:	
+	# loci with MAF > .05 for each population
+	plink --bfile  ./data/FISH_560/FISH_560.fam_01 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_01.maf	
+	plink --bfile  ./data/FISH_560/FISH_560.fam_02 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_02.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_03 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_03.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_04 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_04.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_05 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_05.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_06 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_06.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_07 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_07.maf
+	#plink --bfile  ./data/FISH_560/FISH_560.fam_08 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_08.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_09 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_09.maf
+	plink --bfile  ./data/FISH_560/FISH_560.fam_10 --maf .05 --allow-extra-chr --allow-no-sex --write-snplist --out ./data/FISH_560/FISH_560.fam_10.maf
+	
+	# list of loci passing HWE in at least $(HWE_POP_THRESHOLD) populations
+	python ./scripts/11a_plink_HWE.py $(HWE_POP_THRESHOLD) ./data/FISH_560/FISH_560.fam_01.hwe.snplist ./data/FISH_560/FISH_560.fam_02.hwe.snplist ./data/FISH_560/FISH_560.fam_03.hwe.snplist ./data/FISH_560/FISH_560.fam_04.hwe.snplist ./data/FISH_560/FISH_560.fam_05.hwe.snplist ./data/FISH_560/FISH_560.fam_06.hwe.snplist ./data/FISH_560/FISH_560.fam_07.hwe.snplist ./data/FISH_560/FISH_560.fam_09.hwe.snplist ./data/FISH_560/FISH_560.fam_10.hwe.snplist
+	# list of loci passing MAF threshold in at least one population	
+	python ./scripts/11b_plink_MAF.py ./data/FISH_560/FISH_560.fam_01.maf.snplist ./data/FISH_560/FISH_560.fam_02.maf.snplist ./data/FISH_560/FISH_560.fam_03.maf.snplist ./data/FISH_560/FISH_560.fam_04.maf.snplist ./data/FISH_560/FISH_560.fam_05.maf.snplist ./data/FISH_560/FISH_560.fam_06.maf.snplist ./data/FISH_560/FISH_560.fam_07.maf.snplist ./data/FISH_560/FISH_560.fam_09.maf.snplist ./data/FISH_560/FISH_560.fam_10.maf.snplist
+
+	# remove loci failing the HWE or MAF filters
+	plink --bfile  ./data/FISH_560/FISH_560.filter04 --extract ./data/FISH_560/passing_HWE.snps --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter05
+	plink --bfile  ./data/FISH_560/FISH_560.filter05 --extract ./data/FISH_560/passing_MAF.snps --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter06
+	
+ld:
+	# LD pruning (LD stats don't work per family)
+	#plink --bfile ./data/FISH_560/FISH_560.filter06 --family --ld-window 5 --r2 -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.filter06
+	plink --bfile ./data/FISH_560/FISH_560.filter06 --family --indep-pairwise 3 1 .2 -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.filter06.pruned
+	plink --bfile  ./data/FISH_560/FISH_560.filter06 --extract ./data/FISH_560/FISH_560.filter06.pruned.prune.in --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter07
+
+final:
+	plink --bfile  ./data/FISH_560/FISH_560.filter06 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.final
 
 statistics: basic_stats f_stats pca ibs_dist mds
 
 basic_stats:
-	plink --bfile ./data/batch_10/batch_10_clean --hardy midp --freq --family --allow-extra-chr --out ./data/batch_10/batch_10
+	plink --bfile ./data/FISH_560/FISH_560.final --family --freq --missing -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
-f_stats: ./data/batch_10/batch_10_clean.bed ./data/batch_10/batch_10_clean.bim
-	plink --bfile ./data/batch_10/batch_10_clean --het small-sample --ibc --fst --family --allow-extra-chr --out ./data/batch_10/batch_10
+f_stats:
+	plink --bfile ./data/FISH_560/FISH_560.final --family --het small-sample --ibc --fst -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
+	plink --bfile ./data/FISH_560/FISH_560.final --family --fst -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
-pca: 
-	plink --bfile ./data/batch_10/batch_10_clean --pca header tabs var-wts --make-rel --allow-extra-chr --out ./data/batch_10/batch_10
+# multivariate stats
+pca:
+	plink --bfile ./data/FISH_560/FISH_560.final --pca 100 header tabs var-wts --make-rel -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
-ibs_dist: ./data/batch_10/batch_10_clean.bed ./data/batch_10/batch_10_clean.bim
-	plink --bfile ./data/batch_10/batch_10_clean --pca --distance square flat-missing 1-ibs --allow-extra-chr --out ./data/batch_10/batch_10
+ibs_dist: 
+	plink --bfile ./data/FISH_560/FISH_560.final --distance square flat-missing 1-ibs -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
-mds: 
-	Rscript ./scripts/12_mds.R ./POPINFO.txt ./data/batch_10/batch_10.mdist.id ./data/batch_10/batch_10.mdist 20 ./data/batch_10/batch_10.dist_mds
-
-
+mds:
+	# two different ways of running an MDS
+	Rscript ./scripts/12_mds.R ./data/POPINFO.txt ./data/FISH_560/FISH_560.final.mdist.id ./data/FISH_560/FISH_560.final.mdist 20 ./data/FISH_560/FISH_560.dist_mds
+	#plink --bfile ./data/FISH_560/FISH_560.filter06 --cluster --mds-plot 3  eigvals -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.filter06
+	
 plots: plot_mds
 
 plot_mds: 
-	Rscript ./scripts/13_plot_mds.R ./data/batch_10/batch_10.dist_mds
+	Rscript ./scripts/13_plot_mds.R ./data/FISH_560/FISH_560.dist_mds
 
 
 

@@ -1,6 +1,25 @@
 import os
 import glob
 
+# freebayes command
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+--min-mapping-quality 10 \
+--min-base-quality 10 \
+--min-repeat-size 10 \
+--binomial-obs-priors-off \
+--populations /home/ipseg/Desktop/waples/chum_populations/data/fb.populations \
+--cnv-map /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/CNV.bed \
+--bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
+--samples /home/ipseg/Desktop/waples/chum_populations/data/fb.all.samples \
+--vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.bt2.raw.vcf"
+
+# targets file currently has issues, doen't match with ref
+
+--targets /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/mapped.bed \
+
+
+
+
 -D --read-dependence-factor N
                    Incorporate non-independence of reads by scaling successive
                    observations by this factor during data likelihood
@@ -20,17 +39,17 @@ test_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_003
 bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/*.bam')
 bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
 
-"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
--E 100 -m 10 -q 10 \
--b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/CMUW.raw.vcf"
 
 
 # all pops
-# look at /home/ipseg/Programs/freebayes/scripts/samples.cnv for example cnv variation 
+# look at /home/ipseg/Programs/freebayes/scripts/samples.cnv for example cnv variation
+#first without phasing 
 "freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
--E 100 -m 10 -q 10 --binomial-obs-priors-off \
+-m 10 -q 10 --binomial-obs-priors-off \
 --populations /media/Shared/Data/chum/populations/fb/populations \
 -b " + " -b ".join(bam_files) + " --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
+
+
 
 # freebayes-parrallel
 """/home/ipseg/Programs/freebayes/scripts/fasta_generate_regions_RW.py /home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt 1000 > /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/regions.txt"""

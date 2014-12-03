@@ -18,6 +18,11 @@ rename_dict = {
 
 rename_dict = { '/media/Shared/Data/chum/PE/barcodes/chum_PE_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CMUW'}
 
+rename_dict = { 
+    # path_to_renaming_file : path_to_target_dir
+    '/media/Shared/Data/chum/populations/barcodes/CM05_individuals.txt' : '/media/Shared/Data/chum/populations/cleanSeqs/CM05',
+    }
+
 for rename_file, fq_dir in rename_dict.items():
     with open(rename_file) as INFILE:
         for line in INFILE:

@@ -1,7 +1,24 @@
+# Convert to phred33
+# Python
+import HTSeq
+
+my_seqs = HTSeq.FastqReader("/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05/CM05_s_4_sequence.txt.gz", qual_scale = 'solexa')
+with open("/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05/CM05_s_4_sequence.sanger.fastq", 'w') as OUTFILE:
+    for xx in my_seqs:
+        xx.write_to_fastq_file(OUTFILE)
+
+# move original file to /old_quals folder
+
+gzip "/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05/CM05_s_4_sequence.sanger.fastq"
+
+
+
+
 process_radtags -p '/media/Shared/Data/chum/populations/RawSeqs/gzip/CM01' 	-o "/media/Shared/Data/chum/populations/cleanSeqs/CM01" -b "/media/Shared/Data/chum/populations/barcodes/CM01_barcodes.txt" -y zfastq 	-e sbfI -i gzfastq -c -q -r -t 94
 
 # notice phred64 encoding
-process_radtags -p '/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05' 	-o "/media/Shared/Data/chum/populations/cleanSeqs/CM05" -b "/media/Shared/Data/chum/populations/barcodes/CM05_barcodes.txt" -y fastq 	-e sbfI -i gzfastq -c -q -r -t 94 -E phred64
+#process_radtags -p '/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05' 	-o "/media/Shared/Data/chum/populations/cleanSeqs/CM05" -b "/media/Shared/Data/chum/populations/barcodes/CM05_barcodes.txt" -y fastq 	-e sbfI -i gzfastq -c -q -r -t 94 -E phred64
+process_radtags -f '/media/Shared/Data/chum/populations/RawSeqs/gzip/CM05/CM05_s_4_sequence.sanger.fastq.gz' 	-o "/media/Shared/Data/chum/populations/cleanSeqs/CM05" -b "/media/Shared/Data/chum/populations/barcodes/CM05_barcodes.txt" -y fastq 	-e sbfI -i gzfastq -c -q -r -t 94 
 
 process_radtags -p '/media/Shared/Data/chum/populations/RawSeqs/gzip/CM06' 	-o "/media/Shared/Data/chum/populations/cleanSeqs/CM06" -b "/media/Shared/Data/chum/populations/barcodes/CM06_barcodes.txt" -y fastq 	-e sbfI -i gzfastq -c -q -r -t 94
 

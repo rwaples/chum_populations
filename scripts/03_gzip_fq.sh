@@ -14,8 +14,8 @@ find . -name '*.fq.gz' -exec mv -i {} /media/Shared/Data/chum/populations/cleanS
 
 # need to concatenate the re-sequenced individuals (CMX1)
 cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMHAMM10_0002.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMHAMM10_0002.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/re_CMHAMM10_0002.fq.gz
-cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0010.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0010.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/re_CMKALA03_0010.fq.gz
-cat /media/Shared/Data/chum/populations/re_cleanSeqs/CMX1/CMKALA03_0037.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0037.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/re_CMKALA03_0037.fq.gz
-cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0044.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0044.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/re_CMKALA03_0044.fq.gz
+cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0010.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0010.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0010.fq.gz
+cat /media/Shared/Data/chum/populations/re_cleanSeqs/CMX1/CMKALA03_0037.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0037.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0037.fq.gz
+cat /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0044.fq.gz /media/Shared/Data/chum/populations/cleanSeqs/CMX1/CMKALA03_0044.fq.gz > /media/Shared/Data/chum/populations/cleanSeqs/CMKALA03_0044.fq.gz
 
 # rename and move the remaining files manually
