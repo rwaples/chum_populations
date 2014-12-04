@@ -2,9 +2,9 @@ PLINK v1.90b2o 64-bit (25 Nov 2014)
 12 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.fam_06 --hardy midp --hwe .0001 midp --out ./data/FISH_560/FISH_560.fam_06.hwe --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Tue Dec  2 13:21:17 2014
+Start time: Wed Dec  3 14:47:12 2014
 
-Random number seed: 1417555277
+Random number seed: 1417646832
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 20028 variants loaded from .bim file.
 10 people (0 males, 0 females, 10 ambiguous) loaded from .fam.
@@ -23,4 +23,4 @@ your data.
 Note: No phenotypes present.
 List of variant IDs written to ./data/FISH_560/FISH_560.fam_06.hwe.snplist .
 
-End time: Tue Dec  2 13:21:17 2014
+End time: Wed Dec  3 14:47:12 2014

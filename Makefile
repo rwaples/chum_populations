@@ -72,9 +72,12 @@ ld:
 	plink --bfile  ./data/FISH_560/FISH_560.filter06 --extract ./data/FISH_560/FISH_560.filter06.pruned.prune.in --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter07
 
 final:
-	plink --bfile  ./data/FISH_560/FISH_560.filter06 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.final
+	# try a pruning step
+	plink --bfile  ./data/FISH_560/FISH_560.filter07 --bp-space 70 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter08	
+	plink --bfile  ./data/FISH_560/FISH_560.filter08 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.final
+	plink --bfile  ./data/FISH_560/FISH_560.final --allow-extra-chr --allow-no-sex --recode 12 --out ./data/FISH_560/FISH_560.final
 
-statistics: basic_stats f_stats pca ibs_dist mds
+statistics: basic_stats f_stats count_retained pca ibs_dist mds
 
 basic_stats:
 	plink --bfile ./data/FISH_560/FISH_560.final --family --freq --missing -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
@@ -84,8 +87,15 @@ f_stats:
 	plink --bfile ./data/FISH_560/FISH_560.final --family --fst -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
 # multivariate stats
+count_retained:
+	wc -l < ./data/FISH_560/FISH_560.final.bim > ./data/FISH_560/FISH_560.num_loci_retained
+	wc -l < ./data/FISH_560/FISH_560.final.fam > ./data/FISH_560/FISH_560.num_inds_retained
+
+LOCI_RETAINED := $(shell cat ./data/FISH_560/FISH_560.num_loci_retained)
+INDS_RETAINED := $(shell cat ./data/FISH_560/FISH_560.num_inds_retained)
+
 pca:
-	plink --bfile ./data/FISH_560/FISH_560.final --pca 100 header tabs var-wts --make-rel -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
+	plink --bfile ./data/FISH_560/FISH_560.final --pca $(INDS_RETAINED) header tabs var-wts --make-rel -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final
 
 ibs_dist: 
 	plink --bfile ./data/FISH_560/FISH_560.final --distance square flat-missing 1-ibs -allow-extra-chr --allow-no-sex --out ./data/FISH_560/FISH_560.final

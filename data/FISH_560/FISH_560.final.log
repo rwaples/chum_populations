@@ -1,22 +1,21 @@
 PLINK v1.90b2o 64-bit (25 Nov 2014)
-10 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.final --distance square flat-missing 1-ibs --out ./data/FISH_560/FISH_560.final
+8 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.final --out ./data/FISH_560/FISH_560.final --recode 12
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Tue Dec  2 13:21:18 2014
+Start time: Wed Dec  3 15:05:52 2014
 
-Random number seed: 1417555278
+Random number seed: 1417647952
 32127 MB RAM detected; reserving 16063 MB for main workspace.
-19802 variants loaded from .bim file.
+12176 variants loaded from .bim file.
 160 people (0 males, 0 females, 160 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to ./data/FISH_560/FISH_560.final.nosex .
-Using up to 8 threads (change this with --threads).
+Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 160 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.909055.
-19802 variants and 160 people pass filters and QC.
+Total genotyping rate is 0.911359.
+12176 variants and 160 people pass filters and QC.
 Note: No phenotypes present.
-Distance matrix calculation complete.
-IDs written to ./data/FISH_560/FISH_560.final.mdist.id .
-Distances (proportions) written to ./data/FISH_560/FISH_560.final.mdist .
+--recode to ./data/FISH_560/FISH_560.final.ped +
+./data/FISH_560/FISH_560.final.map ... done.
 
-End time: Tue Dec  2 13:21:18 2014
+End time: Wed Dec  3 15:05:52 2014
