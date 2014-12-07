@@ -1,0 +1,14 @@
+genotypename:    /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.final.ped
+snpname:         /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.final.map
+indivname:       /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.final.ped
+evecoutname:     /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.test.evec
+evaloutname:     /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.test.eval
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.test.snpweights
+numoutlieriter: 0
+outliersigmathresh: 7
+numoutevec:      40
+familynames:     YES
+grmoutname:      FISH_560.grm.out
+fastmode:		NO
+missingmode: YES
+

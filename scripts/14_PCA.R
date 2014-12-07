@@ -17,6 +17,8 @@ smartPCA_missingness_evec <- read.table("/home/ipseg/Desktop/waples/chum_populat
 smartPCA_genotypes_eval <- read.table("/home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.genotypes.eval", sep = "\t", header = FALSE)
 smartPCA_genotypes_evec <- read.table("/home/ipseg/Desktop/waples/chum_populations/data/test_EIGENSTRAT/FISH_560.genotypes.evec", header = FALSE, skip =  1, row.names= 1)
 
+
+
 names(smartPCA_genotypes_evec) <- paste('dim', seq(1, length(smartPCA_genotypes_evec)), sep = "")
 names(smartPCA_missingness_evec) <-  paste('dim', seq(1, length(smartPCA_missingness_evec)), sep = "")
 missingness_IDs = data.frame(str_split_fixed(row.names(smartPCA_missingness_evec), ":", 2))
@@ -29,16 +31,20 @@ smartPCA_genotypes <- cbind(genotype_IDs, smartPCA_genotypes_evec)
 smartPCA_genotypes_eval$pc_axis <- seq(nrow(smartPCA_genotypes_eval))
 
 # simulate a parallele analysis, using: nFactors.parallel()
-PA_sim <- parallel(subject = nrow(eigenvec), var = length(eigenvec)-2, rep = 1000, quantile = .01)
-PA_sim <- parallel(subject = nrow(eigenvec), var = length(smartPCA_evec)-1, rep = 1000, quantile = .01)
+#PA_sim <- parallel(subject = nrow(eigenvec), var = length(eigenvec)-2, rep = 1000, quantile = .01)
+#PA_sim <- parallel(subject = nrow(eigenvec), var = length(smartPCA_evec)-1, rep = 1000, quantile = .01)
 #PA_sim$eigen$mevpea = mean of eigenvalues distribution
 #PA_sim$eigen$sevpea = sd of eigenvalues distribution
 #PA_sim$eigen$qevpea = quantile of eigenvalues distribution
 #PA_sim$eigen$sqevpea = std err of the quantile of eigenvalues distribution
 
 plotParallel(PA_sim, x= eigenval$V1)
-plotParallel(PA_sim, x= smartPCA_genotypes_eval$V1)
+plotParallel(PA_sim, x= )
+
 plotuScree(x= eigenval$V1)
+plotuScree(x= smartPCA_genotypes_eval$V1)
+plotuScree(x= smartPCA_missingness_eval$V1)
+
 
 library(ggplot2)
 theme_set(theme_bw())

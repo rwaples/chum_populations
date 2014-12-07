@@ -75,7 +75,8 @@ final:
 	# try a pruning step
 	plink --bfile  ./data/FISH_560/FISH_560.filter07 --bp-space 70 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.filter08	
 	plink --bfile  ./data/FISH_560/FISH_560.filter08 --allow-extra-chr --allow-no-sex --make-bed --out ./data/FISH_560/FISH_560.final
-	plink --bfile  ./data/FISH_560/FISH_560.final --allow-extra-chr --allow-no-sex --recode 12 --out ./data/FISH_560/FISH_560.final
+	plink --bfile  ./data/FISH_560/FISH_560.final --allow-extra-chr --allow-no-sex --recode 12 A --out ./data/FISH_560/FISH_560.final
+
 
 statistics: basic_stats f_stats count_retained pca ibs_dist mds
 

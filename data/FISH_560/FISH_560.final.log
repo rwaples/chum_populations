@@ -1,10 +1,10 @@
 PLINK v1.90b2o 64-bit (25 Nov 2014)
-8 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.final --out ./data/FISH_560/FISH_560.final --recode 12
+9 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.final --out ./data/FISH_560/FISH_560.final --recode 12 A
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Wed Dec  3 15:05:52 2014
+Start time: Sat Dec  6 19:47:32 2014
 
-Random number seed: 1417647952
+Random number seed: 1417924052
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 12176 variants loaded from .bim file.
 160 people (0 males, 0 females, 160 ambiguous) loaded from .fam.
@@ -15,7 +15,6 @@ Calculating allele frequencies... done.
 Total genotyping rate is 0.911359.
 12176 variants and 160 people pass filters and QC.
 Note: No phenotypes present.
---recode to ./data/FISH_560/FISH_560.final.ped +
-./data/FISH_560/FISH_560.final.map ... done.
+--recode A to ./data/FISH_560/FISH_560.final.raw ... done.
 
-End time: Wed Dec  3 15:05:52 2014
+End time: Sat Dec  6 19:47:32 2014
