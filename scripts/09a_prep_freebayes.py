@@ -2,9 +2,9 @@ import glob
 import os.path
 
 # index the reference
-shell command: samtools faidx /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt
+shell command: samtools faidx /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta
 
-# index each bam
+# index each bam, run in dir with the *.bam files
 shell command:  for f in *.bam ; do samtools index "$f"; done
 
 # create a file listing each bam

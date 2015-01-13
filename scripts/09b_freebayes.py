@@ -1,17 +1,31 @@
 import os
 import glob
 
+
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/bowtie2/*.bam')
+
+
 # freebayes command
-"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt \
+"freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta \
 --min-mapping-quality 10 \
 --min-base-quality 10 \
 --min-repeat-size 10 \
 --binomial-obs-priors-off \
+--bam /media/Shared/Data/chum/populations/aln/curated/bowtie2/CMSTILL10_0014.bam \
+--vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
+
+
+#--bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
+
+
+
 --populations /home/ipseg/Desktop/waples/chum_populations/data/fb.populations \
 --cnv-map /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/CNV.bed \
 --bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
 --samples /home/ipseg/Desktop/waples/chum_populations/data/fb.all.samples \
---vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.bt2.raw.vcf"
+
+
+
 
 # targets file currently has issues, doen't match with ref
 
@@ -36,8 +50,8 @@ piping to bowtie, noticed that old chum reads were trimmed to 85 bases
 parental_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMUW10X_0001.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0008.bam", "/media/Shared/Data/chum/populations/aln/CMUW10X_0009.bam"]
 test_bam_files = ["/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0030.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0033.bam", "/media/Shared/Data/chum/populations/aln/batch_02/CMHAMM10_0040.bam"]
 
-bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/*.bam')
-bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
+bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/bowtie2/*.bam')
+#bam_files += glob.glob('/media/Shared/Data/chum/populations/aln//batch_02/CMSHER*.bam')
 
 
 

@@ -12,7 +12,7 @@ files_to_align = glob.glob('/media/Shared/Data/chum/populations/troubleshoot_var
 # names are changed by adding a 'c'
 my_ref_file = '/home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt'
 
-# this ref padding with N's at the end of each locus
+# this ref is padded with N's at the end of each locus
 # THIS SEEMS TO BE IMPORTANT!!!!
 my_ref_file = '/media/Shared/Data/chum/populations/troubleshoot_variant_calling/ref2/batch_42_CURATED.fasta.txt'
 samtools faidx '/media/Shared/Data/chum/populations/troubleshoot_variant_calling/ref2/batch_42_CURATED.fasta.txt'

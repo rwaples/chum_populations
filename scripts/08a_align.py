@@ -19,7 +19,7 @@ files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/*.fq.g
 #files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/CMUW*.fq.gz') + glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/CMKALA*.fq.gz')
 
 
-my_ref_file = '/home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED.fasta.txt'
+my_ref_file = '/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta'
 
 # could try to apply a large clipping penalty "-L 1000"
 
@@ -32,7 +32,7 @@ for individual_fq_gz in files_to_align:
     
 # bowtie2
 # NOTICE, trims the 3' end by nine bps to match length in full
-bowtie2_cmd = "gunzip -c {} | bowtie2 -p 6 --trim3 9 --no-unal --rg-id {} --rg SM:{} --rg PL:ILLUMINA /home/ipseg/Desktop/waples/chum_populations/data/ref/batch_42_CURATED - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/curated/bowtie2/{}.bam"
+bowtie2_cmd = "gunzip -c {} | bowtie2 -p 6 --trim3 9 --no-unal --rg-id {} --rg SM:{} --rg PL:ILLUMINA /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns - | samtools view -bhu - | samtools sort -m 2G -O bam -T temp_prefix -@ 2 - > /media/Shared/Data/chum/populations/aln/curated/bowtie2/{}.bam"
 
 for individual_fq_gz in files_to_align:
     basename, sample_name, silli, ind_num = parse_name_fqgz(individual_fq_gz)
