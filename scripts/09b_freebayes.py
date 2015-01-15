@@ -9,19 +9,15 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/bowtie2/*
 "freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta \
 --min-mapping-quality 10 \
 --min-base-quality 10 \
---min-repeat-size 10 \
+--min-repeat-size 50 \
 --binomial-obs-priors-off \
---bam /media/Shared/Data/chum/populations/aln/curated/bowtie2/CMSTILL10_0014.bam \
+--populations /home/ipseg/Desktop/waples/chum_populations/data/fb.populations \
+--bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
 --vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
 
 
-#--bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
 
-
-
---populations /home/ipseg/Desktop/waples/chum_populations/data/fb.populations \
 --cnv-map /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/CNV.bed \
---bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
 --samples /home/ipseg/Desktop/waples/chum_populations/data/fb.all.samples \
 
 
