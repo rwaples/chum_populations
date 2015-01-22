@@ -11,6 +11,47 @@ shell command:  for f in *.bam ; do samtools index "$f"; done
 shell command: ls -d $PWD/*.bam > ./bam.list
 
 
+
+def generate_basic_BED(fa_ref, BED_output):
+    with open(fa_ref) as INFILE:
+        with open(BED_output, 'w') as OUTFILE:
+            for line in INFILE:
+                header = line.strip().replace(">", "")
+                seq = next(INFILE).strip()
+                OUTFILE.write("{}\t0\t{}\n".format(header, 100))
+
+generate_basic_BED(fa_ref = "/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta", BED_output = "/home/ipseg/Desktop/waples/chum_populations/data/ref/bed/mapped.bed")
+# Above BED file needs to be edited to remove the mitochondrial locus
+
+
+# here we look at a single BAM alignment file, and create a new BED, removing all loci with a coverage above a threshold within the BAM
+"""          
+bedtools genomecov -bga -ibam /media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter/CMLILLIW11_0048.bam > /home/ipseg/Desktop/waples/chum_populations/data/aln_stats/CMSHERW94S_0001.bwa.txt
+"""
+import collections
+def filter_BED_remove_high__coverage(BED_in, BED_out, aln_file, max_cov):
+    max_cov_of_ref = collections.defaultdict(int)
+    with open(aln_file) as COV_FILE:
+        for line in COV_FILE:
+            ref, start, stop, cov = line.strip().split()
+            if max_cov_of_ref[ref] < 1:
+                max_cov_of_ref[ref] = int(cov)
+  
+    with open(BED_in) as INFILE:
+        with open(BED_out, 'w') as OUTFILE:
+            for line in INFILE:
+                ref = line.strip().split()[0]
+                if max_cov_of_ref[ref] < max_cov + 1:
+                    OUTFILE.write(line)
+                           
+filter_BED_remove_high__coverage(BED_in = "/home/ipseg/Desktop/waples/chum_populations/data/ref/bed/mapped.bed",
+    BED_out = "/home/ipseg/Desktop/waples/chum_populations/data/ref/bed/mapped_no_high_coverage.bed", 
+    aln_file = "/home/ipseg/Desktop/waples/chum_populations/data/aln_stats/CMSHERW94S_0001.bwa.txt",
+    max_cov = 200
+    )
+
+
+
 def generate_CNV_BED(map_stats_file, BED_file, sample_names, catID_col = 0, best_model_col = 4):
     """
     this file is passed to freebayes to specify tetrasomically-inherited loci
@@ -74,18 +115,6 @@ with open(CMUW_samples_file, 'w') as OUTFILE:
 #sam_files = glob.glob('/media/Shared/Data/chum/populations/aln/*.sam')
 #for SAM in sam_files:
 #    print("samtools view -bhu {sam_file} | samtools sort -m 4G -o {bam_file} -O bam -T temp_prefix -@ 2 -".format(sam_file = SAM, bam_file = SAM.replace(".sam", ".bam")))
-
-
-def generate_basic_BED(fa_ref, BED_output):
-    with open(fa_ref) as INFILE:
-        with open(BED_output, 'w') as OUTFILE:
-            for line in INFILE:
-                header = line.strip()
-                seq = next(INFILE).strip()
-                OUTFILE.write("{}\t0\t{}\n".format(header, len(seq)))
-
-generate_basic_BED(fa_ref = "/media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED.fasta.txt", BED_output = "/media/Shared/Data/chum/populations/fb/batch_42_CURATED_nosample.bed")
-
 
 
         

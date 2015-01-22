@@ -7,16 +7,19 @@ bam_files = glob.glob('/media/Shared/Data/chum/populations/aln/curated/bowtie2/*
 
 # freebayes command
 "freebayes -f /media/Shared/Data/chum/populations/aln/curated/ref/batch_42_CURATED_with_Ns.fasta \
---min-mapping-quality 10 \
---min-base-quality 10 \
---min-repeat-size 50 \
+--min-repeat-size 10 \
+--min-base-quality 3 \
+--min-mapping-quality 1 \
 --binomial-obs-priors-off \
+--hwe-priors-off \
+--use-best-n-alleles 4 \
 --populations /home/ipseg/Desktop/waples/chum_populations/data/fb.populations \
---bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/bam.list \
---vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
+--bam-list /media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter/bam.list \
+--targets /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/mapped_no_high_coverage.bed \
+--vcf /home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/pos_1.raw.vcf"
 
 
-
+--targets  
 --cnv-map /home/ipseg/Desktop/waples/chum_populations/data/ref/bed/CNV.bed \
 --samples /home/ipseg/Desktop/waples/chum_populations/data/fb.all.samples \
 

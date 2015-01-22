@@ -1,5 +1,39 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import glob
+
+
+# filter the BAM files to have only reads that start their alignment at the first position
+BAM_files = glob.glob("/media/Shared/Data/chum/populations/aln/curated/bowtie2/*.bam")
+
+for xx in BAM_files:
+    print("samtools view -h -o {} {}".format(xx.replace('.bam', '.sam').replace('curated/bowtie2/', 'curated/bowtie2/start_filter/'), xx))
+
+SAM_files = glob.glob("/media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter/*.sam")
+
+for xx in SAM_files:
+    with open(xx) as INFILE:
+        with open(xx.replace(".sam", ".pos1.sam"), 'w') as OUTFILE:
+            with open(xx.replace(".sam", ".discards.sam"), 'w') as DISCARDS:
+                for line in INFILE:
+                    if line.startswith("@"):
+                        OUTFILE.write(line)
+                    else:
+                        if line.split("\t")[3] == '1':
+                            OUTFILE.write(line)
+                        else:
+                            DISCARDS.write(line)
+
+# convert the filtered SAM files back to BAM
+pos1_SAM_files = glob.glob("/media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter/*.pos1.sam") 
+for xx in pos1_SAM_files:
+    print("samtools view -Sb {} > {}".format(xx, xx.replace(".pos1.sam", ".bam")))
+ 
+    
+"""          
+bedtools genomecov -bga -ibam /media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter/CMLILLIW11_0048.bam > /home/ipseg/Desktop/waples/chum_populations/data/aln_stats/CMSHERW94S_0001.bwa.txt
+"""
+
 
 
 # stats files generated with something like:
