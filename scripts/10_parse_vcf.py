@@ -3,9 +3,39 @@ import vcf
 
 #full_vcf_file = "/home/ipseg/Desktop/waples/chum_populations/batch_02_bt2.vcf"
 #dup_vcf_file = "/home/ipseg/Desktop/waples/chum_populations/batch_02_dup_loci.vcf"
-vcf_file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/all.raw.vcf"
+
+# WARNING .vcf file is 3.0 GB
+vcf_file = "/media/Shared/Data/chum/populations/fb/pos_1.raw.vcf"
+contigs_file = "/media/Shared/Data/chum/populations/fb/example_contigs_with_Ns"
+
+
+# print basic info to screen
+"vcftools --vcf {}".format(vcf_file)
+
+# print allele frequencies to file
+freq_file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/pos1.raw.freq"
+"vcftools --vcf {} --freq --out {}".format(vcf_file, freq_file)
+
+# depth per individual
+ind_depth_file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/pos1.raw.ind_depth"
+"vcftools --vcf {} --depth -c > {}".format(vcf_file, ind_depth_file)
+
+# selecting variants
+--mac # at least this many minor alleles called
+--max-missing .5
+
+selected_file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_42_CURATED/freebayes/pos1.selected"
+"vcftools --vcf {} --max-missing 0.75 --mac 5 --minQ 200 --minDP 2 --recode --recode-INFO-all --out {}".format(vcf_file, selected_file)
+
+# convert to BCF
+"vcftools --vcf {} --contigs {} --recode-bcf --recode-INFO-all --out {}".format(vcf_file, contigs_file, vcf_file.replace(".vcf",".bcf") )
+
+
+
 
 # list loads the whole thing in memory, not always necessary
+
+
 
 
 my_vcf = list(vcf.Reader(open(vcf_file)))
