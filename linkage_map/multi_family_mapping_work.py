@@ -106,7 +106,30 @@ write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loc
 lodLimit = 7 \
 data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes"
- 
+
+# chum_08
+
+
+"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
+lodLimit = 7 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"  
+
+"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
+lodLimit = 7 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"
+
+for xx in reversed(range(38)):
+    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+chromosome={} \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map.log \
+".format(xx, xx, xx)
+)
+
+    
 #estimate LOD limit
 
 #ordermarkers
@@ -125,10 +148,10 @@ for xx in reversed(range(42)):
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
         )
 
-for xx in [35]:
+for xx in [5,35]:
     print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
         data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-        chromosome={} achiasmaticMeiosis=0 maxError = .25 \
+        chromosome={} \
         > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
         )

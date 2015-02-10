@@ -60,6 +60,7 @@ for LG in consensus_map.markers_of_LG.keys():
 
 
 write_union('/home/ipseg/Desktop/waples/chum_populations/linkage_map/test_union.txt', fam08_map,consensus_map)
+write_union('/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/fam_08_map.txt', fam08_map,fam08_map)
 
 
 rhos = compare_orders(consensus_map, fam08_map)

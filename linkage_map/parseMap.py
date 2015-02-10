@@ -3,9 +3,6 @@ from scipy import stats
 ## TODO
 ## Write out to a MSTmap-like format to facilitate use of MergeMap
 ## Incorporate MST_raw genotypes
-##  FIXED
-## Currently compare_orders or align_maps will remove a few references to non-matched LGs in map_2
-
 
 class Marker_data:
 	"""Class to represent the raw genetic data at a set of markers and indiviudals,
