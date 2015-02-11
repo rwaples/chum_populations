@@ -139,7 +139,8 @@ plot.pseudo.y <- function(LG, plot){
     
   #Plot RFm values from left and right:
   if (plot == "Y"){
-  plot(NULL, pch=19, col="red", xlab="cM", ylab="RFm", xlim=c(0, 200), ylim=c(0,.7), las=1, main=paste("LG",LG))
+    LG_name = as.character(as.numeric(LG-75))
+  plot(NULL, pch=19, col="red", xlab="cM", ylab="RFm", xlim=c(0, 200), ylim=c(0,.7), las=1, main=paste("LG",LG_name))
   lines(x=c(-10,260), y=c(0.5, 0.5), lty=2)  
   lines(x=c(-10,260), y=c(1, 1), lty=2, col="grey")  
   
@@ -184,8 +185,8 @@ xmax <- 150
 
 pseudo.y.matrix <- plot.pseudo.y(LG=80, plot="Y")
 
-par(mfrow=c(4,4))
-LGs <- as.character(c(76:112))
+par(mfrow=c(4,5),oma=c(4,3,3,2), mar=c(1.5,1,1,0))
+LGs <- (c(76:112))
 for (j in LGs){
   pseudo.y.matrix <- plot.pseudo.y(LG=j, plot="Y")
 }

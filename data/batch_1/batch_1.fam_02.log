@@ -1,0 +1,23 @@
+PLINK v1.90b2o 64-bit (25 Nov 2014)
+10 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/batch_1/batch_1.filter03 --family --keep-cluster-names 2 --make-bed --out ./data/batch_1/batch_1.fam_02
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Tue Feb 10 15:17:43 2015
+
+Random number seed: 1423610263
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+42511 variants loaded from .bim file.
+176 people (0 males, 0 females, 176 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./data/batch_1/batch_1.fam_02.nosex .
+--family: 1 cluster defined.
+159 people removed by cluster filter(s).
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 17 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.942664.
+42511 variants and 17 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ./data/batch_1/batch_1.fam_02.bed +
+./data/batch_1/batch_1.fam_02.bim + ./data/batch_1/batch_1.fam_02.fam ... done.
+
+End time: Tue Feb 10 15:17:43 2015
