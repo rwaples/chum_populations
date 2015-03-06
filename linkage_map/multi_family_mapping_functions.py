@@ -54,21 +54,23 @@ def prep_data_pandas(individuals, genotypes_at_locus):
     return(my_pd_genos)
 
 def prepare_matrix(*args):
+    """
+    """
     for arg in args:
         if not isinstance(arg, pd.DataFrame):
             raise ValueError("need a pandas DataFrame")
         else:
             pass
+    # combine all the data sets into one
     all_genos = pd.concat(objs = args, join = 'outer')
     # convert Nan to 0
     all_genos.fillna(value = 0, inplace = True)
-    
+    #list of loci
     loci = [str(xx) for xx in all_genos.transpose().index]
-    
     # conver to integer numpy array
-    all_genos_np = np.array(all_genos)
-    all_genos_np = all_genos_np.astype(int)
-    # transpose it
+    all_genos_np = np.array(all_genos).astype(int)
+    #all_genos_np = all_genos_np.astype(int)
+    # transpose
     all_genos_np = np.transpose(all_genos_np)
     return(all_genos_np, loci)
     
