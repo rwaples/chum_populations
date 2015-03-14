@@ -1,0 +1,36 @@
+0->0 : 0
+0->1 : 0
+0->2 : 0
+       Error rate = 0.0
+1->0 : 0
+1->1 : 0
+1->2 : 0
+       Error rate = 0.0
+2->0 : 0
+2->1 : 0
+2->2 : 0
+       Error rate = 0.0
+0,2->0,2 : 1340462
+  0,2->1 : 0
+1,2->1,2 : 0
+  1,2->0 : 0
+       Error rate = 0.0
+Maternally informative markers = 0 (of 12028)
+Paternally informative markers = 12028
+Maternally or paternally informative markers = 12028
+Removed 0 children
+Removed 0 markers
+Number of LGs = 41
+***Family = fam_08 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_01 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_09 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+4->3
+3->3
+All pairs
+join 1 and 2 score = 0.0 sizes 1,1
+join 0 and 1 score = 0.016666666666666666 sizes 1,2
+score = 0.016666666666666666
+improvementE1 : -21.5685216700684
+logL = -21.481321716053923
+Removing 0 markers
+Second round

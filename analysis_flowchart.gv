@@ -35,29 +35,48 @@ subgraph cluster_2 {
 digraph population_analysis{
 	node[color=cornflowerblue];
 
-	ml_psv[label="identify paralogs"];
-	catalog[label="stacks catalog"];
-	ref[label="FASTA reference"]
+	ml_psv[label="identify\nparalogs" color=red shape=diamond];
+	map_catalog[label="stacks catalog"];
+	linkage_map[label="linkage map" color=black shape=box];
+	
+	ref[label="FASTA reference" color=black shape=box];
 
-	family_08 -> catalog;
-	family_01 -> catalog;
-	family_09 -> catalog;
-	catalog -> ml_psv;
-	catalog -> curate; 
+	family_08[color=green];
+	family_01[color=green];
+	family_09[color=green];
+
+	family_08 -> map_catalog;
+	family_01 -> map_catalog;
+	family_09 -> map_catalog;
+	map_catalog -> ml_psv;
+	ml_psv -> curate;
+	ml_psv -> linkage_map;
+	map_catalog -> linkage_map; 
+	map_catalog -> curate; 
 	curate-> ref;
 	
-	chum_pops[label="RAD data from\nPuget Sound\nchum populations"];
-	chum_pops -> ref[label="align"];
-	chum_pops -> catalog[color = red]
+	chum_pops_1[label="population\nRAD data 1" color=green];
+	chum_pops_2[label="population\nRAD data 2" color=green];
 	sam[label="SAM files"];
-	chum_pops -> sam;
-	snp_caller[label="GATK or\n FreeBayes"];
-	result[label="ploidy-aware\n variant discovery \nand genotyping"]
-	ref -> sam;
-	ml_psv -> snp_caller;
-	sam -> snp_caller;
-	ref -> snp_caller;
-	snp_caller -> result;
+	align[color=red shape=diamond]
+	chum_pops_1 -> align;
+	chum_pops_2 -> align;
+	ref -> align;
+	align -> sam;
+
+	pstacks[color=red shape=diamond];
+	cstacks[color=red shape=diamond];
+	sstacks[color=red shape=diamond];
+	result[label="population\ngenotypes" color=black shape=box]
+	pop_catalog[label="stacks\npopulation\ncatalog"]
+	ind_genotypes[label="individual genotypes"];
+	sam -> pstacks;
+	pstacks -> ind_genotypes;
+	ind_genotypes -> cstacks[label="ascertainment"];
+	cstacks -> pop_catalog;
+	pop_catalog -> sstacks;
+	ind_genotypes -> sstacks;
+	sstacks -> result;
 }
 
 

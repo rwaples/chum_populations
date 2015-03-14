@@ -1,39 +1,36 @@
 import glob
-
 from parseMap import *
 
-
-
-
-with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap")as INFILE:
+with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap")as INFILE:
     #just need first line
     first_line = next(INFILE)
     marker_names = first_line.strip().split()[6:]
     
-    with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/lepmap_translation_1.txt", 'w') as OUTFILE:
-        count = 0
-        for marker in marker_names:
-            count += 1
-            OUTFILE.write( "{}\t{}\n".format(marker, count))
-            
-            
+with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_translation.txt", 'w') as OUTFILE:
+    count = 0
+    for marker in marker_names:
+        count += 1
+        OUTFILE.write( "{}\t{}\n".format(marker, count))
             
             
 
 
 fam08_map = Map('fam_08', 'mst', '/home/ipseg/Desktop/waples/chum_populations/linkage_map/chum_08_iter1_mstmap.map')
 
-lepmap_files = glob.glob("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/*.map")
+lepmap_files = glob.glob("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/*.map")
 consensus_map = Map('consensus', 'lepmap', lepmap_files)
 
 
 # marker names used by lepmap are just positions, the markers must be renamed
 # make rename file
 # rename
-consensus_map.rename_markers("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/lepmap_translation_1.txt", 2)
+consensus_map.rename_markers("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_translation.txt", 2)
+write_union('//home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed.linkagemap', consensus_map,consensus_map)
 
 
-#compare_maps(fam08_map, consensus_map)
+consensus_map.LG_of_marker.keys()
+fam08_map.LG_of_marker.keys()
+compare_maps(fam08_map, consensus_map)
 
 
 

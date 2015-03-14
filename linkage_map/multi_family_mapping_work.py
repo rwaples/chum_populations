@@ -1,5 +1,6 @@
 from multi_family_mapping_functions import *
 import pandas as pd
+import collections
 
 # Settings
 #os.chdir("Y:/WORK/WAPLES/Stacks_mapping/Python")
@@ -36,12 +37,12 @@ my_pd_genos_08 = prep_data_pandas(individuals_08, genotypes_at_locus_08)
 my_pd_genos_01 = prep_data_pandas(individuals_01, genotypes_at_locus_01)
 my_pd_genos_09  = prep_data_pandas(individuals_09,  genotypes_at_locus_09)
 
-all_my_data, loci_all = prepare_matrix(my_pd_genos_08, my_pd_genos_01, my_pd_genos_09)
+#all_my_data, loci_all = prepare_matrix(my_pd_genos_08, my_pd_genos_01, my_pd_genos_09)
 
 
-fam_08, loci_08 = prepare_matrix(my_pd_genos_08)
-fam_01, loci_01 = prepare_matrix(my_pd_genos_01)
-fam_09, loci_09 = prepare_matrix(my_pd_genos_09)
+#fam_08, loci_08 = prepare_matrix(my_pd_genos_08)
+#fam_01, loci_01 = prepare_matrix(my_pd_genos_01)
+#fam_09, loci_09 = prepare_matrix(my_pd_genos_09)
 
 # fam is now a tuple -> (genotype_matrix, loci)
 fam_08 = prepare_matrix(my_pd_genos_08)
@@ -61,8 +62,8 @@ def rename_loci_by_family(paralogs_file, fam_names, families):
     if not isinstance(fam_names, list ):
         raise ValueError("names should be a list")
     
-    with open(blacklist_file) as x: 
-        paralogs = [yy.strip() for yy in x.readlines()]
+    with open(paralogs_file) as INFILE: 
+        paralogs = [yy.strip() for yy in INFILE.readlines()]
     # for each family, for each locus, if the locus is a paralog append family-specific text to locus name
     # genotypes are unchanged
     #new_familes = list()
@@ -84,16 +85,16 @@ def rename_loci_by_family(paralogs_file, fam_names, families):
 renamed_08, renamed_01, renamed_09 = rename_loci_by_family(paralogs_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/chum_paralogs.txt", 
     fam_names = ['chum_08', 'chum_01', 'chum_09'], families = [my_pd_genos_08, my_pd_genos_01, my_pd_genos_09])
 
-aa = pd.merge(left = renamed_08.transpose(), right = renamed_01.transpose(), how = 'outer', left_index =True, right_index =True)
-bb = pd.merge(left = aa, right = renamed_09.transpose(), how = 'outer', left_index =True, right_index =True)  
-bb.transpose()
+
+###### this should be moved inside function
+renamed_08t = renamed_08.transpose()
+renamed_01t = renamed_01.transpose()
+renamed_09t = renamed_09.transpose()
+aa = pd.merge(left = renamed_08t, right = renamed_01t, how = 'outer', left_index =True, right_index =True)
+bb = pd.merge(left = aa, right = renamed_09t, how = 'outer', left_index =True, right_index =True) 
+###### end move into function
+
 all_my_data, loci_all = prepare_matrix(bb.transpose())
-
-
-fams = [individuals_08, individuals_01, individuals_09]
-LEPmap_filename = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lepmap"
-my_genotypes = bb.transpose()
-my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0 0', '0 0', '1 1', '1 2'])
 
 def write_LEPmap(families, family_names, loci, genotypes, output_filename):
     with open(output_filename, 'w') as OUTFILE:
@@ -111,13 +112,17 @@ def write_LEPmap(families, family_names, loci, genotypes, output_filename):
                 ind_genotypes = genotypes.loc[ind]
                 OUTFILE.write(ind_info + "\t" + "\t".join([str(xx) for xx in ind_genotypes]) + "\n")
 
+
+fams = [individuals_08, individuals_01, individuals_09]
+LEPmap_filename = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lepmap"
+my_genotypes = bb.transpose()
+my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0 0', '0 0', '1 1', '1 2'])
 write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loci = loci_all, genotypes = my_genotypes, output_filename = LEPmap_filename)
 
 print "java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lepmap \
 lodLimit = 10 sizeLimit = 3 \
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.inital_chromosomes \
-2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.inital_chromosomes.log\
-"
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.inital_chromosomes.log"
 
 print "java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.inital_chromosomes \
 lodLimit = 8 \
@@ -155,9 +160,266 @@ data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralog
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lod3-5_singles.chromosomes \
 2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lod3-5_singles.chromosomes.log"
 
-
+# this takes a long time!
 all_fams = get_recombination_stats(all_my_data)
 write_rec_stats(all_fams, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/all")
+# end long time!
+
+
+#look for LG assignments of duplicated loci that are congruent across families
+def find_duplicate_names(paralogs_file, loci, LG_file, output_file):
+    with open(blacklist_file) as INFILE: 
+        paralogs = [yy.strip() for yy in INFILE.readlines()]
+    #get list of the locus names
+        #  given by loci
+    #get list of LG assignments
+    with open(LG_file) as INFILE:
+        #skip first line
+        next(INFILE)
+        LG_assignments = [int(line.strip()) for line in INFILE]
+    LG_of_locus = dict(zip(loci, LG_assignments))
+    #print(paralogs)
+    with open(output_file, 'w') as OUTFILE:
+        OUTFILE.write("{}\t{}\t{}\t{}\n".format('catalog_name', 'family', 'copy', 'LG'))
+        for locus in loci:
+            catalog_name = locus.split("_")[0]
+            if catalog_name in paralogs:
+                family = locus.split("_")[2]
+                copy = locus[-2:]
+                OUTFILE.write("{}\t{}\t{}\t{}\n".format(catalog_name, family, copy, LG_of_locus[locus]))
+            #list of all loci sharing base name
+                sharing = [loc for loc in loci if locus.split("_")[0] == loc.split("_")[0]]
+                sharing.remove(locus)
+                agree_on_LG = sum([1 for loc in sharing if LG_of_locus[loc] == LG_of_locus[locus] ])
+                disagree_on_LG = sum([1 for loc in sharing if LG_of_locus[loc] != LG_of_locus[locus] ])
+                #print(locus, agree_on_LG, disagree_on_LG)
+
+find_duplicate_names(paralogs_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/chum_paralogs.txt", 
+    loci = loci_all, LG_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lod5_singles.chromosomes", 
+    output_file = '/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/LG_congruence.tsv')
+
+import collections
+def write_name_table(paralogs_file, loci, LG_file, output_file):
+    with open(blacklist_file) as INFILE: 
+        paralogs = [yy.strip() for yy in INFILE.readlines()]
+    with open(LG_file) as INFILE:
+        #skip first line
+        next(INFILE)
+        LG_assignments = [int(line.strip()) for line in INFILE]
+    LG_of_locus = defaultdict(int, zip(loci, LG_assignments))
+    with open(output_file, 'w') as OUTFILE:
+        OUTFILE.write("{}\t{}\t{}\t{}\n".format('catalog_name', 'LG_08_x1', 'LG_08_x2', 'LG_01_x1', 'LG_01_x2', 'LG_09_x1', 'LG_09_x2'))
+        for locus in loci:
+            catalog_name = locus.split("_")[0]
+            if catalog_name in paralogs:
+                family = locus.split("_")[2]
+                copy = locus[-2:]
+                OUTFILE.write("{}\t{}\t{}\t{}\t{}\n".format(catalog_name, LG_of_locus[locus]))
+            #list of all loci sharing base name
+                sharing = [loc for loc in loci if locus.split("_")[0] == loc.split("_")[0]]
+                sharing.remove(locus)
+                agree_on_LG = sum([1 for loc in sharing if LG_of_locus[loc] == LG_of_locus[locus] ])
+                disagree_on_LG = sum([1 for loc in sharing if LG_of_locus[loc] != LG_of_locus[locus] ])
+                #print(locus, agree_on_LG, disagree_on_LG)
+
+find_duplicate_names(paralogs_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/chum_paralogs.txt", 
+    loci = loci_all, LG_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.inital_chromosomes", 
+    output_file = '/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/name_table.tsv')
+
+
+
+
+
+
+def collapse_names(LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2):
+    # set results for 08
+    segmental = False
+    result = []
+    if LG_08_x1 != 0:
+        LG_A = LG_08_x1
+        result.append("A")
+    else:
+        result.append("NA")
+        LG_A = None
+    if LG_08_x2 != 0:
+        if result == ["NA"]:
+            result.append("A")
+            LG_A = LG_08_x2
+            LG_B = None
+        else:
+            result.append("B")
+            LG_B = LG_08_x2
+            if LG_08_x1 == LG_08_x2:
+                segmental == True
+                result.extend(('NA', 'NA', 'NA', 'NA'))
+                return(result)
+    else:
+        result.append("NA")
+        LG_B = None
+        
+    # determine matching in other families
+    for xx in [LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2]:
+        if xx == LG_A:
+            result.append('A')
+        elif xx == LG_B:
+            result.append('B')
+        elif xx != 0:
+            if LG_A == None:
+                LG_A = xx
+                result.append('A')
+            elif LG_B == None:
+                LG_B = xx
+                result.append('B')            
+            else:
+                result.append('C')
+        else:
+            result.append('NA')
+    return(result)
+
+#examples
+#print collapse_names(1,2,2,1,2,1)
+#print collapse_names(0,1,2,0,2,0)
+#print collapse_names(1,0,2,0,2,0)
+#print collapse_names(0,0,1,0,2,0)
+#print collapse_names(0,12,0,0,2,2)
+
+def parse_LG_congruence_line(line):
+    catalog_name, family, copy, LG = line.strip().split("\t")
+    return(catalog_name, family, copy, LG)
+
+
+def write_rename_table(LG_congruence_file, out_file):
+    famLG_of_locus = collections.defaultdict(dict)
+    with open(out_file, 'w') as OUTFILE:
+        OUTFILE.write("{}\t{}\t{}\n".format("old_name", "new_name", "LG"))
+        with open(LG_congruence_file) as PARALOG_LGS:
+            #skip first line
+            next(PARALOG_LGS)
+            for line in PARALOG_LGS:
+                catalog_name, family, copy, LG = parse_LG_congruence_line(line)
+                famLG_of_locus[catalog_name][family, copy] = int(LG)
+            for cn, famLG in famLG_of_locus.items():
+                LG_08_x1 = famLG.get(('08', 'x1'), 0)
+                LG_08_x2 = famLG.get(('08', 'x2'), 0)
+                LG_01_x1 = famLG.get(('01', 'x1'), 0)
+                LG_01_x2 = famLG.get(('01', 'x2'), 0)
+                LG_09_x1 = famLG.get(('09', 'x1'), 0)
+                LG_09_x2 = famLG.get(('09', 'x2'), 0)
+                #print cn, [LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2], collapse_names(LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2)
+                fam_names = ["{}_chum_08_x1", "{}_chum_08_x2", "{}_chum_01_x1", "{}_chum_01_x2", "{}_chum_09_x1", "{}_chum_09_x2"]
+                collaped_names = collapse_names(LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2)
+                LGs = [LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2]
+                family_specific_names = [xx.format(cn) for xx in fam_names]
+                for cnt, fsn in enumerate(family_specific_names):
+                    OUTFILE.write("{}\t{}\t{}\n".format(fsn, cn+"_{}".format(collaped_names[cnt]), LGs[cnt]))
+    
+        
+write_rename_table(LG_congruence_file =  "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/LG_congruence.tsv", 
+    out_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/rename_table.tsv")   
+
+#get rename dict
+rename_table = pd.read_table("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/rename_table.tsv")
+rename_dict = dict(zip(rename_table.old_name,rename_table.new_name))
+    
+renamed_08t = renamed_08.rename(columns=rename_dict).transpose()
+renamed_01t = renamed_01.rename(columns=rename_dict).transpose()
+renamed_09t = renamed_09.rename(columns=rename_dict).transpose()
+aa = pd.merge(left = renamed_08t, right = renamed_01t, how = 'outer', left_index =True, right_index =True)
+bb = pd.merge(left = aa, right = renamed_09t, how = 'outer', left_index =True, right_index =True)
+
+fams = [individuals_08, individuals_01, individuals_09]
+LEPmap_filename = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap"
+my_genotypes = bb.transpose()
+my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0 0', '0 0', '1 1', '1 2'])
+write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loci = my_genotypes.columns.values.tolist(),
+    genotypes = my_genotypes, output_filename = LEPmap_filename)
+
+# reform linkage groups
+print "java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+lodLimit = 10 sizeLimit = 3 \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes.log"
+
+print "java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes \
+lodLimit = 8 lodDifference=3 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod8_singles.chromosomes \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod8_singles.chromosomes.log"
+
+print "java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod8_singles.chromosomes \
+lodLimit = 7 lodDifference=3 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod7_singles.chromosomes \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod7_singles.chromosomes.log"
+
+print "java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod7_singles.chromosomes \
+lodLimit = 6 lodDifference=3 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod6_singles.chromosomes \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod6_singles.chromosomes.log"
+
+print "java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod6_singles.chromosomes \
+lodLimit = 5 lodDifference=3 \
+data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
+2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes.log"
+
+
+with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes") as LG_file:
+    next(LG_file)
+    print zip(my_genotypes.columns.values.tolist(), [xx.strip() for xx in LG_file])
+
+
+
+for xx in reversed(range(1,42)):
+    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
+        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+        chromosome={} \
+        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map \
+        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
+        )
+
+for xx in (18,):
+    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
+        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+        alpha=1 maxDistance=30 \
+        chromosome={} \
+        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map \
+        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
+        )
+
+
+
+# different ways or reasons to rename
+# renaming only occuring *within* catalog entries, and seeks to standardize naming across families
+# non paralogs
+    # should already share names across families
+
+# paralogs
+    # rename relative to a specified target family 
+    # if same catalog locus assigned to same LG in two different families, collapse names
+    # if same catalog locus assigned to same LG in the same families, do not collapse names, possible segmental duplicate
+    
+    # if same catalog locus assigned to different LG in two different families, check if the LGs are homeologs
+        # if homeologs - do not callpase names incormporating LG
+        # if not homeologs - still rename??
+        
+# what to do when a locus is unmapped in the small families?
+
+# renaming procedure
+# 1 - identify homeologs based on family 8
+# 2 - 
+
+    
+
+# mapped two different families, same LG assignmentin small family 
+    
+    
+        
+        
+    
+'10001_y' in my_genotypes.columns.values.tolist()
+
 
 # Remove blacklisted markers (duplicates):
 with open(blacklist_file) as x: 
@@ -262,6 +524,16 @@ chromosome=1 \
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map \
 2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map.log \
 " 
+
+for xx in reversed(range(42)):
+    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
+        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+        chromosome={} \
+        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
+        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
+        )
+
+
 
 for xx in reversed(range(42)):
     print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \

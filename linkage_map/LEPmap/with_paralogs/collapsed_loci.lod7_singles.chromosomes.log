@@ -1,0 +1,2278 @@
+0->0 : 0
+0->1 : 0
+0->2 : 0
+       Error rate = 0.0
+1->0 : 0
+1->1 : 0
+1->2 : 0
+       Error rate = 0.0
+2->0 : 0
+2->1 : 0
+2->2 : 0
+       Error rate = 0.0
+0,2->0,2 : 1340462
+  0,2->1 : 0
+1,2->1,2 : 0
+  1,2->0 : 0
+       Error rate = 0.0
+Maternally informative markers = 0 (of 12028)
+Paternally informative markers = 12028
+Maternally or paternally informative markers = 12028
+Removed 0 markers
+LOD(175, 0) = 50.730831351371116
+LOD(174, 0) = 50.43224777297899
+LOD(174, 1) = 48.48280135712733
+LOD(173, 2) = 46.53823211177203
+LOD(175, 0) = 51.823989272088426
+LOD(174, 0) = 51.52516615900455
+LOD(174, 1) = 49.53108809594482
+LOD(173, 2) = 47.486415116373095
+***Family = fam_08 chromosome = 1 numMarkers = 346 maternal informative markers 0 (paternal informative markers 346)
+***Family = fam_01 chromosome = 1 numMarkers = 346 maternal informative markers 0 (paternal informative markers 346)
+***Family = fam_09 chromosome = 1 numMarkers = 346 maternal informative markers 0 (paternal informative markers 346)
+***Family = fam_08 chromosome = 2 numMarkers = 320 maternal informative markers 0 (paternal informative markers 318)
+***Family = fam_01 chromosome = 2 numMarkers = 320 maternal informative markers 0 (paternal informative markers 318)
+***Family = fam_09 chromosome = 2 numMarkers = 320 maternal informative markers 0 (paternal informative markers 316)
+***Family = fam_08 chromosome = 3 numMarkers = 302 maternal informative markers 0 (paternal informative markers 302)
+***Family = fam_01 chromosome = 3 numMarkers = 302 maternal informative markers 0 (paternal informative markers 301)
+***Family = fam_09 chromosome = 3 numMarkers = 302 maternal informative markers 0 (paternal informative markers 294)
+***Family = fam_08 chromosome = 4 numMarkers = 291 maternal informative markers 0 (paternal informative markers 291)
+***Family = fam_01 chromosome = 4 numMarkers = 291 maternal informative markers 0 (paternal informative markers 291)
+***Family = fam_09 chromosome = 4 numMarkers = 291 maternal informative markers 0 (paternal informative markers 290)
+***Family = fam_08 chromosome = 5 numMarkers = 274 maternal informative markers 0 (paternal informative markers 274)
+***Family = fam_01 chromosome = 5 numMarkers = 274 maternal informative markers 0 (paternal informative markers 274)
+***Family = fam_09 chromosome = 5 numMarkers = 274 maternal informative markers 0 (paternal informative markers 274)
+***Family = fam_08 chromosome = 6 numMarkers = 275 maternal informative markers 0 (paternal informative markers 275)
+***Family = fam_01 chromosome = 6 numMarkers = 275 maternal informative markers 0 (paternal informative markers 275)
+***Family = fam_09 chromosome = 6 numMarkers = 275 maternal informative markers 0 (paternal informative markers 275)
+***Family = fam_08 chromosome = 7 numMarkers = 274 maternal informative markers 0 (paternal informative markers 265)
+***Family = fam_01 chromosome = 7 numMarkers = 274 maternal informative markers 0 (paternal informative markers 273)
+***Family = fam_09 chromosome = 7 numMarkers = 274 maternal informative markers 0 (paternal informative markers 274)
+***Family = fam_08 chromosome = 8 numMarkers = 254 maternal informative markers 0 (paternal informative markers 254)
+***Family = fam_01 chromosome = 8 numMarkers = 254 maternal informative markers 0 (paternal informative markers 254)
+***Family = fam_09 chromosome = 8 numMarkers = 254 maternal informative markers 0 (paternal informative markers 254)
+***Family = fam_08 chromosome = 9 numMarkers = 247 maternal informative markers 0 (paternal informative markers 247)
+***Family = fam_01 chromosome = 9 numMarkers = 247 maternal informative markers 0 (paternal informative markers 247)
+***Family = fam_09 chromosome = 9 numMarkers = 247 maternal informative markers 0 (paternal informative markers 247)
+***Family = fam_08 chromosome = 10 numMarkers = 240 maternal informative markers 0 (paternal informative markers 240)
+***Family = fam_01 chromosome = 10 numMarkers = 240 maternal informative markers 0 (paternal informative markers 240)
+***Family = fam_09 chromosome = 10 numMarkers = 240 maternal informative markers 0 (paternal informative markers 240)
+***Family = fam_08 chromosome = 11 numMarkers = 241 maternal informative markers 0 (paternal informative markers 241)
+***Family = fam_01 chromosome = 11 numMarkers = 241 maternal informative markers 0 (paternal informative markers 239)
+***Family = fam_09 chromosome = 11 numMarkers = 241 maternal informative markers 0 (paternal informative markers 241)
+***Family = fam_08 chromosome = 12 numMarkers = 234 maternal informative markers 0 (paternal informative markers 234)
+***Family = fam_01 chromosome = 12 numMarkers = 234 maternal informative markers 0 (paternal informative markers 234)
+***Family = fam_09 chromosome = 12 numMarkers = 234 maternal informative markers 0 (paternal informative markers 234)
+***Family = fam_08 chromosome = 13 numMarkers = 210 maternal informative markers 0 (paternal informative markers 207)
+***Family = fam_01 chromosome = 13 numMarkers = 210 maternal informative markers 0 (paternal informative markers 210)
+***Family = fam_09 chromosome = 13 numMarkers = 210 maternal informative markers 0 (paternal informative markers 210)
+***Family = fam_08 chromosome = 14 numMarkers = 208 maternal informative markers 0 (paternal informative markers 208)
+***Family = fam_01 chromosome = 14 numMarkers = 208 maternal informative markers 0 (paternal informative markers 208)
+***Family = fam_09 chromosome = 14 numMarkers = 208 maternal informative markers 0 (paternal informative markers 208)
+***Family = fam_08 chromosome = 15 numMarkers = 182 maternal informative markers 0 (paternal informative markers 182)
+***Family = fam_01 chromosome = 15 numMarkers = 182 maternal informative markers 0 (paternal informative markers 182)
+***Family = fam_09 chromosome = 15 numMarkers = 182 maternal informative markers 0 (paternal informative markers 182)
+***Family = fam_08 chromosome = 16 numMarkers = 177 maternal informative markers 0 (paternal informative markers 177)
+***Family = fam_01 chromosome = 16 numMarkers = 177 maternal informative markers 0 (paternal informative markers 177)
+***Family = fam_09 chromosome = 16 numMarkers = 177 maternal informative markers 0 (paternal informative markers 177)
+***Family = fam_08 chromosome = 17 numMarkers = 184 maternal informative markers 0 (paternal informative markers 184)
+***Family = fam_01 chromosome = 17 numMarkers = 184 maternal informative markers 0 (paternal informative markers 183)
+***Family = fam_09 chromosome = 17 numMarkers = 184 maternal informative markers 0 (paternal informative markers 184)
+***Family = fam_08 chromosome = 18 numMarkers = 174 maternal informative markers 0 (paternal informative markers 174)
+***Family = fam_01 chromosome = 18 numMarkers = 174 maternal informative markers 0 (paternal informative markers 174)
+***Family = fam_09 chromosome = 18 numMarkers = 174 maternal informative markers 0 (paternal informative markers 174)
+***Family = fam_08 chromosome = 19 numMarkers = 186 maternal informative markers 0 (paternal informative markers 186)
+***Family = fam_01 chromosome = 19 numMarkers = 186 maternal informative markers 0 (paternal informative markers 186)
+***Family = fam_09 chromosome = 19 numMarkers = 186 maternal informative markers 0 (paternal informative markers 186)
+***Family = fam_08 chromosome = 20 numMarkers = 176 maternal informative markers 0 (paternal informative markers 176)
+***Family = fam_01 chromosome = 20 numMarkers = 176 maternal informative markers 0 (paternal informative markers 176)
+***Family = fam_09 chromosome = 20 numMarkers = 176 maternal informative markers 0 (paternal informative markers 176)
+***Family = fam_08 chromosome = 21 numMarkers = 181 maternal informative markers 0 (paternal informative markers 181)
+***Family = fam_01 chromosome = 21 numMarkers = 181 maternal informative markers 0 (paternal informative markers 181)
+***Family = fam_09 chromosome = 21 numMarkers = 181 maternal informative markers 0 (paternal informative markers 181)
+***Family = fam_08 chromosome = 22 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
+***Family = fam_01 chromosome = 22 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
+***Family = fam_09 chromosome = 22 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
+***Family = fam_08 chromosome = 23 numMarkers = 171 maternal informative markers 0 (paternal informative markers 162)
+***Family = fam_01 chromosome = 23 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
+***Family = fam_09 chromosome = 23 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
+***Family = fam_08 chromosome = 24 numMarkers = 162 maternal informative markers 0 (paternal informative markers 162)
+***Family = fam_01 chromosome = 24 numMarkers = 162 maternal informative markers 0 (paternal informative markers 162)
+***Family = fam_09 chromosome = 24 numMarkers = 162 maternal informative markers 0 (paternal informative markers 162)
+***Family = fam_08 chromosome = 25 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
+***Family = fam_01 chromosome = 25 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
+***Family = fam_09 chromosome = 25 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
+***Family = fam_08 chromosome = 26 numMarkers = 159 maternal informative markers 0 (paternal informative markers 159)
+***Family = fam_01 chromosome = 26 numMarkers = 159 maternal informative markers 0 (paternal informative markers 159)
+***Family = fam_09 chromosome = 26 numMarkers = 159 maternal informative markers 0 (paternal informative markers 159)
+***Family = fam_08 chromosome = 27 numMarkers = 158 maternal informative markers 0 (paternal informative markers 158)
+***Family = fam_01 chromosome = 27 numMarkers = 158 maternal informative markers 0 (paternal informative markers 158)
+***Family = fam_09 chromosome = 27 numMarkers = 158 maternal informative markers 0 (paternal informative markers 158)
+***Family = fam_08 chromosome = 28 numMarkers = 150 maternal informative markers 0 (paternal informative markers 150)
+***Family = fam_01 chromosome = 28 numMarkers = 150 maternal informative markers 0 (paternal informative markers 150)
+***Family = fam_09 chromosome = 28 numMarkers = 150 maternal informative markers 0 (paternal informative markers 150)
+***Family = fam_08 chromosome = 29 numMarkers = 147 maternal informative markers 0 (paternal informative markers 147)
+***Family = fam_01 chromosome = 29 numMarkers = 147 maternal informative markers 0 (paternal informative markers 147)
+***Family = fam_09 chromosome = 29 numMarkers = 147 maternal informative markers 0 (paternal informative markers 147)
+***Family = fam_08 chromosome = 30 numMarkers = 146 maternal informative markers 0 (paternal informative markers 146)
+***Family = fam_01 chromosome = 30 numMarkers = 146 maternal informative markers 0 (paternal informative markers 146)
+***Family = fam_09 chromosome = 30 numMarkers = 146 maternal informative markers 0 (paternal informative markers 146)
+***Family = fam_08 chromosome = 31 numMarkers = 145 maternal informative markers 0 (paternal informative markers 145)
+***Family = fam_01 chromosome = 31 numMarkers = 145 maternal informative markers 0 (paternal informative markers 145)
+***Family = fam_09 chromosome = 31 numMarkers = 145 maternal informative markers 0 (paternal informative markers 145)
+***Family = fam_08 chromosome = 32 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
+***Family = fam_01 chromosome = 32 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
+***Family = fam_09 chromosome = 32 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
+***Family = fam_08 chromosome = 33 numMarkers = 138 maternal informative markers 0 (paternal informative markers 138)
+***Family = fam_01 chromosome = 33 numMarkers = 138 maternal informative markers 0 (paternal informative markers 137)
+***Family = fam_09 chromosome = 33 numMarkers = 138 maternal informative markers 0 (paternal informative markers 138)
+***Family = fam_08 chromosome = 34 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
+***Family = fam_01 chromosome = 34 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
+***Family = fam_09 chromosome = 34 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
+***Family = fam_08 chromosome = 35 numMarkers = 120 maternal informative markers 0 (paternal informative markers 120)
+***Family = fam_01 chromosome = 35 numMarkers = 120 maternal informative markers 0 (paternal informative markers 120)
+***Family = fam_09 chromosome = 35 numMarkers = 120 maternal informative markers 0 (paternal informative markers 120)
+***Family = fam_08 chromosome = 36 numMarkers = 121 maternal informative markers 0 (paternal informative markers 120)
+***Family = fam_01 chromosome = 36 numMarkers = 121 maternal informative markers 0 (paternal informative markers 121)
+***Family = fam_09 chromosome = 36 numMarkers = 121 maternal informative markers 0 (paternal informative markers 121)
+***Family = fam_08 chromosome = 37 numMarkers = 107 maternal informative markers 0 (paternal informative markers 107)
+***Family = fam_01 chromosome = 37 numMarkers = 107 maternal informative markers 0 (paternal informative markers 107)
+***Family = fam_09 chromosome = 37 numMarkers = 107 maternal informative markers 0 (paternal informative markers 107)
+***Family = fam_08 chromosome = 38 numMarkers = 8 maternal informative markers 0 (paternal informative markers 8)
+***Family = fam_01 chromosome = 38 numMarkers = 8 maternal informative markers 0 (paternal informative markers 8)
+***Family = fam_09 chromosome = 38 numMarkers = 8 maternal informative markers 0 (paternal informative markers 8)
+***Family = fam_08 chromosome = 39 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_01 chromosome = 39 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_09 chromosome = 39 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_08 chromosome = 40 numMarkers = 3 maternal informative markers 0 (paternal informative markers 3)
+***Family = fam_01 chromosome = 40 numMarkers = 3 maternal informative markers 0 (paternal informative markers 3)
+***Family = fam_09 chromosome = 40 numMarkers = 3 maternal informative markers 0 (paternal informative markers 3)
+***Family = fam_08 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_01 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+***Family = fam_09 chromosome = 41 numMarkers = 4 maternal informative markers 0 (paternal informative markers 4)
+Family fam_08
+Family fam_01
+Family fam_09
+Number of different markers = 11672
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+142 : chr12 : 7.812539448162381 vs. chr26 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+174 : chr6 : 7.132320645199556 vs. chr35 : 6.580332247358362 (not joined)
+176 : chr11 : 8.100657636890398 vs. chr2 : 6.85596827651233 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+199 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
+8.100657636890398 vs. 0.0
+224 : chr15 : 8.100657636890398 vs. chr40 : 5.485860097875672 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+353 : chr10 : 8.100657636890398 vs. chr28 : 8.100657636890398 (not joined)
+354 : chr28 : 7.237508653036841 vs. chr10 : 6.031382688614232 (not joined)
+7.237508653036841 vs. 0.0
+373 : chr38 : 7.812539448162381 vs. chr9 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+397 : chr7 : 8.100657636890398 vs. chr36 : 5.758165940256667 (not joined)
+7.524814919292353 vs. 0.0
+406 : chr12 : 7.812539448162381 vs. chr26 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+446 : chr11 : 7.237508653036841 vs. chr41 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+471 : chr9 : 7.237508653036841 vs. chr37 : 7.237508653036841 (not joined)
+479 : chr35 : 8.100657636890398 vs. chr6 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+506 : chr6 : 7.812539448162381 vs. chr35 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+522 : chr9 : 7.524814919292353 vs. chr38 : 5.111902293203713 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+732 : chr35 : 7.237508653036841 vs. chr6 : 4.675048007013055 (not joined)
+733 : chr35 : 7.237508653036841 vs. chr6 : 6.950647613629127 (not joined)
+736 : chr6 : 7.237508653036841 vs. chr35 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+750 : chr6 : 8.3891469783143 vs. chr35 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+763 : chr37 : 8.100657636890398 vs. chr9 : 6.580332247358362 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+850 : chr10 : 8.100657636890398 vs. chr28 : 6.305454970542936 (not joined)
+7.524814919292353 vs. 0.0
+869 : chr36 : 7.524814919292353 vs. chr7 : 6.305454970542936 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+946 : chr2 : 8.3891469783143 vs. chr11 : 8.100657636890398 (not joined)
+960 : chr36 : 8.3891469783143 vs. chr7 : 8.100657636890398 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+1004 : chr10 : 7.237508653036841 vs. chr28 : 4.593070097082085 (not joined)
+7.524814919292353 vs. 0.0
+1014 : chr2 : 8.967158220164773 vs. chr11 : 7.409350364429441 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 4.079827535816964
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+1090 : chr7 : 7.524814919292353 vs. chr36 : 6.664261435646007 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+1114 : chr7 : 7.237508653036841 vs. chr36 : 5.214525989256439 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+1138 : chr36 : 8.100657636890398 vs. chr7 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+1174 : chr12 : 8.100657636890398 vs. chr26 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+1192 : chr10 : 8.3891469783143 vs. chr28 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+1208 : chr26 : 7.237508653036841 vs. chr12 : 6.580332247358362 (not joined)
+1210 : chr6 : 7.237508653036841 vs. chr35 : 6.950647613629127 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+1318 : chr36 : 7.237508653036841 vs. chr7 : 6.305454970542936 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+1364 : chr13 : 7.524814919292353 vs. chr9 : 6.093047777746866 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 4.10710350355705
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+1543 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+1575 : chr37 : 8.967158220164773 vs. chr9 : 6.580332247358362 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+1637 : chr11 : 7.524814919292353 vs. chr2 : 5.3732067587902606 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+1661 : chr3 : 7.237508653036841 vs. chr7 : 7.237508653036841 (not joined)
+1665 : chr12 : 7.132320645199556 vs. chr26 : 7.132320645199556 (not joined)
+7.237508653036841 vs. 3.0734132287964897
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+1679 : chr36 : 7.524814919292353 vs. chr7 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+1690 : chr12 : 7.524814919292353 vs. chr26 : 4.6034886995201765 (not joined)
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+1807 : chr11 : 7.812539448162381 vs. chr19 : 6.580332247358362 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+1844 : chr15 : 7.812539448162381 vs. chr40 : 5.214525989256439 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+1900 : chr35 : 8.100657636890398 vs. chr6 : 6.85596827651233 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+1914 : chr35 : 7.237508653036841 vs. chr6 : 4.9442306187986755 (not joined)
+7.524814919292353 vs. 0.0
+1916 : chr10 : 7.524814919292353 vs. chr28 : 4.851830913609798 (not joined)
+1917 : chr2 : 8.100657636890398 vs. chr11 : 5.635673357125613 (not joined)
+7.524814919292353 vs. 0.0
+1933 : chr11 : 7.132320645199556 vs. chr2 : 6.163837697179339 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+1958 : chr13 : 8.100657636890398 vs. chr9 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 4.354506309163542
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+2077 : chr7 : 7.237508653036841 vs. chr36 : 4.9442306187986755 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+2093 : chr11 : 7.237508653036841 vs. chr19 : 4.407060170832148 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 3.3222026871959405
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+2138 : chr6 : 8.100657636890398 vs. chr35 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 4.079827535816964
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+2216 : chr28 : 7.237508653036841 vs. chr10 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+2252 : chr37 : 8.3891469783143 vs. chr9 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+2277 : chr37 : 8.100657636890398 vs. chr9 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 4.10710350355705
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+2335 : chr15 : 7.524814919292353 vs. chr40 : 4.851830913609798 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 4.407060170832148
+2362 : chr10 : 7.524814919292353 vs. chr28 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+2378 : chr6 : 7.812539448162381 vs. chr35 : 6.031382688614232 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+2490 : chr35 : 7.237508653036841 vs. chr6 : 6.378382784323462 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 4.079827535816964
+2543 : chr40 : 7.524814919292353 vs. chr15 : 5.485860097875672 (not joined)
+2544 : chr35 : 7.237508653036841 vs. chr6 : 6.378382784323462 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+2572 : chr15 : 7.812539448162381 vs. chr40 : 4.9442306187986755 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+2635 : chr36 : 7.237508653036841 vs. chr7 : 6.950647613629127 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+2692 : chr9 : 7.812539448162381 vs. chr38 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+2702 : chr9 : 7.812539448162381 vs. chr38 : 5.111902293203713 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+2757 : chr37 : 7.524814919292353 vs. chr9 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+2804 : chr10 : 7.812539448162381 vs. chr28 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+2813 : chr35 : 7.524814919292353 vs. chr6 : 6.664261435646007 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+2839 : chr7 : 7.524814919292353 vs. chr36 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+2866 : chr7 : 7.237508653036841 vs. chr36 : 6.378382784323462 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+2920 : chr6 : 7.132320645199556 vs. chr35 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+3010 : chr9 : 8.100657636890398 vs. chr37 : 7.132320645199556 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+3113 : chr9 : 7.237508653036841 vs. chr38 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+3151 : chr13 : 7.524814919292353 vs. chr9 : 6.378382784323462 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 3.5729579403885614
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+3256 : chr12 : 8.677986831062242 vs. chr26 : 8.677986831062242 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+3276 : chr12 : 8.100657636890398 vs. chr26 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+3286 : chr12 : 7.237508653036841 vs. chr26 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+3353 : chr10 : 7.237508653036841 vs. chr28 : 4.593070097082085 (not joined)
+7.812539448162381 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+3360 : chr13 : 7.524814919292353 vs. chr9 : 6.378382784323462 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+3432 : chr37 : 7.812539448162381 vs. chr9 : 5.111902293203713 (not joined)
+7.524814919292353 vs. 0.0
+3436 : chr10 : 7.812539448162381 vs. chr28 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+3469 : chr9 : 7.237508653036841 vs. chr38 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+3505 : chr9 : 7.237508653036841 vs. chr38 : 5.758165940256667 (not joined)
+7.524814919292353 vs. 3.3222026871959405
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 3.3222026871959405
+3540 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+3555 : chr37 : 7.812539448162381 vs. chr9 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+3584 : chr35 : 7.237508653036841 vs. chr6 : 5.214525989256439 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+3625 : chr35 : 7.812539448162381 vs. chr6 : 6.664261435646007 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 4.079827535816964
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+3698 : chr3 : 7.524814919292353 vs. chr7 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+3735 : chr10 : 7.524814919292353 vs. chr28 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+3783 : chr13 : 7.812539448162381 vs. chr9 : 6.378382784323462 (not joined)
+7.524814919292353 vs. 0.0
+3785 : chr11 : 7.409350364429441 vs. chr19 : 4.853962308381582 (not joined)
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+3821 : chr37 : 7.524814919292353 vs. chr9 : 6.950647613629127 (not joined)
+3826 : chr8 : 7.524814919292353 vs. chr39 : 6.378382784323462 (not joined)
+3835 : chr15 : 7.524814919292353 vs. chr40 : 4.9442306187986755 (not joined)
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.079827535816964
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+3877 : chr35 : 7.812539448162381 vs. chr6 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+3899 : chr10 : 8.3891469783143 vs. chr28 : 8.100657636890398 (not joined)
+3908 : chr9 : 7.237508653036841 vs. chr38 : 6.031382688614232 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 3.3222026871959405
+3926 : chr13 : 7.812539448162381 vs. chr9 : 6.664261435646007 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+3938 : chr35 : 7.524814919292353 vs. chr6 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+3948 : chr10 : 8.100657636890398 vs. chr28 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 3.8255410666115806
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 3.8255410666115806
+7.812539448162381 vs. 0.0
+3976 : chr7 : 7.237508653036841 vs. chr3 : 5.214525989256439 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+4050 : chr9 : 7.524814919292353 vs. chr38 : 5.111902293203713 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+4144 : chr36 : 7.812539448162381 vs. chr7 : 6.85596827651233 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+4188 : chr36 : 8.100657636890398 vs. chr7 : 5.111902293203713 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+4213 : chr7 : 7.524814919292353 vs. chr36 : 6.950647613629127 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+4231 : chr2 : 7.812539448162381 vs. chr11 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+4255 : chr12 : 7.524814919292353 vs. chr26 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 0.0
+4265 : chr9 : 8.677986831062242 vs. chr37 : 8.3891469783143 (not joined)
+4276 : chr37 : 7.812539448162381 vs. chr9 : 7.524814919292353 (not joined)
+4292 : chr7 : 8.3891469783143 vs. chr3 : 5.758165940256667 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 3.8255410666115806
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+4393 : chr9 : 8.677986831062242 vs. chr37 : 8.3891469783143 (not joined)
+7.237508653036841 vs. 0.0
+4418 : chr35 : 8.100657636890398 vs. chr6 : 5.485860097875672 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+4497 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+4562 : chr7 : 8.3891469783143 vs. chr3 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+4683 : chr7 : 7.524814919292353 vs. chr3 : 5.485860097875672 (not joined)
+7.524814919292353 vs. 0.0
+4701 : chr7 : 8.3891469783143 vs. chr36 : 8.3891469783143 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+4802 : chr10 : 8.100657636890398 vs. chr28 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+4833 : chr7 : 8.100657636890398 vs. chr36 : 7.237508653036841 (not joined)
+4834 : chr36 : 7.237508653036841 vs. chr7 : 6.305454970542936 (not joined)
+4843 : chr38 : 7.237508653036841 vs. chr9 : 6.950647613629127 (not joined)
+4854 : chr9 : 7.524814919292353 vs. chr37 : 7.237508653036841 (not joined)
+4855 : chr9 : 7.524814919292353 vs. chr37 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 4.079827535816964
+7.237508653036841 vs. 0.0
+4879 : chr13 : 7.524814919292353 vs. chr9 : 6.378382784323462 (not joined)
+4886 : chr35 : 7.812539448162381 vs. chr6 : 6.664261435646007 (not joined)
+4887 : chr6 : 8.100657636890398 vs. chr35 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+4951 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+4957 : chr11 : 8.3891469783143 vs. chr19 : 6.580332247358362 (not joined)
+7.237508653036841 vs. 0.0
+4967 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+4976 : chr35 : 7.524814919292353 vs. chr6 : 6.378382784323462 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+5054 : chr7 : 7.237508653036841 vs. chr36 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+5150 : chr11 : 8.3891469783143 vs. chr2 : 7.132320645199556 (not joined)
+7.237508653036841 vs. 0.0
+5157 : chr37 : 7.812539448162381 vs. chr9 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+5247 : chr7 : 7.237508653036841 vs. chr36 : 5.485860097875672 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+5292 : chr11 : 7.132320645199556 vs. chr19 : 4.853962308381582 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+5321 : chr37 : 8.677986831062242 vs. chr9 : 6.305454970542936 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+5341 : chr13 : 7.237508653036841 vs. chr9 : 6.093047777746866 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+5415 : chr10 : 7.237508653036841 vs. chr28 : 7.237508653036841 (not joined)
+5423 : chr7 : 7.524814919292353 vs. chr36 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+5430 : chr12 : 7.812539448162381 vs. chr26 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+5459 : chr12 : 7.237508653036841 vs. chr26 : 6.950647613629127 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+5499 : chr35 : 7.237508653036841 vs. chr6 : 6.664261435646007 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+5510 : chr6 : 7.812539448162381 vs. chr35 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+5538 : chr7 : 7.524814919292353 vs. chr3 : 5.485860097875672 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+5646 : chr2 : 7.524814919292353 vs. chr11 : 4.851830913609798 (not joined)
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 3.8255410666115806
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+5698 : chr12 : 8.3891469783143 vs. chr26 : 8.3891469783143 (not joined)
+7.237508653036841 vs. 0.0
+5705 : chr12 : 7.812539448162381 vs. chr26 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 4.079827535816964
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+5796 : chr6 : 8.3891469783143 vs. chr35 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 3.3222026871959405
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+5884 : chr10 : 7.524814919292353 vs. chr28 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+5927 : chr40 : 7.812539448162381 vs. chr15 : 6.031382688614232 (not joined)
+7.812539448162381 vs. 4.6034886995201765
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+5952 : chr2 : 8.100657636890398 vs. chr11 : 6.305454970542936 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 3.0734132287964897
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+6108 : chr13 : 7.237508653036841 vs. chr9 : 6.093047777746866 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.3891469783143 vs. 0.0
+6151 : chr37 : 8.3891469783143 vs. chr9 : 6.031382688614232 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+6170 : chr15 : 7.524814919292353 vs. chr40 : 5.111902293203713 (not joined)
+6175 : chr3 : 7.524814919292353 vs. chr7 : 7.524814919292353 (not joined)
+6187 : chr26 : 7.812539448162381 vs. chr12 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+6229 : chr10 : 7.524814919292353 vs. chr28 : 4.593070097082085 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.079827535816964
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+6350 : chr37 : 8.677986831062242 vs. chr9 : 6.305454970542936 (not joined)
+6354 : chr15 : 7.524814919292353 vs. chr40 : 4.9442306187986755 (not joined)
+7.812539448162381 vs. 0.0
+6361 : chr37 : 8.967158220164773 vs. chr9 : 8.677986831062242 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+6399 : chr12 : 7.132320645199556 vs. chr26 : 4.853962308381582 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+6426 : chr36 : 7.812539448162381 vs. chr7 : 7.524814919292353 (not joined)
+6428 : chr26 : 7.237508653036841 vs. chr12 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+6439 : chr10 : 7.524814919292353 vs. chr28 : 6.950647613629127 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+6488 : chr28 : 7.524814919292353 vs. chr10 : 5.111902293203713 (not joined)
+7.812539448162381 vs. 0.0
+6497 : chr38 : 7.524814919292353 vs. chr9 : 6.950647613629127 (not joined)
+6502 : chr15 : 7.237508653036841 vs. chr40 : 4.593070097082085 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+6529 : chr2 : 8.3891469783143 vs. chr11 : 6.85596827651233 (not joined)
+7.237508653036841 vs. 0.0
+6536 : chr10 : 7.812539448162381 vs. chr28 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+6580 : chr3 : 7.812539448162381 vs. chr7 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+6615 : chr35 : 7.812539448162381 vs. chr6 : 6.664261435646007 (not joined)
+6616 : chr6 : 7.812539448162381 vs. chr35 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+6743 : chr36 : 8.3891469783143 vs. chr7 : 8.100657636890398 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+6776 : chr12 : 8.100657636890398 vs. chr26 : 8.100657636890398 (not joined)
+6778 : chr8 : 8.100657636890398 vs. chr39 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+6787 : chr2 : 7.524814919292353 vs. chr11 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+6860 : chr13 : 7.812539448162381 vs. chr9 : 6.378382784323462 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+6879 : chr28 : 7.524814919292353 vs. chr10 : 6.580332247358362 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 2.8267426932494715
+7.237508653036841 vs. 0.0
+6955 : chr37 : 8.677986831062242 vs. chr9 : 8.3891469783143 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 3.0734132287964897
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 4.10710350355705
+7.237508653036841 vs. 0.0
+6991 : chr11 : 7.237508653036841 vs. chr19 : 4.593070097082085 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7014 : chr15 : 7.524814919292353 vs. chr40 : 4.675048007013055 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7043 : chr12 : 7.132320645199556 vs. chr26 : 7.132320645199556 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.409350364429441 vs. 0.0
+7.812539448162381 vs. 0.0
+7172 : chr7 : 7.524814919292353 vs. chr36 : 5.214525989256439 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7254 : chr35 : 7.524814919292353 vs. chr6 : 6.378382784323462 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7289 : chr6 : 7.524814919292353 vs. chr35 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7327 : chr10 : 8.100657636890398 vs. chr28 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+7371 : chr36 : 8.100657636890398 vs. chr7 : 5.111902293203713 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.10710350355705
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7506 : chr8 : 7.524814919292353 vs. chr39 : 7.237508653036841 (not joined)
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7543 : chr37 : 8.100657636890398 vs. chr9 : 6.305454970542936 (not joined)
+7545 : chr9 : 7.237508653036841 vs. chr38 : 4.851830913609798 (not joined)
+7552 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7579 : chr10 : 7.524814919292353 vs. chr28 : 6.580332247358362 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7646 : chr10 : 7.812539448162381 vs. chr28 : 6.305454970542936 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7655 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7691 : chr7 : 7.812539448162381 vs. chr36 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+7708 : chr11 : 7.237508653036841 vs. chr19 : 5.485860097875672 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7842 : chr37 : 8.677986831062242 vs. chr9 : 8.100657636890398 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7892 : chr11 : 8.3891469783143 vs. chr19 : 5.485860097875672 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7956 : chr2 : 8.3891469783143 vs. chr11 : 6.163837697179339 (not joined)
+7957 : chr11 : 8.677986831062242 vs. chr2 : 7.409350364429441 (not joined)
+7960 : chr28 : 7.237508653036841 vs. chr10 : 4.593070097082085 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7982 : chr6 : 7.237508653036841 vs. chr35 : 6.664261435646007 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.132320645199556 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+8.3891469783143 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8089 : chr35 : 7.237508653036841 vs. chr6 : 4.675048007013055 (not joined)
+8095 : chr7 : 7.524814919292353 vs. chr3 : 6.950647613629127 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8131 : chr10 : 7.524814919292353 vs. chr28 : 7.524814919292353 (not joined)
+7.812539448162381 vs. 0.0
+8166 : chr2 : 8.100657636890398 vs. chr11 : 8.100657636890398 (not joined)
+7.237508653036841 vs. 0.0
+8173 : chr2 : 8.677986831062242 vs. chr11 : 7.132320645199556 (not joined)
+8174 : chr11 : 8.3891469783143 vs. chr2 : 7.132320645199556 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 4.10710350355705
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+8229 : chr11 : 8.100657636890398 vs. chr19 : 5.485860097875672 (not joined)
+7.237508653036841 vs. 2.582361511330149
+7.812539448162381 vs. 0.0
+8264 : chr37 : 7.812539448162381 vs. chr9 : 7.524814919292353 (not joined)
+8267 : chr36 : 8.100657636890398 vs. chr7 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+8275 : chr2 : 7.132320645199556 vs. chr11 : 5.635673357125613 (not joined)
+8285 : chr6 : 7.812539448162381 vs. chr35 : 6.031382688614232 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 3.5729579403885614
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8473 : chr13 : 7.524814919292353 vs. chr9 : 6.093047777746866 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 3.0734132287964897
+8503 : chr35 : 7.237508653036841 vs. chr6 : 5.214525989256439 (not joined)
+7.812539448162381 vs. 4.354506309163542
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+8554 : chr13 : 7.524814919292353 vs. chr9 : 6.093047777746866 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.132320645199556 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+8613 : chr9 : 7.812539448162381 vs. chr38 : 5.3732067587902606 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 3.3222026871959405
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8777 : chr35 : 7.524814919292353 vs. chr6 : 6.378382784323462 (not joined)
+7.524814919292353 vs. 0.0
+8779 : chr10 : 7.812539448162381 vs. chr28 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+8808 : chr6 : 8.3891469783143 vs. chr35 : 7.812539448162381 (not joined)
+8809 : chr6 : 8.3891469783143 vs. chr35 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8834 : chr26 : 7.237508653036841 vs. chr12 : 6.85596827651233 (not joined)
+8842 : chr10 : 8.3891469783143 vs. chr28 : 6.580332247358362 (not joined)
+8848 : chr40 : 7.237508653036841 vs. chr15 : 5.485860097875672 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+8871 : chr36 : 7.237508653036841 vs. chr7 : 6.950647613629127 (not joined)
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+8917 : chr10 : 8.3891469783143 vs. chr28 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+8967 : chr12 : 7.237508653036841 vs. chr26 : 5.758165940256667 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+8980 : chr13 : 7.524814919292353 vs. chr9 : 6.093047777746866 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+9032 : chr7 : 8.100657636890398 vs. chr3 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+8.100657636890398 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+9098 : chr36 : 7.237508653036841 vs. chr7 : 6.305454970542936 (not joined)
+7.524814919292353 vs. 0.0
+9143 : chr10 : 8.100657636890398 vs. chr28 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+9173 : chr6 : 8.3891469783143 vs. chr35 : 8.100657636890398 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+9238 : chr15 : 7.524814919292353 vs. chr40 : 6.031382688614232 (not joined)
+7.237508653036841 vs. 0.0
+9278 : chr7 : 8.100657636890398 vs. chr36 : 7.237508653036841 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9341 : chr26 : 7.237508653036841 vs. chr12 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+9345 : chr10 : 7.132320645199556 vs. chr28 : 6.85596827651233 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 3.3222026871959405
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9428 : chr10 : 7.812539448162381 vs. chr28 : 7.812539448162381 (not joined)
+9435 : chr3 : 8.3891469783143 vs. chr7 : 8.3891469783143 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+9471 : chr37 : 8.3891469783143 vs. chr9 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+9477 : chr7 : 8.677986831062242 vs. chr3 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9530 : chr6 : 7.524814919292353 vs. chr35 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9555 : chr9 : 7.237508653036841 vs. chr38 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 2.8267426932494715
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9603 : chr41 : 8.100657636890398 vs. chr11 : 5.3732067587902606 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+9617 : chr6 : 7.524814919292353 vs. chr35 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+9659 : chr6 : 8.100657636890398 vs. chr35 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 0.0
+9683 : chr19 : 7.812539448162381 vs. chr11 : 6.580332247358362 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+9709 : chr12 : 7.812539448162381 vs. chr26 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+9750 : chr7 : 8.100657636890398 vs. chr36 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+9800 : chr7 : 8.100657636890398 vs. chr36 : 5.758165940256667 (not joined)
+8.100657636890398 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+9819 : chr6 : 7.812539448162381 vs. chr35 : 7.524814919292353 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+8.100657636890398 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+9862 : chr10 : 8.100657636890398 vs. chr28 : 6.031382688614232 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+9909 : chr37 : 7.812539448162381 vs. chr9 : 5.3732067587902606 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+9933 : chr36 : 8.100657636890398 vs. chr7 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+9944 : chr10 : 8.3891469783143 vs. chr28 : 8.100657636890398 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+9989 : chr35 : 7.524814919292353 vs. chr6 : 4.9442306187986755 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+10007 : chr37 : 8.3891469783143 vs. chr9 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+10031 : chr40 : 7.237508653036841 vs. chr15 : 6.378382784323462 (not joined)
+10038 : chr13 : 7.524814919292353 vs. chr9 : 6.378382784323462 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 3.3222026871959405
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+10194 : chr37 : 8.100657636890398 vs. chr9 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+10228 : chr12 : 7.132320645199556 vs. chr26 : 7.132320645199556 (not joined)
+10234 : chr6 : 8.677986831062242 vs. chr35 : 8.100657636890398 (not joined)
+10237 : chr9 : 8.3891469783143 vs. chr37 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 3.0734132287964897
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+10286 : chr10 : 7.812539448162381 vs. chr28 : 7.812539448162381 (not joined)
+10307 : chr35 : 8.100657636890398 vs. chr6 : 6.950647613629127 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+10419 : chr6 : 8.100657636890398 vs. chr35 : 7.812539448162381 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+10454 : chr10 : 8.100657636890398 vs. chr28 : 6.031382688614232 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+10495 : chr2 : 8.3891469783143 vs. chr11 : 6.85596827651233 (not joined)
+10506 : chr3 : 7.237508653036841 vs. chr7 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 3.5729579403885614
+7.524814919292353 vs. 0.0
+10536 : chr7 : 7.524814919292353 vs. chr36 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+10585 : chr9 : 7.812539448162381 vs. chr38 : 7.812539448162381 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+10650 : chr37 : 8.3891469783143 vs. chr9 : 7.132320645199556 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+10658 : chr6 : 8.3891469783143 vs. chr35 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+10679 : chr15 : 7.524814919292353 vs. chr40 : 4.851830913609798 (not joined)
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+10692 : chr28 : 7.524814919292353 vs. chr10 : 5.111902293203713 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+10704 : chr13 : 7.237508653036841 vs. chr9 : 6.093047777746866 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+10724 : chr7 : 7.237508653036841 vs. chr3 : 4.407060170832148 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+10790 : chr37 : 7.524814919292353 vs. chr9 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+10799 : chr28 : 7.237508653036841 vs. chr10 : 5.111902293203713 (not joined)
+7.524814919292353 vs. 0.0
+10805 : chr10 : 7.524814919292353 vs. chr28 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+10821 : chr12 : 7.132320645199556 vs. chr26 : 7.132320645199556 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+10934 : chr35 : 7.524814919292353 vs. chr6 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+10950 : chr9 : 8.100657636890398 vs. chr38 : 8.100657636890398 (not joined)
+10954 : chr10 : 7.237508653036841 vs. chr28 : 7.237508653036841 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+10974 : chr9 : 7.524814919292353 vs. chr37 : 7.237508653036841 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+10994 : chr10 : 8.3891469783143 vs. chr28 : 6.85596827651233 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 2.8267426932494715
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+11052 : chr7 : 8.3891469783143 vs. chr36 : 7.812539448162381 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11072 : chr39 : 8.100657636890398 vs. chr8 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+11092 : chr12 : 7.812539448162381 vs. chr26 : 5.3732067587902606 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+8.100657636890398 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 4.335704634601774
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+11254 : chr2 : 7.409350364429441 vs. chr11 : 6.163837697179339 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 3.5729579403885614
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 4.10710350355705
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+11300 : chr35 : 7.812539448162381 vs. chr6 : 6.950647613629127 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+11349 : chr7 : 7.237508653036841 vs. chr36 : 6.378382784323462 (not joined)
+7.237508653036841 vs. 0.0
+11355 : chr10 : 7.812539448162381 vs. chr28 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+11380 : chr9 : 7.237508653036841 vs. chr38 : 6.664261435646007 (not joined)
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+11410 : chr2 : 8.3891469783143 vs. chr11 : 6.580332247358362 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+11431 : chr11 : 8.3891469783143 vs. chr2 : 6.163837697179339 (not joined)
+7.237508653036841 vs. 4.079827535816964
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+11471 : chr13 : 7.237508653036841 vs. chr9 : 6.093047777746866 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+11484 : chr37 : 7.812539448162381 vs. chr9 : 7.524814919292353 (not joined)
+7.524814919292353 vs. 0.0
+11491 : chr10 : 8.677986831062242 vs. chr28 : 8.100657636890398 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+11517 : chr9 : 7.237508653036841 vs. chr38 : 6.031382688614232 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11530 : chr7 : 7.524814919292353 vs. chr36 : 6.950647613629127 (not joined)
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11557 : chr7 : 8.100657636890398 vs. chr3 : 6.031382688614232 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11601 : chr7 : 7.524814919292353 vs. chr36 : 5.485860097875672 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11618 : chr12 : 8.3891469783143 vs. chr26 : 8.3891469783143 (not joined)
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+11639 : chr13 : 7.812539448162381 vs. chr9 : 6.664261435646007 (not joined)
+11642 : chr12 : 7.524814919292353 vs. chr26 : 5.214525989256439 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+8.100657636890398 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+11664 : chr11 : 7.812539448162381 vs. chr19 : 6.305454970542936 (not joined)
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+11692 : chr10 : 8.3891469783143 vs. chr28 : 8.3891469783143 (not joined)
+11693 : chr28 : 7.524814919292353 vs. chr10 : 6.85596827651233 (not joined)
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+11732 : chr37 : 8.100657636890398 vs. chr9 : 5.635673357125613 (not joined)
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+11753 : chr7 : 7.237508653036841 vs. chr36 : 7.237508653036841 (not joined)
+11758 : chr12 : 7.409350364429441 vs. chr26 : 7.409350364429441 (not joined)
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.237508653036841 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.237508653036841 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 0.0
+7.524814919292353 vs. 0.0
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+11962 : chr15 : 7.524814919292353 vs. chr40 : 6.580332247358362 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+12008 : chr6 : 7.524814919292353 vs. chr35 : 6.305454970542936 (not joined)
+7.812539448162381 vs. 0.0
+7.812539448162381 vs. 0.0
+7.524814919292353 vs. 4.335704634601774
+Number of joined markers in chr 1 is 77
+Number of joined markers in chr 2 is 45
+Number of joined markers in chr 3 is 66
+Number of joined markers in chr 4 is 76
+Number of joined markers in chr 5 is 68
+Number of joined markers in chr 6 is 93
+Number of joined markers in chr 7 is 93
+Number of joined markers in chr 8 is 54
+Number of joined markers in chr 9 is 30
+Number of joined markers in chr 10 is 44
+Number of joined markers in chr 11 is 58
+Number of joined markers in chr 12 is 48
+Number of joined markers in chr 13 is 47
+Number of joined markers in chr 14 is 52
+Number of joined markers in chr 15 is 24
+Number of joined markers in chr 16 is 51
+Number of joined markers in chr 17 is 47
+Number of joined markers in chr 18 is 39
+Number of joined markers in chr 19 is 40
+Number of joined markers in chr 20 is 55
+Number of joined markers in chr 21 is 59
+Number of joined markers in chr 22 is 53
+Number of joined markers in chr 23 is 55
+Number of joined markers in chr 24 is 37
+Number of joined markers in chr 25 is 41
+Number of joined markers in chr 26 is 47
+Number of joined markers in chr 27 is 39
+Number of joined markers in chr 28 is 17
+Number of joined markers in chr 29 is 30
+Number of joined markers in chr 30 is 34
+Number of joined markers in chr 31 is 52
+Number of joined markers in chr 32 is 47
+Number of joined markers in chr 33 is 34
+Number of joined markers in chr 34 is 54
+Number of joined markers in chr 35 is 11
+Number of joined markers in chr 36 is 34
+Number of joined markers in chr 37 is 15
+Number of joined markers in chr 38 is 0
+Number of joined markers in chr 39 is 0
+Number of joined markers in chr 40 is 0
+Number of joined markers in chr 41 is 0
+joined 1766 single markers, non-conflicting LOD score > 8.677986831062242
+Number of LGs = 41, markers in LGs = 9162, singles = 2866
