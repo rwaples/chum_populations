@@ -22,6 +22,7 @@ names(collapsed_map_positions)
 split_character<- str_split_fixed(collapsed_map_positions$Marker, "_", 2)[,2]
 collapsed_map_positions$duplicated  = (split_character == "A") | (split_character == "B")
 collapsed_map_positions <- collapsed_map_positions[collapsed_map_positions$consensus_LG <= 37,]
+collapsed_map_positions$catID <- str_split_fixed(collapsed_map_positions$Marker, "_", 2)[,1]
 lenLG <- ddply(collapsed_map_positions, 'consensus_LG', summarize, lenLG = max(consensus_cM))
 
 paralogs = collapsed_map_positions[collapsed_map_positions$duplicated == TRUE,]
@@ -40,6 +41,8 @@ ggplot(data = collapsed_map_positions) +
   theme_minimal() +
   theme(plot.background = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.border = element_blank(), 
         text = element_text(size=24))
+
+write.table(unique(collapsed_map_positions$catID), file = "/home/ipseg/Desktop/waples/chum_populations/data/batch_2/on_map.txt", quote = FALSE, row.names = FALSE)
 
 
 sum(collapsed_map_positions$duplicated)

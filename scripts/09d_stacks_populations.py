@@ -26,6 +26,13 @@ populations -b 1 -P /media/Shared/Data/chum/populations/pstacks -s -t 6 -r .5 -p
 """
 
 
+"""
+populations -b 2 -P /media/Shared/Data/chum/populations/pstacks -s -t 6 -r .5 -p 6 -a .05 --fstats --plink --genepop --vcf -M /media/Shared/Data/chum/populations/stacks/pop_map/pop_map.txt
+
+populations -b 2 -P /media/Shared/Data/chum/populations/pstacks -s -t 6 -r .5 -p 6 -a .05 --fstats --plink --genepop --vcf -M /media/Shared/Data/chum/populations/stacks/pop_map/pop_map.txt -W /home/ipseg/Desktop/waples/chum_populations/data/batch_2/on_map.txt
+
+"""
+
 
 
 -W /media/Shared/Data/chum/populations/stacks_output/populations/t

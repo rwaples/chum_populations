@@ -3,7 +3,8 @@ import os
 import collections
 import sys
 
-snplist_files = sys.argv[1:]
+output_file = sys.argv[1]
+snplist_files = sys.argv[2:]
 
 # build a list of all the snps from each family.  
 # snps will be present x times if they appear in x families
@@ -14,7 +15,7 @@ for snplist_file in snplist_files:
         concatenated_snps += snps
         
 # write any snps that appear at least once
-with open("./data/FISH_560/passing_MAF.snps", 'w') as OUTFILE:
+with open(output_file, 'w') as OUTFILE:
     for snp in set(concatenated_snps):
         OUTFILE.write("{}\n".format(snp))
         
