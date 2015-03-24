@@ -161,8 +161,8 @@ data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralog
 2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lod3-5_singles.chromosomes.log"
 
 # this takes a long time!
-all_fams = get_recombination_stats(all_my_data)
-write_rec_stats(all_fams, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/all")
+#all_fams = get_recombination_stats(all_my_data)
+#write_rec_stats(all_fams, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/all")
 # end long time!
 
 
@@ -198,7 +198,7 @@ find_duplicate_names(paralogs_file = "/home/ipseg/Desktop/waples/chum_population
     loci = loci_all, LG_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/all_loci.lod5_singles.chromosomes", 
     output_file = '/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/LG_congruence.tsv')
 
-import collections
+
 def write_name_table(paralogs_file, loci, LG_file, output_file):
     with open(blacklist_file) as INFILE: 
         paralogs = [yy.strip() for yy in INFILE.readlines()]
@@ -227,61 +227,81 @@ find_duplicate_names(paralogs_file = "/home/ipseg/Desktop/waples/chum_population
     output_file = '/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/name_table.tsv')
 
 
-
-
-
-
 def collapse_names(LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2):
-    # set results for 08
-    segmental = False
+    # take them in order given here
+    possible_results = ['A','B','C','D','E','F']
+    #possible_results.reverse()
     result = []
-    if LG_08_x1 != 0:
-        LG_A = LG_08_x1
-        result.append("A")
+    
+    # check for segmental
+    # if segmental do not try to resolve
+    for xx in ((LG_08_x1, LG_08_x2), (LG_01_x1, LG_01_x2), (LG_09_x1, LG_09_x2)):
+        x1, x2 = xx
+        if x1 == x2 and x1 != 0: # segmental
+            result = possible_results
+
     else:
-        result.append("NA")
-        LG_A = None
-    if LG_08_x2 != 0:
-        if result == ["NA"]:
-            result.append("A")
-            LG_A = LG_08_x2
-            LG_B = None
-        else:
-            result.append("B")
-            LG_B = LG_08_x2
-            if LG_08_x1 == LG_08_x2:
-                segmental == True
-                result.extend(('NA', 'NA', 'NA', 'NA'))
-                return(result)
-    else:
-        result.append("NA")
-        LG_B = None
-        
-    # determine matching in other families
-    for xx in [LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2]:
-        if xx == LG_A:
-            result.append('A')
-        elif xx == LG_B:
-            result.append('B')
-        elif xx != 0:
-            if LG_A == None:
-                LG_A = xx
-                result.append('A')
-            elif LG_B == None:
-                LG_B = xx
-                result.append('B')            
+        mapping = dict()
+        for assign in (LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2):
+            if assign in mapping:
+                result.append(mapping[assign])
             else:
-                result.append('C')
-        else:
-            result.append('NA')
-    return(result)
+                if assign == 0:
+                     result.append(possible_results.pop(0))
+                else:
+                    mapping[assign] = possible_results.pop(0)
+                    result.append(mapping[assign])
+    return(result)  
+        #diffs = list(set(LG_08_x1, LG_08_x2, LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2))
+        
+
+    #if LG_08_x1 != 0:
+    #    LG_A = LG_08_x1
+    #    result.append("A")
+    #else:
+    #    result.append("NA")
+    #    LG_A = None
+    #if LG_08_x2 != 0:
+    #    if result == ["NA"]:
+    #        result.append("A")
+    #        LG_A = LG_08_x2
+    #        LG_B = None
+    #    else:
+    #        result.append("B")
+    #        LG_B = LG_08_x2
+    #        if LG_08_x1 == LG_08_x2:
+    #            segmental == True
+    #            result.extend(('NA', 'NA', 'NA', 'NA'))
+    #            return(result)
+    #else:
+    #    result.append("NA")
+    #    LG_B = None
+    #    
+    ## determine matching in other families
+    #for xx in [LG_01_x1, LG_01_x2, LG_09_x1, LG_09_x2]:
+    #    if xx == LG_A:
+    #        result.append('A')
+    #    elif xx == LG_B:
+    #        result.append('B')
+    #    elif xx != 0:
+    #        if LG_A == None:
+    #            LG_A = xx
+    #            result.append('A')
+    #        elif LG_B == None:
+    #            LG_B = xx
+    #            result.append('B')            
+    #        else:
+    #            result.append('C')
+    #    else:
+    #        result.append('NA')
+    #return(result)
 
 #examples
-#print collapse_names(1,2,2,1,2,1)
-#print collapse_names(0,1,2,0,2,0)
-#print collapse_names(1,0,2,0,2,0)
-#print collapse_names(0,0,1,0,2,0)
-#print collapse_names(0,12,0,0,2,2)
+print collapse_names(1,2,2,1,2,1)
+print collapse_names(0,1,2,0,2,0)
+print collapse_names(1,0,2,0,2,0)
+print collapse_names(0,0,1,0,2,0)
+print collapse_names(0,12,0,0,2,2)
 
 def parse_LG_congruence_line(line):
     catalog_name, family, copy, LG = line.strip().split("\t")
@@ -312,7 +332,6 @@ def write_rename_table(LG_congruence_file, out_file):
                 family_specific_names = [xx.format(cn) for xx in fam_names]
                 for cnt, fsn in enumerate(family_specific_names):
                     OUTFILE.write("{}\t{}\t{}\n".format(fsn, cn+"_{}".format(collaped_names[cnt]), LGs[cnt]))
-    
         
 write_rename_table(LG_congruence_file =  "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/LG_congruence.tsv", 
     out_file = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/rename_table.tsv")   
@@ -336,7 +355,7 @@ write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loc
 
 # reform linkage groups
 print "java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
-lodLimit = 10 sizeLimit = 3 \
+lodLimit = 10 sizeLimit = 20 \
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes \
 2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes.log"
 
@@ -387,6 +406,10 @@ for xx in (18,):
         > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map \
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
         )
+
+
+
+
 
 
 

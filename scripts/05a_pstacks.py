@@ -3,8 +3,9 @@ import os
 import os.path
 import glob
 
-
 bam_dir = "/media/Shared/Data/chum/populations/aln/curated/bowtie2/start_filter"
+
+bam_dir = "/media/Shared/Data/chum/populations/aln/curated/bwa"
 
 pstacks_cmd = "pstacks -f {} -o /media/Shared/Data/chum/populations/pstacks -i {} --model_type bounded --bound_high 0.05 --alpha 0.05 -m 2 -p 6 -t bam"
 

@@ -73,8 +73,23 @@ class Map:
 	   self.cM_of_marker = dict()
 	   self.markers_of_LG = dict()
 	   self.markers_of_cM = dict()
+	   if map_type.lower() == 'generic':
+	       with open(file_path, 'r') as INFILE:
+			header_line = next(INFILE)
+			for line in INFILE:
+				line_split = line.strip().split()
+				current_marker_LG = line_split[0]
+				current_marker = line_split[1]
+				current_marker_cM = float(line_split[2])
+				self.LG_of_marker[current_marker] = current_marker_LG 
+				self.cM_of_marker[current_marker] = current_marker_cM
+				self.markers_of_LG.setdefault(current_marker_LG, [])
+				self.markers_of_LG[current_marker_LG].append(current_marker)
+				self.markers_of_cM.setdefault(current_marker_cM, [])
+				self.markers_of_cM[current_marker_cM].append(current_marker)
+
 		
-	   if map_type.lower() == 'rqtl':
+	   elif map_type.lower() == 'rqtl':
 	           with open(file_path, 'r') as INFILE:
 
 			# do rqtl parse, only reads in 3 lines
@@ -145,7 +160,7 @@ class Map:
 	                       self.markers_of_cM[current_marker_cM].append(current_marker)
 
 	   else:
-	       print ("Unknown map type, enter one of:[rqtl, mst, lepmap]\n")
+	       print ("Unknown map type, enter one of:[rqtl, mst, lepmap, generic]\n")
 	
 	def rename_markers(self, name_file, name_column):
 		"rename the markers in this instance, using the names in the name_file in the column specified"
@@ -253,24 +268,6 @@ class Map:
 				if self.cM_of_marker.has_key(marker):
 					self.cM_of_marker.pop(marker)
 				removed_markers.append(marker)
-					
-			
-				# #
-				# #print ("Starting to drop\t", marker)
-				# temp_cM = self.cM_of_marker[marker]
-				# temp_LG = self.LG_of_marker[marker]
-				# self.markers_of_LG[temp_LG].remove(marker)
-				# self.markers_of_cM[temp_cM].remove(marker)
-				# self.cM_of_marker.pop(marker)
-				# self.LG_of_marker.pop(marker)
-				# removed_markers.append(marker)
-				# print ("Dropped marker {0}\tfrom\t{1}".format(marker, temp_LG))
-				# if len(self.markers_of_LG[temp_LG]) == 0:
-					# if len(self.markers_of_cM[temp_cM]) == 0:
-						# #remove LG and cM  ref
-						# self.markers_of_LG.pop(temp_LG)
-						# self.markers_of_cM.pop(temp_cM)
-						# print ("removed LG:\t{0} from map:\t{1}".format (temp_LG, self.name) )
 		return removed_markers
 		
 	def drop_LG(self, LG):
@@ -442,7 +439,7 @@ def write_union (file, map_1 ,*args):
 	
 
 
-def align_maps (map_1, map_2):
+def align_maps (map_1, map_2, tolerance = 1):
 	"""Rename the LGs in map_2 to match the names in map_1.
 	Two Linkage groups match and trigger renaming if they share two or more markers, 
 	if a pair of Lgs share only one marker, and error will be returned
@@ -451,6 +448,7 @@ def align_maps (map_1, map_2):
 	returns a tuple of dictionaries that descibe the matches made.
 	"""
 	
+	conflicts = []
 	map_2_LGs_matching_map_1_LG = dict() # values will lists 
 	map_1_LGs_matching_map_2_LG = dict() # values will lists 
 	
@@ -469,7 +467,7 @@ def align_maps (map_1, map_2):
 			# possible is max number of possible matches, determined as the number of markers on the shorter LG. 
 			possible = min(len(map_1.markers_of_LG[LG_in_map_1]), len(map_2.markers_of_LG[LG_in_map_2]))
 			# Find all matches
-			if len(overlap) > 1: 		# match
+			if len(overlap) > tolerance: 		# match
 				multiple_marker_matches = multiple_marker_matches + 1
 				if LG_in_map_1 in unmatched_map_1_LGs:
 					unmatched_map_1_LGs.remove(LG_in_map_1)
@@ -480,9 +478,13 @@ def align_maps (map_1, map_2):
 				map_1_LGs_matching_map_2_LG.setdefault(LG_in_map_2, [])
 				map_1_LGs_matching_map_2_LG[LG_in_map_2].append(LG_in_map_1)
 				print (LG_in_map_1 + "\t" + LG_in_map_2 + "\tmatched at " + str(len(overlap)) +" / "+ str(possible) + "\tmarkers\t" + str(float(len(overlap))/(possible)))
-			elif len(overlap) == 1: 	# single_marker_match
+			elif len(overlap) <= tolerance and len(overlap) > 0: 	# single_marker_match
+				print(tolerance, overlap)
+				conflicts.extend(overlap)
 				single_marker_matches = single_marker_matches + 1
-				for x in overlap: print ("ERROR\n"+ LG_in_map_1 + "\t" + LG_in_map_2 + " share only marker " + x)
+				for x in overlap: 
+				    print ("ERROR\n"+ LG_in_map_1 + "\t" + LG_in_map_2 + " share marker " + x)
+				
 	
 	print ('unmatched_map_1_LGs')
 	print (unmatched_map_1_LGs)
@@ -530,7 +532,7 @@ def align_maps (map_1, map_2):
 				map_2.LG_of_marker[each_marker] = k
 
 	# currently returns the outdated matchings
-	return [map_2_LGs_matching_map_1_LG, map_1_LGs_matching_map_2_LG]
+	return (map_2_LGs_matching_map_1_LG, map_1_LGs_matching_map_2_LG, conflicts)
 
 
 

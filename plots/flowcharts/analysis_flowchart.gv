@@ -1,0 +1,118 @@
+digraph mapping{
+	subgraph cluster_1 {
+		label="paper 1";
+		family_08[];
+		ml_psv1[label="identify paralogs"];
+		map1[label="linkage map" shape = rect];
+		family_08 -> ml_psv1;
+		ml_psv1 -> map1;
+	}
+	// node[color=cornflowerblue];
+	
+subgraph cluster_2 {
+	label="paper 2"
+	map2[label="consensus\nlinkage map" shape = rect];
+	resolve_paralogs[label="resolve paralogs\nacross families"];
+	ml_psv2[label="identify paralogs"];	
+	family_01 -> ml_psv2;
+	family_09 -> ml_psv2;
+	family_08 -> ml_psv2;
+	ml_psv2 -> resolve_paralogs;
+	resolve_paralogs-> map2;
+	
+	centromeres[label="place\ncentromeres"];
+	ref_genomes[label="O. mykiss \n S. Salar \n genomes"];
+	transcriptome[label="chum\ntranscriptome"];
+	map3[label="annotated linkage map" shape = rect];
+	
+	map2 -> map3;
+	centromeres -> map3;
+	transcriptome -> map3;
+	ref_genomes -> map3;
+	}
+}
+
+digraph population_analysis{
+	node[color=cornflowerblue];
+
+	ml_psv[label="identify\nparalogs" color=red shape=diamond];
+	map_catalog[label="stacks catalog"];
+	linkage_map[label="linkage map" color=black shape=box];
+	
+	ref[label="FASTA reference" color=black shape=box];
+
+	family_08[color=green];
+	family_01[color=green];
+	family_09[color=green];
+
+	family_08 -> map_catalog;
+	family_01 -> map_catalog;
+	family_09 -> map_catalog;
+	map_catalog -> ml_psv;
+	ml_psv -> curate;
+	ml_psv -> linkage_map;
+	map_catalog -> linkage_map; 
+	map_catalog -> curate; 
+	curate-> ref;
+	
+	chum_pops_1[label="population\nRAD data 1" color=green];
+	chum_pops_2[label="population\nRAD data 2" color=green];
+	sam[label="SAM files"];
+	align[color=red shape=diamond]
+	chum_pops_1 -> align;
+	chum_pops_2 -> align;
+	ref -> align;
+	align -> sam;
+
+	pstacks[color=red shape=diamond];
+	cstacks[color=red shape=diamond];
+	sstacks[color=red shape=diamond];
+	result[label="population\ngenotypes" color=black shape=box]
+	pop_catalog[label="stacks\npopulation\ncatalog"]
+	ind_genotypes[label="individual genotypes"];
+	sam -> pstacks;
+	pstacks -> ind_genotypes;
+	ind_genotypes -> cstacks[label="ascertainment"];
+	cstacks -> pop_catalog;
+	pop_catalog -> sstacks;
+	ind_genotypes -> sstacks;
+	sstacks -> result;
+}
+
+
+digraph populations{	
+	pop1[label="Squakum Creek\nFALL" style=filled color = tan];
+	pop2[label="Hamma Hamma\nSUMMER" style=filled color = orange];
+	pop3[label="Lilliwaup Creek\nFALL" style=filled color = tan];
+	pop4[label=	"Hoodsport Hatchery\nFALL" style=filled color = tan];
+	pop5[label="Snohomish River\nFALL" style=filled color=tan];
+	pop6[label="Stillaguamish River\nFALL" style=filled color=tan];
+	pop7[label="Nisqually Kalama Creek\nWINTER" style=filled color=lightblue];
+	pop8[label="Sherwood River\nFALL" style=filled color=tan];
+	pop9[label="Sherwood River\nSUMMER" style=filled color= orange];
+	pop10[label="Skookum Creek\nFALL" style=filled color=tan];
+
+	south_puget[label="South Puget Sound"];
+	north_puget[label="North Puget Sound"];
+	hood_canal[label="Hood Canal"];
+	fraser[label="Fraser River BC"];
+	pops[label="chum populations"];
+	
+	pop1 -> fraser;
+	pop2 -> hood_canal;
+	pop3 -> hood_canal;
+	pop4 -> hood_canal;
+	pop5 -> north_puget;
+	pop6 -> north_puget;
+	pop7 -> south_puget;
+	pop8 -> south_puget;
+	pop9 -> south_puget;
+	pop10 -> south_puget;
+					
+	south_puget -> pops;
+	north_puget -> pops;
+	hood_canal -> pops;
+	fraser -> pops;
+}
+
+
