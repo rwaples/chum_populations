@@ -33,6 +33,12 @@ populations -b 2 -P /media/Shared/Data/chum/populations/pstacks -s -t 6 -r .5 -p
 
 """
 
+"""
+populations -b 3 -P /media/Shared/Data/chum/populations/pstacks/batch_3 -s -t 6 -r .5 -p 6 -a .05 --fstats --plink --genepop --vcf --verbose -M /media/Shared/Data/chum/populations/stacks/pop_map/pop_map.txt > /media/Shared/Data/chum/populations/pstacks/batch_3/populations.log
+
+
+"""
+
 
 
 -W /media/Shared/Data/chum/populations/stacks_output/populations/t

@@ -21,7 +21,7 @@ catalog_individuals = [
 'CMSHERW94S_0090', 'CMSHERW94S_0027'
 ]
 
-print('cstacks -b 2  -o ./ -p 6 -g' + " -s ./" + " -s ./".join(catalog_individuals))
+print('cstacks -b 3  -o /media/Shared/Data/chum/populations/pstacks/batch_3 -p 6 -g' + " -s ./" + " -s ./".join(catalog_individuals))
 
 #remove parents from catalog indiviudals and instead use the pre-existing catalog from the mappping paper, after convserion to new stacks format
 # use /home/ipseg/Programs/Stacks/stacks-1.20/scripts/convert_stacks.pl

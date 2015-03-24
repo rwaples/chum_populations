@@ -46,7 +46,7 @@ bwa_prefilter_bams = glob.glob("/media/Shared/Data/chum/populations/aln/curated/
 for xx in bwa_prefilter_bams:
     print(post_filter_cmd.format(xx, xx.replace("/bwa/", "/bwa/post_filter/")))
 
-# only keep 
+# above BWA alignments were used for pstacks batch 3
     
     
 # bowtie2

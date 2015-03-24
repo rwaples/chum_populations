@@ -353,7 +353,7 @@ my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0
 write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loci = my_genotypes.columns.values.tolist(),
     genotypes = my_genotypes, output_filename = LEPmap_filename)
 
-# reform linkage groups
+# form linkage groups
 print "java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
 lodLimit = 10 sizeLimit = 20 \
 > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.inital.chromosomes \
@@ -390,15 +390,16 @@ with open("/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_p
 
 
 
-for xx in reversed(range(1,42)):
+for xx in reversed(range(38,42)):
     print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
         data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+        alpha=1 maxDistance=30 \
         chromosome={} \
         > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map \
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
         )
 
-for xx in (18,):
+for xx in (5, 7, 11, 16, 26, 23, 35):
     print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
         data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
         alpha=1 maxDistance=30 \
@@ -409,7 +410,8 @@ for xx in (18,):
 
 
 
-
+#####################################################################################################3
+##END WORK
 
 
 

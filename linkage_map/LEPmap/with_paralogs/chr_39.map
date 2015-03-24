@@ -1,9 +1,1 @@
-#java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap chromosome=39 
-*** LG = 39 likelihood = -21.4368 with alpha penalty = -21.4368
-6740	0.00	( 0 )
-3488	3.98	( 0 )
-9698	3.98	( 0 ) duplicate*
-7422	3.99	( 0 )
-11127	4.00	( 0 )
-3657	4.01	( 0 )
-#COUNT = 1
+#java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap alpha=1 maxDistance=30 chromosome=39 

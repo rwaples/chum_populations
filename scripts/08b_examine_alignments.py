@@ -3,6 +3,32 @@ import matplotlib.pyplot as plt
 import glob
 
 
+# use bedtools to generate a histogram of coverage per contig
+# notice contigs with zero coverage are not counted
+bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMSHERW94F_0083.bam > /home/ipseg/Desktop/waples/temp/a.cov.txt
+bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMSHERW94F_0084.bam > /home/ipseg/Desktop/waples/temp/b.cov.txt
+bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMHAMM10_0030.bam > /home/ipseg/Desktop/waples/temp/b.cov.txt
+
+
+# read in coverages
+
+aaa = pd.read_csv("/home/ipseg/Desktop/waples/temp/a.cov.txt", sep = "\t", header = None)
+bbb = pd.read_csv("/home/ipseg/Desktop/waples/temp/b.cov.txt", sep = "\t", header = None)
+aaa.columns = ['contig', 'start', 'stop', 'cov']
+bbb.columns = ['contig', 'start', 'stop', 'cov']
+aaa = aaa[(aaa['start'] == 0) & (aaa['stop'] == 84)]
+bbb = bbb[(bbb['start'] == 0) & (bbb['stop'] == 84)]
+
+ccc= pd.merge(aaa, bbb, on = 'contig')
+scatter(ccc['cov_x'], ccc['cov_y'], alpha = .5)
+yscale('log')
+xscale('log')
+
+# histogram
+hist(ccc['cov_y'], bins = range(50) )
+
+
+
 # filter the BAM files to have only reads that start their alignment at the first position
 BAM_files = glob.glob("/media/Shared/Data/chum/populations/aln/curated/bowtie2/*.bam")
 
