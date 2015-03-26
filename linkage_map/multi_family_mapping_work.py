@@ -399,7 +399,7 @@ for xx in reversed(range(38,42)):
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
         )
 
-for xx in (5, 7, 11, 16, 26, 23, 35):
+for xx in (1, 7):
     print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
         data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
         alpha=1 maxDistance=30 \
@@ -408,236 +408,245 @@ for xx in (5, 7, 11, 16, 26, 23, 35):
         2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
         )
 
-
-
-#####################################################################################################3
-##END WORK
-
-
-
-# different ways or reasons to rename
-# renaming only occuring *within* catalog entries, and seeks to standardize naming across families
-# non paralogs
-    # should already share names across families
-
-# paralogs
-    # rename relative to a specified target family 
-    # if same catalog locus assigned to same LG in two different families, collapse names
-    # if same catalog locus assigned to same LG in the same families, do not collapse names, possible segmental duplicate
-    
-    # if same catalog locus assigned to different LG in two different families, check if the LGs are homeologs
-        # if homeologs - do not callpase names incormporating LG
-        # if not homeologs - still rename??
-        
-# what to do when a locus is unmapped in the small families?
-
-# renaming procedure
-# 1 - identify homeologs based on family 8
-# 2 - 
-
-    
-
-# mapped two different families, same LG assignmentin small family 
-    
-    
-        
-        
-    
-'10001_y' in my_genotypes.columns.values.tolist()
-
-
-# Remove blacklisted markers (duplicates):
-with open(blacklist_file) as x: 
-    my_blacklist = [yy.strip() for yy in x.readlines()]
-remove_by_blacklist(my_blacklist, genotypes_at_locus_08)
-remove_by_blacklist(my_blacklist, genotypes_at_locus_01)
-remove_by_blacklist(my_blacklist, genotypes_at_locus_09)
-
-my_pd_genos_08 = prep_data_pandas(individuals_08, genotypes_at_locus_08)
-my_pd_genos_01 = prep_data_pandas(individuals_01, genotypes_at_locus_01)
-my_pd_genos_09  = prep_data_pandas(individuals_09,  genotypes_at_locus_09)
-
-all_my_data, loci_all = prepare_matrix(my_pd_genos_08, my_pd_genos_01, my_pd_genos_09)
-
-# write loci to file
-write_loci(loci = loci_08, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_08")
-write_loci(loci = loci_01, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_01")
-write_loci(loci = loci_09, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_09")
-write_loci(loci = loci_all, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/all")
-
-#Each family alone
-just_fam_08 = get_recombination_stats(fam_08)
-just_fam_01 = get_recombination_stats(fam_01)
-just_fam_09 = get_recombination_stats(fam_09)
-
-write_rec_stats(just_fam_08, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_08")
-write_rec_stats(just_fam_01, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_01")
-write_rec_stats(just_fam_09, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats//fam_09")
-
-# all families combined
-all_fams = get_recombination_stats(all_my_data)
-write_rec_stats(all_fams, "/olympus/WORK/WAPLES/chum_populations/rec_stats/all")
-
-all_fams_minus_14 = get_recombination_stats(all_minus_14)
-write_rec_stats(all_fams_minus_14, "Y:/WORK/MCKINNEY/MSTMap/recombination_stats/all_minus_14")
-
-# write LEPmap output
-#loci_all # these are the 
-fams = [individuals_08, individuals_01, individuals_09]
-LEPmap_filename = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap"
-my_genotypes = pd.concat(objs= [my_pd_genos_08, my_pd_genos_01,my_pd_genos_09])
-my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0 0', '0 0', '1 1', '1 2'])
-
-def write_LEPmap(families, family_names, loci, genotypes, output_filename):
-    with open(output_filename, 'w') as OUTFILE:
-        # TODO: write header
-        header = "\t".join(["#family", 'name', 'sire', 'dam', 'sex', 'blank'] + loci) + "\n"
-        OUTFILE.write(header)
-        for fam_idx, fam in enumerate(families):
-            fam_name = family_names[fam_idx]
-            DAM_line = "\t".join([fam_name, fam_name + "_Dam", '0', '0', '2', '0'] + ['1 1' for xx in loci]) + "\n"
-            SIRE_line = "\t".join([fam_name, fam_name + "_Sire", '0', '0', '1', '0'] + ['1 2' for xx in loci]) + "\n"
-            OUTFILE.write(DAM_line)
-            OUTFILE.write(SIRE_line)
-            for ind in fam:
-                ind_info = "\t".join([fam_name, ind, fam_name + "_Sire", fam_name + "_Dam", '0', '0'])
-                ind_genotypes = genotypes.loc[ind]
-                OUTFILE.write(ind_info + "\t" + "\t".join([str(xx) for xx in ind_genotypes]) + "\n")
-
-write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loci = loci_all, genotypes = my_genotypes, output_filename = LEPmap_filename)
-
-
-
-# LEPmap commands
-"java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.chromosomes"
-
-"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.chromosomes \
-lodLimit = 7 \
-data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes"
-
-# chum_08
-
-
-"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
-lodLimit = 7 \
-data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"  
-
-"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
-lodLimit = 7 \
-data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"
-
-for xx in [5,35]:
-    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes \
-data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
-chromosome={} \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map \
-2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map.log \
-".format(xx, xx, xx)
-) 
-
-    
-#estimate LOD limit
-
-#ordermarkers
-"java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
-data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-chromosome=1 \
-> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map \
-2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map.log \
-" 
-
-for xx in reversed(range(42)):
-    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
-        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+for xx in (1, 7):
+    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lod5_singles.chromosomes \
+        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/collapsed_loci.lepmap \
+        alpha=.5 maxDistance=30 \
         chromosome={} \
-        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
-        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
+        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map \
+        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/with_paralogs/chr_{}.map.log\n".format(xx, xx, xx)
         )
 
 
-
-for xx in reversed(range(42)):
-    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
-        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-        chromosome={} \
-        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
-        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
-        )
-
-for xx in [5,35]:
-    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
-        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
-        chromosome={} \
-        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
-        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
-        )
-
-
-
-# inspect
-all_my_data.shape
-len(genotypes_at_locus_14)
-
-
-
-
-
-
-
-
-N = testy.R + testy.NR
-R = testy.R
-testa = e**-(2*(N/2. - R)**2/N)
-
-
-
-
-
-
-#####################################
-both_genos = pd.concat(objs = [my_pd_genos_14, my_pd_genos_10, my_pd_genos_A, my_pd_genos_B], join = 'outer')
-# convert Nan to 0
-both_genos.fillna(value = 0, inplace = True)
-# conver to integer numpy array
-both_genos_np = np.array(both_genos)
-both_genos_np = both_genos_np.astype(int)
-# transpose it
-both_genos_np = np.transpose(both_genos_np)
-#my_inds_14, my_genos_14 = import_MSTmap(linkage_map_file_1)
-#my_inds_10, my_genos_10 = import_MSTmap(linkage_map_file_2)
-#my_inds_A, my_genos_A = import_MSTmap(linkage_map_file_3)
-#my_inds_B, my_genos_B = import_MSTmap(linkage_map_file_4)
-
-
-######################
-# Pandas treatment, under construction
-# NOTICE, this is transposed from the numpy appraoch
-# columns are loci, rows are individuals
-my_pd_genos_14 = pd.DataFrame.from_dict(my_genos_14)
-my_pd_genos_10 = pd.DataFrame.from_dict(my_genos_10)
-my_pd_genos_A = pd.DataFrame.from_dict(my_genos_A)
-my_pd_genos_B = pd.DataFrame.from_dict(my_genos_B)
-
-# add an index
-my_pd_genos_14.index = my_inds_14
-my_pd_genos_10.index = my_inds_10
-my_pd_genos_A.index = my_inds_A
-my_pd_genos_B.index = my_inds_B
-
-
-
-
-both_genos_np.shape
-
-
-######################
-# numpy treatment, WORKS! but no way to combine yet
-#int_arr = np.array(my_genos.values())
-# subset to just 100 loci
-int_arr = 
-
+#
+######################################################################################################3
+###END WORK
+#
+#
+#
+## different ways or reasons to rename
+## renaming only occuring *within* catalog entries, and seeks to standardize naming across families
+## non paralogs
+#    # should already share names across families
+#
+## paralogs
+#    # rename relative to a specified target family 
+#    # if same catalog locus assigned to same LG in two different families, collapse names
+#    # if same catalog locus assigned to same LG in the same families, do not collapse names, possible segmental duplicate
+#    
+#    # if same catalog locus assigned to different LG in two different families, check if the LGs are homeologs
+#        # if homeologs - do not callpase names incormporating LG
+#        # if not homeologs - still rename??
+#        
+## what to do when a locus is unmapped in the small families?
+#
+## renaming procedure
+## 1 - identify homeologs based on family 8
+## 2 - 
+#
+#    
+#
+## mapped two different families, same LG assignmentin small family 
+#    
+#    
+#        
+#        
+#    
+#'10001_y' in my_genotypes.columns.values.tolist()
+#
+#
+## Remove blacklisted markers (duplicates):
+#with open(blacklist_file) as x: 
+#    my_blacklist = [yy.strip() for yy in x.readlines()]
+#remove_by_blacklist(my_blacklist, genotypes_at_locus_08)
+#remove_by_blacklist(my_blacklist, genotypes_at_locus_01)
+#remove_by_blacklist(my_blacklist, genotypes_at_locus_09)
+#
+#my_pd_genos_08 = prep_data_pandas(individuals_08, genotypes_at_locus_08)
+#my_pd_genos_01 = prep_data_pandas(individuals_01, genotypes_at_locus_01)
+#my_pd_genos_09  = prep_data_pandas(individuals_09,  genotypes_at_locus_09)
+#
+#all_my_data, loci_all = prepare_matrix(my_pd_genos_08, my_pd_genos_01, my_pd_genos_09)
+#
+## write loci to file
+#write_loci(loci = loci_08, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_08")
+#write_loci(loci = loci_01, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_01")
+#write_loci(loci = loci_09, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_09")
+#write_loci(loci = loci_all, path = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/all")
+#
+##Each family alone
+#just_fam_08 = get_recombination_stats(fam_08)
+#just_fam_01 = get_recombination_stats(fam_01)
+#just_fam_09 = get_recombination_stats(fam_09)
+#
+#write_rec_stats(just_fam_08, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_08")
+#write_rec_stats(just_fam_01, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats/fam_01")
+#write_rec_stats(just_fam_09, "/home/ipseg/Desktop/waples/chum_populations/linkage_map/rec_stats//fam_09")
+#
+## all families combined
+#all_fams = get_recombination_stats(all_my_data)
+#write_rec_stats(all_fams, "/olympus/WORK/WAPLES/chum_populations/rec_stats/all")
+#
+#all_fams_minus_14 = get_recombination_stats(all_minus_14)
+#write_rec_stats(all_fams_minus_14, "Y:/WORK/MCKINNEY/MSTMap/recombination_stats/all_minus_14")
+#
+## write LEPmap output
+##loci_all # these are the 
+#fams = [individuals_08, individuals_01, individuals_09]
+#LEPmap_filename = "/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap"
+#my_genotypes = pd.concat(objs= [my_pd_genos_08, my_pd_genos_01,my_pd_genos_09])
+#my_genotypes = my_genotypes.replace(to_replace = [np.NaN, 0, 1, 2 ], value = ['0 0', '0 0', '1 1', '1 2'])
+#
+#def write_LEPmap(families, family_names, loci, genotypes, output_filename):
+#    with open(output_filename, 'w') as OUTFILE:
+#        # TODO: write header
+#        header = "\t".join(["#family", 'name', 'sire', 'dam', 'sex', 'blank'] + loci) + "\n"
+#        OUTFILE.write(header)
+#        for fam_idx, fam in enumerate(families):
+#            fam_name = family_names[fam_idx]
+#            DAM_line = "\t".join([fam_name, fam_name + "_Dam", '0', '0', '2', '0'] + ['1 1' for xx in loci]) + "\n"
+#            SIRE_line = "\t".join([fam_name, fam_name + "_Sire", '0', '0', '1', '0'] + ['1 2' for xx in loci]) + "\n"
+#            OUTFILE.write(DAM_line)
+#            OUTFILE.write(SIRE_line)
+#            for ind in fam:
+#                ind_info = "\t".join([fam_name, ind, fam_name + "_Sire", fam_name + "_Dam", '0', '0'])
+#                ind_genotypes = genotypes.loc[ind]
+#                OUTFILE.write(ind_info + "\t" + "\t".join([str(xx) for xx in ind_genotypes]) + "\n")
+#
+#write_LEPmap(families = fams, family_names = ["fam_08", "fam_01", "fam_09"], loci = loci_all, genotypes = my_genotypes, output_filename = LEPmap_filename)
+#
+#
+#
+## LEPmap commands
+#"java SeparateChromosomes data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.chromosomes"
+#
+#"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.chromosomes \
+#lodLimit = 7 \
+#data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes"
+#
+## chum_08
+#
+#
+#"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
+#lodLimit = 7 \
+#data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"  
+#
+#"java JoinSingles /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.chromosomes \
+#lodLimit = 7 \
+#data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes"
+#
+#for xx in [5,35]:
+#    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap.final.chromosomes \
+#data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chum_08.lepmap \
+#chromosome={} \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map \
+#2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chum_08/chr_{}.map.log \
+#".format(xx, xx, xx)
+#) 
+#
+#    
+##estimate LOD limit
+#
+##ordermarkers
+#"java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
+#data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#chromosome=1 \
+#> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map \
+#2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_1.map.log \
+#" 
+#
+#for xx in reversed(range(42)):
+#    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
+#        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#        chromosome={} \
+#        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
+#        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
+#        )
+#
+#
+#
+#for xx in reversed(range(42)):
+#    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
+#        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#        chromosome={} \
+#        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
+#        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
+#        )
+#
+#for xx in [5,35]:
+#    print("java OrderMarkers /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap.final.chromosomes \
+#        data=/home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/ini.lepmap \
+#        chromosome={} \
+#        > /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map \
+#        2> /home/ipseg/Desktop/waples/chum_populations/linkage_map/LEPmap/chr_{}.map.log\n".format(xx, xx, xx)
+#        )
+#
+#
+#
+## inspect
+#all_my_data.shape
+#len(genotypes_at_locus_14)
+#
+#
+#
+#
+#
+#
+#
+#
+#N = testy.R + testy.NR
+#R = testy.R
+#testa = e**-(2*(N/2. - R)**2/N)
+#
+#
+#
+#
+#
+#
+######################################
+#both_genos = pd.concat(objs = [my_pd_genos_14, my_pd_genos_10, my_pd_genos_A, my_pd_genos_B], join = 'outer')
+## convert Nan to 0
+#both_genos.fillna(value = 0, inplace = True)
+## conver to integer numpy array
+#both_genos_np = np.array(both_genos)
+#both_genos_np = both_genos_np.astype(int)
+## transpose it
+#both_genos_np = np.transpose(both_genos_np)
+##my_inds_14, my_genos_14 = import_MSTmap(linkage_map_file_1)
+##my_inds_10, my_genos_10 = import_MSTmap(linkage_map_file_2)
+##my_inds_A, my_genos_A = import_MSTmap(linkage_map_file_3)
+##my_inds_B, my_genos_B = import_MSTmap(linkage_map_file_4)
+#
+#
+#######################
+## Pandas treatment, under construction
+## NOTICE, this is transposed from the numpy appraoch
+## columns are loci, rows are individuals
+#my_pd_genos_14 = pd.DataFrame.from_dict(my_genos_14)
+#my_pd_genos_10 = pd.DataFrame.from_dict(my_genos_10)
+#my_pd_genos_A = pd.DataFrame.from_dict(my_genos_A)
+#my_pd_genos_B = pd.DataFrame.from_dict(my_genos_B)
+#
+## add an index
+#my_pd_genos_14.index = my_inds_14
+#my_pd_genos_10.index = my_inds_10
+#my_pd_genos_A.index = my_inds_A
+#my_pd_genos_B.index = my_inds_B
+#
+#
+#
+#
+#both_genos_np.shape
+#
+#
+#######################
+## numpy treatment, WORKS! but no way to combine yet
+##int_arr = np.array(my_genos.values())
+## subset to just 100 loci
+#int_arr = 
+#
 

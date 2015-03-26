@@ -1,0 +1,26 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+11 arguments: --allow-extra-chr --allow-no-sex --bfile final --family --fst --het small-sample --ibc --out final
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_3/work
+Start time: Wed Mar 25 18:35:07 2015
+
+Random number seed: 1427333707
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+17251 variants loaded from .bim file.
+173 people (0 males, 0 females, 173 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to final.nosex .
+--family: 10 clusters defined.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 173 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.946201.
+17251 variants and 173 people pass filters and QC.
+Note: No phenotypes present.
+final.ibc written.
+--het small-sample: 17251 variants scanned, report written to final.het .
+Writing --fst report (10 populations) to final.fst ... done.
+17251 markers with valid Fst estimates.
+Mean Fst estimate: 0.0260494
+Weighted Fst estimate: 0.0270551
+
+End time: Wed Mar 25 18:35:07 2015

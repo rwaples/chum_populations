@@ -1,0 +1,27 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+12 arguments: --allow-extra-chr --allow-no-sex --bfile filter_HWE --hardy midp --hwe 0.001 midp --make-bed --out filter_MAF_HWE
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_3/work
+Start time: Wed Mar 25 14:19:34 2015
+
+Random number seed: 1427318374
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+20308 variants loaded from .bim file.
+173 people (0 males, 0 females, 173 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to filter_MAF_HWE.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 173 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.942372.
+--hardy: Writing Hardy-Weinberg report (founders only) to filter_MAF_HWE.hwe
+... done.
+Warning: --hwe observation counts vary by more than 10%.  Consider using
+--geno, and/or applying different p-value thresholds to distinct subsets of
+your data.
+--hwe: 3057 variants removed due to Hardy-Weinberg exact test.
+17251 variants and 173 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to filter_MAF_HWE.bed + filter_MAF_HWE.bim + filter_MAF_HWE.fam ...
+done.
+
+End time: Wed Mar 25 14:19:34 2015
