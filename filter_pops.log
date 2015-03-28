@@ -1,0 +1,11 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+19 arguments: --allow-extra-chr --allow-no-sex --family --file batch_3.plink --keep-cluster-names 1 2 3 4 5 6 7 8 9 10 --make-bed --out filter_pops
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Thu Mar 26 17:35:36 2015
+
+Random number seed: 1427416536
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Error: Failed to open batch_3.plink.map.
+
+End time: Thu Mar 26 17:35:36 2015

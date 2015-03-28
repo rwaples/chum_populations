@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 # SAM file without header lines
 SAM_filename = "C:/Users/IPSEG/Desktop/Waples/Dropbox/Projects/chum_populations/data/stacks_catalog/mapping/batch_42_self.sam"
 
@@ -62,9 +61,6 @@ len(whitelist)
 len(blacklist)
 len(whitelist.intersection(blacklist))
     
-    
-    
-#with open(whitelist_file, 'w') as WHITELIST:
 with open(blacklist_file, 'w') as BLACKLIST:
    BLACKLIST.writelines([(str(x)+"\n") for x in blacklist])
 

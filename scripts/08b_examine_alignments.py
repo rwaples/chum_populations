@@ -7,7 +7,7 @@ import glob
 # notice contigs with zero coverage are not counted
 bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMSHERW94F_0083.bam > /home/ipseg/Desktop/waples/temp/a.cov.txt
 bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMSHERW94F_0084.bam > /home/ipseg/Desktop/waples/temp/b.cov.txt
-bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMHAMM10_0030.bam > /home/ipseg/Desktop/waples/temp/b.cov.txt
+bedtools genomecov -bg -ibam /media/Shared/Data/chum/populations/aln/curated/bwa/post_filter/CMUW10_0008.bam > /home/ipseg/Desktop/waples/temp/b.cov.txt
 
 
 # read in coverages

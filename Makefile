@@ -22,16 +22,16 @@ missingness:
 
 
 #split files by family
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 1 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_01
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 2 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_02
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 3 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_03	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 4 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_04	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 5 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_05	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 6 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_06	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 7 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_07	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 1 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_01
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 2 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_02
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 3 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_03	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 4 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_04	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 5 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_05	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 6 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_06	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 7 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_07	
 	#plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 8 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_08	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 9 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_09	
-	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 10 -allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_10	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 9 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_09	
+	plink --bfile  ./data/batch_2/batch_2.filter05 --family --keep-cluster-names 10 --allow-extra-chr --allow-no-sex --make-bed --out ./data/batch_2/batch_2.fam_10	
 
 hwe:	
 	# list of loci passing HWE for each pop

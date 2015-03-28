@@ -14,10 +14,10 @@ def parse_name_fqgz(ind_filename):
     silli, ind_num = sample_name.split('_')
     return(basename, sample_name, silli, ind_num)
 
-# FASTQ files trimmed to 84 bp with:
-# process_radtags -i gzfastq -y gzfastq -p /media/Shared/Data/chum/populations/cleanSeqs -o /media/Shared/Data/chum/populations/cleanSeqs/trimmed_84 -t 84 --disable_rad_check
+# FASTQ files trimmed to 93 bp with:
+process_radtags -i gzfastq -y gzfastq -p /media/Shared/Data/chum/populations/cleanSeqs -o /media/Shared/Data/chum/populations/cleanSeqs/trimmed_93 -t 93 --disable_rad_check
 
-files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/trimmed_84/*.fq.gz')
+files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/trimmed_93/*.fq.gz')
 
 # use this to re-run alignmnts after converting the phred scores
 #files_to_align = glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/CMUW*.fq.gz') + glob.glob('/media/Shared/Data/chum/populations/cleanSeqs/CMKALA*.fq.gz')

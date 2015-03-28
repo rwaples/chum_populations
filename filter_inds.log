@@ -1,0 +1,11 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+9 arguments: --allow-extra-chr --allow-no-sex --bfile filter_pops --make-bed --mind 0.25 --out filter_inds
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Thu Mar 26 17:35:37 2015
+
+Random number seed: 1427416537
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Error: Failed to open filter_pops.bed.
+
+End time: Thu Mar 26 17:35:37 2015
