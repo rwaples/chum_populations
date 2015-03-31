@@ -1,0 +1,21 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+10 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile filter_inds --make-bed --out miss_final --write-snplist
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
+Start time: Mon Mar 30 11:59:43 2015
+
+Random number seed: 1427741983
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+28861 variants loaded from .bim file.
+174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to miss_final.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.935808.
+28861 variants and 174 samples pass filters and QC.
+Note: No phenotypes present.
+List of variant IDs written to miss_final.snplist .
+--make-bed to miss_final.bed + miss_final.bim + miss_final.fam ... done.
+
+End time: Mon Mar 30 11:59:43 2015
