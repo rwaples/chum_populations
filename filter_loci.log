@@ -1,11 +1,11 @@
 PLINK v1.90b3i 64-bit (18 Mar 2015)
-9 arguments: --allow-extra-chr --allow-no-sex --bfile filter_inds --geno 0.25 --make-bed --out filter_loci
+12 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile filter_inds --geno 0.25 --make-bed --out filter_loci --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Thu Mar 26 17:35:37 2015
+Start time: Tue Mar 31 14:48:35 2015
 
-Random number seed: 1427416537
+Random number seed: 1427838515
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 Error: Failed to open filter_inds.bed.
 
-End time: Thu Mar 26 17:35:37 2015
+End time: Tue Mar 31 14:48:35 2015

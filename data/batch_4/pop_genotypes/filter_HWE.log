@@ -2,21 +2,21 @@ PLINK v1.90b3i 64-bit (18 Mar 2015)
 12 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile filter_MAF --extract passing_HWE.snplist --make-bed --out filter_HWE --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Mon Mar 30 12:00:39 2015
+Start time: Tue Mar 31 16:25:56 2015
 
-Random number seed: 1427742039
+Random number seed: 1427844356
 32127 MB RAM detected; reserving 16063 MB for main workspace.
-28861 variants loaded from .bim file.
+28800 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to filter_HWE.nosex .
---extract: 20531 variants remaining.
+--extract: 20480 variants remaining.
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.927755.
-20531 variants and 174 samples pass filters and QC.
+Total genotyping rate is 0.92826.
+20480 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to filter_HWE.snplist .
 --make-bed to filter_HWE.bed + filter_HWE.bim + filter_HWE.fam ... done.
 
-End time: Mon Mar 30 12:00:39 2015
+End time: Tue Mar 31 16:25:56 2015

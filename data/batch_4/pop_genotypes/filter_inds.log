@@ -2,9 +2,9 @@ PLINK v1.90b3i 64-bit (18 Mar 2015)
 12 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile filter_pops --make-bed --mind 0.25 --out filter_inds --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Mon Mar 30 11:59:43 2015
+Start time: Tue Mar 31 16:25:51 2015
 
-Random number seed: 1427741983
+Random number seed: 1427844351
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 28861 variants loaded from .bim file.
 200 samples (0 males, 0 females, 200 ambiguous) loaded from .fam.
@@ -20,4 +20,4 @@ Note: No phenotypes present.
 List of variant IDs written to filter_inds.snplist .
 --make-bed to filter_inds.bed + filter_inds.bim + filter_inds.fam ... done.
 
-End time: Mon Mar 30 11:59:43 2015
+End time: Tue Mar 31 16:25:51 2015

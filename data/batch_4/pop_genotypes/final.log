@@ -2,26 +2,26 @@ PLINK v1.90b3i 64-bit (18 Mar 2015)
 14 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile final --family --fst --het small-sample --ibc --out final --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Mon Mar 30 15:09:48 2015
+Start time: Tue Mar 31 16:25:57 2015
 
-Random number seed: 1427753388
+Random number seed: 1427844357
 32127 MB RAM detected; reserving 16063 MB for main workspace.
-13433 variants loaded from .bim file.
+13407 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to final.nosex .
 --family: 10 clusters defined.
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.928135.
-13433 variants and 174 samples pass filters and QC.
+Total genotyping rate is 0.928572.
+13407 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 final.ibc written.
 List of variant IDs written to final.snplist .
---het small-sample: 13433 variants scanned, report written to final.het .
+--het small-sample: 13407 variants scanned, report written to final.het .
 Writing --fst report (10 populations) to final.fst ... done.
-13433 markers with valid Fst estimates.
-Mean Fst estimate: 0.0271678
-Weighted Fst estimate: 0.0270414
+13407 markers with valid Fst estimates.
+Mean Fst estimate: 0.0270966
+Weighted Fst estimate: 0.0269887
 
-End time: Mon Mar 30 15:09:48 2015
+End time: Tue Mar 31 16:25:57 2015
