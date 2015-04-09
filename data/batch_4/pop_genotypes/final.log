@@ -2,9 +2,9 @@ PLINK v1.90b3i 64-bit (18 Mar 2015)
 14 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile final --family --fst --het small-sample --ibc --out final --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Tue Mar 31 16:25:57 2015
+Start time: Thu Apr  9 09:46:08 2015
 
-Random number seed: 1427844357
+Random number seed: 1428597968
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 13407 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
@@ -24,4 +24,4 @@ Writing --fst report (10 populations) to final.fst ... done.
 Mean Fst estimate: 0.0270966
 Weighted Fst estimate: 0.0269887
 
-End time: Tue Mar 31 16:25:57 2015
+End time: Thu Apr  9 09:46:08 2015

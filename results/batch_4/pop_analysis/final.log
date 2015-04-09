@@ -1,0 +1,26 @@
+PLINK v1.90b3i 64-bit (18 Mar 2015)
+9 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/final --out /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/final --recode
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/.canopy/ipython_notebooks
+Start time: Thu Apr  9 09:24:33 2015
+
+Random number seed: 1428596673
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+13407 variants loaded from .bim file.
+174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/final.nosex
+.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.928572.
+13407 variants and 174 samples pass filters and QC.
+Note: No phenotypes present.
+--recode to
+/home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/final.ped
++
+/home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/final.map
+... done.
+
+End time: Thu Apr  9 09:24:33 2015
