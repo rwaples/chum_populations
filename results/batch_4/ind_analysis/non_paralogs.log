@@ -1,0 +1,26 @@
+PLINK v1.90b3j 64-bit (2 Apr 2015) 
+12 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile non_paralogs --cluster --mds-plot 3 eigvals --out non_paralogs
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/ind_analysis
+Start time: Fri Apr 10 11:39:13 2015
+
+Random number seed: 1428691153
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+12539 variants loaded from .bim file.
+174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to non_paralogs.nosex .
+Using up to 8 threads (change this with --threads).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.927873.
+12539 variants and 174 samples pass filters and QC.
+Note: No phenotypes present.
+Distance matrix calculation complete.
+Clustering... done.
+Cluster solution written to non_paralogs.cluster1 , non_paralogs.cluster2 , and
+non_paralogs.cluster3 .
+Performing multidimensional scaling analysis (3 dimensions)... done.
+MDS solution written to non_paralogs.mds (eigenvalues in
+non_paralogs.mds.eigvals ).
+
+End time: Fri Apr 10 11:39:13 2015
