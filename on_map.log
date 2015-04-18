@@ -1,0 +1,10 @@
+PLINK v1.90b3j 64-bit (2 Apr 2015) 
+9 arguments: --bfile complete --make-bed --not-chr 0 {univseral_plink_commands} --out on_map --recode
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Fri Apr 17 17:26:59 2015
+
+Error: Invalid --not-chr chromosome code '{univseral_plink_commands}'.
+For more information, try 'plink --help [flag name]' or 'plink --help | more'.
+
+End time: Fri Apr 17 17:26:59 2015

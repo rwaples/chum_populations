@@ -1,0 +1,10 @@
+PLINK v1.90b3j 64-bit (2 Apr 2015) 
+11 arguments: --bfile complete --exclude paralog_SNPs.txt {univseral_plink_commands} --make-bed --not-chr 0 --out mapped_non_paralogs --recode
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Fri Apr 17 17:27:00 2015
+
+Error: Invalid --exclude parameter sequence.
+For more information, try 'plink --help [flag name]' or 'plink --help | more'.
+
+End time: Fri Apr 17 17:27:00 2015
