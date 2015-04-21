@@ -1,10 +1,10 @@
 PLINK v1.90b3j 64-bit (2 Apr 2015) 
-12 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile non_paralogs --cluster --mds-plot 3 eigvals --out non_paralogs
+14 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile non_paralogs --make-rel --out non_paralogs --pca 173 header tabs var-wts
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/ind_analysis
-Start time: Fri Apr 10 11:39:13 2015
+Start time: Mon Apr 20 17:44:56 2015
 
-Random number seed: 1428691153
+Random number seed: 1429577096
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 12539 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
@@ -15,12 +15,10 @@ Calculating allele frequencies... done.
 Total genotyping rate is 0.927873.
 12539 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
-Distance matrix calculation complete.
-Clustering... done.
-Cluster solution written to non_paralogs.cluster1 , non_paralogs.cluster2 , and
-non_paralogs.cluster3 .
-Performing multidimensional scaling analysis (3 dimensions)... done.
-MDS solution written to non_paralogs.mds (eigenvalues in
-non_paralogs.mds.eigvals ).
+Relationship matrix calculation complete.
+Relationship matrix written to non_paralogs.rel , and IDs written to
+non_paralogs.rel.id .
+--pca: Results saved to non_paralogs.eigenval , non_paralogs.eigenvec , and
+non_paralogs.eigenvec.var .
 
-End time: Fri Apr 10 11:39:13 2015
+End time: Mon Apr 20 17:44:57 2015

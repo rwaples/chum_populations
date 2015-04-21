@@ -6,22 +6,36 @@ library(RColorBrewer)
 mds = read.table('non_paralogs.IND_md_poistions', 
                  header = TRUE,sep = "\t")
 
+pca_eval = read.table('chum.pca.eval', 
+                      header = FALSE,sep = "\t")
+
+pca_evec = read.table('chum.pca.evec', 
+                      header = TRUE,sep = "\t")
+
 pop_colors <- c("#000000", brewer.pal(9, "Set1"))
 
-shinyServer(function(input, output) {
+shinyServer(function(input, output){
   
   # reactive data
   mydata.reac <- reactive({
-    mds['xx'] = mds[input$xcol]
-    mds['yy'] = mds[input$ycol]
-    #mds['colorby'] = mds[input$colorby]
-    return(mds)})
+    if (input$type == 'MDS'){
+      mds['xx'] = mds[input$xcol]
+      mds['yy'] = mds[input$ycol]
+      to_return = mds
+    } else if (input$type == 'PCA'){
+      xcol = paste('PC', strsplit(input$xcol, split = "_")[[1]][2], sep = "")
+      ycol = paste('PC', strsplit(input$ycol, split = "_")[[1]][2], sep = "")
+      pca_evec['xx'] = pca_evec[xcol]
+      pca_evec['yy'] = pca_evec[ycol]
+      to_return = pca_evec}
+    
+    
+    return(to_return)
+  })
   
   # output
   output$plot1 <- renderPlot({
-    #ggplot
     mydata <- mydata.reac()
-    
     if (input$colorby == "Population"){
       p = ggplot(mydata, aes(x=xx, y=yy)) + 
         geom_point(alpha = .5, size = 8, aes(color = POPNAME)) +
@@ -43,6 +57,7 @@ shinyServer(function(input, output) {
       ggtitle("Puget Sound Chum Salmon Populations")
     print(p)
     
-  },height = 800, width = 800)
+  },
+  height = 800, width = 800)
   
 })

@@ -1,22 +1,22 @@
 PLINK v1.90b3j 64-bit (2 Apr 2015) 
-11 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile complete --family --freqx --out complete --write-snplist
+11 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile complete --out complete --recode A-transpose --write-snplist
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Fri Apr 17 17:29:40 2015
+Start time: Mon Apr 20 14:42:21 2015
 
-Random number seed: 1429316980
+Random number seed: 1429566141
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 13407 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to complete.nosex .
---family: 10 clusters defined.
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
 Total genotyping rate is 0.928572.
---freqx: Allele frequencies (founders only) written to complete.frqx .
 13407 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to complete.snplist .
+Warning: Underscore(s) present in sample IDs.
+--recode A-transpose to complete.traw ... done.
 
-End time: Fri Apr 17 17:29:40 2015
+End time: Mon Apr 20 14:42:21 2015
