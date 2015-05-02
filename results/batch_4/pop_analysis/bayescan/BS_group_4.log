@@ -1,23 +1,23 @@
 PLINK v1.90b3j 64-bit (2 Apr 2015) 
-13 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/non_paralogs --family --keep-cluster-names 4 6 --out /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_4 --recode
+15 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/non_paralogs --family --keep-cluster-names 5 4 6 2 --out /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_4 --recode
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Thu Apr 16 11:47:20 2015
+Start time: Fri May  1 18:16:20 2015
 
-Random number seed: 1429210040
+Random number seed: 1430529380
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 12539 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_4.nosex
 .
---family: 2 clusters defined.
-131 samples removed by cluster filter(s).
+--family: 4 clusters defined.
+83 samples removed by cluster filter(s).
 Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 43 founders and 0 nonfounders present.
+Before main variant filters, 91 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate in remaining samples is 0.957009.
-12539 variants and 43 samples pass filters and QC.
+Total genotyping rate in remaining samples is 0.942133.
+12539 variants and 91 samples pass filters and QC.
 Note: No phenotypes present.
 --recode to
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_4.ped
@@ -25,4 +25,4 @@ Note: No phenotypes present.
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_4.map
 ... done.
 
-End time: Thu Apr 16 11:47:20 2015
+End time: Fri May  1 18:16:20 2015
