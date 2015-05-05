@@ -1,0 +1,15 @@
+genotypename:  /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.ped
+snpname:         /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.map
+indivname:       /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.ped
+evecoutname:    /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.evec
+evaloutname:    /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.eval
+grmoutname:      /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.rel
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.snpweights
+deletesnpoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/non_paralogs.snpremoved
+fastmode: NO
+usenorm: YES
+missingmode: YES
+outliermode:     2 
+numchrom:  50
+numoutlieriter:   0 
+numoutlierevec:   0     
