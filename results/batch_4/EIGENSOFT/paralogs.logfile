@@ -1,0 +1,144 @@
+parameter file: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.parfile
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.tsv
+snpname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.map
+indivname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.ped
+evecoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.evec
+evaloutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.eval
+grmoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.rel
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.snpweights
+deletesnpoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.snpremoved
+outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.ind_outliers
+fastmode: NO
+usenorm: NO
+missingmode: NO
+outliermode: 0
+numchrom: 50
+numoutlieriter: 5
+numoutlierevec: 10
+lsqproject: YES
+## smartpca version: 13050
+no norm used
+
+lsqproject used
+number of samples used: 174 number of snps used: 1416
+Using 8 threads, and partial sum lookup algorithm.
+total number of snps killed in pass: 0  used: 1416
+grm dumped
+
+## To get Tracy-Widom statistics: recompile smartpca with TWTAB correctly specified in Makefile, or
+   just run twstats (see README file in POPGEN directory)
+    kurtosis           snps    indivs
+ eigenvector    1     5.527     1.884
+ eigenvector    2     5.367     4.584
+ eigenvector    3     5.401     3.642
+ eigenvector    4     6.337     2.506
+ eigenvector    5     5.160     3.871
+ eigenvector    6     4.860     2.693
+ eigenvector    7     5.059     2.980
+ eigenvector    8     4.954     4.366
+ eigenvector    9     5.290     3.355
+ eigenvector   10     5.102     2.852
+population:   0              Control  174
+eigbestsnp    1              52208_C  1            1     6.124
+eigbestsnp    1         44425_TTCGGG  1            1     4.232
+eigbestsnp    1              57165_A  1            1     3.700
+eigbestsnp    1              46906_A  1            1     3.647
+eigbestsnp    1              26133_C  1            1     3.628
+eigbestsnp    1              47575_G  1            1     3.541
+eigbestsnp    1              48190_A  1            1     3.519
+eigbestsnp    1              54208_A  1            1     3.476
+eigbestsnp    1          45656_GTTGC  1            1     3.383
+eigbestsnp    1            1607_TTCT  1            1     3.367
+eigbestsnp    2              41562_A  1            1     4.787
+eigbestsnp    2             45237_CA  1            1     4.339
+eigbestsnp    2             49358_TA  1            1     4.123
+eigbestsnp    2              42705_T  1            1     4.043
+eigbestsnp    2              39912_A  1            1     4.002
+eigbestsnp    2      53197_GAGTAACTG  1            1     3.636
+eigbestsnp    2               7615_G  1            1     3.548
+eigbestsnp    2              5606_AT  1            1     3.503
+eigbestsnp    2              52208_C  1            1     3.483
+eigbestsnp    2             60281_TA  1            1     3.425
+eigbestsnp    3            47678_GCT  1            1     5.068
+eigbestsnp    3              7689_TC  1            1     4.962
+eigbestsnp    3               3969_A  1            1     4.199
+eigbestsnp    3             43395_CG  1            1     4.069
+eigbestsnp    3              52287_C  1            1     3.807
+eigbestsnp    3              49934_A  1            1     3.782
+eigbestsnp    3             56816_TG  1            1     3.647
+eigbestsnp    3            8859_TGAC  1            1     3.612
+eigbestsnp    3             10293_CT  1            1     3.421
+eigbestsnp    3              12142_T  1            1     3.359
+eigbestsnp    4            67169_CCT  1            1     5.569
+eigbestsnp    4            67169_CCG  1            1     5.467
+eigbestsnp    4              77111_A  1            1     4.666
+eigbestsnp    4              77111_G  1            1     4.558
+eigbestsnp    4             12810_CT  1            1     4.232
+eigbestsnp    4            13831_GGT  1            1     4.122
+eigbestsnp    4             36608_CC  1            1     4.088
+eigbestsnp    4            47678_ACT  1            1     3.853
+eigbestsnp    4             56961_CG  1            1     3.631
+eigbestsnp    4             49358_TT  1            1     3.562
+eigbestsnp    5               3891_C  1            1     4.583
+eigbestsnp    5             52283_CA  1            1     4.350
+eigbestsnp    5             28272_GT  1            1     3.867
+eigbestsnp    5              43491_G  1            1     3.705
+eigbestsnp    5              53558_G  1            1     3.546
+eigbestsnp    5           43843_GGTG  1            1     3.510
+eigbestsnp    5             16314_TA  1            1     3.434
+eigbestsnp    5             56547_TA  1            1     3.401
+eigbestsnp    5              43387_A  1            1     3.359
+eigbestsnp    5             31519_TC  1            1     3.356
+eigbestsnp    6              20044_A  1            1     4.433
+eigbestsnp    6             52283_CA  1            1     3.936
+eigbestsnp    6              19460_T  1            1     3.888
+eigbestsnp    6             46644_AC  1            1     3.858
+eigbestsnp    6              4567_AG  1            1     3.502
+eigbestsnp    6               6796_G  1            1     3.497
+eigbestsnp    6              16919_T  1            1     3.479
+eigbestsnp    6              76580_C  1            1     3.475
+eigbestsnp    6            50925_GGA  1            1     3.414
+eigbestsnp    6               5145_G  1            1     3.372
+eigbestsnp    7              58294_T  1            1     4.766
+eigbestsnp    7              44004_C  1            1     4.378
+eigbestsnp    7            45284_AGA  1            1     4.378
+eigbestsnp    7             57629_GA  1            1     3.826
+eigbestsnp    7             56816_TT  1            1     3.639
+eigbestsnp    7               2574_A  1            1     3.536
+eigbestsnp    7              43608_C  1            1     3.520
+eigbestsnp    7          5216_TGCCAA  1            1     3.404
+eigbestsnp    7             37946_CT  1            1     3.400
+eigbestsnp    7              11919_C  1            1     3.391
+eigbestsnp    8             66905_AT  1            1     4.115
+eigbestsnp    8              67384_G  1            1     3.818
+eigbestsnp    8              54936_T  1            1     3.809
+eigbestsnp    8             48742_GC  1            1     3.687
+eigbestsnp    8               5085_T  1            1     3.570
+eigbestsnp    8              6648_AC  1            1     3.568
+eigbestsnp    8            13831_GGG  1            1     3.544
+eigbestsnp    8           31449_TAAA  1            1     3.532
+eigbestsnp    8              46846_G  1            1     3.486
+eigbestsnp    8              50062_T  1            1     3.466
+eigbestsnp    9              38011_A  1            1     5.275
+eigbestsnp    9              53064_T  1            1     4.563
+eigbestsnp    9            23175_GTC  1            1     4.142
+eigbestsnp    9          35066_TCATT  1            1     4.088
+eigbestsnp    9              43608_C  1            1     3.876
+eigbestsnp    9              46400_A  1            1     3.699
+eigbestsnp    9              49934_A  1            1     3.619
+eigbestsnp    9              52287_C  1            1     3.439
+eigbestsnp    9          35066_TTCTT  1            1     3.405
+eigbestsnp    9              67840_T  1            1     3.363
+eigbestsnp   10               2341_G  1            1     4.467
+eigbestsnp   10            53317_GGG  1            1     4.362
+eigbestsnp   10           26222_CCCC  1            1     4.043
+eigbestsnp   10              52368_C  1            1     3.850
+eigbestsnp   10               4439_A  1            1     3.642
+eigbestsnp   10              50062_T  1            1     3.554
+eigbestsnp   10              58294_T  1            1     3.520
+eigbestsnp   10              1313_TC  1            1     3.470
+eigbestsnp   10                218_C  1            1     3.467
+eigbestsnp   10             12765_TT  1            1     3.449
+##end of smartpca run
