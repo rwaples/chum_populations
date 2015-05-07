@@ -17,11 +17,10 @@ outliermode: 0
 numchrom: 50
 numoutlieriter: 5
 numoutlierevec: 10
-lsqproject: YES
+lsqproject: NO
 ## smartpca version: 13050
 no norm used
 
-lsqproject used
 number of samples used: 174 number of snps used: 1416
 Using 8 threads, and partial sum lookup algorithm.
 total number of snps killed in pass: 0  used: 1416
