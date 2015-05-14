@@ -1,0 +1,23 @@
+PLINK v1.90b2o 64-bit (25 Nov 2014)
+9 arguments: --allow-extra-chr --allow-no-sex --bfile ./data/FISH_560/FISH_560.filter06 --extract ./data/FISH_560/FISH_560.filter06.pruned.prune.in --make-bed --out ./data/FISH_560/FISH_560.filter07
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Wed Dec  3 14:47:12 2014
+
+Random number seed: 1417646832
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+19802 variants loaded from .bim file.
+160 people (0 males, 0 females, 160 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./data/FISH_560/FISH_560.filter07.nosex .
+--extract: 14574 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 160 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.910107.
+14574 variants and 160 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ./data/FISH_560/FISH_560.filter07.bed +
+./data/FISH_560/FISH_560.filter07.bim + ./data/FISH_560/FISH_560.filter07.fam
+... done.
+
+End time: Wed Dec  3 14:47:13 2014

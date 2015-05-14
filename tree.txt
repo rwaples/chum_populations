@@ -1,0 +1,51 @@
+.
+├── data
+│   ├── batch_4
+│   │   ├── coverage
+│   │   └── pop_genotypes
+│   ├── PGDSpider_SPID
+│   └── ref
+│       ├── bed
+│       └── chum
+│           └── 1
+│               └── cache
+├── linkage_map
+│   ├── centromere_placement
+│   ├── LEPmap
+│   │   ├── chum_08
+│   │   ├── example
+│   │   ├── no_paralogs
+│   │   └── with_paralogs
+│   └── rec_stats
+│       ├── all
+│       ├── fam_01
+│       ├── fam_08
+│       └── fam_09
+├── old
+│   ├── batch_2
+│   │   └── populations_output
+│   └── FISH_560
+│       └── original
+├── plots
+│   ├── flowcharts
+│   ├── map
+│   ├── popgen
+│   ├── sequencing
+│   └── shiny
+│       ├── chum_mds
+│       │   └── shinyapps
+│       │       └── rwaples
+│       └── linkage_map
+│           └── shinyapps
+│               └── rwaples
+├── results
+│   └── batch_4
+│       ├── EIGENSOFT
+│       ├── ind_analysis
+│       ├── pop_analysis
+│       │   └── bayescan
+│       │       └── old
+│       └── synteny
+└── scripts
+
+48 directories
