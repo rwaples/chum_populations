@@ -1,6 +1,9 @@
 chum_populations
 ================
-```
+
+
+ryan.waples@gmail.com
+
 ####chum_populations
   - scripts
     * contains python and R scripts for 
@@ -20,5 +23,4 @@ chum_populations
     * sequencing
     * shiny
   - old
-  
-  ```
+
