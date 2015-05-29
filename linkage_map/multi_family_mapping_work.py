@@ -54,11 +54,11 @@ def rename_loci_by_family(paralogs_file, fam_names, families):
     # check if each family listed in families is formatted as if returned from prepare matrix
     for afam in families:
         if not isinstance(afam, pd.core.frame.DataFrame):
-            raise ValueError("families should be a pandas.core.frame.DataFrame")
+            raise ValueError("families should be a pandas DataFrame")
         else:
             pass
     if len(fam_names) != len(families) :
-        raise ValueError("names and families shoul have the same length")
+        raise ValueError("names and families should have the same length")
     if not isinstance(fam_names, list ):
         raise ValueError("names should be a list")
     
@@ -98,7 +98,6 @@ all_my_data, loci_all = prepare_matrix(bb.transpose())
 
 def write_LEPmap(families, family_names, loci, genotypes, output_filename):
     with open(output_filename, 'w') as OUTFILE:
-        # TODO: write header
         header = "\t".join(["#family", 'name', 'sire', 'dam', 'sex', 'blank'] + loci) + "\n"
         OUTFILE.write(header)
         for fam_idx, fam in enumerate(families):
