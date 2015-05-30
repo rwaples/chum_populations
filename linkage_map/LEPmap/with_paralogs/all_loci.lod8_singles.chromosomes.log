@@ -10,14 +10,14 @@
 2->1 : 0
 2->2 : 0
        Error rate = 0.0
-0,2->0,2 : 1338190
+0,2->0,2 : 1336466
   0,2->1 : 0
 1,2->1,2 : 0
   1,2->0 : 0
        Error rate = 0.0
-Maternally informative markers = 0 (of 12516)
-Paternally informative markers = 12516
-Maternally or paternally informative markers = 12516
+Maternally informative markers = 0 (of 12603)
+Paternally informative markers = 12603
+Maternally or paternally informative markers = 12603
 Removed 0 markers
 LOD(175, 0) = 50.730831351371116
 LOD(174, 0) = 50.43224777297899
@@ -31,11 +31,11 @@ LOD(173, 2) = 47.486415116373095
 ***Family = fam_01 chromosome = 1 numMarkers = 326 maternal informative markers 0 (paternal informative markers 326)
 ***Family = fam_09 chromosome = 1 numMarkers = 326 maternal informative markers 0 (paternal informative markers 326)
 ***Family = fam_08 chromosome = 2 numMarkers = 313 maternal informative markers 0 (paternal informative markers 311)
-***Family = fam_01 chromosome = 2 numMarkers = 313 maternal informative markers 0 (paternal informative markers 311)
+***Family = fam_01 chromosome = 2 numMarkers = 313 maternal informative markers 0 (paternal informative markers 312)
 ***Family = fam_09 chromosome = 2 numMarkers = 313 maternal informative markers 0 (paternal informative markers 309)
-***Family = fam_08 chromosome = 3 numMarkers = 286 maternal informative markers 0 (paternal informative markers 286)
-***Family = fam_01 chromosome = 3 numMarkers = 286 maternal informative markers 0 (paternal informative markers 285)
-***Family = fam_09 chromosome = 3 numMarkers = 286 maternal informative markers 0 (paternal informative markers 278)
+***Family = fam_08 chromosome = 3 numMarkers = 285 maternal informative markers 0 (paternal informative markers 285)
+***Family = fam_01 chromosome = 3 numMarkers = 285 maternal informative markers 0 (paternal informative markers 285)
+***Family = fam_09 chromosome = 3 numMarkers = 285 maternal informative markers 0 (paternal informative markers 277)
 ***Family = fam_08 chromosome = 4 numMarkers = 283 maternal informative markers 0 (paternal informative markers 283)
 ***Family = fam_01 chromosome = 4 numMarkers = 283 maternal informative markers 0 (paternal informative markers 283)
 ***Family = fam_09 chromosome = 4 numMarkers = 283 maternal informative markers 0 (paternal informative markers 282)
@@ -45,24 +45,24 @@ LOD(173, 2) = 47.486415116373095
 ***Family = fam_08 chromosome = 6 numMarkers = 251 maternal informative markers 0 (paternal informative markers 251)
 ***Family = fam_01 chromosome = 6 numMarkers = 251 maternal informative markers 0 (paternal informative markers 251)
 ***Family = fam_09 chromosome = 6 numMarkers = 251 maternal informative markers 0 (paternal informative markers 251)
-***Family = fam_08 chromosome = 7 numMarkers = 250 maternal informative markers 0 (paternal informative markers 242)
-***Family = fam_01 chromosome = 7 numMarkers = 250 maternal informative markers 0 (paternal informative markers 249)
-***Family = fam_09 chromosome = 7 numMarkers = 250 maternal informative markers 0 (paternal informative markers 250)
+***Family = fam_08 chromosome = 7 numMarkers = 248 maternal informative markers 0 (paternal informative markers 240)
+***Family = fam_01 chromosome = 7 numMarkers = 248 maternal informative markers 0 (paternal informative markers 248)
+***Family = fam_09 chromosome = 7 numMarkers = 248 maternal informative markers 0 (paternal informative markers 248)
 ***Family = fam_08 chromosome = 8 numMarkers = 246 maternal informative markers 0 (paternal informative markers 246)
 ***Family = fam_01 chromosome = 8 numMarkers = 246 maternal informative markers 0 (paternal informative markers 246)
 ***Family = fam_09 chromosome = 8 numMarkers = 246 maternal informative markers 0 (paternal informative markers 246)
 ***Family = fam_08 chromosome = 9 numMarkers = 238 maternal informative markers 0 (paternal informative markers 238)
 ***Family = fam_01 chromosome = 9 numMarkers = 238 maternal informative markers 0 (paternal informative markers 238)
 ***Family = fam_09 chromosome = 9 numMarkers = 238 maternal informative markers 0 (paternal informative markers 238)
-***Family = fam_08 chromosome = 10 numMarkers = 230 maternal informative markers 0 (paternal informative markers 230)
-***Family = fam_01 chromosome = 10 numMarkers = 230 maternal informative markers 0 (paternal informative markers 230)
-***Family = fam_09 chromosome = 10 numMarkers = 230 maternal informative markers 0 (paternal informative markers 230)
+***Family = fam_08 chromosome = 10 numMarkers = 228 maternal informative markers 0 (paternal informative markers 228)
+***Family = fam_01 chromosome = 10 numMarkers = 228 maternal informative markers 0 (paternal informative markers 228)
+***Family = fam_09 chromosome = 10 numMarkers = 228 maternal informative markers 0 (paternal informative markers 228)
 ***Family = fam_08 chromosome = 11 numMarkers = 221 maternal informative markers 0 (paternal informative markers 221)
 ***Family = fam_01 chromosome = 11 numMarkers = 221 maternal informative markers 0 (paternal informative markers 221)
 ***Family = fam_09 chromosome = 11 numMarkers = 221 maternal informative markers 0 (paternal informative markers 221)
-***Family = fam_08 chromosome = 12 numMarkers = 221 maternal informative markers 0 (paternal informative markers 221)
-***Family = fam_01 chromosome = 12 numMarkers = 221 maternal informative markers 0 (paternal informative markers 219)
-***Family = fam_09 chromosome = 12 numMarkers = 221 maternal informative markers 0 (paternal informative markers 221)
+***Family = fam_08 chromosome = 12 numMarkers = 220 maternal informative markers 0 (paternal informative markers 220)
+***Family = fam_01 chromosome = 12 numMarkers = 220 maternal informative markers 0 (paternal informative markers 220)
+***Family = fam_09 chromosome = 12 numMarkers = 220 maternal informative markers 0 (paternal informative markers 220)
 ***Family = fam_08 chromosome = 13 numMarkers = 198 maternal informative markers 0 (paternal informative markers 196)
 ***Family = fam_01 chromosome = 13 numMarkers = 198 maternal informative markers 0 (paternal informative markers 198)
 ***Family = fam_09 chromosome = 13 numMarkers = 198 maternal informative markers 0 (paternal informative markers 198)
@@ -76,7 +76,7 @@ LOD(173, 2) = 47.486415116373095
 ***Family = fam_01 chromosome = 16 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
 ***Family = fam_09 chromosome = 16 numMarkers = 171 maternal informative markers 0 (paternal informative markers 171)
 ***Family = fam_08 chromosome = 17 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
-***Family = fam_01 chromosome = 17 numMarkers = 169 maternal informative markers 0 (paternal informative markers 168)
+***Family = fam_01 chromosome = 17 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
 ***Family = fam_09 chromosome = 17 numMarkers = 169 maternal informative markers 0 (paternal informative markers 169)
 ***Family = fam_08 chromosome = 18 numMarkers = 168 maternal informative markers 0 (paternal informative markers 168)
 ***Family = fam_01 chromosome = 18 numMarkers = 168 maternal informative markers 0 (paternal informative markers 168)
@@ -99,18 +99,18 @@ LOD(173, 2) = 47.486415116373095
 ***Family = fam_08 chromosome = 24 numMarkers = 153 maternal informative markers 0 (paternal informative markers 153)
 ***Family = fam_01 chromosome = 24 numMarkers = 153 maternal informative markers 0 (paternal informative markers 153)
 ***Family = fam_09 chromosome = 24 numMarkers = 153 maternal informative markers 0 (paternal informative markers 153)
-***Family = fam_08 chromosome = 25 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
-***Family = fam_01 chromosome = 25 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
-***Family = fam_09 chromosome = 25 numMarkers = 152 maternal informative markers 0 (paternal informative markers 152)
+***Family = fam_08 chromosome = 25 numMarkers = 151 maternal informative markers 0 (paternal informative markers 151)
+***Family = fam_01 chromosome = 25 numMarkers = 151 maternal informative markers 0 (paternal informative markers 151)
+***Family = fam_09 chromosome = 25 numMarkers = 151 maternal informative markers 0 (paternal informative markers 151)
 ***Family = fam_08 chromosome = 26 numMarkers = 148 maternal informative markers 0 (paternal informative markers 148)
 ***Family = fam_01 chromosome = 26 numMarkers = 148 maternal informative markers 0 (paternal informative markers 148)
 ***Family = fam_09 chromosome = 26 numMarkers = 148 maternal informative markers 0 (paternal informative markers 148)
 ***Family = fam_08 chromosome = 27 numMarkers = 144 maternal informative markers 0 (paternal informative markers 144)
 ***Family = fam_01 chromosome = 27 numMarkers = 144 maternal informative markers 0 (paternal informative markers 144)
 ***Family = fam_09 chromosome = 27 numMarkers = 144 maternal informative markers 0 (paternal informative markers 144)
-***Family = fam_08 chromosome = 28 numMarkers = 142 maternal informative markers 0 (paternal informative markers 142)
-***Family = fam_01 chromosome = 28 numMarkers = 142 maternal informative markers 0 (paternal informative markers 142)
-***Family = fam_09 chromosome = 28 numMarkers = 142 maternal informative markers 0 (paternal informative markers 142)
+***Family = fam_08 chromosome = 28 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
+***Family = fam_01 chromosome = 28 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
+***Family = fam_09 chromosome = 28 numMarkers = 141 maternal informative markers 0 (paternal informative markers 141)
 ***Family = fam_08 chromosome = 29 numMarkers = 140 maternal informative markers 0 (paternal informative markers 140)
 ***Family = fam_01 chromosome = 29 numMarkers = 140 maternal informative markers 0 (paternal informative markers 140)
 ***Family = fam_09 chromosome = 29 numMarkers = 140 maternal informative markers 0 (paternal informative markers 140)
@@ -129,15 +129,15 @@ LOD(173, 2) = 47.486415116373095
 ***Family = fam_08 chromosome = 34 numMarkers = 129 maternal informative markers 0 (paternal informative markers 129)
 ***Family = fam_01 chromosome = 34 numMarkers = 129 maternal informative markers 0 (paternal informative markers 128)
 ***Family = fam_09 chromosome = 34 numMarkers = 129 maternal informative markers 0 (paternal informative markers 129)
-***Family = fam_08 chromosome = 35 numMarkers = 118 maternal informative markers 0 (paternal informative markers 118)
-***Family = fam_01 chromosome = 35 numMarkers = 118 maternal informative markers 0 (paternal informative markers 118)
-***Family = fam_09 chromosome = 35 numMarkers = 118 maternal informative markers 0 (paternal informative markers 118)
+***Family = fam_08 chromosome = 35 numMarkers = 117 maternal informative markers 0 (paternal informative markers 117)
+***Family = fam_01 chromosome = 35 numMarkers = 117 maternal informative markers 0 (paternal informative markers 117)
+***Family = fam_09 chromosome = 35 numMarkers = 117 maternal informative markers 0 (paternal informative markers 117)
 ***Family = fam_08 chromosome = 36 numMarkers = 111 maternal informative markers 0 (paternal informative markers 110)
 ***Family = fam_01 chromosome = 36 numMarkers = 111 maternal informative markers 0 (paternal informative markers 111)
 ***Family = fam_09 chromosome = 36 numMarkers = 111 maternal informative markers 0 (paternal informative markers 111)
-***Family = fam_08 chromosome = 37 numMarkers = 100 maternal informative markers 0 (paternal informative markers 100)
-***Family = fam_01 chromosome = 37 numMarkers = 100 maternal informative markers 0 (paternal informative markers 100)
-***Family = fam_09 chromosome = 37 numMarkers = 100 maternal informative markers 0 (paternal informative markers 100)
+***Family = fam_08 chromosome = 37 numMarkers = 98 maternal informative markers 0 (paternal informative markers 98)
+***Family = fam_01 chromosome = 37 numMarkers = 98 maternal informative markers 0 (paternal informative markers 98)
+***Family = fam_09 chromosome = 37 numMarkers = 98 maternal informative markers 0 (paternal informative markers 98)
 ***Family = fam_08 chromosome = 38 numMarkers = 7 maternal informative markers 0 (paternal informative markers 7)
 ***Family = fam_01 chromosome = 38 numMarkers = 7 maternal informative markers 0 (paternal informative markers 7)
 ***Family = fam_09 chromosome = 38 numMarkers = 7 maternal informative markers 0 (paternal informative markers 7)
@@ -153,27 +153,28 @@ LOD(173, 2) = 47.486415116373095
 Family fam_08
 Family fam_01
 Family fam_09
-Number of different markers = 12092
+Number of different markers = 12166
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-205 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 5.485860097875672
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
-360 : chr10 : 8.100657636890398 vs. chr28 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 5.758165940256667
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 0.0
+8.100657636890398 vs. 3.5729579403885614
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 6.580332247358362
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 4.335704634601774
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
+8.967158220164773 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 6.305454970542936
@@ -181,17 +182,14 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
-967 : chr2 : 8.3891469783143 vs. chr12 : 8.100657636890398 (not joined)
-985 : chr36 : 8.3891469783143 vs. chr7 : 8.100657636890398 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.967158220164773 vs. 7.409350364429441
-8.100657636890398 vs. 0.0
-8.3891469783143 vs. 7.812539448162381
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -200,11 +198,9 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.967158220164773 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-1208 : chr11 : 8.100657636890398 vs. chr27 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 7.812539448162381
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -215,7 +211,6 @@ Number of different markers = 12092
 8.967158220164773 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -225,14 +220,13 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
-8.100657636890398 vs. 6.85596827651233
-8.100657636890398 vs. 6.664261435646007
+8.100657636890398 vs. 6.580332247358362
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 4.6034886995201765
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-2316 : chr37 : 8.3891469783143 vs. chr9 : 8.100657636890398 (not joined)
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -247,6 +241,8 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
@@ -261,7 +257,7 @@ Number of different markers = 12092
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 7.132320645199556
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 4.335704634601774
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
@@ -272,9 +268,9 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
-3344 : chr11 : 8.677986831062242 vs. chr27 : 8.677986831062242 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-3364 : chr11 : 8.100657636890398 vs. chr27 : 8.100657636890398 (not joined)
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -287,62 +283,55 @@ Number of different markers = 12092
 8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-8.677986831062242 vs. 0.0
-8.100657636890398 vs. 0.0
-8.677986831062242 vs. 0.0
-8.100657636890398 vs. 5.635673357125613
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.3891469783143 vs. 0.0
-8.3891469783143 vs. 0.0
-8.3891469783143 vs. 0.0
-8.677986831062242 vs. 0.0
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
-4002 : chr10 : 8.3891469783143 vs. chr28 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.524814919292353
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 0.0
+8.3891469783143 vs. 0.0
+8.3891469783143 vs. 0.0
+8.677986831062242 vs. 0.0
+8.677986831062242 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.677986831062242 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 5.111902293203713
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.3891469783143 vs. 4.593070097082085
-4383 : chr9 : 8.677986831062242 vs. chr37 : 8.3891469783143 (not joined)
-8.3891469783143 vs. 5.758165940256667
+8.3891469783143 vs. 0.0
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
-4524 : chr9 : 8.677986831062242 vs. chr37 : 8.3891469783143 (not joined)
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 5.485860097875672
-8.100657636890398 vs. 7.812539448162381
-8.3891469783143 vs. 7.812539448162381
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-4847 : chr7 : 8.3891469783143 vs. chr36 : 8.3891469783143 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-8.100657636890398 vs. 7.237508653036841
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-8.100657636890398 vs. 7.812539448162381
 8.967158220164773 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 7.812539448162381
@@ -355,6 +344,7 @@ Number of different markers = 12092
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
@@ -362,79 +352,68 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
 8.100657636890398 vs. 4.079827535816964
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 4.335704634601774
-5886 : chr11 : 8.3891469783143 vs. chr27 : 8.3891469783143 (not joined)
-8.100657636890398 vs. 6.305454970542936
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 7.812539448162381
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 4.335704634601774
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 5.3732067587902606
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-6570 : chr37 : 8.967158220164773 vs. chr9 : 8.677986831062242 (not joined)
+8.677986831062242 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
-8.3891469783143 vs. 6.85596827651233
 8.3891469783143 vs. 0.0
-6761 : chr9 : 8.3891469783143 vs. chr38 : 8.100657636890398 (not joined)
+6804 : chr9 : 8.3891469783143 vs. chr38 : 8.100657636890398 (not joined)
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-6972 : chr36 : 8.3891469783143 vs. chr7 : 8.100657636890398 (not joined)
-7012 : chr11 : 8.100657636890398 vs. chr27 : 8.100657636890398 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 6.664261435646007
 8.100657636890398 vs. 0.0
-7204 : chr37 : 8.677986831062242 vs. chr9 : 8.3891469783143 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 6.85596827651233
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 5.111902293203713
-8.100657636890398 vs. 4.10710350355705
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 6.305454970542936
-7834 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-7940 : chr3 : 8.100657636890398 vs. chr7 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 4.9442306187986755
-8139 : chr37 : 8.677986831062242 vs. chr9 : 8.100657636890398 (not joined)
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 6.163837697179339
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
-8475 : chr2 : 8.100657636890398 vs. chr12 : 8.100657636890398 (not joined)
-8.677986831062242 vs. 7.132320645199556
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.524814919292353
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 4.593070097082085
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -446,35 +425,29 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 5.635673357125613
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 7.812539448162381
-8.3891469783143 vs. 7.812539448162381
-8.3891469783143 vs. 7.812539448162381
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.524814919292353
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-9505 : chr10 : 8.100657636890398 vs. chr28 : 8.100657636890398 (not joined)
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-9539 : chr6 : 8.100657636890398 vs. chr35 : 8.100657636890398 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.237508653036841
 8.677986831062242 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-9810 : chr3 : 8.3891469783143 vs. chr7 : 8.3891469783143 (not joined)
-8.100657636890398 vs. 0.0
-8.3891469783143 vs. 7.812539448162381
-8.677986831062242 vs. 6.580332247358362
-8.3891469783143 vs. 0.0
-8.100657636890398 vs. 0.0
-8.677986831062242 vs. 7.132320645199556
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 5.3732067587902606
 8.100657636890398 vs. 0.0
@@ -482,50 +455,42 @@ Number of different markers = 12092
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
 8.3891469783143 vs. 0.0
 8.3891469783143 vs. 0.0
-8.100657636890398 vs. 5.758165940256667
-8.100657636890398 vs. 5.635673357125613
+8.100657636890398 vs. 3.8255410666115806
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 5.635673357125613
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 6.305454970542936
-8.100657636890398 vs. 0.0
-10352 : chr10 : 8.3891469783143 vs. chr28 : 8.100657636890398 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 7.812539448162381
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 7.812539448162381
-10647 : chr6 : 8.3891469783143 vs. chr35 : 8.100657636890398 (not joined)
-10651 : chr9 : 8.3891469783143 vs. chr37 : 8.100657636890398 (not joined)
+10722 : chr6 : 8.3891469783143 vs. chr35 : 8.100657636890398 (not joined)
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 4.079827535816964
 8.677986831062242 vs. 0.0
-8.100657636890398 vs. 6.950647613629127
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-8.3891469783143 vs. 0.0
-8.3891469783143 vs. 6.85596827651233
-8.100657636890398 vs. 7.812539448162381
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-11050 : chr11 : 8.100657636890398 vs. chr27 : 8.100657636890398 (not joined)
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 7.132320645199556
 8.100657636890398 vs. 0.0
-11090 : chr6 : 8.3891469783143 vs. chr35 : 8.100657636890398 (not joined)
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 6.580332247358362
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.677986831062242 vs. 0.0
@@ -542,7 +507,7 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 3.8255410666115806
-8.3891469783143 vs. 7.812539448162381
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 6.580332247358362
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -553,38 +518,36 @@ Number of different markers = 12092
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 5.635673357125613
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 6.163837697179339
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-11958 : chr10 : 8.677986831062242 vs. chr28 : 8.100657636890398 (not joined)
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 6.031382688614232
+8.100657636890398 vs. 0.0
 8.100657636890398 vs. 4.10710350355705
 8.3891469783143 vs. 0.0
-12086 : chr11 : 8.3891469783143 vs. chr27 : 8.3891469783143 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
-8.100657636890398 vs. 0.0
-12163 : chr10 : 8.3891469783143 vs. chr28 : 8.3891469783143 (not joined)
-8.100657636890398 vs. 0.0
-8.3891469783143 vs. 0.0
-8.100657636890398 vs. 5.635673357125613
-12209 : chr9 : 8.3891469783143 vs. chr37 : 8.3891469783143 (not joined)
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
-8.3891469783143 vs. 5.89923696771256
+8.3891469783143 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 0.0
+8.100657636890398 vs. 0.0
+8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
-8.3891469783143 vs. 5.111902293203713
+8.100657636890398 vs. 4.10710350355705
+8.3891469783143 vs. 0.0
 8.677986831062242 vs. 0.0
-8.3891469783143 vs. 5.3732067587902606
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
-8.3891469783143 vs. 5.635673357125613
+8.3891469783143 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
 8.100657636890398 vs. 0.0
@@ -593,45 +556,45 @@ Number of different markers = 12092
 8.100657636890398 vs. 0.0
 8.3891469783143 vs. 0.0
 Number of joined markers in chr 1 is 18
-Number of joined markers in chr 2 is 15
+Number of joined markers in chr 2 is 7
 Number of joined markers in chr 3 is 11
 Number of joined markers in chr 4 is 7
 Number of joined markers in chr 5 is 14
-Number of joined markers in chr 6 is 23
+Number of joined markers in chr 6 is 19
 Number of joined markers in chr 7 is 21
 Number of joined markers in chr 8 is 8
-Number of joined markers in chr 9 is 6
-Number of joined markers in chr 10 is 12
-Number of joined markers in chr 11 is 7
-Number of joined markers in chr 12 is 13
+Number of joined markers in chr 9 is 8
+Number of joined markers in chr 10 is 6
+Number of joined markers in chr 11 is 12
+Number of joined markers in chr 12 is 7
 Number of joined markers in chr 13 is 11
 Number of joined markers in chr 14 is 19
-Number of joined markers in chr 15 is 10
+Number of joined markers in chr 15 is 11
 Number of joined markers in chr 16 is 4
 Number of joined markers in chr 17 is 15
 Number of joined markers in chr 18 is 3
 Number of joined markers in chr 19 is 10
 Number of joined markers in chr 20 is 8
 Number of joined markers in chr 21 is 12
-Number of joined markers in chr 22 is 12
+Number of joined markers in chr 22 is 11
 Number of joined markers in chr 23 is 12
 Number of joined markers in chr 24 is 9
-Number of joined markers in chr 25 is 16
+Number of joined markers in chr 25 is 17
 Number of joined markers in chr 26 is 10
-Number of joined markers in chr 27 is 6
-Number of joined markers in chr 28 is 2
+Number of joined markers in chr 27 is 14
+Number of joined markers in chr 28 is 7
 Number of joined markers in chr 29 is 7
 Number of joined markers in chr 30 is 9
 Number of joined markers in chr 31 is 16
 Number of joined markers in chr 32 is 10
 Number of joined markers in chr 33 is 10
 Number of joined markers in chr 34 is 5
-Number of joined markers in chr 35 is 5
-Number of joined markers in chr 36 is 12
-Number of joined markers in chr 37 is 13
+Number of joined markers in chr 35 is 6
+Number of joined markers in chr 36 is 16
+Number of joined markers in chr 37 is 6
 Number of joined markers in chr 38 is 0
 Number of joined markers in chr 39 is 1
 Number of joined markers in chr 40 is 0
 Number of joined markers in chr 41 is 2
-joined 404 single markers, non-conflicting LOD score > 8.677986831062242
-Number of LGs = 41, markers in LGs = 7330, singles = 5186
+joined 399 single markers, non-conflicting LOD score > 8.100657636890398
+Number of LGs = 41, markers in LGs = 7312, singles = 5291

@@ -10,14 +10,14 @@
 2->1 : 0
 2->2 : 0
        Error rate = 0.0
-0,2->0,2 : 1338190
+0,2->0,2 : 1336466
   0,2->1 : 0
 1,2->1,2 : 0
   1,2->0 : 0
        Error rate = 0.0
-Maternally informative markers = 0 (of 12194)
-Paternally informative markers = 12194
-Maternally or paternally informative markers = 12194
+Maternally informative markers = 0 (of 12151)
+Paternally informative markers = 12151
+Maternally or paternally informative markers = 12151
 Removed 0 children
 Removed 0 markers
 Number of LGs = 37
@@ -27,428 +27,529 @@ Number of LGs = 37
 228->156
 156->156
 All pairs
-join 28 and 77 score = 0.0 sizes 1,1
-join 8 and 136 score = 0.0 sizes 1,1
-join 49 and 143 score = 0.0 sizes 1,1
-join 25 and 84 score = 0.0 sizes 1,1
-join 20 and 84 score = 0.0 sizes 1,2
-join 36 and 50 score = 0.0 sizes 1,1
-join 49 and 116 score = 0.0 sizes 2,1
-join 65 and 143 score = 0.0 sizes 1,3
-join 20 and 70 score = 0.0 sizes 3,1
-join 70 and 102 score = 0.0 sizes 4,1
-join 34 and 44 score = 0.0 sizes 1,1
-join 26 and 87 score = 0.0 sizes 1,1
-join 74 and 87 score = 0.0 sizes 1,2
-join 25 and 107 score = 0.0 sizes 5,1
-join 99 and 102 score = 0.0 sizes 1,6
-join 51 and 88 score = 0.0 sizes 1,1
-join 34 and 39 score = 0.0 sizes 2,1
-join 44 and 105 score = 0.0 sizes 3,1
-join 39 and 121 score = 0.0 sizes 4,1
-join 82 and 121 score = 0.0 sizes 1,5
-join 65 and 137 score = 0.0 sizes 4,1
-join 9 and 116 score = 0.0 sizes 1,5
-join 77 and 152 score = 0.0 sizes 2,1
-join 9 and 94 score = 0.0 sizes 6,1
-join 89 and 114 score = 0.0 sizes 1,1
-join 89 and 139 score = 0.0 sizes 2,1
-join 18 and 139 score = 0.0 sizes 1,3
-join 26 and 145 score = 0.0 sizes 3,1
-join 81 and 129 score = 0.0 sizes 1,1
-join 51 and 107 score = 0.0 sizes 2,7
-join 0 and 88 score = 0.0 sizes 1,9
-join 22 and 83 score = 0.0 sizes 1,1
-join 22 and 129 score = 0.0 sizes 2,2
-join 83 and 150 score = 0.0 sizes 4,1
-join 12 and 124 score = 0.0 sizes 1,1
-join 68 and 124 score = 0.0 sizes 1,2
-join 30 and 150 score = 0.0 sizes 1,5
-join 30 and 50 score = 0.0 sizes 6,2
-join 46 and 137 score = 0.0 sizes 1,7
-join 29 and 101 score = 0.0 sizes 1,1
-join 94 and 114 score = 0.0 sizes 8,4
-join 85 and 119 score = 0.0 sizes 1,1
-join 127 and 131 score = 0.0 sizes 1,1
-join 0 and 71 score = 0.0 sizes 10,1
-join 36 and 71 score = 0.0 sizes 8,11
-join 2 and 146 score = 0.0 sizes 1,1
-join 2 and 126 score = 0.0 sizes 2,1
-join 8 and 78 score = 0.0 sizes 2,1
-join 32 and 136 score = 0.0 sizes 1,3
-join 131 and 152 score = 0.0 sizes 2,3
-join 43 and 79 score = 0.0 sizes 1,1
-join 72 and 81 score = 0.0 sizes 1,19
-join 76 and 138 score = 0.0 sizes 1,1
-join 113 and 138 score = 0.0 sizes 1,2
-join 43 and 90 score = 0.0 sizes 2,1
-join 23 and 148 score = 0.0 sizes 1,1
-join 18 and 23 score = 0.0 sizes 12,2
-join 28 and 48 score = 0.0 sizes 5,1
-join 45 and 93 score = 0.0 sizes 1,1
-join 128 and 144 score = 0.0 sizes 1,1
-join 68 and 82 score = 0.0 sizes 3,6
-join 12 and 13 score = 0.0 sizes 9,1
-join 52 and 74 score = 0.0 sizes 1,4
-join 40 and 128 score = 0.0 sizes 1,2
-join 47 and 127 score = 0.0 sizes 1,6
-join 80 and 105 score = 0.0 sizes 1,10
-join 3 and 144 score = 0.0 sizes 1,3
-join 40 and 78 score = 0.0 sizes 4,4
-join 75 and 134 score = 0.0 sizes 1,1
-join 31 and 64 score = 0.0 sizes 1,1
-join 64 and 122 score = 0.0 sizes 2,1
-join 72 and 73 score = 0.0 sizes 20,1
-join 99 and 148 score = 0.0 sizes 21,14
-join 27 and 103 score = 0.0 sizes 1,1
-join 58 and 79 score = 0.0 sizes 1,3
-All pairs
-join 32 and 35 score = 0.0 sizes 8,1
-join 19 and 130 score = 0.0 sizes 1,1
-join 41 and 125 score = 0.0 sizes 1,1
-join 62 and 92 score = 0.0 sizes 1,1
-join 47 and 97 score = 0.006666666666666667 sizes 7,1
-join 101 and 103 score = 0.006666666666666667 sizes 2,2
-join 7 and 45 score = 0.0 sizes 1,2
-join 55 and 73 score = 0.0 sizes 1,35
-join 1 and 37 score = 0.0 sizes 1,1
-join 1 and 151 score = 0.0 sizes 2,1
-join 41 and 85 score = 0.005988023952095809 sizes 2,2
-join 91 and 135 score = 0.0 sizes 1,1
-join 55 and 111 score = 0.0 sizes 36,1
-join 60 and 111 score = 0.0 sizes 1,37
-join 54 and 60 score = 0.0 sizes 1,38
-join 7 and 48 score = 0.0 sizes 3,8
-join 10 and 76 score = 0.006535947712418301 sizes 1,3
+join 36 and 63 score = 0.0 sizes 1,1
+join 23 and 133 score = 0.0 sizes 1,1
+join 8 and 89 score = 0.0 sizes 1,1
+join 33 and 107 score = 0.0 sizes 1,1
+join 6 and 126 score = 0.0 sizes 1,1
+join 38 and 89 score = 0.0 sizes 1,2
+join 59 and 63 score = 0.0 sizes 1,2
+join 36 and 65 score = 0.0 sizes 3,1
+join 43 and 127 score = 0.0 sizes 1,1
+join 43 and 126 score = 0.0 sizes 2,2
+join 19 and 64 score = 0.0 sizes 1,1
+join 8 and 115 score = 0.0 sizes 3,1
+join 12 and 47 score = 0.0 sizes 1,1
+join 47 and 93 score = 0.0 sizes 2,1
 join 5 and 66 score = 0.0 sizes 1,1
-join 56 and 118 score = 0.00558659217877095 sizes 1,1
-join 58 and 141 score = 0.006289308176100629 sizes 4,1
-join 4 and 122 score = 0.0 sizes 1,3
-join 37 and 66 score = 0.0 sizes 3,2
-join 63 and 112 score = 0.007575757575757576 sizes 1,1
-join 31 and 112 score = 0.007042253521126761 sizes 4,2
-join 92 and 140 score = 0.012987012987012988 sizes 2,1
-join 3 and 62 score = 0.005263157894736842 sizes 9,3
-join 109 and 135 score = 0.006756756756756757 sizes 1,2
-join 5 and 24 score = 0.0 sizes 5,1
-join 24 and 108 score = 0.0 sizes 6,1
-join 63 and 120 score = 0.006666666666666667 sizes 6,1
-join 57 and 110 score = 0.0 sizes 1,1
-join 110 and 155 score = 0.0 sizes 2,1
-join 147 and 154 score = 0.0 sizes 1,1
-join 61 and 147 score = 0.006622516556291391 sizes 1,2
-join 90 and 104 score = 0.006756756756756757 sizes 5,1
-join 16 and 123 score = 0.0 sizes 1,1
-join 16 and 155 score = 0.0 sizes 2,3
-join 10 and 29 score = 0.0055248618784530384 sizes 4,4
-join 53 and 146 score = 0.0 sizes 1,3
-join 53 and 153 score = 0.0 sizes 4,1
-join 93 and 151 score = 0.0 sizes 11,7
-join 108 and 145 score = 0.0 sizes 18,5
-join 106 and 126 score = 0.0 sizes 1,5
-join 57 and 153 score = 0.0 sizes 5,6
-join 14 and 132 score = 0.006024096385542169 sizes 1,1
-join 86 and 96 score = 0.0 sizes 1,1
-join 86 and 98 score = 0.0 sizes 2,1
-join 38 and 96 score = 0.0 sizes 1,3
-join 33 and 56 score = 0.011627906976744186 sizes 1,2
-join 14 and 104 score = 0.012345679012345678 sizes 2,6
-join 46 and 141 score = 0.012578616352201259 sizes 39,8
-join 33 and 140 score = 0.011111111111111112 sizes 3,12
-join 67 and 154 score = 0.0 sizes 1,3
-join 11 and 52 score = 0.01282051282051282 sizes 1,23
-join 120 and 134 score = 0.025 sizes 7,2
-join 4 and 54 score = 0.0 sizes 9,47
-join 119 and 130 score = 0.026845637583892617 sizes 4,2
-join 35 and 59 score = 0.0 sizes 15,1
-join 17 and 27 score = 0.03592814371257485 sizes 1,8
-join 17 and 80 score = 0.030303030303030304 sizes 9,11
-join 67 and 133 score = 0.0 sizes 4,1
-join 11 and 113 score = 0.0375 sizes 24,20
-join 15 and 115 score = 0.0 sizes 1,1
-join 115 and 117 score = 0.0 sizes 2,1
-join 38 and 95 score = 0.0 sizes 4,1
-join 19 and 142 score = 0.03783783783783784 sizes 6,1
-join 61 and 125 score = 0.030120481927710843 sizes 5,7
-join 15 and 100 score = 0.034482758620689655 sizes 3,1
-join 59 and 98 score = 0.034482758620689655 sizes 16,5
-join 69 and 149 score = 0.037037037037037035 sizes 1,1
-join 75 and 97 score = 0.03205128205128205 sizes 56,44
-join 100 and 142 score = 0.034482758620689655 sizes 4,12
+join 5 and 140 score = 0.0 sizes 2,1
+join 42 and 130 score = 0.0 sizes 1,1
+join 93 and 130 score = 0.0 sizes 3,2
+join 12 and 121 score = 0.0 sizes 5,1
+join 42 and 56 score = 0.0 sizes 6,1
+join 38 and 70 score = 0.0 sizes 4,1
+join 70 and 119 score = 0.0 sizes 5,1
+join 4 and 115 score = 0.0 sizes 1,6
+join 4 and 20 score = 0.0 sizes 7,1
+join 19 and 65 score = 0.0 sizes 2,4
+join 59 and 127 score = 0.0 sizes 6,4
+join 32 and 141 score = 0.0 sizes 1,1
+join 14 and 141 score = 0.0 sizes 1,2
+join 10 and 14 score = 0.0 sizes 1,3
+join 25 and 80 score = 0.0 sizes 1,1
+join 25 and 108 score = 0.0 sizes 2,1
+join 30 and 108 score = 0.0 sizes 1,3
+join 30 and 82 score = 0.0 sizes 4,1
+join 82 and 92 score = 0.0 sizes 5,1
+join 27 and 80 score = 0.0 sizes 1,6
+join 76 and 92 score = 0.0 sizes 1,7
+join 27 and 97 score = 0.0 sizes 8,1
+join 117 and 119 score = 0.0 sizes 1,8
+join 68 and 121 score = 0.0 sizes 1,7
+join 64 and 109 score = 0.0 sizes 10,1
+join 109 and 114 score = 0.0 sizes 11,1
+join 33 and 56 score = 0.0 sizes 2,8
+join 131 and 145 score = 0.0 sizes 1,1
+join 11 and 26 score = 0.0 sizes 1,1
+join 57 and 123 score = 0.0 sizes 1,1
+join 34 and 132 score = 0.0 sizes 1,1
+join 106 and 132 score = 0.0 sizes 1,2
+join 6 and 26 score = 0.0 sizes 12,2
+join 97 and 117 score = 0.0 sizes 9,9
+join 10 and 41 score = 0.0 sizes 4,1
+join 66 and 123 score = 0.0 sizes 3,2
+join 24 and 140 score = 0.0 sizes 1,5
+join 18 and 24 score = 0.0 sizes 1,6
+join 51 and 149 score = 0.0 sizes 1,1
+join 129 and 131 score = 0.0 sizes 1,2
+join 28 and 129 score = 0.0 sizes 1,3
+join 28 and 118 score = 0.0 sizes 4,1
+join 69 and 145 score = 0.0 sizes 1,5
+join 1 and 69 score = 0.0 sizes 1,6
+join 118 and 128 score = 0.0 sizes 7,1
+join 45 and 114 score = 0.0 sizes 1,14
+join 39 and 122 score = 0.0 sizes 1,1
+join 68 and 155 score = 0.0 sizes 10,1
+join 11 and 102 score = 0.0 sizes 15,1
+join 102 and 113 score = 0.0 sizes 16,1
+join 40 and 58 score = 0.0 sizes 1,1
+join 58 and 84 score = 0.0 sizes 2,1
+join 84 and 88 score = 0.0 sizes 3,1
+join 103 and 138 score = 0.0 sizes 1,1
+join 94 and 137 score = 0.0 sizes 1,1
+join 21 and 133 score = 0.0 sizes 1,2
+join 55 and 95 score = 0.0 sizes 1,1
+join 78 and 142 score = 0.0 sizes 1,1
+join 0 and 53 score = 0.0 sizes 1,1
+join 0 and 81 score = 0.0 sizes 2,1
+join 40 and 96 score = 0.0 sizes 4,1
+join 110 and 143 score = 0.0 sizes 1,1
+join 1 and 134 score = 0.0 sizes 8,1
+join 15 and 22 score = 0.005291005291005291 sizes 1,1
+join 49 and 139 score = 0.0 sizes 1,1
 All pairs
-join 13 and 109 score = 0.053691275167785234 sizes 100,3
-join 91 and 117 score = 0.08695652173913043 sizes 103,16
-join 69 and 95 score = 0.1 sizes 2,21
-join 118 and 132 score = 0.11976047904191617 sizes 23,119
-join 123 and 149 score = 0.17391304347826086 sizes 11,142
-join 21 and 133 score = 0.32142857142857145 sizes 1,153
-join 6 and 106 score = 0.0 sizes 1,154
-join 6 and 42 score = 0.2857142857142857 sizes 155,1
-score = 1.7069727714901193
-improvementE1 : -826.8157996573361
-improvementE2 : -826.8153305483664
-improvementE3 : -826.8152195692226
-improvementE3 : -826.8144343368783
-improvementE3 : -822.7150478016512
-improvementE1 : -822.7150421138149
-improvementE2 : -822.7150323118512
-improvementE3 : -821.527053634841
-improvementE2 : -819.8030614078475
-improvementE3 : -819.724405310393
-improvementE1 : -817.6705453165231
-improvementE3 : -816.4740343143885
-improvementE2 : -816.4641155742748
-improvementE3 : -816.1701844378749
-improvementE1 : -816.1700606675618
-improvementE2 : -816.1593975738518
-improvementE3 : -815.2163939892829
-improvementE1 : -815.2163904764384
-improvementE1 : -815.2159106020156
-improvementE1 : -815.0784552650656
-improvementE1 : -815.0781597366906
-improvementE3 : -807.311133368589
-improvementE1 : -807.3099971912981
-improvementE1 : -807.2314195260751
-improvementE2 : -807.2314145485591
-improvementE1 : -807.2308007816908
-improvementE3 : -807.2305386886999
-improvementE1 : -807.0906605922006
-improvementE3 : -806.260883378001
-improvementE1 : -806.2607100244578
-improvementE3 : -794.7747653365986
-improvementE1 : -794.7747461755594
-improvementE3 : -794.6586396461793
-improvementE3 : -794.6586384379669
-improvementE2 : -794.6545498006885
-improvementE3 : -794.6490356208556
-improvementE3 : -794.6331864029291
-improvementE2 : -794.6328255643436
-improvementE3 : -794.632521891521
-improvementE2 : -794.626117701519
-improvementE3 : -794.626113985747
-improvementE1 : -794.6261087431701
-improvementE1 : -794.6261063357438
-improvementE3 : -794.6145305446521
-improvementE3 : -794.5756727474038
-improvementE2 : -787.7771583705032
-improvementE1 : -787.7397538578014
-improvementE3 : -783.9116500229761
-improvementE1 : -783.9116189698284
-improvementE1 : -783.9116131844207
-improvementE2 : -783.911350025338
-improvementE2 : -783.9113362878804
-improvementE1 : -783.911316807603
-improvementE3 : -783.9113047674887
-improvementE2 : -717.2739869051795
-improvementE2 : -716.9055091678083
-improvementE2 : -709.7768283403591
-improvementE1 : -709.7767960359153
-improvementE2 : -709.7675489653072
-improvementE3 : -709.7675183004574
-improvementE3 : -709.7611194694799
-improvementE2 : -709.7485242270941
-improvementE2 : -709.7481167310634
-improvementE3 : -709.7453891181813
-improvementE3 : -703.077647494065
-improvementE1 : -702.2904941665164
-improvementE3 : -702.2819056064989
-improvementE3 : -702.2819043911372
-improvementE2 : -702.2818953838876
-improvementE2 : -702.2818884869536
-improvementE3 : -702.281369981022
-improvementE2 : -702.2813323502032
-improvementE3 : -702.2813310649567
-improvementE1 : -702.2797657171001
-improvementE3 : -702.2797642648761
-improvementE2 : -701.6634320402654
-improvementE2 : -701.6633840702748
-improvementE1 : -701.6633823776007
-improvementE1 : -701.6633807075905
-improvementE2 : -701.6500774645453
-improvementE1 : -701.650062498084
-improvementE3 : -697.686162148371
-improvementE3 : -692.5879458050622
-improvementE1 : -692.5878212622308
-improvementE2 : -690.04805171716
-improvementE1 : -689.8383594676642
-improvementE3 : -689.8383450595729
-improvementE3 : -689.5858490739353
-improvementE2 : -689.5310769625817
-improvementE3 : -688.6362748913286
-improvementE3 : -688.6362556972292
-improvementE2 : -688.6362539396277
-improvementE3 : -688.6357962858607
-improvementE3 : -688.6357882777364
-improvementE1 : -688.6353820054153
-improvementE3 : -686.9557347620873
-improvementE2 : -680.4941712862706
-improvementE3 : -680.4941635055134
-improvementE2 : -680.4941534916977
-improvementE3 : -680.4941350601243
-improvementE3 : -679.1791120964624
-improvementE2 : -679.179110846323
-improvementE2 : -679.1771086583922
-improvementE3 : -679.1771072971198
-improvementE3 : -679.1771026457559
-improvementE3 : -678.9168532481259
-improvementE2 : -678.9168457440035
-improvementE1 : -678.9168227313979
-improvementE3 : -678.9168215590632
-improvementE3 : -673.6814008174663
-improvementE1 : -673.6764622589035
-improvementE3 : -673.676459768255
-improvementE1 : -672.5864362485534
-improvementE3 : -672.4626625237014
-improvementE3 : -672.4626602714369
-improvementE2 : -669.5255881185878
-improvementE1 : -661.7514597064214
-improvementE3 : -661.7512754594022
-improvementE2 : -657.7024810619805
-improvementE1 : -649.7231943967215
-improvementE2 : -649.7231925897756
-improvementE1 : -649.7229431078861
-improvementE2 : -649.7227741965917
-improvementE2 : -649.7224245078951
-improvementE2 : -649.7224003749262
-improvementE3 : -649.7223540651827
-improvementE1 : -649.7223509137212
-improvementE3 : -649.7218050853887
-improvementE3 : -649.5284183494882
-improvementE3 : -649.528415596618
-improvementE2 : -648.1157704587183
-improvementE2 : -648.1151496998446
-improvementE3 : -647.839017276808
-improvementE3 : -640.7979731653538
-improvementE1 : -640.7979711869145
-improvementE3 : -640.7979698111521
-improvementE2 : -638.6740909205082
-improvementE3 : -638.674038391621
-improvementE3 : -638.6740373710284
-improvementE1 : -631.2081468876481
-improvementE2 : -631.1700267392848
-improvementE2 : -630.571524913666
-improvementE3 : -624.9073292557413
-improvementE3 : -624.9072547040419
-improvementE1 : -624.906733046437
-improvementE3 : -624.454822103695
-improvementE1 : -624.4548176310741
-improvementE3 : -624.4537784480156
-improvementE3 : -624.4537773530478
-improvementE1 : -624.4427148962062
-improvementE2 : -624.4415548599538
-improvementE1 : -624.4414958597242
-improvementE1 : -624.4409426516132
-improvementE3 : -624.4188916803553
-improvementE1 : -624.417059987756
-improvementE1 : -624.3855534589838
-improvementE2 : -620.6317096749123
-improvementE2 : -620.6314646015401
-improvementE3 : -620.6314570438351
-improvementE2 : -620.6308825339261
-improvementE1 : -620.6307980556847
-improvementE1 : -620.6250952499549
-improvementE2 : -620.6243396910054
-improvementE3 : -620.6243271991966
-improvementE3 : -620.6233046605072
-improvementE3 : -620.3119692710939
-improvementE3 : -620.3115992070371
-improvementE3 : -620.3115981644796
-improvementE1 : -620.3115861837371
-improvementE1 : -620.311575555894
-improvementE3 : -620.3111339213291
-improvementE2 : -620.3109604950296
-improvementE3 : -615.5924434275196
-improvementE2 : -615.5694558725827
-improvementE3 : -615.4845522036414
-improvementE1 : -615.4845017067549
-improvementE3 : -607.259116311785
-improvementE1 : -607.2256633972738
-improvementE1 : -607.2255410767071
-improvementE3 : -607.2255399272381
-improvementE1 : -607.2255330632235
-improvementE3 : -607.2201393902515
-improvementE3 : -607.2201063126538
-improvementE3 : -607.2013123007305
-improvementE1 : -607.2012913542867
-improvementE3 : -607.2010863081753
-improvementE3 : -607.2010831243947
-improvementE2 : -607.1906706367563
-improvementE2 : -607.1906550975989
-improvementE2 : -607.1519424216592
-improvementE2 : -606.9556309982792
-improvementE2 : -606.9552174301489
-improvementE1 : -606.9551789431745
-improvementE3 : -606.954979262181
-improvementE3 : -606.9549747564174
-improvementE2 : -606.9081062380291
-improvementE3 : -606.9046870705879
-improvementE3 : -606.1162480930113
-improvementE2 : -606.116238808869
-improvementE2 : -606.0997801657927
-improvementE2 : -606.0996339559683
-improvementE3 : -606.035567073516
-improvementE3 : -606.0355001444275
-improvementE3 : -606.0354982525713
-improvementE3 : -606.0354882740959
-improvementE1 : -605.7113758088124
-improvementE1 : -605.7113689593559
-improvementE3 : -605.7110897090527
-improvementE2 : -605.7109750055106
-improvementE2 : -605.7109673389996
-improvementE2 : -605.7107503659811
-improvementE3 : -605.7107482902906
-improvementE3 : -605.7001225109354
-improvementE1 : -603.6592993447455
-improvementE1 : -603.4474126266643
-improvementE1 : -603.4449244036739
-improvementE1 : -603.4449215979878
-improvementE2 : -603.4083042378783
-improvementE1 : -603.4082986430735
-improvementE3 : -603.3747372716562
-improvementE2 : -600.8043151770473
-improvementE2 : -600.7872184789724
-improvementE2 : -600.7789287012782
-improvementE3 : -600.7778913970144
-improvementE3 : -600.7777007933803
-improvementE1 : -600.7606387841672
-improvementE1 : -600.760618707822
-improvementE2 : -600.7605843175368
-improvementE3 : -593.4253934428885
-improvementE2 : -593.4253763830388
-improvementE1 : -593.4253641569508
-improvementE3 : -592.8553320084375
-improvementE2 : -592.8553296097527
-improvementE3 : -592.851787227198
-improvementE1 : -592.851782757434
-improvementE3 : -592.8517677453755
-improvementE1 : -592.8517666676285
-improvementE3 : -592.8517582302959
-improvementE3 : -592.8517571207085
-improvementE1 : -591.8518000924776
-improvementE3 : -591.8517981587192
-improvementE2 : -591.8517912137053
-improvementE1 : -591.8517665722156
-improvementE1 : -591.8484146466451
-improvementE3 : -591.848412886311
-improvementE3 : -591.8484015754216
-improvementE1 : -591.8480295535583
-improvementE1 : -591.8480184894559
-improvementE2 : -591.8479757608166
-improvementE3 : -591.8479747504473
-improvementE2 : -591.8479719118843
-improvementE2 : -591.8479707685401
-improvementE3 : -591.8479668011591
-improvementE1 : -591.8479652419691
-logL = -3088.090372941145
+join 52 and 73 score = 0.0 sizes 1,1
+join 72 and 120 score = 0.0 sizes 1,1
+join 29 and 148 score = 0.006024096385542169 sizes 1,1
+join 46 and 111 score = 0.0 sizes 1,1
+join 78 and 143 score = 0.0 sizes 2,2
+join 49 and 105 score = 0.0 sizes 2,1
+join 17 and 57 score = 0.006493506493506494 sizes 1,7
+join 124 and 139 score = 0.0 sizes 1,3
+join 51 and 122 score = 0.0064516129032258064 sizes 2,2
+join 54 and 86 score = 0.0 sizes 1,1
+join 20 and 152 score = 0.006944444444444444 sizes 18,1
+join 45 and 76 score = 0.006329113924050633 sizes 17,19
+join 55 and 138 score = 0.006896551724137931 sizes 2,2
+join 111 and 128 score = 0.006211180124223602 sizes 2,9
+join 88 and 152 score = 0.00641025641025641 sizes 5,36
+join 41 and 71 score = 0.0 sizes 5,1
+join 71 and 144 score = 0.0 sizes 6,1
+join 7 and 146 score = 0.0 sizes 1,1
+join 91 and 153 score = 0.0 sizes 1,1
+join 16 and 153 score = 0.006622516556291391 sizes 1,2
+join 15 and 147 score = 0.00558659217877095 sizes 2,1
+join 7 and 90 score = 0.0 sizes 2,1
+join 23 and 146 score = 0.0 sizes 3,3
+join 83 and 136 score = 0.0 sizes 1,1
+join 75 and 81 score = 0.013245033112582781 sizes 1,3
+join 75 and 124 score = 0.0 sizes 4,4
+join 13 and 53 score = 0.0 sizes 1,8
+join 13 and 35 score = 0.0 sizes 9,1
+join 112 and 144 score = 0.0 sizes 1,7
+join 91 and 136 score = 0.0 sizes 3,2
+join 50 and 112 score = 0.0 sizes 1,8
+join 99 and 155 score = 0.0 sizes 1,11
+join 61 and 99 score = 0.0 sizes 1,12
+join 87 and 103 score = 0.0 sizes 1,4
+join 85 and 100 score = 0.0 sizes 1,1
+join 85 and 86 score = 0.0 sizes 2,2
+join 50 and 54 score = 0.0 sizes 9,4
+join 3 and 21 score = 0.0 sizes 1,6
+join 3 and 67 score = 0.0 sizes 7,1
+join 61 and 90 score = 0.0 sizes 13,8
+join 67 and 135 score = 0.0 sizes 21,1
+join 105 and 113 score = 0.0 sizes 10,41
+join 35 and 110 score = 0.0 sizes 51,4
+join 94 and 101 score = 0.006756756756756757 sizes 2,1
+join 120 and 151 score = 0.014285714285714285 sizes 2,1
+join 72 and 142 score = 0.012658227848101266 sizes 3,55
+join 32 and 116 score = 0.01282051282051282 sizes 13,1
+join 100 and 134 score = 0.0 sizes 14,11
+join 22 and 46 score = 0.01092896174863388 sizes 3,25
+join 106 and 150 score = 0.006535947712418301 sizes 3,1
+join 98 and 150 score = 0.0 sizes 1,4
+join 29 and 96 score = 0.013157894736842105 sizes 2,58
+join 74 and 151 score = 0.014184397163120567 sizes 1,60
+join 37 and 125 score = 0.0 sizes 1,1
+join 39 and 52 score = 0.024691358024691357 sizes 4,2
+join 37 and 48 score = 0.0 sizes 2,1
+join 34 and 95 score = 0.01775147928994083 sizes 5,5
+join 73 and 154 score = 0.0379746835443038 sizes 6,1
+join 79 and 107 score = 0.030303030303030304 sizes 1,22
+join 31 and 147 score = 0.029239766081871343 sizes 1,28
+join 17 and 31 score = 0.04516129032258064 sizes 8,29
+join 44 and 154 score = 0.034482758620689655 sizes 1,7
+join 60 and 77 score = 0.03571428571428571 sizes 1,1
+join 60 and 98 score = 0.03225806451612903 sizes 2,10
+join 16 and 149 score = 0.037037037037037035 sizes 5,8
+join 44 and 125 score = 0.034482758620689655 sizes 13,3
+join 87 and 104 score = 0.037037037037037035 sizes 12,1
+All pairs
+join 18 and 74 score = 0.06 sizes 37,61
+join 79 and 137 score = 0.08387096774193549 sizes 23,3
+join 2 and 77 score = 0.07407407407407407 sizes 1,13
+join 48 and 62 score = 0.14814814814814814 sizes 16,1
+join 101 and 116 score = 0.16891891891891891 sizes 26,98
+join 104 and 135 score = 0.125 sizes 14,124
+join 9 and 62 score = 0.2857142857142857 sizes 1,17
+join 2 and 83 score = 0.2962962962962963 sizes 138,18
+score = 1.8119905626260828
+improvementE1 : -903.2461671025452
+improvementE2 : -903.1907677262873
+improvementE2 : -903.190766567463
+improvementE3 : -903.1843104277503
+improvementE2 : -903.1842509794566
+improvementE2 : -903.1842483217266
+improvementE3 : -903.1760231287544
+improvementE3 : -903.1735659637392
+improvementE2 : -903.0629883522475
+improvementE1 : -903.0629775309145
+improvementE1 : -903.0613431671708
+improvementE1 : -903.0613131349135
+improvementE3 : -888.165630763798
+improvementE3 : -886.178531816516
+improvementE2 : -886.1318127722641
+improvementE3 : -886.1296659068487
+improvementE3 : -886.1292575397422
+improvementE3 : -886.1292436172143
+improvementE1 : -886.1291338834927
+improvementE3 : -886.0301980851762
+improvementE2 : -886.0301965793511
+improvementE1 : -886.0130287157481
+improvementE3 : -886.0126817845521
+improvementE3 : -885.9455725651765
+improvementE3 : -885.9453562838934
+improvementE3 : -882.7976248234091
+improvementE2 : -882.797406433157
+improvementE3 : -882.7970989659183
+improvementE2 : -882.7968346873317
+improvementE3 : -882.7968217578609
+improvementE1 : -882.7961667333001
+improvementE1 : -882.7823396888057
+improvementE3 : -880.4066211406692
+improvementE2 : -880.2651489490194
+improvementE1 : -867.9452884325541
+improvementE3 : -867.9452366591648
+improvementE1 : -867.801627058349
+improvementE2 : -867.7723849865649
+improvementE2 : -867.7723685477044
+improvementE2 : -867.7723328636207
+improvementE1 : -867.7723316487081
+improvementE1 : -867.6896690804441
+improvementE3 : -867.6753579725269
+improvementE3 : -867.6747743491965
+improvementE3 : -867.6743333984709
+improvementE3 : -867.674331736844
+improvementE2 : -860.773026249391
+improvementE1 : -860.772785536576
+improvementE1 : -860.7727753444985
+improvementE1 : -853.9197103987595
+improvementE2 : -853.918202150018
+improvementE3 : -853.5352092411925
+improvementE3 : -849.3026978045826
+improvementE1 : -846.2683877574591
+improvementE1 : -846.2681161898025
+improvementE1 : -846.2669450591075
+improvementE2 : -846.2669355176203
+improvementE3 : -846.2669320686119
+improvementE3 : -846.2011489316872
+improvementE3 : -846.2011412358568
+improvementE1 : -846.2011399663241
+improvementE2 : -846.2006125253092
+improvementE1 : -846.2006114526798
+improvementE2 : -846.2005324708758
+improvementE3 : -846.2005230402559
+improvementE2 : -817.6464398574874
+improvementE3 : -817.6305841414687
+improvementE1 : -814.0958873332287
+improvementE3 : -813.8874396353481
+improvementE2 : -813.8873396993301
+improvementE1 : -813.8873370858585
+improvementE1 : -813.8873354884036
+improvementE3 : -799.6623869661505
+improvementE3 : -799.6615594807477
+improvementE2 : -799.5871145270053
+improvementE1 : -799.5868410970502
+improvementE3 : -788.693262866927
+improvementE3 : -788.286718012525
+improvementE3 : -788.2827939123442
+improvementE1 : -788.2826935040257
+improvementE3 : -768.5744329438412
+improvementE3 : -768.5743949180635
+improvementE3 : -759.7469563022678
+improvementE1 : -759.3074784296898
+improvementE1 : -759.3073748091197
+improvementE2 : -759.3073737381194
+improvementE2 : -759.3073708483585
+improvementE3 : -759.3073696052054
+improvementE3 : -759.3073669273283
+improvementE2 : -759.3071918986703
+improvementE1 : -759.3071907285604
+improvementE1 : -759.1651592694983
+improvementE2 : -759.1651124045624
+improvementE1 : -759.1448001417887
+improvementE3 : -759.1409584015448
+improvementE1 : -759.1409530335409
+improvementE1 : -759.1407845121831
+improvementE1 : -736.5555197287613
+improvementE3 : -690.09957193226
+improvementE3 : -690.0974168438645
+improvementE2 : -690.0974018601079
+improvementE3 : -690.0973733963899
+improvementE1 : -690.0961763669355
+improvementE1 : -690.096102226469
+improvementE1 : -690.0956468290044
+improvementE1 : -690.0956453045492
+improvementE2 : -690.0956122755183
+improvementE3 : -684.9260227213135
+improvementE1 : -677.069197459906
+improvementE3 : -674.4612555814547
+improvementE3 : -674.4611926959808
+improvementE2 : -674.4611902798731
+improvementE3 : -664.4844551104748
+improvementE2 : -661.862813561839
+improvementE3 : -661.8628124005041
+improvementE3 : -661.8622785443857
+improvementE2 : -661.8603660366803
+improvementE1 : -661.8603222983365
+improvementE1 : -661.8602620965717
+improvementE2 : -661.8601408679938
+improvementE2 : -661.8593830855016
+improvementE3 : -661.249878788107
+improvementE1 : -657.5183224375154
+improvementE1 : -653.7777913019911
+improvementE3 : -653.7201695043589
+improvementE1 : -653.7200722676652
+improvementE1 : -653.7139708447949
+improvementE1 : -653.713847434693
+improvementE3 : -653.7138406324734
+improvementE1 : -653.0012744779956
+improvementE1 : -653.00127272432
+improvementE3 : -653.0011994897402
+improvementE2 : -649.6132759238294
+improvementE2 : -649.6129466700047
+improvementE1 : -648.3134920465403
+improvementE1 : -648.3134240686434
+improvementE1 : -648.313411475596
+improvementE3 : -648.2904108293817
+improvementE1 : -648.2903826461469
+improvementE1 : -648.2903695977911
+improvementE2 : -648.290368447341
+improvementE3 : -648.2893823522004
+improvementE3 : -648.2890631692233
+improvementE3 : -648.2890485443523
+improvementE1 : -648.2889832077974
+improvementE2 : -648.2889793352599
+improvementE3 : -642.0314553350055
+improvementE1 : -642.0314477058045
+improvementE3 : -640.0342465056094
+improvementE3 : -637.792581319972
+improvementE3 : -637.7925769837202
+improvementE1 : -637.7912933638238
+improvementE2 : -637.7912889647062
+improvementE3 : -637.7906943912061
+improvementE3 : -637.7906932601552
+improvementE1 : -637.7906530306554
+improvementE1 : -637.7904732098712
+improvementE1 : -637.7169679927929
+improvementE1 : -637.604740111112
+improvementE3 : -632.9489547110825
+improvementE1 : -632.9489496801405
+improvementE3 : -620.3567008040015
+improvementE3 : -620.3566988240966
+improvementE2 : -620.3562809833038
+improvementE2 : -620.2229012946544
+improvementE2 : -620.2200071261747
+improvementE1 : -620.2200037473013
+improvementE1 : -620.1925400387108
+improvementE3 : -620.1879113463756
+improvementE3 : -620.187882034812
+improvementE2 : -620.1874886870703
+improvementE3 : -620.1874486198406
+improvementE2 : -620.1778243538121
+improvementE3 : -619.9139277904669
+improvementE1 : -605.7508373627472
+improvementE3 : -605.7508362687386
+improvementE3 : -605.7134090241285
+improvementE2 : -605.652880374148
+improvementE1 : -605.640989931276
+improvementE2 : -605.6245346006938
+improvementE3 : -605.6110317398311
+improvementE2 : -605.3313696499761
+improvementE3 : -605.331368135629
+improvementE2 : -605.3307601185572
+improvementE1 : -605.2907646570593
+improvementE3 : -605.0439697035447
+improvementE1 : -605.0411195092736
+improvementE3 : -605.0411183958213
+improvementE2 : -605.0329664807907
+improvementE3 : -605.0328810295621
+improvementE3 : -605.0328698706835
+improvementE2 : -605.0328681221708
+improvementE3 : -605.0308019526703
+improvementE1 : -605.0306980269329
+improvementE3 : -605.0306659681644
+improvementE3 : -605.0306299716149
+improvementE3 : -605.0304412706141
+improvementE3 : -602.8996080893834
+improvementE1 : -602.8996035181709
+improvementE1 : -602.8995018841581
+improvementE2 : -600.7207158813549
+improvementE3 : -596.7325150641827
+improvementE1 : -595.2673645393756
+improvementE2 : -595.2673634112703
+improvementE2 : -595.2673125071755
+improvementE1 : -595.267310345422
+improvementE1 : -595.2066884912169
+improvementE2 : -595.2007410969704
+improvementE3 : -595.200503540826
+improvementE3 : -595.1328118988644
+improvementE3 : -594.5632308919343
+improvementE3 : -594.5115356395986
+improvementE2 : -594.5115336828767
+improvementE2 : -594.4930381273981
+improvementE3 : -594.4929219954199
+improvementE1 : -594.4929201935488
+improvementE1 : -594.4929184394182
+improvementE2 : -594.3845849136926
+improvementE3 : -594.3845820910531
+improvementE3 : -594.3845343225938
+improvementE2 : -594.3619713576852
+improvementE3 : -591.7522732656356
+improvementE2 : -591.7482007681958
+improvementE2 : -591.7354152678918
+improvementE3 : -591.7350930035293
+improvementE2 : -591.7350669861006
+improvementE3 : -591.735058509402
+improvementE3 : -591.735049127166
+improvementE2 : -591.2437346394067
+improvementE3 : -591.2437317594433
+improvementE1 : -591.2432883636122
+improvementE3 : -591.2432853558054
+improvementE1 : -582.3997388567193
+improvementE1 : -582.399344754693
+improvementE1 : -582.3993397391362
+improvementE2 : -578.7780760653151
+improvementE3 : -578.7774548047228
+improvementE2 : -575.0629488714596
+improvementE3 : -575.0629441292403
+improvementE3 : -575.0629428106699
+improvementE2 : -575.0629388478241
+improvementE2 : -575.0629370192532
+improvementE1 : -575.0629318432473
+improvementE2 : -575.0629220572794
+improvementE2 : -575.0629193597277
+improvementE2 : -567.2525971723317
+improvementE2 : -567.2431053255568
+improvementE3 : -567.2426078446556
+improvementE1 : -567.242597631043
+improvementE2 : -567.2422183379157
+improvementE3 : -567.2034684523179
+improvementE3 : -567.184053144716
+improvementE2 : -567.1814718106974
+improvementE3 : -567.181445782707
+improvementE3 : -567.1814348739723
+improvementE3 : -567.1814331325734
+improvementE3 : -567.1684245658737
+improvementE3 : -567.1679988891453
+improvementE2 : -567.1679923487047
+improvementE2 : -567.1679908629965
+improvementE1 : -567.1679835584807
+improvementE1 : -567.1679825106655
+improvementE2 : -567.1679813071402
+improvementE3 : -567.1679457401839
+improvementE2 : -567.1677976733251
+improvementE2 : -567.1677949259911
+improvementE3 : -563.9661071306779
+improvementE1 : -563.9661054382594
+improvementE3 : -563.9179928365783
+improvementE2 : -563.9179612819592
+improvementE1 : -563.9179593496249
+improvementE1 : -563.9179073810615
+improvementE3 : -563.9179053914039
+improvementE2 : -563.9179042578924
+improvementE2 : -563.9179012513666
+improvementE1 : -563.9178977120661
+improvementE1 : -560.9890195297189
+improvementE1 : -560.9890095680455
+improvementE2 : -560.9890076887209
+improvementE3 : -560.9879183130525
+improvementE2 : -560.9879154491364
+improvementE3 : -560.9879120193646
+improvementE2 : -560.9879077439525
+improvementE2 : -560.987906419545
+improvementE1 : -560.9875844665567
+improvementE1 : -560.9875821617363
+improvementE3 : -560.9875311370695
+improvementE3 : -560.9858618914632
+improvementE3 : -560.984353752663
+improvementE2 : -560.9779908407615
+improvementE3 : -560.9779883866811
+improvementE3 : -560.962678025177
+improvementE3 : -560.9626301982969
+improvementE2 : -560.9626188426138
+improvementE3 : -560.7254373526098
+improvementE1 : -560.7254092477283
+improvementE2 : -560.7253536033339
+improvementE3 : -560.4607798079403
+improvementE2 : -560.4369706886703
+improvementE3 : -554.7627645444081
+improvementE2 : -554.7623147991162
+improvementE3 : -554.4223060159673
+improvementE3 : -554.4146247434065
+improvementE2 : -554.4146176274703
+improvementE2 : -554.414613170932
+improvementE1 : -554.4023338664231
+improvementE3 : -554.4023318417887
+improvementE2 : -554.3926845052503
+improvementE3 : -554.3926798734191
+improvementE2 : -554.3926725841836
+improvementE3 : -554.3890501697883
+improvementE2 : -554.389025918766
+improvementE2 : -554.3890085247995
+logL = -2981.898072071855
 Removing 0 markers
 Second round
-improvementE1 : -591.8479587231561
-improvementE2 : -554.1121781448887
-improvementE3 : -554.1103579414744
-improvementE3 : -552.1112396201088
-improvementE3 : -552.1104536420057
-improvementE2 : -552.1104428196388
-improvementE2 : -552.1104381791614
-improvementE1 : -552.1104185619511
-improvementE1 : -552.1103240004643
-improvementE3 : -552.1103193610024
+improvementE2 : -554.1363835776397
+improvementE1 : -554.1363823138922
+improvementE1 : -554.136355758171
+improvementE2 : -554.1363520641394
+improvementE1 : -554.1338209828701
+improvementE3 : -554.1188520144847
+improvementE1 : -554.1186678007575
+improvementE2 : -554.1186563884942
+improvementE3 : -554.1181722186941
+improvementE1 : -554.1150397840672
+improvementE1 : -554.1150387219071
+improvementE3 : -554.1150367439418
+improvementE1 : -554.1148320955313
+improvementE3 : -554.1148291051011
+improvementE1 : -554.1148221887686
+improvementE1 : -554.1148181111414
+improvementE1 : -554.1148168021882
+improvementE3 : -554.1148155395879
+improvementE3 : -554.1148144701888
+improvementE1 : -554.1148082846274
+improvementE3 : -552.1284055945656
+improvementE2 : -552.1283998668165
+improvementE3 : -551.8652536706013
+improvementE1 : -551.8652521415327
+improvementE3 : -551.8652503021849
+improvementE2 : -551.8652491606972
+improvementE3 : -551.8652383936284
+improvementE1 : -551.8652311128515
+improvementE3 : -551.8652233329044
+improvementE1 : -551.8652219600326
+improvementE3 : -551.865220623818
+improvementE1 : -551.865179002405
+improvementE2 : -551.8609307816063
+improvementE1 : -551.8608954565627
+improvementE2 : -551.860894136677
+improvementE2 : -551.8608794129495
+improvementE1 : -551.8608782721732
+improvementE1 : -551.8608580879722
+improvementE3 : -551.8608517077943
+improvementE1 : -551.8608457732968
+improvementE3 : -551.8608398844224
+improvementE1 : -551.8608313205186
+improvementE2 : -551.8608251901284
+improvementE3 : -551.8608223663608
+improvementE3 : -551.8608191882499
+improvementE3 : -551.8608121573596
+improvementE3 : -551.8608073312134
+improvementE3 : -550.8607347241752
+improvementE3 : -550.8607066706344
+improvementE3 : -550.8606647306522
+improvementE1 : -550.8606597826633
+improvementE3 : -550.8606544161191
