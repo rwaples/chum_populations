@@ -1,0 +1,321 @@
+parameter file: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.parfile
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/mapped_non_paralogs_subset.ped
+snpname: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/mapped_non_paralogs_subset.map
+indivname: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/complete.ped
+evecoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.evec
+evaloutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.eval
+grmoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.rel
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.snpweights
+deletesnpoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.snpremoved
+outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.ind_outliers
+fastmode: NO
+usenorm: NO
+missingmode: NO
+outliermode: 0
+numchrom: 50
+numoutlieriter: 5
+numoutlierevec: 10
+lsqproject: NO
+## smartpca version: 13050
+no norm used
+
+genetic distance set from physical distance
+1:CMHAMM10_0002 ignored
+1:CMHAMM10_0005 ignored
+1:CMHAMM10_0008 ignored
+1:CMHAMM10_0011 ignored
+1:CMHAMM10_0012 ignored
+1:CMHAMM10_0014 ignored
+1:CMHAMM10_0015 ignored
+1:CMHAMM10_0016 ignored
+1:CMHAMM10_0017 ignored
+1:CMHAMM10_0018 ignored
+1:CMHAMM10_0022 ignored
+1:CMHAMM10_0024 ignored
+1:CMHAMM10_0025 ignored
+1:CMHAMM10_0026 ignored
+1:CMHAMM10_0027 ignored
+1:CMHAMM10_0029 ignored
+1:CMHAMM10_0030 ignored
+1:CMHAMM10_0033 ignored
+1:CMHAMM10_0040 ignored
+1:CMHAMM10_0056 ignored
+2:CMKALA03_0004 ignored
+2:CMKALA03_0005 ignored
+2:CMKALA03_0006 ignored
+2:CMKALA03_0007 ignored
+2:CMKALA03_0008 ignored
+2:CMKALA03_0009 ignored
+2:CMKALA03_0011 ignored
+2:CMKALA03_0012 ignored
+2:CMKALA03_0017 ignored
+2:CMKALA03_0024 ignored
+2:CMKALA03_0025 ignored
+2:CMKALA03_0036 ignored
+2:CMKALA03_0041 ignored
+2:CMKALA03_0046 ignored
+2:CMKALA03_0048 ignored
+2:CMKALA03_0049 ignored
+2:CMKALA03_0050 ignored
+3:CMLILLIW11_0011 ignored
+3:CMLILLIW11_0030 ignored
+3:CMLILLIW11_0031 ignored
+3:CMLILLIW11_0032 ignored
+3:CMLILLIW11_0035 ignored
+3:CMLILLIW11_0037 ignored
+3:CMLILLIW11_0047 ignored
+3:CMLILLIW11_0048 ignored
+3:CMLILLIW11_0053 ignored
+3:CMLILLIW11_0061 ignored
+3:CMLILLIW11_0063 ignored
+3:CMLILLIW11_0077 ignored
+3:CMLILLIW11_0079 ignored
+3:CMLILLIW11_0080 ignored
+3:CMLILLIW11_0085 ignored
+3:CMLILLIW11_0087 ignored
+3:CMLILLIW11_0089 ignored
+3:CMLILLIW11_0095 ignored
+3:CMLILLIW11_0096 ignored
+3:CMLILLIW11_0099 ignored
+4:CMSHERW94F_0010 ignored
+4:CMSHERW94F_0012 ignored
+4:CMSHERW94F_0018 ignored
+4:CMSHERW94F_0019 ignored
+4:CMSHERW94F_0022 ignored
+4:CMSHERW94F_0024 ignored
+4:CMSHERW94F_0026 ignored
+4:CMSHERW94F_0027 ignored
+4:CMSHERW94F_0028 ignored
+4:CMSHERW94F_0032 ignored
+4:CMSHERW94F_0033 ignored
+4:CMSHERW94F_0035 ignored
+4:CMSHERW94F_0036 ignored
+4:CMSHERW94F_0039 ignored
+4:CMSHERW94F_0045 ignored
+4:CMSHERW94F_0046 ignored
+4:CMSHERW94F_0047 ignored
+4:CMSHERW94F_0052 ignored
+4:CMSHERW94F_0056 ignored
+4:CMSHERW94F_0058 ignored
+4:CMSHERW94F_0059 ignored
+4:CMSHERW94F_0061 ignored
+4:CMSHERW94F_0064 ignored
+4:CMSHERW94F_0066 ignored
+4:CMSHERW94F_0074 ignored
+4:CMSHERW94F_0075 ignored
+4:CMSHERW94F_0076 ignored
+4:CMSHERW94F_0083 ignored
+4:CMSHERW94F_0084 ignored
+4:CMSHERW94F_0085 ignored
+4:CMSHERW94F_0086 ignored
+4:CMSHERW94F_0091 ignored
+5:CMSHERW94S_0001 ignored
+5:CMSHERW94S_0003 ignored
+5:CMSHERW94S_0009 ignored
+5:CMSHERW94S_0015 ignored
+5:CMSHERW94S_0016 ignored
+5:CMSHERW94S_0017 ignored
+5:CMSHERW94S_0018 ignored
+5:CMSHERW94S_0019 ignored
+5:CMSHERW94S_0020 ignored
+5:CMSHERW94S_0022 ignored
+5:CMSHERW94S_0027 ignored
+5:CMSHERW94S_0032 ignored
+5:CMSHERW94S_0033 ignored
+5:CMSHERW94S_0034 ignored
+5:CMSHERW94S_0047 ignored
+5:CMSHERW94S_0050 ignored
+5:CMSHERW94S_0053 ignored
+5:CMSHERW94S_0056 ignored
+5:CMSHERW94S_0057 ignored
+5:CMSHERW94S_0059 ignored
+5:CMSHERW94S_0062 ignored
+5:CMSHERW94S_0066 ignored
+5:CMSHERW94S_0068 ignored
+5:CMSHERW94S_0071 ignored
+5:CMSHERW94S_0075 ignored
+5:CMSHERW94S_0083 ignored
+5:CMSHERW94S_0085 ignored
+5:CMSHERW94S_0087 ignored
+5:CMSHERW94S_0090 ignored
+5:CMSHERW94S_0093 ignored
+5:CMSHERW94S_0095 ignored
+6:CMSKOO10_0002 ignored
+6:CMSKOO10_0004 ignored
+6:CMSKOO10_0007 ignored
+6:CMSKOO10_0008 ignored
+6:CMSKOO10_0009 ignored
+6:CMSKOO10_0010 ignored
+6:CMSKOO10_0011 ignored
+6:CMSKOO10_0012 ignored
+6:CMSKOO10_0018 ignored
+6:CMSKOO10_0033 ignored
+6:CMSKOO10_0040 ignored
+7:CMSNOH10_0026 ignored
+7:CMSNOH10_0027 ignored
+7:CMSNOH10_0034 ignored
+7:CMSNOH10_0038 ignored
+7:CMSNOH10_0058 ignored
+7:CMSNOH10_0062 ignored
+7:CMSNOH10_0069 ignored
+7:CMSNOH10_0072 ignored
+7:CMSNOH10_0088 ignored
+7:CMSNOH10_0089 ignored
+7:CMSNOH10_0090 ignored
+7:CMSNOH10_0102 ignored
+7:CMSNOH10_0104 ignored
+7:CMSNOH10_0106 ignored
+8:CMSQUA10_0001 ignored
+8:CMSQUA10_0004 ignored
+8:CMSQUA10_0009 ignored
+8:CMSQUA10_0010 ignored
+8:CMSQUA10_0017 ignored
+8:CMSQUA10_0019 ignored
+8:CMSQUA10_0038 ignored
+8:CMSQUA10_0058 ignored
+9:CMSTILL10_0006 ignored
+9:CMSTILL10_0009 ignored
+9:CMSTILL10_0014 ignored
+9:CMSTILL10_0020 ignored
+9:CMSTILL10_0029 ignored
+9:CMSTILL10_0037 ignored
+9:CMSTILL10_0043 ignored
+9:CMSTILL10_0044 ignored
+9:CMSTILL10_0047 ignored
+9:CMSTILL10_0055 ignored
+9:CMSTILL10_0061 ignored
+9:CMSTILL10_0067 ignored
+9:CMSTILL10_0080 ignored
+10:CMUW10_0001 ignored
+10:CMUW10_0002 ignored
+10:CMUW10_0003 ignored
+10:CMUW10_0004 ignored
+10:CMUW10_0007 ignored
+10:CMUW10_0008 ignored
+10:CMUW10_0009 ignored
+10:CMUW10_0011 ignored
+all individuals set ignore.  Likely input problem (col 6)
+resetting all individual...
+genotype file processed
+number of samples used: 174 number of snps used: 1000
+Using 8 threads, and partial sum lookup algorithm.
+total number of snps killed in pass: 0  used: 1000
+grm dumped
+
+## To get Tracy-Widom statistics: recompile smartpca with TWTAB correctly specified in Makefile, or
+   just run twstats (see README file in POPGEN directory)
+    kurtosis           snps    indivs
+ eigenvector    1     3.219     5.023
+ eigenvector    2     3.077     1.703
+ eigenvector    3     3.613     6.302
+ eigenvector    4     3.453     3.437
+ eigenvector    5     3.458     8.196
+ eigenvector    6     3.337     4.751
+ eigenvector    7     3.358     3.582
+ eigenvector    8     3.362     3.860
+ eigenvector    9     3.527     3.433
+ eigenvector   10     3.405     3.718
+population:   0                  ???  174
+eigbestsnp    1              20735_7 11            7     3.474
+eigbestsnp    1              5882_86 14           86     3.359
+eigbestsnp    1              9773_49 21           49     3.267
+eigbestsnp    1             28620_14  1           14     3.188
+eigbestsnp    1             39912_82 11           82     3.083
+eigbestsnp    1             34522_82 30           82     2.923
+eigbestsnp    1             41761_87  4           87     2.897
+eigbestsnp    1             29270_29  9           29     2.823
+eigbestsnp    1             62917_81 35           81     2.809
+eigbestsnp    1             51194_57 23           57     2.784
+eigbestsnp    2             45739_36 32           36     3.580
+eigbestsnp    2             53022_91 23           91     3.206
+eigbestsnp    2             26187_49  8           49     2.858
+eigbestsnp    2             60405_52 10           52     2.796
+eigbestsnp    2             57396_84 12           84     2.745
+eigbestsnp    2             38681_12 10           12     2.678
+eigbestsnp    2             46698_75 19           75     2.657
+eigbestsnp    2             40117_68 11           68     2.600
+eigbestsnp    2             27529_40  9           40     2.543
+eigbestsnp    2             21748_50  6           50     2.540
+eigbestsnp    3              4779_55 10           55     4.128
+eigbestsnp    3             68460_70 20           70     3.517
+eigbestsnp    3             26133_87  4           87     3.500
+eigbestsnp    3             25051_27 21           27     3.234
+eigbestsnp    3             10446_58  6           58     3.212
+eigbestsnp    3             14362_37 26           37     3.170
+eigbestsnp    3             15008_45 17           45     3.152
+eigbestsnp    3             52260_56 10           56     3.020
+eigbestsnp    3              25232_9  2            9     2.880
+eigbestsnp    3             28620_14  1           14     2.790
+eigbestsnp    4             43998_44 17           44     4.551
+eigbestsnp    4             18185_56 22           56     3.406
+eigbestsnp    4             60405_52 10           52     3.084
+eigbestsnp    4             39418_29 23           29     2.981
+eigbestsnp    4             49616_61 14           61     2.790
+eigbestsnp    4             54807_92 14           92     2.787
+eigbestsnp    4             47936_67 10           67     2.755
+eigbestsnp    4              1934_32 10           32     2.736
+eigbestsnp    4             11010_73 10           73     2.718
+eigbestsnp    4             18258_68 12           68     2.705
+eigbestsnp    5             29746_60  4           60     3.314
+eigbestsnp    5             21857_23 35           23     3.253
+eigbestsnp    5             46908_21 13           21     3.189
+eigbestsnp    5             37785_75 30           75     3.082
+eigbestsnp    5              5559_70 36           70     3.008
+eigbestsnp    5             15135_72  1           72     2.975
+eigbestsnp    5             33014_10 11           10     2.966
+eigbestsnp    5             34522_82 30           82     2.939
+eigbestsnp    5             43782_49 30           49     2.925
+eigbestsnp    5             29035_48 33           48     2.891
+eigbestsnp    6             18996_74 21           74     3.472
+eigbestsnp    6             47005_81 23           81     3.270
+eigbestsnp    6             55209_62 31           62     3.057
+eigbestsnp    6             28977_48 32           48     3.036
+eigbestsnp    6             35172_67 28           67     2.966
+eigbestsnp    6             46191_70 34           70     2.929
+eigbestsnp    6              1154_46 31           46     2.928
+eigbestsnp    6             30971_46 11           46     2.911
+eigbestsnp    6              8419_35 26           35     2.904
+eigbestsnp    6             52805_20 20           20     2.821
+eigbestsnp    7             48914_83 29           83     4.029
+eigbestsnp    7              2278_14 29           14     3.792
+eigbestsnp    7             11010_73 10           73     3.148
+eigbestsnp    7              2270_45 17           45     2.924
+eigbestsnp    7              25232_9  2            9     2.825
+eigbestsnp    7             72852_31 30           31     2.803
+eigbestsnp    7             34522_82 30           82     2.726
+eigbestsnp    7             39115_61 17           61     2.684
+eigbestsnp    7             13819_70 12           70     2.680
+eigbestsnp    7             43869_69 24           69     2.588
+eigbestsnp    8             38681_12 10           12     3.292
+eigbestsnp    8             29746_60  4           60     3.261
+eigbestsnp    8             45739_36 32           36     3.102
+eigbestsnp    8             17018_51 11           51     2.984
+eigbestsnp    8                 88_8 30            8     2.978
+eigbestsnp    8             37921_27  1           27     2.902
+eigbestsnp    8             14193_17 14           17     2.814
+eigbestsnp    8             63771_90 36           90     2.764
+eigbestsnp    8              35110_9 29            9     2.742
+eigbestsnp    8             31090_18  2           18     2.731
+eigbestsnp    9             12046_76 25           76     3.602
+eigbestsnp    9             12225_64  2           64     3.434
+eigbestsnp    9             26187_49  8           49     3.307
+eigbestsnp    9             39751_30 19           30     3.167
+eigbestsnp    9              1453_84 31           84     3.144
+eigbestsnp    9             13819_70 12           70     3.078
+eigbestsnp    9             78624_21 17           21     3.032
+eigbestsnp    9             67732_28 19           28     3.027
+eigbestsnp    9             25893_10 10           10     3.002
+eigbestsnp    9             30947_61 29           61     2.988
+eigbestsnp   10             20267_86 22           86     3.818
+eigbestsnp   10             34117_46  7           46     3.561
+eigbestsnp   10             37715_12 11           12     3.284
+eigbestsnp   10             51506_49 22           49     3.168
+eigbestsnp   10              45625_9 22            9     3.140
+eigbestsnp   10              2244_88  7           88     3.111
+eigbestsnp   10             37173_42 20           42     3.071
+eigbestsnp   10             39508_71 34           71     3.012
+eigbestsnp   10              4759_29 19           29     2.981
+eigbestsnp   10             18277_11  4           11     2.947
+##end of smartpca run

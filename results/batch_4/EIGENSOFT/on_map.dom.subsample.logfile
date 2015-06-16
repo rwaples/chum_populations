@@ -1,0 +1,29 @@
+parameter file: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.parfile
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.tsv
+snpname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.map.subsample
+indivname: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/complete.ped
+evecoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.evec
+evaloutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.eval
+grmoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.rel
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.snpweights
+deletesnpoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.snpremoved
+outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.dom.subsample.ind_outliers
+fastmode: NO
+usenorm: NO
+missingmode: NO
+outliermode: 0
+numchrom: 50
+numoutlieriter: 5
+numoutlierevec: 10
+lsqproject: NO
+## smartpca version: 13050
+no norm used
+
+warning: bad chrom: 1	9_C	1	1
+warning: bad chrom: 1	9_A	1	1
+warning: bad chrom: 1	15_G	1	1
+warning: bad chrom: 1	15_T	1	1
+warning: bad chrom: 1	82_G	1	1
+warning: bad chrom: 1	82_C	1	1
