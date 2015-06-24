@@ -14,9 +14,9 @@ Options in effect:
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Mon Jun 15 18:10:28 2015
+Start time: Tue Jun 23 13:43:18 2015
 
-Random number seed: 1434417028
+Random number seed: 1435092198
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 7259 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
@@ -27,7 +27,7 @@ Warning: At least 263 duplicate IDs in --exclude file.
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.928701.
+Total genotyping rate is 0.92804.
 1000 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to mapped_non_paralogs_subset.snplist .
@@ -36,4 +36,4 @@ mapped_non_paralogs_subset.fam ... done.
 --recode to mapped_non_paralogs_subset.ped + mapped_non_paralogs_subset.map ...
 done.
 
-End time: Mon Jun 15 18:10:28 2015
+End time: Tue Jun 23 13:43:18 2015
