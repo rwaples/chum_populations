@@ -1,19 +1,6 @@
 Output from LD method v.2
-Starting time: Wed Jun 24 15:59:38 2015
+Starting time: Thu Jul  2 16:05:18 2015
 Input File: "mapped_non_paralogs.gen.txt"
-
-Chromosomes, followed by a colon and the number of loci in Genotype Input File:
-       1:   309,       2:   230,       3:   145,       4:   260,       5:    75,
-       6:   177,       7:   163,       8:   145,       9:   176,      10:   224,
-      11:   154,      12:   186,      13:   169,      14:   253,      15:   134,
-      16:    54,      17:   199,      18:   151,      19:   267,      20:   154,
-      21:   152,      22:   176,      23:   164,      24:   157,      25:   141,
-      26:   189,      27:   119,      28:   254,      29:   217,      30:   176,
-      31:    61,      32:   115,      33:   106,      34:   224,      35:   203,
-      36:   102,      37:    70
-Number of loci seen in genotype and [chromosomes/loci] files: 6251
-Each pair of loci are taken in distinct chromosomes.
-Maximum number of locus pairs = 18945147
 
 Number of Loci = 6251
 
@@ -51,24 +38,24 @@ Mating model: Random
 
 Population     1 [CMHAMM10_0002]  (Number of Individuals = 20)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       14.8        14.9        14.9
-Independent Comparisons =   11650091    14963335    17041976
-OverAll r^2 =                  0.07985     0.07938     0.07938
-Expected r^2 Sample =          0.07894     0.07856     0.07870
-Estimated Ne^ =                  339.4       373.7       454.2
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       14.9
+Independent Comparisons =   15427947
+OverAll r^2 =                  0.07951
+Expected r^2 Sample =          0.07857
+Estimated Ne^ =                  325.2
 
 95% CIs for Ne^
-* Parametric                     316.5       349.4       420.9
-                                 365.8       401.7       493.3
+* Parametric                     306.8
+                                 345.9
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:01:57 2015
+Time: Thu Jul  2 16:06:07 2015
 
 Non-polymorphic loci:    29,    55,   129,   143,   173,   189,   196,   210,
           270,   322,   342,   365,   381,   486,   529,   567,   600,   615,
@@ -91,24 +78,24 @@ Total non-polymorphic = 150
 
 Population     2 [CMKALA03_0004]  (Number of Individuals = 17)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       15.9        15.9        15.9
-Independent Comparisons =   13453691    16608598    18000378
-OverAll r^2 =                  0.07748     0.07713     0.07699
-Expected r^2 Sample =          0.07560     0.07541     0.07541
-Estimated Ne^ =                  161.6       177.1       193.3
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       15.9
+Independent Comparisons =   17124566
+OverAll r^2 =                  0.07722
+Expected r^2 Sample =          0.07541
+Estimated Ne^ =                  168.7
 
 95% CIs for Ne^
-* Parametric                     156.7       171.8       187.2
-                                 166.8       182.7       199.7
+* Parametric                     163.9
+                                 173.7
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:04:06 2015
+Time: Thu Jul  2 16:06:51 2015
 
 Non-polymorphic loci:    29,   529,   902,   965,  1228,  1407,  1496,  1740,
          1783,  2259,  2335,  2344,  2395,  2971,  2999,  3168,  3183,  3351,
@@ -120,24 +107,24 @@ Total non-polymorphic = 44
 
 Population     3 [CMLILLIW11_0011]  (Number of Individuals = 20)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       19.4        19.4        19.4
-Independent Comparisons =   15568519    17903918    18666308
-OverAll r^2 =                  0.06016     0.06018     0.06017
-Expected r^2 Sample =          0.06011     0.06012     0.06012
-Estimated Ne^ =                 5959.0      4869.4      5761.3
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       19.4
+Independent Comparisons =   18460326
+OverAll r^2 =                  0.06023
+Expected r^2 Sample =          0.06012
+Estimated Ne^ =                 2611.6
 
 95% CIs for Ne^
-* Parametric                    3276.5      2998.1      3343.6
-                               32651.6     12922.8     20724.8
+* Parametric                    1963.4
+                                3896.4
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:06:39 2015
+Time: Thu Jul  2 16:07:44 2015
 
 Non-polymorphic loci:   195,   270,   532,  1416,  1527,  1559,  1877,  2060,
          3749,  3915,  3949,  4020,  4081,  4114,  4950,  5044,  5417,  5498,
@@ -147,24 +134,24 @@ Total non-polymorphic = 21
 
 Population     4 [CMSHERW94F_0010]  (Number of Individuals = 32)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       29.3        29.3        29.3
-Independent Comparisons =   14602034    17367566    18803204
-OverAll r^2 =                  0.03843     0.03840     0.03836
-Expected r^2 Sample =          0.03747     0.03747     0.03745
-Estimated Ne^ =                  319.9       327.6       336.9
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       29.3
+Independent Comparisons =   17906884
+OverAll r^2 =                  0.03849
+Expected r^2 Sample =          0.03747
+Estimated Ne^ =                  300.1
 
 95% CIs for Ne^
-* Parametric                     310.8       318.8       328.0
-                                 329.5       336.8       346.3
+* Parametric                     292.8
+                                 307.8
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:10:25 2015
+Time: Thu Jul  2 16:09:03 2015
 
 Non-polymorphic loci:   120,   381,   441,   532,  1084,  1294,  1295,  1962,
          2583,  2697,  2738,  2910,  3017,  3441,  3652,  3987,  4342,  4355,
@@ -175,24 +162,24 @@ Total non-polymorphic = 29
 
 Population     5 [CMSHERW94S_0001]  (Number of Individuals = 31)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       25.4        25.4        25.4
-Independent Comparisons =   14243758    17186752    18715976
-OverAll r^2 =                  0.04537     0.04528     0.04520
-Expected r^2 Sample =          0.04328     0.04326     0.04327
-Estimated Ne^ =                  145.2       150.3       157.5
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       25.4
+Independent Comparisons =   17722160
+OverAll r^2 =                  0.04538
+Expected r^2 Sample =          0.04326
+Estimated Ne^ =                  143.7
 
 95% CIs for Ne^
-* Parametric                     142.9       148.1       155.2
-                                 147.6       152.6       159.9
+* Parametric                     141.7
+                                 145.8
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:14:11 2015
+Time: Thu Jul  2 16:10:19 2015
 
 Non-polymorphic loci:    24,    96,   105,   116,   120,   176,   199,   225,
           260,   284,   333,   337,   365,   380,   419,   456,   467,   519,
@@ -226,24 +213,24 @@ Total non-polymorphic = 259
 
 Population     6 [CMSKOO10_0002]  (Number of Individuals = 11)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       10.0        10.1        10.1
-Independent Comparisons =   13277267    15768254    17291928
-OverAll r^2 =                  0.13436     0.13411     0.13335
-Expected r^2 Sample =          0.13419     0.13404     0.13338
-Estimated Ne^ =                 1788.3      4136.9    Infinite
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       10.1
+Independent Comparisons =   16260104
+OverAll r^2 =                  0.13419
+Expected r^2 Sample =          0.13404
+Estimated Ne^ =                 2003.2
 
 95% CIs for Ne^
-* Parametric                    1121.0      1830.7      5708.1
-                                4402.6    Infinite    Infinite
+* Parametric                    1250.7
+                                5011.5
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:15:41 2015
+Time: Thu Jul  2 16:10:49 2015
 
 Non-polymorphic loci:   213,   289,   322,   402,   406,   443,   465,   481,
           505,   545,   668,   723,   802,   813,   831,   846,   851,   853,
@@ -264,24 +251,24 @@ Total non-polymorphic = 138
 
 Population     7 [CMSNOH10_0026]  (Number of Individuals = 14)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       12.5        12.5        12.5
-Independent Comparisons =   14013144    16182975    18018626
-OverAll r^2 =                  0.10089     0.10091     0.10072
-Expected r^2 Sample =          0.10075     0.10083     0.10072
-Estimated Ne^ =                 2122.8      3529.6    103056.6
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       12.5
+Independent Comparisons =   16687315
+OverAll r^2 =                  0.10097
+Expected r^2 Sample =          0.10083
+Estimated Ne^ =                 2163.0
 
 95% CIs for Ne^
-* Parametric                    1400.1      1962.6      4475.6
-                                4379.3     17367.7    Infinite
+* Parametric                    1459.3
+                                4171.9
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:17:36 2015
+Time: Thu Jul  2 16:11:27 2015
 
 Non-polymorphic loci:    10,    12,    20,    26,    27,    29,    54,    69,
            72,    92,    96,    98,   106,   108,   134,   150,   154,   158,
@@ -340,24 +327,24 @@ Total non-polymorphic = 512
 
 Population     8 [CMSQUA10_0001]  (Number of Individuals = 8)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =        5.8         5.8         5.8
-Independent Comparisons =   11722423    15310312    15310312
-OverAll r^2 =                  0.26342     0.26039     0.26039
-Expected r^2 Sample =          0.26540     0.26294     0.26294
-Estimated Ne^ =               Infinite    Infinite    Infinite
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =        5.8
+Independent Comparisons =   15786159
+OverAll r^2 =                  0.26042
+Expected r^2 Sample =          0.26295
+Estimated Ne^ =               Infinite
 
 95% CIs for Ne^
-* Parametric                  Infinite    Infinite    Infinite
-                              Infinite    Infinite    Infinite
+* Parametric                  Infinite
+                              Infinite
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:18:48 2015
+Time: Thu Jul  2 16:11:52 2015
 
 Non-polymorphic loci:    10,    27,    29,   106,   115,   148,   176,   189,
           193,   207,   213,   228,   233,   289,   293,   304,   365,   415,
@@ -388,24 +375,24 @@ Total non-polymorphic = 236
 
 Population     9 [CMSTILL10_0006]  (Number of Individuals = 13)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =       10.6        10.6        10.6
-Independent Comparisons =   12997412    15502049    17322848
-OverAll r^2 =                  0.12235     0.12205     0.12137
-Expected r^2 Sample =          0.12205     0.12190     0.12135
-Estimated Ne^ =                 1001.2      1962.5     14977.9
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =       10.6
+Independent Comparisons =   15984390
+OverAll r^2 =                  0.12208
+Expected r^2 Sample =          0.12190
+Estimated Ne^ =                 1643.5
 
 95% CIs for Ne^
-* Parametric                     766.0      1267.0      3035.0
-                                1443.7      4341.1    Infinite
+* Parametric                    1131.1
+                                3000.0
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Time: Wed Jun 24 16:20:33 2015
+Time: Thu Jul  2 16:12:26 2015
 
 Non-polymorphic loci:    29,   160,   225,   235,   270,   289,   380,   387,
           430,   456,   466,   491,   547,   627,   688,   723,   755,   886,
@@ -425,23 +412,23 @@ Total non-polymorphic = 125
 
 Population    10 [CMUW10_0001]  (Number of Individuals = 8)
 ****************
---------------------------------------------------------------
-Lowest Allele Frequency Used     0.100       0.050         0+   
---------------------------------------------------------------
-Harmonic Mean Sample Size =        5.5         5.5         5.5
-Independent Comparisons =   14150705    17635002    17635002
-OverAll r^2 =                  0.27612     0.27300     0.27300
-Expected r^2 Sample =          0.27971     0.27594     0.27594
-Estimated Ne^ =               Infinite    Infinite    Infinite
+--------------------------------------
+Lowest Allele Frequency Used     0.050  
+--------------------------------------
+Harmonic Mean Sample Size =        5.5
+Independent Comparisons =   18183320
+OverAll r^2 =                  0.27303
+Expected r^2 Sample =          0.27595
+Estimated Ne^ =               Infinite
 
 95% CIs for Ne^
-* Parametric                  Infinite    Infinite    Infinite
-                              Infinite    Infinite    Infinite
+* Parametric                  Infinite
+                              Infinite
 
 * CIs by Jackknife are skipped when number of polymorphic loci > 100
 
-**************************************************************
+**************************************
 
-Ending time: Wed Jun 24 16:21:59 2015
+Ending time: Thu Jul  2 16:12:55 2015
 -------------------------------------
 
