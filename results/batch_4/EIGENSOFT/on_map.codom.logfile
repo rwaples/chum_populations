@@ -13,7 +13,7 @@ outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGE
 fastmode: NO
 usenorm: NO
 missingmode: NO
-outliermode: 0
+outliermode: 2
 numchrom: 50
 numoutlieriter: 5
 numoutlierevec: 10
@@ -202,124 +202,120 @@ genotype file processed
 number of samples used: 174 number of snps used: 7259
 Using 8 threads, and partial sum lookup algorithm.
 total number of snps killed in pass: 0  used: 7259
-number of samples after outlier removal: 172
-total number of snps killed in pass: 0  used: 7259
-number of samples after outlier removal: 171
-total number of snps killed in pass: 0  used: 7259
 grm dumped
 
 ## To get Tracy-Widom statistics: recompile smartpca with TWTAB correctly specified in Makefile, or
    just run twstats (see README file in POPGEN directory)
     kurtosis           snps    indivs
- eigenvector    1     3.650     6.585
- eigenvector    2     3.533     1.712
- eigenvector    3     3.377     8.529
- eigenvector    4     3.530     3.280
- eigenvector    5     3.292    14.945
- eigenvector    6     3.454    12.895
- eigenvector    7     3.439    13.520
- eigenvector    8     3.458     8.500
- eigenvector    9     3.353     4.196
- eigenvector   10     3.683     2.756
-population:   0                  ???  171
-eigbestsnp    1             67191_46  7           46     4.870
-eigbestsnp    1             55460_63 26           63     4.357
-eigbestsnp    1             28435_75 14           75     4.221
-eigbestsnp    1             44698_89 26           89     4.110
-eigbestsnp    1             44238_70 20           70     3.921
-eigbestsnp    1             31024_82 19           82     3.884
-eigbestsnp    1             28620_14  1           14     3.796
-eigbestsnp    1             47273_72 10           72     3.782
-eigbestsnp    1             53950_45 35           45     3.714
-eigbestsnp    1             57364_21  3           21     3.678
-eigbestsnp    2             63195_44 21           44     4.188
-eigbestsnp    2             25771_87 37           87     4.128
-eigbestsnp    2             38673_82 12           82     3.987
-eigbestsnp    2             24120_58  6           58     3.715
-eigbestsnp    2             26047_69 13           69     3.677
-eigbestsnp    2             37210_24 10           24     3.599
-eigbestsnp    2             13327_40 13           40     3.561
-eigbestsnp    2             38901_38 17           38     3.509
-eigbestsnp    2             43499_32 10           32     3.460
-eigbestsnp    2             33126_85  9           85     3.433
-eigbestsnp    3             66432_72 17           72     4.006
-eigbestsnp    3             26133_87  4           87     3.798
-eigbestsnp    3             14362_37 26           37     3.720
-eigbestsnp    3              4779_55 10           55     3.659
-eigbestsnp    3             12299_89  9           89     3.581
-eigbestsnp    3             35351_61 34           61     3.578
-eigbestsnp    3             10802_39 11           39     3.565
-eigbestsnp    3             33056_84 35           84     3.554
-eigbestsnp    3              18644_9 25            9     3.510
-eigbestsnp    3             51133_21  3           21     3.502
-eigbestsnp    4             67949_78 37           78     4.374
-eigbestsnp    4             60405_52 10           52     4.330
-eigbestsnp    4              1300_87 33           87     4.254
-eigbestsnp    4             43998_44 17           44     4.175
-eigbestsnp    4              67614_8 10            8     4.009
-eigbestsnp    4              5342_30 19           30     3.943
-eigbestsnp    4             29003_88  3           88     3.855
-eigbestsnp    4             39332_82 25           82     3.846
-eigbestsnp    4             48603_78 34           78     3.711
-eigbestsnp    4             15461_32 24           32     3.704
-eigbestsnp    5             29746_60  4           60     4.208
-eigbestsnp    5             41431_81 29           81     3.865
-eigbestsnp    5             28736_89 26           89     3.832
-eigbestsnp    5             59425_48 26           48     3.770
-eigbestsnp    5             47228_50  4           50     3.508
-eigbestsnp    5             23499_80 14           80     3.503
-eigbestsnp    5             11511_36  4           36     3.488
-eigbestsnp    5             21422_46 26           46     3.485
-eigbestsnp    5              46987_9 36            9     3.459
-eigbestsnp    5             45565_32  4           32     3.456
-eigbestsnp    6              1025_43 15           43     4.847
-eigbestsnp    6             42710_59  8           59     4.277
-eigbestsnp    6             35095_47 17           47     4.127
-eigbestsnp    6             46574_90 17           90     4.075
-eigbestsnp    6             12615_64 28           64     3.977
-eigbestsnp    6             15389_23  7           23     3.871
-eigbestsnp    6             37354_70 15           70     3.813
-eigbestsnp    6             11349_55  3           55     3.666
-eigbestsnp    6             48603_78 34           78     3.632
-eigbestsnp    6             46927_85 13           85     3.520
-eigbestsnp    7              7768_52 12           52     4.173
-eigbestsnp    7             16461_37 35           37     4.090
-eigbestsnp    7             21810_71  1           71     4.038
-eigbestsnp    7              5233_12  4           12     3.810
-eigbestsnp    7             27455_70 34           70     3.787
-eigbestsnp    7             53431_28 14           28     3.740
-eigbestsnp    7             49555_55 34           55     3.702
-eigbestsnp    7             36274_77 17           77     3.563
-eigbestsnp    7             45231_69  8           69     3.557
-eigbestsnp    7              6458_17 19           17     3.540
-eigbestsnp    8               2671_9 25            9     4.876
-eigbestsnp    8              7361_71 12           71     4.160
-eigbestsnp    8             30411_47 36           47     4.032
-eigbestsnp    8             20007_31  3           31     3.711
-eigbestsnp    8             16554_77  3           77     3.657
-eigbestsnp    8             32645_90  3           90     3.548
-eigbestsnp    8             45034_79 10           79     3.491
-eigbestsnp    8             56670_88 14           88     3.469
-eigbestsnp    8             26170_52 15           52     3.459
-eigbestsnp    8               679_38 17           38     3.300
-eigbestsnp    9             18879_39  2           39     4.670
-eigbestsnp    9             56632_45 12           45     4.395
-eigbestsnp    9             46908_21 13           21     3.804
-eigbestsnp    9             60448_73  1           73     3.735
-eigbestsnp    9             46362_39 25           39     3.694
-eigbestsnp    9             49574_42  3           42     3.556
-eigbestsnp    9             48475_52 28           52     3.545
-eigbestsnp    9              10649_6  2            6     3.537
-eigbestsnp    9             22290_46 18           46     3.432
-eigbestsnp    9             20617_62 28           62     3.431
-eigbestsnp   10              7841_76  9           76     4.611
-eigbestsnp   10             17893_74 27           74     4.535
-eigbestsnp   10             30883_66 15           66     4.357
-eigbestsnp   10             40392_66 13           66     4.271
-eigbestsnp   10             58350_31 13           31     4.166
-eigbestsnp   10              4127_60 15           60     4.018
-eigbestsnp   10             15554_24 17           24     3.951
-eigbestsnp   10             46698_75 19           75     3.842
-eigbestsnp   10             26170_52 15           52     3.824
-eigbestsnp   10             17115_91 37           91     3.799
+ eigenvector    1     3.650     6.691
+ eigenvector    2     3.513     1.683
+ eigenvector    3     3.427     8.407
+ eigenvector    4     3.529     3.426
+ eigenvector    5     3.260    26.190
+ eigenvector    6     3.305    15.260
+ eigenvector    7     3.418    14.328
+ eigenvector    8     3.424    14.439
+ eigenvector    9     3.455     7.456
+ eigenvector   10     3.471     4.198
+population:   0                  ???  174
+eigbestsnp    1             67191_46  7           46     4.882
+eigbestsnp    1             55460_63 26           63     4.351
+eigbestsnp    1             28435_75 14           75     4.225
+eigbestsnp    1             44698_89 26           89     4.111
+eigbestsnp    1             44238_70 20           70     3.919
+eigbestsnp    1             31024_82 19           82     3.880
+eigbestsnp    1             28620_14  1           14     3.792
+eigbestsnp    1             47273_72 10           72     3.781
+eigbestsnp    1             53950_45 35           45     3.707
+eigbestsnp    1             57364_21  3           21     3.676
+eigbestsnp    2             63195_44 21           44     4.237
+eigbestsnp    2             25771_87 37           87     4.106
+eigbestsnp    2             24120_58  6           58     3.742
+eigbestsnp    2             33126_85  9           85     3.700
+eigbestsnp    2             38673_82 12           82     3.660
+eigbestsnp    2             37210_24 10           24     3.634
+eigbestsnp    2                562_8 18            8     3.575
+eigbestsnp    2             38901_38 17           38     3.484
+eigbestsnp    2             26047_69 13           69     3.452
+eigbestsnp    2             49499_26  8           26     3.427
+eigbestsnp    3             14362_37 26           37     3.934
+eigbestsnp    3             66432_72 17           72     3.848
+eigbestsnp    3              4779_55 10           55     3.707
+eigbestsnp    3             12299_89  9           89     3.681
+eigbestsnp    3              18644_9 25            9     3.667
+eigbestsnp    3              5506_26 37           26     3.591
+eigbestsnp    3             26133_87  4           87     3.532
+eigbestsnp    3             52152_16 27           16     3.529
+eigbestsnp    3             27473_51 25           51     3.526
+eigbestsnp    3              9809_76 28           76     3.498
+eigbestsnp    4             67949_78 37           78     4.386
+eigbestsnp    4             60405_52 10           52     4.317
+eigbestsnp    4              1300_87 33           87     4.209
+eigbestsnp    4             29003_88  3           88     4.021
+eigbestsnp    4             43998_44 17           44     3.997
+eigbestsnp    4              67614_8 10            8     3.994
+eigbestsnp    4              5342_30 19           30     3.907
+eigbestsnp    4             39332_82 25           82     3.738
+eigbestsnp    4             48603_78 34           78     3.712
+eigbestsnp    4              2947_56  9           56     3.675
+eigbestsnp    5             45223_22 27           22     3.911
+eigbestsnp    5             41935_88 27           88     3.865
+eigbestsnp    5              5684_50 24           50     3.786
+eigbestsnp    5              16637_7 11            7     3.734
+eigbestsnp    5             54743_14 29           14     3.724
+eigbestsnp    5             13327_40 13           40     3.505
+eigbestsnp    5              9805_13  8           13     3.399
+eigbestsnp    5             63943_50 29           50     3.306
+eigbestsnp    5             41129_70 21           70     3.276
+eigbestsnp    5             47366_69  1           69     3.258
+eigbestsnp    6             28736_89 26           89     3.890
+eigbestsnp    6             11511_36  4           36     3.733
+eigbestsnp    6             24328_11 26           11     3.711
+eigbestsnp    6             40773_52 26           52     3.692
+eigbestsnp    6              13793_8  9            8     3.691
+eigbestsnp    6             19493_51 17           51     3.599
+eigbestsnp    6             38262_30 14           30     3.594
+eigbestsnp    6             13172_43 13           43     3.567
+eigbestsnp    6             23499_80 14           80     3.512
+eigbestsnp    6             28321_38 12           38     3.500
+eigbestsnp    7              1025_43 15           43     4.817
+eigbestsnp    7             35095_47 17           47     4.104
+eigbestsnp    7             42710_59  8           59     4.088
+eigbestsnp    7             46574_90 17           90     4.025
+eigbestsnp    7             12615_64 28           64     3.952
+eigbestsnp    7             11349_55  3           55     3.809
+eigbestsnp    7             37354_70 15           70     3.678
+eigbestsnp    7             48603_78 34           78     3.629
+eigbestsnp    7              5849_50 17           50     3.629
+eigbestsnp    7             15389_23  7           23     3.623
+eigbestsnp    8             21810_71  1           71     4.219
+eigbestsnp    8             16461_37 35           37     4.155
+eigbestsnp    8              5233_12  4           12     3.824
+eigbestsnp    8             36274_77 17           77     3.776
+eigbestsnp    8              7768_52 12           52     3.767
+eigbestsnp    8             45231_69  8           69     3.720
+eigbestsnp    8             49555_55 34           55     3.599
+eigbestsnp    8             53431_28 14           28     3.583
+eigbestsnp    8             32316_91 22           91     3.465
+eigbestsnp    8             14943_17 31           17     3.450
+eigbestsnp    9               2671_9 25            9     4.888
+eigbestsnp    9             30411_47 36           47     4.043
+eigbestsnp    9              7361_71 12           71     4.011
+eigbestsnp    9             32645_90  3           90     3.812
+eigbestsnp    9             20007_31  3           31     3.664
+eigbestsnp    9             26170_52 15           52     3.635
+eigbestsnp    9             16554_77  3           77     3.555
+eigbestsnp    9             56670_88 14           88     3.541
+eigbestsnp    9             45034_79 10           79     3.461
+eigbestsnp    9             32295_23 19           23     3.425
+eigbestsnp   10             18879_39  2           39     5.066
+eigbestsnp   10             56632_45 12           45     4.505
+eigbestsnp   10             46908_21 13           21     3.906
+eigbestsnp   10             54187_70 11           70     3.772
+eigbestsnp   10              11895_6 30            6     3.730
+eigbestsnp   10             52173_91 29           91     3.719
+eigbestsnp   10             49574_42  3           42     3.572
+eigbestsnp   10             44822_74  3           74     3.556
+eigbestsnp   10             40179_15 30           15     3.548
+eigbestsnp   10             46362_39 25           39     3.547
 ##end of smartpca run

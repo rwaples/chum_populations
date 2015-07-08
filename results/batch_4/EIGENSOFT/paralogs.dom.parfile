@@ -12,7 +12,7 @@ outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGE
 fastmode:      NO
 usenorm:       NO
 missingmode:   NO
-outliermode:   0 
+outliermode:   2 
 numchrom:      50
 numoutlieriter: 5 
 numoutlierevec: 10 
