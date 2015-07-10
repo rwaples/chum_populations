@@ -1,0 +1,39 @@
+PLINK v1.90b3q 64-bit (29 May 2015)
+Options in effect:
+  --allow-extra-chr
+  --allow-no-sex
+  --autosome-num 50
+  --file results/batch_4/EIGENSOFT/complete
+  --out results/batch_4/EIGENSOFT/complete.codom.subsample
+  --recode
+  --thin-count 1214
+  --write-snplist
+
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Thu Jul  9 16:17:48 2015
+
+Random number seed: 1436483868
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (13407 variants, 174 samples).
+--file: results/batch_4/EIGENSOFT/complete.codom.subsample-temporary.bed +
+results/batch_4/EIGENSOFT/complete.codom.subsample-temporary.bim +
+results/batch_4/EIGENSOFT/complete.codom.subsample-temporary.fam written.
+13407 variants loaded from .bim file.
+174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+results/batch_4/EIGENSOFT/complete.codom.subsample.nosex .
+--thin-count: 12193 variants removed (1214 remaining).
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.928686.
+1214 variants and 174 samples pass filters and QC.
+Note: No phenotypes present.
+List of variant IDs written to
+results/batch_4/EIGENSOFT/complete.codom.subsample.snplist .
+--recode to results/batch_4/EIGENSOFT/complete.codom.subsample.ped +
+results/batch_4/EIGENSOFT/complete.codom.subsample.map ... done.
+
+End time: Thu Jul  9 16:17:48 2015

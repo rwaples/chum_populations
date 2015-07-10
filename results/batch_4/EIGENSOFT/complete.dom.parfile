@@ -1,0 +1,19 @@
+genotypename:  /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.txt
+snpname:       /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.map
+indivname:     /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/individuals.ped
+
+evecoutname:    /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.evec
+evaloutname:    /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.eval
+grmoutname:      /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.rel
+snpweightoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.snpweights
+deletesnpoutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.snpremoved
+outlieroutname: /home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.ind_outliers
+
+fastmode:      NO
+usenorm:       NO
+missingmode:   NO
+outliermode:   2 
+numchrom:      50
+numoutlieriter: 5 
+numoutlierevec: 10 
+lsqproject: NO     

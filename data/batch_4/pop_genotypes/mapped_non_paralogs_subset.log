@@ -5,35 +5,32 @@ Options in effect:
   --autosome-num 50
   --bfile complete
   --exclude paralog_SNPs.txt
-  --make-bed
   --not-chr 0
   --out mapped_non_paralogs_subset
   --recode
-  --thin-count 1000
+  --thin-count 1214
   --write-snplist
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Tue Jun 23 13:43:18 2015
+Start time: Thu Jul  9 14:23:14 2015
 
-Random number seed: 1435092198
+Random number seed: 1436476994
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 7259 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to mapped_non_paralogs_subset.nosex .
 --exclude: 6251 variants remaining.
 Warning: At least 263 duplicate IDs in --exclude file.
---thin-count: 5251 variants removed (1000 remaining).
+--thin-count: 5037 variants removed (1214 remaining).
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.92804.
-1000 variants and 174 samples pass filters and QC.
+Total genotyping rate is 0.929089.
+1214 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to mapped_non_paralogs_subset.snplist .
---make-bed to mapped_non_paralogs_subset.bed + mapped_non_paralogs_subset.bim +
-mapped_non_paralogs_subset.fam ... done.
 --recode to mapped_non_paralogs_subset.ped + mapped_non_paralogs_subset.map ...
 done.
 
-End time: Tue Jun 23 13:43:18 2015
+End time: Thu Jul  9 14:23:14 2015

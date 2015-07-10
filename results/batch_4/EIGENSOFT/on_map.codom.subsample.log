@@ -1,0 +1,43 @@
+PLINK v1.90b3q 64-bit (29 May 2015)
+Options in effect:
+  --allow-extra-chr
+  --allow-no-sex
+  --autosome-num 50
+  --exclude results/batch_4/EIGENSOFT/paralog_SNPs.txt
+  --file results/batch_4/EIGENSOFT/complete
+  --not-chr 40
+  --out results/batch_4/EIGENSOFT/on_map.codom.subsample
+  --recode
+  --thin-count 1214
+  --write-snplist
+
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Thu Jul  9 16:11:32 2015
+
+Random number seed: 1436483492
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (7259 variants, 174 samples).
+--file: results/batch_4/EIGENSOFT/on_map.codom.subsample-temporary.bed +
+results/batch_4/EIGENSOFT/on_map.codom.subsample-temporary.bim +
+results/batch_4/EIGENSOFT/on_map.codom.subsample-temporary.fam written.
+7259 variants loaded from .bim file.
+174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+results/batch_4/EIGENSOFT/on_map.codom.subsample.nosex .
+--exclude: 6251 variants remaining.
+Warning: At least 263 duplicate IDs in --exclude file.
+--thin-count: 5037 variants removed (1214 remaining).
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.929572.
+1214 variants and 174 samples pass filters and QC.
+Note: No phenotypes present.
+List of variant IDs written to
+results/batch_4/EIGENSOFT/on_map.codom.subsample.snplist .
+--recode to results/batch_4/EIGENSOFT/on_map.codom.subsample.ped +
+results/batch_4/EIGENSOFT/on_map.codom.subsample.map ... done.
+
+End time: Thu Jul  9 16:11:32 2015
