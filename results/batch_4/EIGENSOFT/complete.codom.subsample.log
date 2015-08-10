@@ -11,9 +11,9 @@ Options in effect:
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Fri Aug  7 10:13:35 2015
+Start time: Mon Aug 10 16:14:00 2015
 
-Random number seed: 1438967615
+Random number seed: 1439248440
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 Scanning .ped file... done.
 Performing single-pass .bed write (13407 variants, 174 samples).
@@ -28,7 +28,7 @@ results/batch_4/EIGENSOFT/complete.codom.subsample.nosex .
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.929292.
+Total genotyping rate is 0.928232.
 1214 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to
@@ -36,4 +36,4 @@ results/batch_4/EIGENSOFT/complete.codom.subsample.snplist .
 --recode to results/batch_4/EIGENSOFT/complete.codom.subsample.ped +
 results/batch_4/EIGENSOFT/complete.codom.subsample.map ... done.
 
-End time: Fri Aug  7 10:13:35 2015
+End time: Mon Aug 10 16:14:00 2015

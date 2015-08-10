@@ -197,123 +197,123 @@ no norm used
 10:CMUW10_0011 ignored
 all individuals set ignore.  Likely input problem (col 6)
 resetting all individual...
-number of samples used: 174 number of snps used: 3236
+number of samples used: 174 number of snps used: 3171
 Using 8 threads, and partial sum lookup algorithm.
-total number of snps killed in pass: 0  used: 3236
+total number of snps killed in pass: 0  used: 3171
 grm dumped
 
 ## To get Tracy-Widom statistics: recompile smartpca with TWTAB correctly specified in Makefile, or
    just run twstats (see README file in POPGEN directory)
     kurtosis           snps    indivs
- eigenvector    1     4.153     3.947
- eigenvector    2     5.715     1.762
- eigenvector    3     4.623     4.295
- eigenvector    4     4.241     2.885
- eigenvector    5     4.344    19.045
- eigenvector    6     4.479     5.826
- eigenvector    7     4.372     3.719
- eigenvector    8     4.319     3.425
- eigenvector    9     4.726     2.918
- eigenvector   10     4.481     3.643
+ eigenvector    1     6.152     1.633
+ eigenvector    2     4.613     4.740
+ eigenvector    3     4.526     3.375
+ eigenvector    4     4.204     3.556
+ eigenvector    5     4.687     5.818
+ eigenvector    6     4.344     4.778
+ eigenvector    7     4.513     3.543
+ eigenvector    8     5.102     2.981
+ eigenvector    9     4.378     3.693
+ eigenvector   10     4.516     2.931
 population:   0                  ???  174
-eigbestsnp    1              27350_C  1            1     3.876
-eigbestsnp    1              57168_G  1            1     3.862
-eigbestsnp    1               9773_G  1            1     3.643
-eigbestsnp    1              10725_G  1            1     3.574
-eigbestsnp    1              45002_T  1            1     3.546
-eigbestsnp    1         41952_GGGGAT  1            1     3.543
-eigbestsnp    1             26262_TT  1            1     3.536
-eigbestsnp    1            19403_CTT  1            1     3.442
-eigbestsnp    1               1458_G  1            1     3.435
-eigbestsnp    1              57215_G  1            1     3.417
-eigbestsnp    2         3222_CCCAGCA  1            1     7.089
-eigbestsnp    2              16440_C  1            1     6.801
-eigbestsnp    2              64426_G  1            1     5.559
-eigbestsnp    2         30427_TATCGA  1            1     4.362
-eigbestsnp    2          10694_AGCAG  1            1     4.155
-eigbestsnp    2              12392_G  1            1     3.801
-eigbestsnp    2             62436_GA  1            1     3.777
-eigbestsnp    2              30957_A  1            1     3.738
-eigbestsnp    2            39141_GCA  1            1     3.728
-eigbestsnp    2             31003_GT  1            1     3.635
-eigbestsnp    3               8928_A  1            1     4.629
-eigbestsnp    3         40357_ATCCCC  1            1     4.529
-eigbestsnp    3         30427_TATCGA  1            1     4.350
-eigbestsnp    3              16440_C  1            1     4.224
-eigbestsnp    3              66808_G  1            1     4.097
-eigbestsnp    3            42018_AGT  1            1     3.943
-eigbestsnp    3              20096_A  1            1     3.872
-eigbestsnp    3             54277_TT  1            1     3.863
-eigbestsnp    3               4273_G  1            1     3.821
-eigbestsnp    3              5425_AA  1            1     3.778
-eigbestsnp    4              29892_C  1            1     4.253
-eigbestsnp    4              41683_C  1            1     3.947
-eigbestsnp    4             56322_TG  1            1     3.942
-eigbestsnp    4           50475_CTGT  1            1     3.874
-eigbestsnp    4              8315_TG  1            1     3.848
-eigbestsnp    4                698_A  1            1     3.809
-eigbestsnp    4           53826_TATC  1            1     3.801
-eigbestsnp    4              51598_T  1            1     3.787
-eigbestsnp    4        28208_GAAATGA  1            1     3.767
-eigbestsnp    4             28036_CG  1            1     3.608
-eigbestsnp    5              63507_G  1            1     3.949
-eigbestsnp    5              56067_G  1            1     3.943
-eigbestsnp    5              45926_C  1            1     3.768
-eigbestsnp    5              41173_C  1            1     3.657
-eigbestsnp    5              78624_T  1            1     3.532
-eigbestsnp    5             48004_TT  1            1     3.477
-eigbestsnp    5              29892_C  1            1     3.465
-eigbestsnp    5            15243_ATG  1            1     3.445
-eigbestsnp    5              35104_A  1            1     3.442
-eigbestsnp    5               5500_A  1            1     3.424
-eigbestsnp    6        28452_CGGGAAC  1            1     4.415
-eigbestsnp    6              19672_C  1            1     4.135
-eigbestsnp    6             45326_GT  1            1     3.865
-eigbestsnp    6              31994_C  1            1     3.863
-eigbestsnp    6              36333_A  1            1     3.852
-eigbestsnp    6              1491_CC  1            1     3.836
-eigbestsnp    6              25837_A  1            1     3.830
-eigbestsnp    6             62436_AG  1            1     3.811
-eigbestsnp    6           50475_CTGT  1            1     3.794
-eigbestsnp    6              10356_A  1            1     3.764
-eigbestsnp    7             49440_GT  1            1     4.416
-eigbestsnp    7              19428_T  1            1     4.256
-eigbestsnp    7         41952_GGTGAT  1            1     4.062
-eigbestsnp    7              19020_A  1            1     4.005
-eigbestsnp    7             49440_TT  1            1     3.928
-eigbestsnp    7              33868_T  1            1     3.904
-eigbestsnp    7            11155_GTA  1            1     3.781
-eigbestsnp    7              53661_G  1            1     3.777
-eigbestsnp    7              46966_A  1            1     3.759
-eigbestsnp    7              53661_C  1            1     3.728
-eigbestsnp    8              31994_C  1            1     3.868
-eigbestsnp    8        28452_GGGGAAC  1            1     3.863
-eigbestsnp    8            63404_CCT  1            1     3.854
-eigbestsnp    8               5856_G  1            1     3.809
-eigbestsnp    8               7414_A  1            1     3.732
-eigbestsnp    8            32905_CTC  1            1     3.708
-eigbestsnp    8          28566_TAAAA  1            1     3.702
-eigbestsnp    8             53597_AT  1            1     3.668
-eigbestsnp    8               7455_T  1            1     3.632
-eigbestsnp    8              24058_T  1            1     3.583
-eigbestsnp    9               7972_C  1            1     5.542
-eigbestsnp    9             43395_CG  1            1     4.724
-eigbestsnp    9    16888_CACACCTCCTT  1            1     4.607
-eigbestsnp    9             43395_CT  1            1     4.447
-eigbestsnp    9              29694_A  1            1     4.270
-eigbestsnp    9              6146_GG  1            1     4.102
-eigbestsnp    9             65489_GC  1            1     3.948
-eigbestsnp    9            18194_AGA  1            1     3.789
-eigbestsnp    9              6702_TA  1            1     3.729
-eigbestsnp    9           12829_GATG  1            1     3.602
-eigbestsnp   10             49440_TT  1            1     4.276
-eigbestsnp   10            26994_TGT  1            1     4.236
-eigbestsnp   10              34610_G  1            1     4.058
-eigbestsnp   10              51598_T  1            1     3.966
-eigbestsnp   10              31354_T  1            1     3.869
-eigbestsnp   10               2141_T  1            1     3.692
-eigbestsnp   10               9126_G  1            1     3.663
-eigbestsnp   10             42068_AC  1            1     3.648
-eigbestsnp   10           4637_TAAAA  1            1     3.641
-eigbestsnp   10              25951_T  1            1     3.619
+eigbestsnp    1              16440_C  1            1     7.102
+eigbestsnp    1         51599_GCTGAC  1            1     6.339
+eigbestsnp    1              64426_G  1            1     5.639
+eigbestsnp    1          32917_AAGTC  1            1     5.281
+eigbestsnp    1           16386_TTAA  1            1     4.901
+eigbestsnp    1          6869_ATACCA  1            1     4.684
+eigbestsnp    1              10437_C  1            1     4.224
+eigbestsnp    1              21010_A  1            1     4.099
+eigbestsnp    1              17727_C  1            1     4.012
+eigbestsnp    1             51382_GT  1            1     3.732
+eigbestsnp    2              55460_A  1            1     4.278
+eigbestsnp    2              54899_A  1            1     4.271
+eigbestsnp    2            80621_GGC  1            1     4.102
+eigbestsnp    2              15451_C  1            1     3.900
+eigbestsnp    2             41311_CC  1            1     3.868
+eigbestsnp    2              51163_A  1            1     3.799
+eigbestsnp    2              45799_C  1            1     3.696
+eigbestsnp    2              15451_A  1            1     3.695
+eigbestsnp    2              41432_T  1            1     3.649
+eigbestsnp    2              55460_T  1            1     3.621
+eigbestsnp    3              7689_TC  1            1     4.223
+eigbestsnp    3              22975_G  1            1     4.034
+eigbestsnp    3          6869_ATACCA  1            1     3.909
+eigbestsnp    3             35757_TG  1            1     3.829
+eigbestsnp    3             21386_AC  1            1     3.792
+eigbestsnp    3              15549_G  1            1     3.787
+eigbestsnp    3              7689_GT  1            1     3.759
+eigbestsnp    3              66808_G  1            1     3.689
+eigbestsnp    3              53865_A  1            1     3.657
+eigbestsnp    3                414_A  1            1     3.647
+eigbestsnp    4              42971_G  1            1     4.079
+eigbestsnp    4               1362_T  1            1     3.685
+eigbestsnp    4             36850_GT  1            1     3.618
+eigbestsnp    4              53168_C  1            1     3.500
+eigbestsnp    4             28949_CC  1            1     3.486
+eigbestsnp    4             19486_CG  1            1     3.443
+eigbestsnp    4            37911_TCA  1            1     3.438
+eigbestsnp    4              56936_T  1            1     3.408
+eigbestsnp    4              40096_G  1            1     3.369
+eigbestsnp    4           33677_GCTG  1            1     3.349
+eigbestsnp    5            41252_CAG  1            1     4.556
+eigbestsnp    5            55543_GTG  1            1     4.185
+eigbestsnp    5             13112_AA  1            1     4.017
+eigbestsnp    5            41252_TAA  1            1     3.997
+eigbestsnp    5              25856_T  1            1     3.934
+eigbestsnp    5             13839_GG  1            1     3.886
+eigbestsnp    5            23983_TGT  1            1     3.838
+eigbestsnp    5             13312_AG  1            1     3.819
+eigbestsnp    5              45849_T  1            1     3.776
+eigbestsnp    5             40605_AC  1            1     3.624
+eigbestsnp    6              30083_T  1            1     4.835
+eigbestsnp    6              5627_GG  1            1     4.029
+eigbestsnp    6              43130_C  1            1     3.890
+eigbestsnp    6             13112_GA  1            1     3.645
+eigbestsnp    6             66136_CT  1            1     3.576
+eigbestsnp    6              15150_G  1            1     3.463
+eigbestsnp    6              56936_T  1            1     3.450
+eigbestsnp    6             14616_GC  1            1     3.444
+eigbestsnp    6        26845_GCGCAAT  1            1     3.434
+eigbestsnp    6                 73_T  1            1     3.394
+eigbestsnp    7             46437_CA  1            1     4.679
+eigbestsnp    7             40958_CG  1            1     4.494
+eigbestsnp    7            37911_TCA  1            1     4.320
+eigbestsnp    7              29001_A  1            1     3.985
+eigbestsnp    7            8486_AGGC  1            1     3.958
+eigbestsnp    7              39078_T  1            1     3.788
+eigbestsnp    7             6031_GTC  1            1     3.688
+eigbestsnp    7              31583_T  1            1     3.651
+eigbestsnp    7              42410_C  1            1     3.610
+eigbestsnp    7             21192_CC  1            1     3.530
+eigbestsnp    8        49594_GTAAATC  1            1     5.859
+eigbestsnp    8        49594_CCACACT  1            1     5.283
+eigbestsnp    8        49594_GTAATCC  1            1     5.236
+eigbestsnp    8        49594_GTAATCT  1            1     5.183
+eigbestsnp    8             38757_TA  1            1     4.431
+eigbestsnp    8        49594_CCACACC  1            1     4.243
+eigbestsnp    8               8237_T  1            1     4.148
+eigbestsnp    8            46210_AGA  1            1     3.931
+eigbestsnp    8               6120_C  1            1     3.674
+eigbestsnp    8              18361_C  1            1     3.577
+eigbestsnp    9              10133_A  1            1     4.446
+eigbestsnp    9              41431_T  1            1     4.007
+eigbestsnp    9            17366_CTA  1            1     4.006
+eigbestsnp    9              39325_G  1            1     3.960
+eigbestsnp    9             47539_CA  1            1     3.803
+eigbestsnp    9             22632_GC  1            1     3.769
+eigbestsnp    9       15094_CGTACAAC  1            1     3.671
+eigbestsnp    9              32319_T  1            1     3.667
+eigbestsnp    9               4387_A  1            1     3.573
+eigbestsnp    9              40086_T  1            1     3.564
+eigbestsnp   10              8268_TT  1            1     4.549
+eigbestsnp   10             35657_AG  1            1     4.434
+eigbestsnp   10            41252_TGG  1            1     4.054
+eigbestsnp   10            40065_GTG  1            1     3.990
+eigbestsnp   10              43752_C  1            1     3.861
+eigbestsnp   10              12651_T  1            1     3.802
+eigbestsnp   10               5426_A  1            1     3.792
+eigbestsnp   10              45448_T  1            1     3.792
+eigbestsnp   10       24078_TGAGGGAA  1            1     3.779
+eigbestsnp   10              41431_G  1            1     3.696
 ##end of smartpca run
