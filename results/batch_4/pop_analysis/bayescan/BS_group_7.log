@@ -1,12 +1,22 @@
-PLINK v1.90b3j 64-bit (2 Apr 2015) 
-13 arguments: --allow-extra-chr --allow-no-sex --autosome-num 50 --bfile /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/non_paralogs --family --keep-cluster-names 4 6 --out /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_7 --recode
+PLINK v1.90b3q 64-bit (29 May 2015)
+Options in effect:
+  --allow-extra-chr
+  --allow-no-sex
+  --autosome-num 50
+  --bfile /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes/non_paralogs
+  --family
+  --keep-allele-order
+  --keep-cluster-names 4 6
+  --out /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_7
+  --recode
+
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Fri May  1 18:16:21 2015
+Start time: Tue Oct  6 10:57:27 2015
 
-Random number seed: 1430529381
+Random number seed: 1444154247
 32127 MB RAM detected; reserving 16063 MB for main workspace.
-12539 variants loaded from .bim file.
+12399 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_7.nosex
@@ -16,8 +26,8 @@ Ambiguous sex IDs written to
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 43 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate in remaining samples is 0.957009.
-12539 variants and 43 samples pass filters and QC.
+Total genotyping rate in remaining samples is 0.956855.
+12399 variants and 43 samples pass filters and QC.
 Note: No phenotypes present.
 --recode to
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_7.ped
@@ -25,4 +35,4 @@ Note: No phenotypes present.
 /home/ipseg/Desktop/waples/chum_populations/results/batch_4/pop_analysis/bayescan/BS_group_7.map
 ... done.
 
-End time: Fri May  1 18:16:21 2015
+End time: Tue Oct  6 10:57:27 2015

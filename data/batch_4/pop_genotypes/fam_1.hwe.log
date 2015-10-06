@@ -6,14 +6,15 @@ Options in effect:
   --bfile fam_1
   --hardy midp
   --hwe 0.05 midp
+  --keep-allele-order
   --out fam_1.hwe
   --write-snplist
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Tue Jun  9 16:24:48 2015
+Start time: Tue Oct  6 10:50:14 2015
 
-Random number seed: 1433892288
+Random number seed: 1444153814
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 28800 variants loaded from .bim file.
 20 samples (0 males, 0 females, 20 ambiguous) loaded from .fam.
@@ -32,4 +33,4 @@ your data.
 Note: No phenotypes present.
 List of variant IDs written to fam_1.hwe.snplist .
 
-End time: Tue Jun  9 16:24:48 2015
+End time: Tue Oct  6 10:50:14 2015

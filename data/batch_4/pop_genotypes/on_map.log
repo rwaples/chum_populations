@@ -4,15 +4,16 @@ Options in effect:
   --allow-no-sex
   --autosome-num 50
   --bfile on_map
+  --keep-allele-order
   --out on_map
   --recode A
   --write-snplist
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_genotypes
-Start time: Tue Jun  9 16:24:55 2015
+Start time: Tue Oct  6 10:50:22 2015
 
-Random number seed: 1433892295
+Random number seed: 1444153822
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 7259 variants loaded from .bim file.
 174 samples (0 males, 0 females, 174 ambiguous) loaded from .fam.
@@ -20,10 +21,10 @@ Ambiguous sex IDs written to on_map.nosex .
 Using 1 thread (no multithreaded calculations invoked).
 Before main variant filters, 174 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.93074.
+Total genotyping rate is 0.930738.
 7259 variants and 174 samples pass filters and QC.
 Note: No phenotypes present.
 List of variant IDs written to on_map.snplist .
 --recode A to on_map.raw ... done.
 
-End time: Tue Jun  9 16:24:55 2015
+End time: Tue Oct  6 10:50:22 2015
