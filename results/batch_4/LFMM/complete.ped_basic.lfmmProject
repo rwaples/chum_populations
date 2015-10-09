@@ -1,0 +1,20 @@
+new("lfmmProject"
+    , lfmmProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmmProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.lfmm"
+    , environment.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/basic.env"
+    , runs = list()
+    , K = c(3L, 3L, 3L, 3L, 3L)
+    , d = c(1L, 1L, 1L, 1L, 1L)
+    , all = c(FALSE, FALSE, FALSE, FALSE, FALSE)
+    , lfmmClass.files = c("/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/K3/run1/complete.ped_r1_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/K3/run2/complete.ped_r2_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/K3/run3/complete.ped_r3_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/K3/run4/complete.ped_r4_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped_basic.lfmm/K3/run5/complete.ped_r5_s1.3.lfmmClass"
+)
+    , n = 174L
+    , L = 13407L
+    , D = 1L
+    , creationTime = structure(1444342324.26803, class = c("POSIXct", "POSIXt"))
+)

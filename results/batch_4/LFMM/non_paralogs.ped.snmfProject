@@ -1,0 +1,42 @@
+new("snmfProject"
+    , snmfProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmfProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.geno"
+    , runs = list()
+    , K = c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 10L, 1L, 2L, 3L, 4L, 5L, 
+6L, 7L, 8L, 9L, 10L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 10L)
+    , snmfClass.files = c("/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K1/run1/non_paralogs.ped_r1.1.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K2/run1/non_paralogs.ped_r1.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K3/run1/non_paralogs.ped_r1.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K4/run1/non_paralogs.ped_r1.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K5/run1/non_paralogs.ped_r1.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K6/run1/non_paralogs.ped_r1.6.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K7/run1/non_paralogs.ped_r1.7.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K8/run1/non_paralogs.ped_r1.8.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K9/run1/non_paralogs.ped_r1.9.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K10/run1/non_paralogs.ped_r1.10.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K1/run2/non_paralogs.ped_r2.1.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K2/run2/non_paralogs.ped_r2.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K3/run2/non_paralogs.ped_r2.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K4/run2/non_paralogs.ped_r2.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K5/run2/non_paralogs.ped_r2.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K6/run2/non_paralogs.ped_r2.6.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K7/run2/non_paralogs.ped_r2.7.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K8/run2/non_paralogs.ped_r2.8.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K9/run2/non_paralogs.ped_r2.9.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K10/run2/non_paralogs.ped_r2.10.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K1/run3/non_paralogs.ped_r3.1.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K2/run3/non_paralogs.ped_r3.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K3/run3/non_paralogs.ped_r3.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K4/run3/non_paralogs.ped_r3.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K5/run3/non_paralogs.ped_r3.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K6/run3/non_paralogs.ped_r3.6.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K7/run3/non_paralogs.ped_r3.7.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K8/run3/non_paralogs.ped_r3.8.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K9/run3/non_paralogs.ped_r3.9.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K10/run3/non_paralogs.ped_r3.10.snmfClass"
+)
+    , n = 174L
+    , L = 12399L
+    , creationTime = structure(1444416289.98954, class = c("POSIXct", "POSIXt"))
+)

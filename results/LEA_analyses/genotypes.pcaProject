@@ -1,0 +1,14 @@
+new("pcaProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pca"
+    , n = 50L
+    , L = 400L
+    , K = 50L
+    , center = TRUE
+    , scale = TRUE
+    , pcaProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pcaProject"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.lfmm"
+    , eigenvalue.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pca/genotypes.eigenvalues"
+    , eigenvector.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pca/genotypes.eigenvectors"
+    , sdev.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pca/genotypes.sdev"
+    , projection.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.pca/genotypes.projections"
+)

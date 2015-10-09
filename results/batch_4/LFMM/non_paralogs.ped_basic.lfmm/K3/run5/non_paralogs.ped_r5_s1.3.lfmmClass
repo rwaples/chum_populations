@@ -1,0 +1,19 @@
+new("lfmmClass"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM"
+    , lfmmClass.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped_basic.lfmm/K3/run5/non_paralogs.ped_r5_s1.3.lfmmClass"
+    , K = 3L
+    , d = 1L
+    , Niter = 10000L
+    , burn = 5000L
+    , CPU = 7L
+    , seed = 206162089L
+    , missing.data = TRUE
+    , all = FALSE
+    , run = 5L
+    , epsilon.noise = 0.001
+    , epsilon.b = 1000
+    , random.init = TRUE
+    , zscore.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped_basic.lfmm/K3/run5/non_paralogs.ped_r5_s1.3.zscore"
+    , deviance = 2157458.05066848
+    , DIC = 2157457.74968162
+)

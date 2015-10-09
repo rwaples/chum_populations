@@ -1,0 +1,14 @@
+new("pcaProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pca"
+    , n = 174L
+    , L = 12399L
+    , K = 174L
+    , center = TRUE
+    , scale = TRUE
+    , pcaProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pcaProject"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.lfmm"
+    , eigenvalue.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pca/non_paralogs.ped.eigenvalues"
+    , eigenvector.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pca/non_paralogs.ped.eigenvectors"
+    , sdev.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pca/non_paralogs.ped.sdev"
+    , projection.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.pca/non_paralogs.ped.projections"
+)

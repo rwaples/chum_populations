@@ -1,0 +1,14 @@
+new("pcaProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pca"
+    , n = 174L
+    , L = 13407L
+    , K = 174L
+    , center = TRUE
+    , scale = TRUE
+    , pcaProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pcaProject"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.lfmm"
+    , eigenvalue.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pca/complete.ped.eigenvalues"
+    , eigenvector.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pca/complete.ped.eigenvectors"
+    , sdev.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pca/complete.ped.sdev"
+    , projection.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.pca/complete.ped.projections"
+)

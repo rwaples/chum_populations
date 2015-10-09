@@ -1,0 +1,20 @@
+new("lfmmProject"
+    , lfmmProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmmProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.lfmm"
+    , environment.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/gradients.env"
+    , runs = list()
+    , K = c(6L, 6L, 6L, 6L, 6L)
+    , d = c(1L, 1L, 1L, 1L, 1L)
+    , all = c(FALSE, FALSE, FALSE, FALSE, FALSE)
+    , lfmmClass.files = c("/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/K6/run1/genotypes_r1_s1.6.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/K6/run2/genotypes_r2_s1.6.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/K6/run3/genotypes_r3_s1.6.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/K6/run4/genotypes_r4_s1.6.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes_gradients.lfmm/K6/run5/genotypes_r5_s1.6.lfmmClass"
+)
+    , n = 50L
+    , L = 400L
+    , D = 1L
+    , creationTime = structure(1444334028.32897, class = c("POSIXct", "POSIXt"))
+)

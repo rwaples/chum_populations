@@ -1,0 +1,19 @@
+new("snmfClass"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.snmf/K3/run10/"
+    , snmfClass.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.snmf/K3/run10/complete.ped_r10.3.snmfClass"
+    , K = 3L
+    , run = 10L
+    , CPU = 1L
+    , seed = 395777415L
+    , alpha = 10
+    , percentage = 0.05
+    , I = 0L
+    , iterations = 200L
+    , entropy = TRUE
+    , tolerance = 1e-05
+    , crossEntropy = 0.776886381344672
+    , ploidy = 2L
+    , Q.input.file = ""
+    , Q.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.snmf/K3/run10/complete.ped_r10.3.Q"
+    , G.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.ped.snmf/K3/run10/complete.ped_r10.3.G"
+)

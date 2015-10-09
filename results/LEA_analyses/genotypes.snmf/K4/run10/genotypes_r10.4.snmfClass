@@ -1,0 +1,19 @@
+new("snmfClass"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.snmf/K4/run10/"
+    , snmfClass.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.snmf/K4/run10/genotypes_r10.4.snmfClass"
+    , K = 4L
+    , run = 10L
+    , CPU = 1L
+    , seed = 829993622L
+    , alpha = 10
+    , percentage = 0.05
+    , I = 0L
+    , iterations = 200L
+    , entropy = TRUE
+    , tolerance = 1e-05
+    , crossEntropy = 0.591437564545329
+    , ploidy = 2L
+    , Q.input.file = ""
+    , Q.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.snmf/K4/run10/genotypes_r10.4.Q"
+    , G.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/LEA_analyses/genotypes.snmf/K4/run10/genotypes_r10.4.G"
+)
