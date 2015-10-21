@@ -5,21 +5,114 @@
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{lineno}
-\linenumbers
-
-
 \usepackage{natbib}
 
+\usepackage{booktabs}
+\usepackage{pdflscape}
 %\usepackage{fontspec}
 %\setmainfont{Georgia}
 %\setsansfont{Trebuchet MS}
 %\setmonofont{Inconsolata}
 
 
-
+\linenumbers
 \begin{document}
 % \bibliographystyle{}
 
+\listoffigures 
+
+\listoftables
+
+\pagebreak
+\section*{Figures}
+\subsection*{Map of sampling locations including run timing}
+\begin{figure}[H]
+\includegraphics[scale=.6]{figures/collection_map.png}
+\caption[Collection locations]{Collection locations and runtiming of chum salmon sampled near Puget Sound.}
+\end{figure}
+
+\subsection*{Linkage map}
+\begin{figure}[H]
+\includegraphics[scale=.26]{figures/chum_map.png}
+\caption[Linkage map of chum salmon]{37 linkage groups, likely corresponding to the 37 chromosomes in the chum salmon karyotype. Paralogous loci are shown as red diamonds, non-paralogs are blue circles. Black lines connect confounded catalog entries that have been resolved into two paralogous loci. The 16 distal concentrations of paralogs form 8 pairs of homeologous chromosomes. Notice LGs 2 and 32 have distinct ancestral relationships on each end.}
+\end{figure}
+
+
+\subsection*{Ascertainment bias}
+\begin{figure}[H]
+\includegraphics[scale=.5]{figures/supplemental/ascertainment.png}
+\caption[MAF Histogram showing ascertainment bias]{Folded minor allele frequency (MAF) for all loci (grey) and the subset of loci placed on the linkage map (black outline). The rightward shift in the MAF distribution shows the effect of ascertainment bias.  Notice the y-axis is density-scaled to accommodate differing number of loci in each set.}
+\end{figure}
+
+\subsection*{Population structure}
+\begin{figure}[H]
+\includegraphics[scale=.35]{figures/poster_3a.png}
+\includegraphics[scale=.35]{figures/poster_3b.png}
+\includegraphics[scale=.35]{figures/poster_3c.png}
+\caption[Individual-based PCAs showing population structure]{Population structure - Individual-based PCA from ten populations (colors) of chum salmon from Puget Sound.  Population structure obtained from paralogs (a) is similar to that obtained by non-paralogs (b), especially after down-sampling to match the number of loci (c).}
+\end{figure}
+
+\begin{landscape}
+\subsection*{Manhattan plot}
+\begin{figure}[H]
+\includegraphics[scale=.25]{figures/Bayescan_Fst_and_bootstrap.png}
+\caption[Manhattan plot]{Manhattan plot of differentiation across the 37 linkage groups of chum salmon.  Points are Bayescan Fst values for single loci. Population genetic statistics were calculated at each cM position by calculating an inverse distance-weighted average value from loci within a 5cM wide window centered on each position.  Black outlines show loci selected as life history outliers in Bayescan. Black Lower shaded regions show genomic regions in the upper 99\%, as determined by bootstrap permutation. Color codes for shaded regions: Red: LFMM qvalue, Blue: Bayescan qvalue, Green: Bayescan Fst, Purple: Weir Fst.}
+\end{figure}
+\end{landscape}
+\section*{Tables}
+
+\subsection*{Sequencing and genotyping}
+
+\begin{table}[H]
+\caption{\label{tab:table-name}Sample sizes. usable sequences, and genotyping rates}
+
+\begin{tabular}{lrrrrr}
+\toprule
+{} & {} & \multicolumn{2}{c}{Aligned sequences} & \multicolumn{2}{c}{Genotyping rate}\\
+Collection &  n   &            mean &        std &              mean &       std \\
+\midrule
+Hamma Hamma            &  20 &         1,419,541 & 1,427,760 &            0.87 &       0.08 \\
+Lilliwaup Creek        &  20 &         2,760,125 &   999,141 &            0.98 &       0.01 \\
+Nisqually Kalama Creek &  17 &         2,270,022 & 1,432,866 &            0.96 &       0.03 \\
+Sherwood River Fall    &  32 &         3,235,188 &   966,091 &            0.96 &       0.04 \\
+Sherwood River Summer  &  31 &         2,504,974 & 1,183,089 &            0.91 &       0.07 \\
+Skookum Creek          &  11 &         1,644,932 &   637,844 &            0.95 &       0.09 \\
+Snohomish River        &  14 &         1,135,085 &   495,888 &            0.94 &       0.07 \\
+Squakum Creek          &   8 &           999,084 &   650,927 &            0.86 &       0.08 \\
+Stillaguamish River    &  13 &           710,538 &   269,873 &            0.91 &       0.06 \\
+Hoodsport Hatchery*    &   8 &           509,422 &   148,391 &            0.85 &       0.08 \\
+\bottomrule
+\multicolumn{6}{l}{*paired-end sequencing.}
+\end{tabular}
+
+\end {table}
+
+\subsection*{Genetic diversity} 
+
+\begin{table}[H]
+%\caption{\label{tab:table-name}Genetic diversity}
+\caption{Genetic diversity} 
+\begin{tabular}{lrr}
+\toprule
+{} & Heterozygosity &     Ne \\
+\midrule
+Hamma Hamma            &           0.30 &    339 \\
+Lilliwaup Creek        &           0.34 &  5,959 \\
+Nisqually Kalama Creek &           0.32 &    161 \\
+Sherwood River Fall    &           0.33 &    319 \\
+Sherwood River Summer  &           0.31 &    145 \\
+Skookum Creek          &           0.33 &  1,788 \\
+Snohomish River        &           0.32 &  2,122 \\
+Squakum Creek          &           0.31 & $\infty$* \\
+Stillaguamish River    &           0.30 &  1,001 \\
+Hoodsport Hatchery     &           0.30 & $\infty$* \\
+\bottomrule
+\multicolumn{3}{l}{*small sample size (\textless10)}
+\end{tabular}
+
+\end {table}
+
+\pagebreak
 \section*{Outline}
 \begin{itemize}
 
@@ -52,8 +145,9 @@
 \end{itemize}
 
 \end{itemize}
-\pagebreak
 
+
+\pagebreak
 
 \section*{Abstract}
 The common ancestor of salmonids underwent a whole genome duplication (WGD) approximately 100 million years ago. Understanding the genetic legacy of this event is critical to the conservation and management of these economically and socially important fish species. In contrast to most animals with strictly disomic inheritance, regions of the salmon genome undergo tetrasomic inheritance.  Loci in these regions are often excluded from genetic analyses owing to increased complexity during both genotype assignment and subsequent analyses. Here I develop methods to better characterize the tetrasomically-inherited regions of salmonid genomes.
@@ -64,8 +158,6 @@ The common ancestor of salmonids underwent a whole genome duplication (WGD) appr
 \subsection*{Genotyping duplicates}
 Legacy of the salmonid WGD - Uncharacterized regions of the genome - retained through unknown mechanisms.  
 
-Recent studies have shown the benefits of polyploidy in other species \citep{Selmecki2015}.  Possible benefits are unknown but could include reduced inbreeding depression in small isolated populations typical of salmonids.
-
 This is the first time that high-throughput sequencing data has been applied to score duplicated loci within salmonids.
 
 \subsection*{Genome scan}
@@ -75,56 +167,49 @@ draw on synteny / orthology
 
 \subsubsection*{Puget Sound chum salmon}
 
-Chum salmon (Oncorhynchus keta) have the widest distribution of any Pacific salmonid, from Korea, around the Pacific Rim, to Oregon \citep{Salo1991}. Chum salmon are abundant and are utilized by tribal and non-tribal fishers and comprise the dominant commercial fishery in Washington State. Recently some chum salmon populations have undergone drastic declines.  National Oceanic and Atmospheric Administration (NOAA) Fisheries recognizes four evolutionarily significant units (ESUs) of chum salmon in the Pacific Northwest. Of the four, two are listed as ‘threatened’ under the Endangered Species Act: the Hood Canal summer-run ESU and the Columbia River ESU. The Hood Canal summer-run ESU is composed of 16 historic populations, 7 of which are extinct \citep{Good2005} and is the earliest-returning chum salmon stock in the Americas. Further work on Population structure?
+Chum salmon (Oncorhynchus keta) have the widest distribution of any Pacific salmonid, from Korea, around the Pacific Rim, to Oregon \citep{Salo1991}. Chum salmon are abundant and are utilized by tribal and non-tribal fishers and comprise the dominant commercial fishery in Washington State. Recently some chum salmon populations have undergone drastic declines.  National Oceanic and Atmospheric Administration (NOAA) Fisheries recognizes four evolutionarily significant units (ESUs) of chum salmon in the Pacific Northwest. Of the four, two are listed as ‘threatened’ under the Endangered Species Act: the Hood Canal summer-run ESU and the Columbia River ESU. The Hood Canal summer-run ESU is composed of 16 historic populations, 7 of which are extinct \citep{Good2005} and is the earliest-returning chum salmon stock in the Americas. 
 
 Two evolutionary significant units (ESU) - Hood canal summer-run vs the rest. 'Genetically and ecologically distinct' threatened under the ESA. Notice which populations where supplemented by hatchery programs?
-Chum salmon stray at similar rates to other pacific salmon \cite{Small2014} (could also cite Johnson et. al. 1997).  Note past measures of Effective population size.
+Chum salmon stray at similar rates to other pacific salmon \cite{Small2014}.
 
-Salmonids in the Pacific Northwest have a rich variety of life histories, with variation in run-timing, straying rates, age at maturity, freshwater residence, and many other dimensions \citep{Quinn2005}. This species and population-level diversity adds resilience to ecosystems and to species of conservation and economic concern \citep{Schindler2010}, especially in the face of climate change (reviewed in \citet{Schindler2015}).  Life history differs across populations within Puget Sound.  Generally, eggs are deposited in November - December. Embryos devlope and hatch after ~4 months and migrate to sea. 'survival and growth in juvenile chum salmon depend less on freshwater conditions than on favorable estuarine and marine conditions.'  Chum salmon return to freshwater to spawn at 3-5 years of age, and generally spawn within 100km of the ocean.
+Salmonids in the Pacific Northwest have a rich variety of life histories, with variation in run-timing, straying rates, age at maturity, freshwater residence, and many other dimensions \citep{Quinn2005}. This species and population-level diversity adds resilience to ecosystems and to species of conservation and economic concern \citep{Schindler2010}, especially in the face of climate change (reviewed in \citet{Schindler2015}).  Life history differs across populations within Puget Sound.  Generally, eggs are deposited in November - December. Embryos develop and hatch after ~4 months and migrate to sea, with survival and growth very dependent on favorable estuarine and marine conditions  \citep{Quinn2005}.  Chum salmon return to freshwater to spawn at 3-5 years of age, and generally spawn within 100km of the ocean.
 
-\subsection*{Objectives}
+
+"genetically similar populations with dissimilar life histories and morphology may provide insights at the onset of ecological speciation and reproductive isolation (Hendry 2009)." - from Aykanat et al.
+
 
 \section*{Methods}
 
+\subsection*{Salish Sea collections}
+The Salish is located in Washington State, USA. The sampling locations and timings were designed to capture the existing diversity in genetic structure and life history.
+
 \subsection*{Sequence analysis}
-Genetic variation was quantified with a reference-based approach using the \texttt{Stacks} software pipeline \citep{Catchen2013}.  A chum salmon reference constructed from \citep{Waples2015}. Reads from each individual were demultiplexed and quality filtered with 'process-radtags' and then aligned to the reference with BWA-mem  (version 0.7.5a-r405) \citep{Li2013}.  Alignments containing indels or with a mapping quality < 20 were removed. Stacks components \texttt{pstacks}, \texttt{cstacks}, \texttt{sstacks}, and \texttt{populations} were used to identify and genotype genetic variants for each population individual.
+Genetic variation was quantified with a reference-based approach using the \texttt{Stacks} software pipeline \citep{Catchen2013}.  A chum salmon reference was constructed from by conducting an all-by-all self-alignment of the catalog from \citep{Waples2015} using bowtie2 \citep{Langmead2012} allowing up to three mismatches.  Catalog entries placed on the linkage map of \citet{Waples2015} were retained, otherwise only a single sequence was retained from each group of aligned sequences.  Reads from each individual were demultiplexed and quality filtered with 'process-radtags' and then aligned to the constructed reference with BWA-mem (version 0.7.5a-r405) \citep{Li2013}.  Alignments containing indels or with a mapping quality < 20 were removed. Stacks components \texttt{pstacks}, \texttt{cstacks}, \texttt{sstacks}, and \texttt{populations} were used to identify and genotype genetic variants for each individual.
 
-The initial set of genotypes and individuals was assessed prior to further analysis.  Loci or individuals with more than 25\% missing data were removed.  Loci with a minor allele frequency below 5\% were removed. Hardy-Weinberg equilibrium was tested within each collection using the mid p-value statistic \citep{Graffelman2013}. Loci rejecting HWE in more than 5 collections were removed.  Finally, within each RAD locus, only the single SNP with the largest minor allele frequency was retained, to reduced pseudo-replication caused by physical linkage.  All filters were applied in PLINK (version v1.90b3q) \citep{Chang2014}. Note that for for the dominant coding used for the PCA analyses of population structure (see below), sequence haplotypes containing all SNPs within each locus were utilized. See supplemental file XXX for detailed description of the analysis pipeline.
-
-Paralogous loci were identified by through their segregation patterns as in \citet{Waples2015}.  At each locus, the observed allelic segregation pattern were fit to models specified by parental genotypes.
+The initial set of genotypes and individuals was assessed prior to further analysis.  Loci and individuals with more than 25\% missing data were removed.  Loci with a minor allele frequency (MAF) below 5\% were removed as they are more difficult to distinguish from sequencing errors \citep{Nielsen2011} . Hardy-Weinberg equilibrium (HWE) was tested within each collection using the mid p-value statistic \citep{Graffelman2013}. Loci with HWE rejected in more than 5 collections were removed.  Finally, within each locus, only the single SNP with the largest minor allele frequency was retained, to reduced pseudo-replication caused by physical linkage.  All filters were applied in \texttt{PLINK} (v1.90beta) \citep{Chang2014}. Note that for the PCA analyses of population structure (see below), allelic haplotypes of all SNPs within each locus were utilized.
 
 \subsection*{Linkage map}
-We constructed a consensus linkage map from three gynogenetic haploid families (sizes 175, 34, 31) with the  LEPmap \citep{Rastas2013}. This linkage map  builds on the map presented in \citet{Waples2015} with the addition of two additional families and the placement of centromeric regions. As the linkage map is constructed from gynogenetic haploid offspring, it only reflects recombination events that occur within the female lineage. As with many other species, there are sex-specific differences in recombination rates. (Not sure what else to say about female/male differences in linkage maps). The position of centromeres within each chromosome will be estimated by measuring recombination fractions along chromosomes (cite Limborg?).
+We constructed a consensus linkage map from three families of gynogenetic haploid offspring (family sizes 175, 34, 31) using the software LEPmap \citep{Rastas2013}. This linkage map here builds on the map presented in \citet{Waples2015} with the addition of two additional families and the inference of centromeric regions. As the linkage map is constructed from gynogenetic haploid offspring, it reflects only the recombination events that occur within the female lineage. As with many other species, there are sex-specific differences in recombination rates not reflected in this map. Regions of each chromosome likely to contain the centromere are estimated by measuring recombination fractions along chromosomes \textbf{cite Limborg}.
 
-\subsection*{Individual-based analyses} 
-Scoring paralogs using the dominance coding suggested by \citet{Patterson2006} for microsatellites. 
+Paralogous loci confounded by alignment were identified and resolved using their segregation pattern within the gynogenetic offspring as in \citet{Waples2015} and were included when constructing the linkage map. For all loci that were variable in at least one offspring, the observed allelic segregation pattern was fit to the predicted segregation patterns under different possible parental genotypes.  The parental genotype was selected as the genotype that was most likely to produced the observed segregation pattern, accounting for genotyping error. This parental genotype was used identified segregating loci suitable for inclusion on the linkage map. 
 
-Principal component analyses (PCAs) were conducted with EIGENSOFT (version 6.0.1) \citep{Patterson2006}
+\subsection*{Population structure and diversity}
 
-PCAs were compared with a Procrustes analysis. When supplied with two PCA projections, this method attempts to find an optimal superimposition of both of them, this is achieved by  translation, rotation, reflection and scaling.  After this transformation is complete, the remaining difference in shape is a measure of the Procrustes distance between the projections \citep{Peres2001}.
+Allele frequencies, Heterozygosity, and Fst \citep{Weir1984} were calculated for each locus in \texttt{PLINK}.
 
-Formal tests for population structure \citep{Patterson2006}, based on the Tracey-Widom distribution \citep{Tracy1994}. Q values.
+Principal component analyses (PCAs) were conducted on genotype matrices with \texttt{EIGENSOFT} (v6.0.1) \citep{Patterson2006}, including tests for population structure by comparing largest eigenvalues to the Tracey-Widom distribution \citep{Tracy1994}.  Genotypes at paralogous loci were scored for the presence/absence of each allelic haplotype using the dominance coding suggested by \citet{Patterson2006}. PCAs were compared with a Procrustes analysis. When supplied with two PCA projections, this method attempts to find an optimal superimposition, achieved by translation, rotation, reflection and scaling.  After this transformation is complete, the remaining difference in shape is a measure of the Procrustes distance between the PCA projections. \citep{Peres2001}.
 
-\subsection*{Population-based analyses \& genome scans}
-Allele frequencies, Heterozygosity, and Fst (Weir 1984) were calculated for each locus in PLINK.
+Effective population size (Ne) was estimated for each population using the LD method implemented in the \texttt{LDNe} software package \citep{Waples2010}.  The LD method estimates the average correlation of alleles at pairs of loci (r2). The mean pairwise r2 value across independently-assorting loci provides an estimate of contemporary effective population size. Physically linked loci can downwardly bias Ne estimates; to avoid this potential bias, only loci placed on the linkage map were included in this analysis, and r2 measurements between loci co-located on a chromosome were also excluded.
 
-Fst across the genome.  Use LOESS (local regression) to reveal regions of elevated differentiation.  Benefits of this approach vs a bootstrapping methods (eg. Hohenlohe 2010).
+\subsection*{Genome scans}
+Rolling-means of populations and test statistics were calculated at each cM position using a sliding-window analysis. At each focal cM a weighted-mean value was calculated across all loci within 2.5cM on either side, with weights for each locus within the window inversely proportional to squared distance to the focal point. At each focal cM, bootstrapped upper 99\%? intervals were calculated by permuting random loci 1000 times into the windowed positions.
 
-Genome scans.  Bayescan all populations - 
-LFMM models with run-timing data
+LFMM 
 
-Effective population size was estimated for each population using the LD method implemented in the LDNe software package \citep{Waples2010}.  The LD methods estimates the average correlation of alleles at pairs of loci (r2). The mean pairwise r2 value across independently-assorting loci provides an estimate of contemporary effective population size. Only loci placed on the linkage map were used for this calculation and the map was utilized to ensure that only pairs of loci not co-located on a chromosome contributed to mean r2.
+Genome scans.  Bayescan all populations - LFMM models with run-timing data
 
 \subsection*{Synteny - relation to genetic resources}
 By design, RADseq generates sequence data exclusively near restriction enzyme cut sites; alignments of RAD contigs to genomic resources relate RAD data to much larger genomic sections.  These resources often have functional annotations, whole gene sequences, and reading frame information that is unavailable to RADseq projects, expanding my ability to interpret genetic differentiation in a biological context.
-
-(pending)
-Contigs assembled from paired-end sequence data \citet{Waples2015} will be aligned to genomic resources including the Atlantic salmon genome (Willie Davidson, personal communication), chum transcriptome \citep{Seeb2011}
-
-Othologous loci in Chinook salmon linkage maps of Chinook salmon (McKinney et al. submitted).  More detail on the Oxford grid construction and alignment parameters.
-
-\subsection*{Should I do?}
-phylogenetic tree
 
 
 \section*{Results}
@@ -132,106 +217,90 @@ phylogenetic tree
 table of sequencing results -  by collection location, including family and wild samples.
 Genotyping rate
 
-\subsection*{Individual-based}
-
-
-\subsection*{Population-based}
-population structure
-
-Summarize population relationships, consistent with \citet{Small2014}?
-
-Breakdown of population structure and lower PC axes.
-
-Four individual-based PCA figures
-
-\includegraphics[scale=.3]{figures/PCA_codom.png}
-\includegraphics[scale=.3]{figures/PCA_dom.png}
-
-\includegraphics[scale=.3]{figures/PCA_dom_paralogs.png}
-\includegraphics[scale=.3]{figures/PCA_codom_subsample.png}
-Paralogs have similar neutral patterns of population structure (Procrustes similarity xxx)
-
-Is the a possible quantitative measure of information loss due to dominance coding?  These doesn't quite make sense, as the the dominant haplotypes contain *more* information.
-
-discuss population vs individual based results
-
-can we demonstrate contained within paralogs by bootstrapping 
-Genome scans - LG regions highlighted.
-
-\subsection*{Effective population size}
-
-
-Perhaps run the Ne with and without the linkage map correction?
-
-\subsection*{Ascertainment Bias}
-The linkage map was constructed from three female parents from Hoodsport hatchery, WA.
-
-Demonstrate ascertainment effect when using only loci on linkage map - effect on allele frequencies.
-
-\begin{figure}[H]
-\includegraphics[scale=.3]{figures/supplemental/ascertainment2.png}
-\caption{Minor allele frequency (MAF) density histograms for all loci (blue) and the subset of loci placed on the linkage map (green). The rightward shift in the MAF distribution shows the effect of ascertainment bias.} \textbf{TODO: align histogram bins, check the .5 boundary}
-\end{figure}
-
 \subsection*{Linkage map}
-Here we present a consensus map placing 7795 loci onto 37 linkage groups.  These 37 linkage groups correspond 1:1 with those reported in \citep{Waples2015} and likely have a 1:1 correspondence with the 37 chromosomes in chum salmon \citep{Phillips2001}. \textbf{Do we want a map figure, perhaps just a slice of a single LG, or a table?}.
+Here we present a consensus map placing 7795 loci onto 37 linkage groups.  These 37 linkage groups correspond 1:1 with those reported in \citep{Waples2015} and likely have a 1:1 correspondence with the 37 chromosomes in the most common chum salmon karyotype\citep{Phillips2001}. Of the 13,407 loci scored in the wild, 6,251 were placed on the linkage map. 
 
-Of the 13,407 loci scored in the wild, 6,251 were placed on the linkage map. 
-
-A total of xxx paralogs were identified and placed onto the linkage map (do I want to count them in pairs or not?).  The location of these paralogs were were concentrated on the distal ends of three chromosomes, consistent with results found in other Salmonid species  \citep{Brieuc2014, Kodama2014, Waples2015} (also McKinney submitted). Consistency across families (see supplemental table xx)
-
-The consensus linkage map produced in chapter two will likely be similar to the single-family map produced in chapter one.  The map produced in chapter one contained thousands of loci placed on 37 linkage groups, with eight pairs of homeologous chromosome arms.  These pairs have elevated levels of sequence identity, likely due to ongoing tetrasomic inheritance.  We expect to find a similar pattern in the other two families, this would provide validation of the methods developed in chapter one. Potentially more interesting, but less likely, are drastic differences such as chromosomal inversions or chromosome number polymorphisms.  This type of chromosomal variation is documented within some salmon species \citep{Phillips2001}, but is not likely to be seen between these closely related families from Hoodsport Washington.
+A total of \textbf{xxx} paralogs were identified and placed onto the linkage map.  The location of these paralogs were were concentrated on the distal ends of three chromosomes, consistent with results found in other Salmonid species  \citep{Brieuc2014, Kodama2014, Waples2015}. These eight pairs of homeologous chromosome arms have elevated levels of sequence identity, likely due to ongoing residual tetrasomic inheritance.
 
 placement of centromeres
 
 paralogs
 
-Notice the distribution of paralogs matches the  pattern found in other salmonids.
 syntenic/orthologous relationships, see supplemental figure xx.
 
-Table (supplemental?)
+\subsection*{Ascertainment Bias}
+The linkage map was constructed from three females from the Hoodsport hatchery, WA.  Demonstrate ascertainment effect when using only loci on linkage map - effect on allele frequencies.
+
+\subsection*{Genetic diversity}
+
+\subsection*{Population structure}
+
+Population struture represented by the PCA projections was consistent with \citet{Small2014}?.  Population structure was similar across the paralogs across the duplicated and non duplicated loci. Four individual-based PCA figures. 
+
+
+Population structure  have similar neutral patterns of population structure (Procrustes similarity xxx)
+
+
 
 \section*{Discussion}
-To do
+
+Recent studies have shown the benefits of polyploidy in other species \citep{Selmecki2015}.  Possible benefits are unknown but could include reduced inbreeding depression in small isolated populations typical of salmonids.
 
 Compared to \citet{Small2014} the effective sizes (N$_{e}$) are larger, this could be due to the downward bias removed by utilizing the linkage map.
 
-\section*{Meta}
-Does this turn into two papers?
-
- - linkage map and individual-based analyses - including duplicated loci
-
- - inference of adaptation -associated  life history variation  - Fst across the genome.
+discuss population vs individual based results
 
 \pagebreak
 \section*{Supplemental Figures}
+\begin{itemize}
+\item Figures
+    	\begin{enumerate}
+        \item Linkage map
+        \item Manhattan plots - genome scans statistics
+        \item Cross-validation error of inferred ancestry  - how to select K
+        \item Chinook synteny oxford grid
+        \item PCA of mapped/unmapped loci to address ascertainment bias?
+		\end{enumerate}
+\item Tables
+    	\begin{enumerate}
+        \item Chum reference sequence (FASTA)
+        \item Locus-specific info: 
+        	\begin{itemize}
+            \item Map position
+            \item Allele frequencies
+            \item F-statistics
+            \item Bayescan q value and alphas
+            \item LFMM q value
+            \end{itemize}
+        \item PCA projections, SNP loadings, Procrustes analysis, Tracy-Widom statistics
+        \item LFMM inferred latent factors and environmental variables
+        \item Smoothed genomic statistics from genome scan - 
+        \end{enumerate}
+\end{itemize}
+
+
 
 \begin{figure}[H]
 \includegraphics[scale=.4]{figures/supplemental/PCA_eigenvalues.png}
-\caption{Percent variance explained (eigenvalue) for the first eight PC axes of each locus set.  Notice the similarity between the two bi-allelic sets and the two haplotypic sets.}
+\caption[SUPPLEMENTAL - PCA eigenvalues]{Percent variance explained (eigenvalue) for the first eight PC axes of each locus set.  Notice the similarity between the two bi-allelic sets and the two haplotypic sets.}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[scale=.4]{figures/supplemental/TW_stats.png}
-\caption{Number of significant PC axes as determined by the Tracey-Widom test.}
+\caption[SUPPLEMENTAL - PCA significant axes]{Number of significant PC axes as determined by the Tracey-Widom test.}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[scale=.25]{figures/supplemental/synteny_chinook.png}
-\caption{Oxford grid - Chum and Chinook linkage groups. Loci are colored by their LG assignment in chum salmon and positioned according to the order within each genome.}
+\includegraphics[scale=.35]{figures/supplemental/synteny_chinook.png}
+\caption[SUPPLEMENTAL - Chum / Chinook Oxford grid]{Oxford grid - Chum and Chinook linkage groups. Loci are colored by their LG assignment in chum salmon and positioned according to the order within each genome.}
 \end{figure}
-
-% \section*{References}
 
 \bibliographystyle{apalike}
 \bibliography{./bibtex/7_13_15}
 
 \section*{Acknowledgements}
-Carita Pascal - lab work and library prep.
-
-Seeb lab
-
 WDFW - chum salmon expertise.
-
+Carita Pascal - lab work and library prep.
+Samples sources?
 Rachel Hovel - multivariate stat advice.
 \end{document}
