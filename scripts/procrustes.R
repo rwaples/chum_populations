@@ -8,23 +8,40 @@ library(vegan)
 #rel_mat_1 = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.relmatrix', sep = "", header = FALSE)
 #rel_mat_2 = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/on_map.codom.subsample.relmatrix', sep = "", header = FALSE)
 
-evec_1 = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.codom.evec', 
+evec_a = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.evec',                        sep = "", header = FALSE, skip =1)
+
+evec_b = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.evec', 
                        sep = "", header = FALSE, skip =1)
-evec_2 = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.evec', 
+evec_c = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/complete.dom.subsample.evec', 
                     sep = "", header = FALSE, skip =1)
 
-evec_3 = read.table('/home/ipseg/Desktop/waples/chum_populations/results/batch_4/EIGENSOFT/paralogs.dom.evec', 
-										sep = "", header = FALSE, skip =1)
 
 # CCA
 my_cca = cc(evec_1[2:5], evec_2[2:6])
 
 
 # procrustes
-proc1 = procrustes( evec_2[2:7], evec_1[2:7], symmetric=TRUE)
-plot(proc1, kind = 2)
-plot(proc1, kind = 1, choices=c(1,2))
-proc1$scale
+proc_ab = procrustes( evec_a[2:7], evec_b[2:7], symmetric=TRUE, )
+summary(proc_ab)
+plot(proc_ab, kind = 2)
+plot(proc_ab, kind = 1, choices=c(1,2))
+
+prot_ab = protest(evec_a[2:7], evec_b[2:7], permutations = how(nperm = 10000))
+prot_ac = protest(evec_a[2:7], evec_c[2:7], permutations = how(nperm = 10000))
+prot_bc = protest(evec_b[2:7], evec_c[2:7], permutations = how(nperm = 10000))
+
+prot_ab
+prot_ac
+prot_bc
+
+
+summary(prot_bc)
+protest(evec_a[2:7], evec_b[2:7], permutations = how(nperm = 10000))
+protest(evec_a[2:7], evec_b[2:7], permutations = how(nperm = 10000))
+
+#protest(proc_ab[2:7], proc_ab[2:7], perm = 10000, scores = "sites")
+
+proc_ab$scale
 (residuals(proc1))
 proc1
 

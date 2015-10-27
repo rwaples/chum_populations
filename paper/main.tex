@@ -163,7 +163,9 @@ This is the first time that high-throughput sequencing data has been applied to 
 \subsection*{Genome scan}
 map-assisted genome scan with a paired population design. The linkage map will be used to interpret the population genomic data. They provide information on the genomic adjacency of loci and facilitate the  assessment of statistical independence between alleles.  This can address the persistent problem of pseudoreplication, such as during the estimation of effective population size (e.g., \citet{Larson2014} or for marker development for mixed stock analysis. Kernel smoothing and bootstrapping (e.g., \citet{Hohenlohe2010} will be used to identify genomic regions with elevated level of divergence.
 
-draw on synteny / orthology 
+Despite the limited geogrpahic range of this studym 
+
+LFMM and other methods of environmental correlation have increased power to detect selection from standing genetic variation (Pritchard2010, Frichot2013)
 
 \subsubsection*{Puget Sound chum salmon}
 
@@ -181,15 +183,17 @@ Salmonids in the Pacific Northwest have a rich variety of life histories, with v
 \section*{Methods}
 
 \subsection*{Salish Sea collections}
-The Salish is located in Washington State, USA. The sampling locations and timings were designed to capture the existing diversity in genetic structure and life history.
+Colections of chum salmon were made across the Salish Sea, of the Pacific Ocean on the border of the USA and Canada from. Collection locations and timings were designed to capture the existing diversity in genetic structure and life history, including the latest-spawning chum salmon population (Nisqually) and the ESA-listed Hood Canal summer spawning population (Hamma Hamma).  Fin clips were taken from adult fish were collected from each location during a single sampling event and preserved in ethanol.  
+
+DNA was extracted from tissues using DNEasy-96 kits from Qiagen (Venlo, Netherlands). A total of 200 adult samples were prepared for RAD sequencing with the SbfI restriction enzyme as per Baird et al. (2008) and Etter et al. (2011a). DNA from each sample was uniquely barcoded (6bp), pooled into libraries of 10-30 samples, and sequenced for 101 base cycles at the Genomics Core Facility at the University of Oregon, on a Illumina HiSeq2000. Hoodsport samples were sequenced using a paired-end protocol, all other collections were sequenced using a single-end protocol.  Data from 240 gynogentic haploid offspring, used in construction of the consensus linkage map and originally reported in \citet{Waples2015}, were sequenced in a similar manner.  
 
 \subsection*{Sequence analysis}
-Genetic variation was quantified with a reference-based approach using the \texttt{Stacks} software pipeline \citep{Catchen2013}.  A chum salmon reference was constructed from by conducting an all-by-all self-alignment of the catalog from \citep{Waples2015} using bowtie2 \citep{Langmead2012} allowing up to three mismatches.  Catalog entries placed on the linkage map of \citet{Waples2015} were retained, otherwise only a single sequence was retained from each group of aligned sequences.  Reads from each individual were demultiplexed and quality filtered with 'process-radtags' and then aligned to the constructed reference with BWA-mem (version 0.7.5a-r405) \citep{Li2013}.  Alignments containing indels or with a mapping quality < 20 were removed. Stacks components \texttt{pstacks}, \texttt{cstacks}, \texttt{sstacks}, and \texttt{populations} were used to identify and genotype genetic variants for each individual.
+Genetic variation was quantified with a reference-based approach using the \texttt{Stacks} software pipeline \citep{Catchen2013}.  A chum salmon reference was constructed from by conducting an all-by-all self-alignment of the catalog from \citep{Waples2015} using bowtie2 \citep{Langmead2012} allowing up to three mismatches.  Catalog entries placed on the linkage map of \citet{Waples2015} were retained, otherwise only a single sequence was retained from each group of aligned sequences.  Reads from each individual were demultiplexed and quality filtered with 'process-radtags' and then aligned to the constructed reference with BWA-mem (version 0.7.5a-r405) \citep{Li2013}.  Alignments containing indels or with a mapping quality < 20 were removed. Stacks components \texttt{pstacks}, \texttt{cstacks}, \texttt{sstacks}, and \texttt{populations} were used to identify and genotype genetic variants for each individual. 20 individuals, 2 from each collection location, were used to ascertain genetic variation, other samples were genotyped at these loci.
 
 The initial set of genotypes and individuals was assessed prior to further analysis.  Loci and individuals with more than 25\% missing data were removed.  Loci with a minor allele frequency (MAF) below 5\% were removed as they are more difficult to distinguish from sequencing errors \citep{Nielsen2011} . Hardy-Weinberg equilibrium (HWE) was tested within each collection using the mid p-value statistic \citep{Graffelman2013}. Loci with HWE rejected in more than 5 collections were removed.  Finally, within each locus, only the single SNP with the largest minor allele frequency was retained, to reduced pseudo-replication caused by physical linkage.  All filters were applied in \texttt{PLINK} (v1.90beta) \citep{Chang2014}. Note that for the PCA analyses of population structure (see below), allelic haplotypes of all SNPs within each locus were utilized.
 
 \subsection*{Linkage map}
-We constructed a consensus linkage map from three families of gynogenetic haploid offspring (family sizes 175, 34, 31) using the software LEPmap \citep{Rastas2013}. This linkage map here builds on the map presented in \citet{Waples2015} with the addition of two additional families and the inference of centromeric regions. As the linkage map is constructed from gynogenetic haploid offspring, it reflects only the recombination events that occur within the female lineage. As with many other species, there are sex-specific differences in recombination rates not reflected in this map. Regions of each chromosome likely to contain the centromere are estimated by measuring recombination fractions along chromosomes \textbf{cite Limborg}.
+We constructed a consensus linkage map from three families of gynogenetic haploid offspring (family sizes 175, 34, 31) using the software LEPmap \citep{Rastas2013}. This linkage map here builds on the map presented in \citet{Waples2015} with the addition of two additional families and the placement of centromeric regions. As the linkage map is constructed from gynogenetic haploid offspring, it reflects only the recombination events that occur within the female lineage. As with many other species, there are sex-specific differences in recombination rates not reflected in this map. Regions of each chromosome likely to contain the centromere are estimated by measuring recombination fractions along chromosomes \textbf{cite Limborg}.
 
 Paralogous loci confounded by alignment were identified and resolved using their segregation pattern within the gynogenetic offspring as in \citet{Waples2015} and were included when constructing the linkage map. For all loci that were variable in at least one offspring, the observed allelic segregation pattern was fit to the predicted segregation patterns under different possible parental genotypes.  The parental genotype was selected as the genotype that was most likely to produced the observed segregation pattern, accounting for genotyping error. This parental genotype was used identified segregating loci suitable for inclusion on the linkage map. 
 
@@ -229,26 +233,41 @@ paralogs
 syntenic/orthologous relationships, see supplemental figure xx.
 
 \subsection*{Ascertainment Bias}
-The linkage map was constructed from three females from the Hoodsport hatchery, WA.  Demonstrate ascertainment effect when using only loci on linkage map - effect on allele frequencies.
+The linkage map was   Initial population variant discovery proceeded on two individuals from each population. When these disocered snps are filtered by inclusion on the linkage map constructed from three females from the Hoodsport collection there is a notable right-shift in the allele frequency spectrum (Figure 3).  This occurs as rare variants from other populations are excluded as they were not variable in any of the three parents used for linkage mapping. 
+
+
 
 \subsection*{Genetic diversity}
+Hamma hamma, the Endangered species act (ESA)-listed collection, and member of a distinct population segment, did not show reduced diversity as measured by hetereozygosity or contemporary Ne.
+
+Two populations has infinite point estimatates of Ne, these two populations were also the two populaitons with the smallest sample sizes, both below ten.  Small sample sizes  with 
 
 \subsection*{Population structure}
 
-Population struture represented by the PCA projections was consistent with \citet{Small2014}?.  Population structure was similar across the paralogs across the duplicated and non duplicated loci. Four individual-based PCA figures. 
+Population structure represented by the PCA projections was consistent with \citet{Small2014}?.  Population structure, as reflected by the PCA projections, was similar whether measured with the paralogs or non duplicated loci: Procrustes similarity xxx. 
+
+The distinctness of the Hamma Hamma summer run chum salmon was well supported in our analyses of population structure.  In all PCAs, Hamma Hamma individuals were separated from the rest of the indidivuals along one of the primary axes (Figure 4).  
+
+Population structure ave similar neutral patterns of population structure 
 
 
-Population structure  have similar neutral patterns of population structure (Procrustes similarity xxx)
-
+"PCA uses the mean allele frequencies as the first factor, and then two factors that represent deviations from this mean in two orthogonal directions (e.g., the diagonals of the square). As a result the PCA loadings on the second and third factors effectively recapitulate the geography of the space, as previously observed.
+...
+In summary, the fact that the first factor in PCA represents the mean allele frequencies is responsible both for the fact that it produces less interpretable factors in the discrete case and more interpretable results in the continuous case.
+" {Engelhardt}
 
 
 \section*{Discussion}
+
+The potential for bias in genetic inference resulting from this ascertainment bias.
 
 Recent studies have shown the benefits of polyploidy in other species \citep{Selmecki2015}.  Possible benefits are unknown but could include reduced inbreeding depression in small isolated populations typical of salmonids.
 
 Compared to \citet{Small2014} the effective sizes (N$_{e}$) are larger, this could be due to the downward bias removed by utilizing the linkage map.
 
 discuss population vs individual based results
+
+
 
 \pagebreak
 \section*{Supplemental Figures}
