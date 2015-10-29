@@ -1,0 +1,26 @@
+new("snmfProject"
+    , snmfProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmfProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.geno"
+    , runs = list()
+    , K = c(2L, 3L, 4L, 5L, 6L, 2L, 3L, 4L, 5L, 6L, 2L, 3L, 4L, 5L, 6L)
+    , snmfClass.files = c("/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K2/run1/complete.dom_r1.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K3/run1/complete.dom_r1.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K4/run1/complete.dom_r1.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K5/run1/complete.dom_r1.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K6/run1/complete.dom_r1.6.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K2/run2/complete.dom_r2.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K3/run2/complete.dom_r2.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K4/run2/complete.dom_r2.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K5/run2/complete.dom_r2.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K6/run2/complete.dom_r2.6.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K2/run3/complete.dom_r3.2.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K3/run3/complete.dom_r3.3.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K4/run3/complete.dom_r3.4.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K5/run3/complete.dom_r3.5.snmfClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K6/run3/complete.dom_r3.6.snmfClass"
+)
+    , n = 174L
+    , L = 35579L
+    , creationTime = structure(1446077422.865, class = c("POSIXct", "POSIXt"))
+)

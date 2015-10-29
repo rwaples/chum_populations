@@ -5,11 +5,11 @@ ped_genotypes = '/home/ipseg/Desktop/waples/chum_populations/data/batch_4/pop_ge
 lfmm_genotypes = '/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.lfmm'
 geno_genotypes = '/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.geno'
 
+
 # convert a .ped  file
 ped2lfmm(input.file = ped_genotypes,  output.file = lfmm_genotypes)
 # convert lfmm file to geno
 lfmm2geno(input.file = lfmm_genotypes, geno_genotypes, force = TRUE)
-
 
 # run pca
 pc = pca(lfmm_genotypes, scale = TRUE, center = TRUE)
@@ -33,12 +33,13 @@ snmf_project = snmf(geno_genotypes, K=1:10, entropy = TRUE, repetitions = 3, CPU
 # plot cross-entropy criterion of all runs of the project
 plot(snmf_project, lwd = 5, col = "red", pch=1)
 
+
 # get the cross-entropy of each run for K = 3
 ce = cross.entropy(snmf_project, K = 3)
 # select the run with the lowest cross-entropy
 best = which.min(ce)
 # We can also visualize a barplot of ancestry coeffcients as follows.
-barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8)
+barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
 
 library(plyr)
 pp = data.frame(Q(snmf_project, K = 3, run  =best ))

@@ -33,7 +33,7 @@ prot_bc = protest(evec_b[2:7], evec_c[2:7], permutations = how(nperm = 10000))
 prot_ab
 prot_ac
 prot_bc
-
+prot_bc$t0
 
 summary(prot_bc)
 protest(evec_a[2:7], evec_b[2:7], permutations = how(nperm = 10000))

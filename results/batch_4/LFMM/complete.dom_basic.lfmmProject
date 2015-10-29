@@ -1,0 +1,18 @@
+new("lfmmProject"
+    , lfmmProject.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom_basic.lfmmProject"
+    , directory = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom_basic.lfmm/"
+    , input.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.lfmm"
+    , environment.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/basic.env"
+    , runs = list()
+    , K = c(3L, 3L, 3L)
+    , d = c(1L, 1L, 1L)
+    , all = c(FALSE, FALSE, FALSE)
+    , lfmmClass.files = c("/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom_basic.lfmm/K3/run1/complete.dom_r1_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom_basic.lfmm/K3/run2/complete.dom_r2_s1.3.lfmmClass", 
+"/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom_basic.lfmm/K3/run3/complete.dom_r3_s1.3.lfmmClass"
+)
+    , n = 174L
+    , L = 35579L
+    , D = 1L
+    , creationTime = structure(1446070492.77441, class = c("POSIXct", "POSIXt"))
+)
