@@ -1,0 +1,41 @@
+PLINK v1.90b3w 64-bit (3 Sep 2015)
+Options in effect:
+  --autosome-num 50
+  --chr 28
+  --file /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci
+  --out /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28
+  --recode
+
+Hostname: ipseg-ubuntu
+Working directory: /home/ipseg/Desktop/waples/chum_populations
+Start time: Fri Oct 30 18:19:01 2015
+
+Random number seed: 1446254341
+32127 MB RAM detected; reserving 16063 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (174 variants, 246 samples).
+--file:
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28-temporary.bed
++
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28-temporary.bim
++
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28-temporary.fam
+written.
+174 variants loaded from .bim file.
+246 samples (3 males, 3 females, 240 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28.nosex
+.
+Using 1 thread (no multithreaded calculations invoked.
+Before main variant filters, 6 founders and 240 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.543337.
+174 variants and 246 samples pass filters and QC.
+Note: No phenotypes present.
+--recode to
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28.ped
++
+/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom28.map
+... done.
+
+End time: Fri Oct 30 18:19:01 2015

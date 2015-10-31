@@ -1,0 +1,134 @@
+Mode    : Phaser
+Options : --input-ped /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.ped /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.map --duohmm -W 5 --effective-size 10 --input-map /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.16.shapeitmap -O /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.phased
+Version : v2.r837
+Date    : 30/10/2015 18:36:50
+
+MODE -phase : PHASING GENOTYPE DATA
+  * Autosome (chr1 ... chr22)
+  * Window-based model (SHAPEIT v2)
+  * MCMC iteration
+  * duoHMM is used to refine family haplotypes
+
+Parameters :
+  * Seed : 1446255410
+  * Parallelisation: 1 threads
+  * Ref allele is NOT aligned on the reference genome
+  * MCMC: 35 iterations [7 B + 1 runs of 8 P + 20 M]
+  * Model: 100 states per window [100 H + 0 PM + 0 R + 0 COV ] / Windows of ~5.0 Mb / Ne = 10
+
+Reading site list in [/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.map]
+  * 184 sites included
+
+Reading sample list and genotypes in [/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.ped] where missing-code = [0]
+  * 246 samples included
+  * 0 unrelateds / 0 duos / 240 trios in 3 different families
+
+Reading genetic map in [/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.16.shapeitmap]
+  * 184 genetic positions found
+  * #set=184 / #interpolated=0
+  * Physical map [0.01 Mb -> 89.57 Mb] / Genetic map [0.00 cM -> 89.56 cM]
+
+Checking Mendel errors...
+  * Low level of Mendel error in all trios and duos
+  * 0 SNPs with high Mendel error rate (> 5%)
+
+Checking missingness and MAF...
+  * 240 individuals with high rates of missing data (>5%)
+  * 180 SNPs with high rates of missing data (>5%)
+
+Building graphs ... 
+
+  * 246 graphs / 15269 segments / ~2 SNPs per segment / 1442092 transitions
+  * 0 haploids / 246 unrelateds / 0 duos / 0 trios
+  * 492 founder haplotypes
+
+Sampling haplotypes
+
+
+Burn-in iteration [1/7]
+
+Burn-in iteration [2/7]
+
+Burn-in iteration [3/7]
+
+Burn-in iteration [4/7]
+
+Burn-in iteration [5/7]
+
+Burn-in iteration [6/7]
+
+Burn-in iteration [7/7]
+
+Pruning iteration [1/8]
+
+Pruning iteration [2/8]
+
+Pruning iteration [3/8]
+
+Pruning iteration [4/8]
+
+Pruning iteration [5/8]
+
+Pruning iteration [6/8]
+
+Pruning iteration [7/8]
+
+Pruning iteration [8/8]
+
+Pruning graphs
+
+  * 246 graphs / 8145 segments / ~5 SNPs per segment / 175250 transitions
+  * 0 haploids / 246 unrelateds / 0 duos / 0 trios
+  * 492 founder haplotypes
+
+Main iteration [1/20]
+
+Main iteration [2/20]
+
+Main iteration [3/20]
+
+Main iteration [4/20]
+
+Main iteration [5/20]
+
+Main iteration [6/20]
+
+Main iteration [7/20]
+
+Main iteration [8/20]
+
+Main iteration [9/20]
+
+Main iteration [10/20]
+
+Main iteration [11/20]
+
+Main iteration [12/20]
+
+Main iteration [13/20]
+
+Main iteration [14/20]
+
+Main iteration [15/20]
+
+Main iteration [16/20]
+
+Main iteration [17/20]
+
+Main iteration [18/20]
+
+Main iteration [19/20]
+
+Main iteration [20/20]
+
+Normalising graphs
+
+
+Solving haplotypes
+
+
+Writing sample list in [/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.phased.sample]
+
+Writing site list and haplotypes in [/home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom16.phased.haps]
+
+Running time: 51 seconds
