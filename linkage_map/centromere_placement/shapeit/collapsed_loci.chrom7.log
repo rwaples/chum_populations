@@ -3,17 +3,18 @@ Options in effect:
   --autosome-num 50
   --chr 7
   --file /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci
+  --geno .5
   --out /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7
   --recode
 
 Hostname: ipseg-ubuntu
 Working directory: /home/ipseg/Desktop/waples/chum_populations
-Start time: Fri Oct 30 18:18:58 2015
+Start time: Fri Oct 30 23:43:47 2015
 
-Random number seed: 1446254338
+Random number seed: 1446273827
 32127 MB RAM detected; reserving 16063 MB for main workspace.
 Scanning .ped file... done.
-Performing single-pass .bed write (268 variants, 246 samples).
+Performing single-pass .bed write (268 variants, 177 samples).
 --file:
 /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7-temporary.bed
 +
@@ -22,15 +23,16 @@ Performing single-pass .bed write (268 variants, 246 samples).
 /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7-temporary.fam
 written.
 268 variants loaded from .bim file.
-246 samples (3 males, 3 females, 240 ambiguous) loaded from .fam.
+177 samples (1 male, 1 female, 175 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
 /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7.nosex
 .
 Using 1 thread (no multithreaded calculations invoked.
-Before main variant filters, 6 founders and 240 nonfounders present.
+Before main variant filters, 2 founders and 175 nonfounders present.
 Calculating allele frequencies... done.
-Total genotyping rate is 0.515198.
-268 variants and 246 samples pass filters and QC.
+Total genotyping rate is 0.534046.
+117 variants removed due to missing genotype data (--geno).
+151 variants and 177 samples pass filters and QC.
 Note: No phenotypes present.
 --recode to
 /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7.ped
@@ -38,4 +40,4 @@ Note: No phenotypes present.
 /home/ipseg/Desktop/waples/chum_populations/linkage_map/centromere_placement/shapeit/collapsed_loci.chrom7.map
 ... done.
 
-End time: Fri Oct 30 18:18:58 2015
+End time: Fri Oct 30 23:43:47 2015
