@@ -4,10 +4,8 @@ library("LEA")
 setwd("~/Desktop/waples/chum_populations/results/batch_4/LFMM")
 
 raw_genotypes = '/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.geno'
-
 lfmm_genotypes = '/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.lfmm'
 geno_genotypes = '/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.geno'
-
 
 # convert raw file to lfmm
 geno2lfmm(input.file = raw_genotypes, lfmm_genotypes, force = TRUE)
