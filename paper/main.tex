@@ -62,58 +62,55 @@
 \end{landscape}
 \section*{Tables}
 
-\subsection*{Sequencing and genotyping}
-
+% Table 1
 \begin{table}[H]
-\caption{\label{tab:table-name}Sample sizes. usable sequences, and genotyping rates}
-
-\begin{tabular}{lrrrrr}
+\caption{\label{tab:table-name}Sample size. usable sequences, and genotyping rate for each collection}
+\begin{tabular}{llrrrrrr}
 \toprule
-{} & {} & \multicolumn{2}{c}{Aligned sequences} & \multicolumn{2}{c}{Genotyping rate}\\
-Collection &  n   &            mean &        std &              mean &       std \\
+{} & {} & {} & {} & \multicolumn{2}{c}{Usabled sequences} & \multicolumn{2}{c}{Genotyping rate}\\
+Collection &  Run Timing   &  Year &  n &          mean &        std &              mean &       std \\
 \midrule
-Hamma Hamma            &  20 &         1,419,541 & 1,427,760 &            0.87 &       0.08 \\
-Lilliwaup Creek        &  20 &         2,760,125 &   999,141 &            0.98 &       0.01 \\
-Nisqually Kalama Creek &  17 &         2,270,022 & 1,432,866 &            0.96 &       0.03 \\
-Sherwood River Fall    &  32 &         3,235,188 &   966,091 &            0.96 &       0.04 \\
-Sherwood River Summer  &  31 &         2,504,974 & 1,183,089 &            0.91 &       0.07 \\
-Skookum Creek          &  11 &         1,644,932 &   637,844 &            0.95 &       0.09 \\
-Snohomish River        &  14 &         1,135,085 &   495,888 &            0.94 &       0.07 \\
-Squakum Creek          &   8 &           999,084 &   650,927 &            0.86 &       0.08 \\
-Stillaguamish River    &  13 &           710,538 &   269,873 &            0.91 &       0.06 \\
+Hamma Hamma            &  Summer &  2010 &  20 &         1,419,541 & 1,427,760 &            0.87 &       0.08 \\
+Lilliwaup Creek        &    Fall &  2011 &  20 &         2,760,125 &   999,141 &            0.98 &       0.01 \\
+Nisqually Creek &  Winter &  2003 &  17 &         2,270,022 & 1,432,866 &            0.96 &       0.03 \\
+Sherwood River     &    Fall &  1994 &  32 &         3,235,188 &   966,091 &            0.96 &       0.04 \\
+Sherwood River   &  Summer &  1994 &  31 &         2,504,974 & 1,183,089 &            0.91 &       0.07 \\
+Skookum Creek          &    Fall &  2010 &  11 &         1,644,932 &   637,844 &            0.95 &       0.09 \\
+Snohomish River        &    Fall &  2010 &  14 &         1,135,085 &   495,888 &            0.94 &       0.07 \\
+Squakum Creek          &     Fall &  2010 &   8 &           999,084 &   650,927 &            0.86 &       0.08 \\
+Stillaguamish River    &    Fall &  2010 &  13 &           710,538 &   269,873 &            0.91 &       0.06 \\
 \midrule
-Hoodsport Hatchery*    &   8 &           509,422 &   148,391 &            0.85 &       0.08 \\
+Hoodsport Hatchery     &    Fall &  2010 &   8 &           509,422 &   148,391 &            0.85 &       0.08 \\
 \bottomrule
 \multicolumn{6}{l}{*paired-end sequencing.}
-5\end{tabular}
-
+\end{tabular}
 \end {table}
 
-\subsection*{Genetic diversity} 
-
+% Table 2
 \begin{table}[H]
-%\caption{\label{tab:table-name}Genetic diversity}
 \caption{Genetic diversity} 
-\begin{tabular}{lrr}
+\begin{tabular}{lrrll}
 \toprule
-{} & Heterozygosity &     Ne \\
+Collection & Obs. Het. &  $\widehat{N_{e}}$ &   lower CI &    upper CI \\
 \midrule
-Hamma Hamma            &           0.30 &    339 \\
-Lilliwaup Creek        &           0.34 &  5,959 \\
-Nisqually Kalama Creek &           0.32 &    161 \\
-Sherwood River Fall    &           0.33 &    319 \\
-Sherwood River Summer  &           0.31 &    145 \\
-Skookum Creek          &           0.33 &  1,788 \\
-Snohomish River        &           0.32 &  2,122 \\
-Squakum Creek          &           0.31 & $\infty$* \\
-Stillaguamish River    &           0.30 &  1,001 \\
+Hamma Hamma            &           0.30 &    339 &   316.5 &    365.8 \\
+Lilliwaup Creek        &           0.34 &  5,959 &  3276.5 &  32651.6 \\
+Nisqually Kalama Creek &           0.32 &    161 &   156.7 &    166.8 \\
+Sherwood River (Fall)    &           0.33 &    319 &   310.8 &    329.5 \\
+Sherwood River (Summer)  &           0.31 &    145 &   142.9 &    147.6 \\
+Skookum Creek          &           0.33 &  1,788 &  1121.0 &   4402.6 \\
+Snohomish River        &           0.32 &  2,122 &  1400.1 &   4379.3 \\
+Squakum Creek          &           0.31 & $\infty$* &     NA &      NA \\
+Stillaguamish River    &           0.30 &  1,001 &   766.0 &   1443.7 \\
 \midrule
-Hoodsport Hatchery     &           0.30 & $\infty$* \\
+Hoodsport Hatchery     &           0.30 & $\infty$* &     NA &      NA \\
 \bottomrule
 \multicolumn{3}{l}{*small sample size (\textless10)}
 \end{tabular}
-
 \end {table}
+
+
+
 
 \pagebreak
 \section*{Outline}
