@@ -41,6 +41,13 @@ best = which.min(ce)
 # We can also visualize a barplot of ancestry coeffcients as follows.
 barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
 
+
+pdf('/home/ipseg/Desktop/waples/chum_populations/paper/figures/supplemental/Q.non_paralogs.pdf')
+barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
+dev.off()
+
+
+
 library(plyr)
 pp = data.frame(Q(snmf_project, K = 3, run  =best ))
 pp = arrange(pp, V4)
@@ -50,7 +57,7 @@ pp = arrange(pp, V1)
 barplot(t(pp), col = 1:8)
 
 
-barplot(t(order(Q(snmf_project, K = 4, run  =best ))), col = 1:4))
+barplot(t(order(Q(snmf_project, K = 3, run  = best ))), col = 1:4)
 
 
 ##LFMM##

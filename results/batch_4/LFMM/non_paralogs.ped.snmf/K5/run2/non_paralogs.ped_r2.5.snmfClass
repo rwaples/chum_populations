@@ -4,14 +4,14 @@ new("snmfClass"
     , K = 5L
     , run = 2L
     , CPU = 6L
-    , seed = 1464405539L
+    , seed = 1848757253L
     , alpha = 10
     , percentage = 0.1
     , I = 0L
     , iterations = 200L
     , entropy = TRUE
     , tolerance = 1e-05
-    , crossEntropy = 0.794808362334472
+    , crossEntropy = 0.792705571755564
     , ploidy = 2L
     , Q.input.file = ""
     , Q.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/non_paralogs.ped.snmf/K5/run2/non_paralogs.ped_r2.5.Q"

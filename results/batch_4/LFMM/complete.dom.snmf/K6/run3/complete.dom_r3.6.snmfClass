@@ -4,14 +4,14 @@ new("snmfClass"
     , K = 6L
     , run = 3L
     , CPU = 6L
-    , seed = 512534692L
+    , seed = 191704647L
     , alpha = 10
     , percentage = 0.1
     , I = 0L
     , iterations = 200L
     , entropy = TRUE
     , tolerance = 1e-05
-    , crossEntropy = 0.413568074277399
+    , crossEntropy = 0.414757879295231
     , ploidy = 1L
     , Q.input.file = ""
     , Q.output.file = "/home/ipseg/Desktop/waples/chum_populations/results/batch_4/LFMM/complete.dom.snmf/K6/run3/complete.dom_r3.6.Q"
