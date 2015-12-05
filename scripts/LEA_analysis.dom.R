@@ -32,8 +32,12 @@ plot( -log10(tw$pvalues),tw$percentage)
 
 
 # run snmf (sparse non-negative matrix factorization)
+
+
 snmf_project = NULL
 snmf_project = snmf(geno_genotypes, K=2:6, entropy = TRUE, repetitions = 5, CPU = 6, percentage = 0.10, project = "new", ploidy = 1)
+
+load.snmfProject('complete.dom.snmfProject')
 
 # we may want to deal with the 
 
@@ -44,6 +48,12 @@ plot(snmf_project, lwd = 5, col = "red", pch=1)
 ce = cross.entropy(snmf_project, K = 3)
 # select the run with the lowest cross-entropy
 best = which.min(ce)
+
+png('/home/ipseg/Desktop/waples/chum_populations/paper/figures/CV.complete.png')
+plot(snmf_project, lwd = 5, col = "red", pch=1)
+dev.off()
+
+
 # We can also visualize a barplot of ancestry coeffcients as follows.
 barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
 

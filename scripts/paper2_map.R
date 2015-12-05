@@ -19,6 +19,8 @@ cent_loci_merged <- ddply(.data = cent_loci_merged, .variables = .(paper1_LG.y),
 cent_loci_merged <- ddply(.data = cent_loci_merged, .variables = .(paper1_LG.y), mutate, bot_cent = min(cM))
 
 cent_boundaries <- ddply(cent_loci_merged, 'paper1_LG.x', summarize, max = max(top_cent), min = min(bot_cent))
+# make sure they are at least 1 cm wide
+cent_boundaries[cent_boundaries$min == cent_boundaries$max,]$max = cent_boundaries[cent_boundaries$min == cent_boundaries$max,]$min + 1
 
 
 # Add column of max cM per LG
@@ -60,7 +62,7 @@ pl1 <- ggplot() +
 
 pl1
 
-ggsave('/home/ipseg/Desktop/waples/chum_populations/paper/figures/linkage_map.png', width= 18, height = 8, dpi = 400 )
+ggsave('/home/ipseg/Desktop/waples/chum_populations/paper/figures/linkage_map.png', width= 16, height = 8, dpi = 400 )
 
 cent_boundaries$mycolor = 1:13
 # centromeres

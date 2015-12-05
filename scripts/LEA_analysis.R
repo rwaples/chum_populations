@@ -38,11 +38,15 @@ plot(snmf_project, lwd = 5, col = "red", pch=1)
 ce = cross.entropy(snmf_project, K = 3)
 # select the run with the lowest cross-entropy
 best = which.min(ce)
+
+
+load.snmfProject('non_paralogs.ped.snmfProject')
+png('/home/ipseg/Desktop/waples/chum_populations/paper/figures/CV.non_paralogs.png')
+plot(snmf_project, lwd = 5, col = "red", pch=1)
+dev.off()
+
 # We can also visualize a barplot of ancestry coeffcients as follows.
-barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
-
-
-pdf('/home/ipseg/Desktop/waples/chum_populations/paper/figures/supplemental/Q.non_paralogs.pdf')
+png('/home/ipseg/Desktop/waples/chum_populations/paper/figures/supplemental/Q.non_paralogs.png')
 barplot(t(Q(snmf_project, K = 3, run  =best )), col = 1:8, xlab = 'Individual')
 dev.off()
 
